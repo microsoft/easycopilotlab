@@ -1,0 +1,57 @@
+title: "문과생을 위한 Copilot Studio"
+description: "개발자 없이 만드는 우리 팀 전용 AI — 완전 정복 1일 과정"
+theme: just-the-docs
+
+url: ""
+baseurl: ""
+
+# 검색 설정
+search_enabled: true
+search:
+  heading_level: 2
+  previews: 3
+  preview_words_before: 5
+  preview_words_after: 10
+
+# 네비게이션
+heading_anchors: true
+
+# 색상
+color_scheme: light
+
+# Callouts
+callouts:
+  highlight:
+    title: 핵심
+    color: blue
+  tip:
+    title: 팁
+    color: green
+  warning:
+    title: 주의
+    color: yellow
+  important:
+    title: 중요
+    color: red
+  note:
+    title: 참고
+    color: grey-lt
+
+# 링크
+aux_links:
+  "GitHub":
+    - "//github.com/"
+aux_links_new_tab: true
+
+# 푸터
+footer_content: "문과생을 위한 Copilot Studio &mdash; 개발자 없이 만드는 우리 팀 전용 AI"
+
+# Mermaid 다이어그램
+mermaid:
+  version: "10.9.0"
+
+# 빌드 제외
+exclude:
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
