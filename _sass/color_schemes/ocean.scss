@@ -9,6 +9,10 @@ $btn-primary-color: #2563eb;
 $search-background-color: #edf2f7;
 $search-result-preview-color: #4a5568;
 $code-background-color: #edf2f7;
-$feedback-color: #d5e3f7;
+$feedback-color: #2563eb;
+
+.nav-list-link.active {
+  color: #fff !important;
+}
 $table-background-color: #f7f9fc;
 $border-color: #cbd5e0;
