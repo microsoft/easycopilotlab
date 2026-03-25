@@ -104,7 +104,7 @@ Copilot에게 아래 프롬프트를 입력하세요:
   - 담당자정보.xlsx
 
 배포: Teams + @호출
-Flow: RequestToTeams (문의접수 자동 전달)
+Flow: RequestByEmail (문의접수 메일 자동 전달)
 FAQ: "연차 며칠?", "경비처리 어떻게?", "복지포인트 사용처?"
 ```
 
