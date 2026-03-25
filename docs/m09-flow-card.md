@@ -47,7 +47,8 @@ nav_order: 10
 flowchart LR
     A[👤 담당자한테<br>문의 넣어줘] --> B[🎬 Request Topic<br>정보 수집]
     B --> C[⚡ Flow 실행<br>RequestByEmail]
-    C --> D[📧 담당자 메일로<br>문의 내용 전달]
+    C --> C1[🤖 AI 프롬프트<br>메일 본문 생성]
+    C1 --> D[📧 담당자 메일로<br>문의 내용 전달]
     D --> E[💬 에이전트:<br>전달 완료되었습니다]
 ```
 
@@ -64,7 +65,8 @@ flowchart LR
 | **입력 ①** | `myRequest` (텍스트): 문의 내용 |
 | **입력 ②** | `mySender` (텍스트): 문의자 이름 |
 | **입력 ③** | `myEmail` (텍스트): 담당자 메일 주소 |
-| **동작** | 담당자 메일로 문의 내용 발송 |
+| **동작 ①** | AI 프롬프트로 메일 본문 생성 |
+| **동작 ②** | 담당자 메일로 문의 내용 발송 |
 | **출력** | `myReturn` (텍스트): 처리 완료 메시지 |
 
 ### Step-by-Step
@@ -73,28 +75,42 @@ flowchart LR
 2. **"만들기"** → **"인스턴트 클라우드 흐름"**
 3. **"Copilot Studio에서 흐름을 호출할 때"** 트리거 선택
 4. 입력 매개변수 추가: `myRequest` (텍스트), `mySender` (텍스트), `myEmail` (텍스트)
-5. **"+ 새 단계"** → **"Office 365 Outlook"** → **"메일 보내기 (V2)"**
-6. 받는 사람: 동적 콘텐츠 `myEmail` 선택
-7. 제목: `[문의접수] @{triggerBody()?['text_1']}님의 문의`
-8. 본문: 아래 HTML 붙여넣기 (아래 참고)
-9. **Flow 저장**
+5. **"+ 새 단계"** → **"AI Builder"** → **"AI 프롬프트를 사용하여 텍스트 만들기"**
+6. AI 프롬프트 설정 (아래 참고)
+7. **"+ 새 단계"** → **"Office 365 Outlook"** → **"메일 보내기 (V2)"**
+8. 받는 사람: 동적 콘텐츠 `myEmail` 선택
+9. 제목: `[문의접수] @{triggerBody()?['text_1']}님의 문의`
+10. 본문: AI 프롬프트 출력 결과(동적 콘텐츠) 선택
+11. **Flow 저장**
 
-### 메일 본문 HTML
+### AI 프롬프트 설정
 
-아래 HTML을 그대로 복사해서 본문에 붙여넣으세요:
+**"+ 새 단계" → "AI Builder" → "AI 프롬프트를 사용하여 텍스트 만들기"**를 선택한 후, **"프롬프트 만들기"**를 클릭하세요.
 
-```html
-<h2>📧 새로운 문의가 접수되었습니다</h2>
-<table>
-  <tr><td><b>문의자</b></td><td>@{triggerBody()?['text_1']}</td></tr>
-  <tr><td><b>문의내용</b></td><td>@{triggerBody()?['text']}</td></tr>
-  <tr><td><b>접수시간</b></td><td>@{utcNow()}</td></tr>
-</table>
-<p>이 메일은 HR도우미 에이전트가 자동으로 전달한 문의입니다.</p>
+**프롬프트 이름:** `문의접수 메일 본문 생성`
+
+**프롬프트 내용 (복사해서 붙여넣기):**
+
+```
+아래 문의 접수 정보를 바탕으로, 담당자에게 보낼 안내 메일 본문을 HTML 형식으로 작성해 주세요.
+
+문의자: {{mySender}}
+문의내용: {{myRequest}}
+
+작성 규칙:
+- 정중하고 간결한 한국어 비즈니스 톤
+- 문의자 이름, 문의 내용, 접수 시간을 표로 정리
+- 마지막에 "이 메일은 HR도우미 에이전트가 자동으로 전달한 문의입니다." 문구 포함
+- HTML 태그만 출력 (```html 등 코드 블록 마크업 제외)
 ```
 
+**입력 매개변수 매핑:**
+- `mySender` ← 동적 콘텐츠 `mySender` (트리거 입력)
+- `myRequest` ← 동적 콘텐츠 `myRequest` (트리거 입력)
+
 {: .note }
-> HTML을 이해할 필요 없습니다. **복붙이 목표**입니다.
+> AI 프롬프트가 매번 **깔끔한 비즈니스 메일**을 자동 생성합니다. HTML을 직접 쓸 필요가 없습니다!  
+> 이것이 M11에서 배울 **"Flow에 AI 심기"**의 실전 적용입니다.
 
 ---
 
@@ -143,8 +159,8 @@ M5에서 작성한 지침의 STRICT RULES에 추가:
 ## 핵심 정리
 
 1. **Flow = 에이전트의 손발** — 말에서 행동으로 확장
-2. **메일 전달 = 편지봉투** — 문의 내용을 담당자에게 자동 전달
-3. **HTML은 복붙** — 코드를 이해할 필요 없음
+2. **AI 프롬프트 = 메일 작성 AI** — 문의 내용을 깔끔한 비즈니스 메일로 자동 생성
+3. **메일 전달 = 편지봉투** — 문의 내용을 담당자에게 자동 전달
 4. Flow 연결 후 **재게시** 필수
 5. **Flow가 연결된 에이전트는 대화하는 RPA**
 
@@ -155,7 +171,7 @@ M5에서 작성한 지침의 STRICT RULES에 추가:
 | 질문 | 답변 |
 |:-----|:-----|
 | Power Automate가 뭔가요? | Microsoft의 자동화 도구입니다. 에이전트의 손발 역할을 합니다. |
-| HTML을 알아야 하나요? | 아닙니다. 오늘은 복붙만 합니다. |
+| AI 프롬프트가 매번 다른 메일을 만들지 않나요? | 프롬프트에 규칙을 명확히 지정했기 때문에 형식은 일관되고, 내용만 문의에 맞게 달라집니다. |
 | Flow 말고 다른 도구도 연결되나요? | HTTP 요청, 커스텀 커넥터 등 대부분 연결 가능합니다. 오늘은 메일 연동에 집중합니다. |
 | 에이전트가 Flow를 잘못 호출하면? | 지침의 STRICT RULES를 더 명확하게 작성하세요. 지침 → 지식 → 엔진 순서로 원인을 찾아보세요. |
 | 담당자 메일 주소를 어떻게 알아내나요? | 담당자정보.xlsx 지식 파일에서 검색하거나, 사용자에게 직접 물어보도록 설계합니다. |
@@ -168,6 +184,7 @@ M5에서 작성한 지침의 STRICT RULES에 추가:
 |:-----|:-----|
 | Copilot Studio에서 Flow 만들기 | [learn.microsoft.com](https://learn.microsoft.com/microsoft-copilot-studio/advanced-flow-create) |
 | Power Automate 시작 | [learn.microsoft.com](https://learn.microsoft.com/power-automate/getting-started) |
+| AI Builder 프롬프트 개요 | [learn.microsoft.com](https://learn.microsoft.com/ai-builder/prompts-overview) |
 | Office 365 Outlook 커넥터 | [learn.microsoft.com](https://learn.microsoft.com/connectors/office365/) |
 
 ---

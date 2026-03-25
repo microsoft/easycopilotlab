@@ -63,12 +63,12 @@ nav_order: 0
 | 6 | 13:40 | [MODULE 6 ⭐](docs/m06-knowledge) | 교과서 연결 — 파일 직접 업로드 + WorkIQ | 45분 | 🟢 직접 실습 |
 | 7 | 14:25 | [MODULE 7 ⭐](docs/m07-topic-variables) | 대본 + 포스트잇 변수 | 30분 | 🟡 복붙 + 확인 |
 | — | 14:55 | ☕ 휴식② | | 15분 | |
-| 8 | 15:10 | [MODULE 8](docs/m08-deployment) | 게시·배포 — Teams + Copilot | 20분 | 🟢 직접 실습 |
+| 8 | 15:10 | [MODULE 8](docs/m08-deployment) | 게시·배포 — Copilot에서 에이전트 사용 | 20분 | 🟢 직접 실습 |
 | 9 | 15:30 | [MODULE 9 ⭐](docs/m09-flow-card) | 손발 달기 — Flow + 메일로 문의 전달 | 50분 | 🟡 복붙 + 결과 확인 |
 | — | 16:20 | ☕ 휴식③ | | 15분 | |
 | 10 | 16:35 | [MODULE 10](docs/m10-conversation-log) | 신입사원의 일기 — 대화기록 Excel 저장 | 20분 | 👀 강사 데모 |
 | 11 | 16:55 | [MODULE 11](docs/m11-ai-prompt) | AI 프롬프트 — Flow에 AI 심기 | 20분 | 👀 강사 데모 |
-| 12 | 17:15 | [MODULE 12](docs/m12-future-vision) | 미래 비전 — 멀티에이전트 + 자율 트리거 | 15분 | 👀 강사 데모 |
+| 12 | 17:15 | [MODULE 12](docs/m12-future-vision) | 미래 비전 — 멀티에이전트 + MCP + 자율 트리거 | 15분 | 👀 강사 데모 |
 | 13 | 17:30 | [MODULE 13 ⭐](docs/m13-design-complete) | 나만의 에이전트 설계서 완성 | 20분 | 🟢 설계서 완성 |
 | — | 17:50 | 🎉 종료 | Q&A · 트러블슈팅 (18:00까지 10분 버퍼) | | |
 {: .timetable}
