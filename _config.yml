@@ -50,6 +50,13 @@ footer_content: "문과생을 위한 Copilot Studio &mdash; 개발자 없이 만
 mermaid:
   version: "10.9.0"
 
+# 기본 레이아웃
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
 # 빌드 제외
 exclude:
   - Gemfile.lock
