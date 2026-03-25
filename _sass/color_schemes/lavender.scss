@@ -13,6 +13,9 @@ $feedback-color: #7c3aed;
 
 .nav-list-link.active {
   color: #fff !important;
+  &:hover {
+    color: #fff !important;
+  }
 }
 $table-background-color: #faf8ff;
 $border-color: #d6cfe6;
