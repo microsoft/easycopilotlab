@@ -53,12 +53,12 @@ nav_order: 0
 | # | 시간 | 모듈 | 제목 | 소요 | 수강생 역할 |
 |:--|:-----|:-----|:-----|:-----|:-----------|
 | 0 | 09:30 | [MODULE 0](docs/m00-orientation) | 오리엔테이션 — 오늘 만들 에이전트 미리보기 | 10분 | 👀 보기 |
-| 1 | 09:40 | [MODULE 1](docs/m01-copilot-principles) | Copilot 원리 + 보안·컴플라이언스 | 20분 | 👀 보기 |
+| 1 | 09:40 | [MODULE 1](docs/m01-copilot-principles) | Copilot 원리 — 오케스트레이터와 재료 | 20분 | 👀 보기 |
 | 2 | 10:00 | [MODULE 2](docs/m02-immersive-incontext) | 몰입형 vs 인컨텍스트 | 15분 | 👀 보기 |
 | 3 | 10:15 | [MODULE 3 ⭐](docs/m03-agent-builder) | 에이전트 빌더 + 6개 샘플 자유 체험 | 45분 | 🟢 직접 만들기 |
 | — | 11:00 | ☕ 휴식① | | 15분 | |
-| 4 | 11:15 | [MODULE 4 ⭐](docs/m04-frame-design) | 생성형 선언 + 4가지 프레임 + 설계서 작성 | 30분 | 🟢 설계서 작성 |
-| 5 | 11:45 | [MODULE 5 ⭐](docs/m05-instructions) | 지침(채용공고) 작성 + 엔진 선택 + 디버깅 | 25분 | 🟢 직접 작성 + 테스트 |
+| 4 | 11:15 | [MODULE 4 ⭐](docs/m04-frame-design) | 생성형 선언 + 4가지 구성요소 + 설계서 작성 | 30분 | 🟢 설계서 작성 |
+| 5 | 11:45 | [MODULE 5 ⭐](docs/m05-instructions) | 지침(채용공고) 작성 + 엔진 선택 | 25분 | 🟢 직접 작성 + 테스트 |
 | — | 12:10 | 🍱 점심 | | 90분 | |
 | 6 | 13:40 | [MODULE 6 ⭐](docs/m06-knowledge) | 교과서 연결 — 파일 직접 업로드 + WorkIQ | 45분 | 🟢 직접 실습 |
 | 7 | 14:25 | [MODULE 7 ⭐](docs/m07-topic-variables) | 대본 + 포스트잇 변수 | 30분 | 🟡 복붙 + 확인 |
