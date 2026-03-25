@@ -10,6 +10,15 @@
   }
 }
 
+// 타임테이블 시간·소요 컬럼 줄바꿈 방지
+.timetable {
+  td:nth-child(2),
+  td:nth-child(5),
+  th:nth-child(5) {
+    white-space: nowrap;
+  }
+}
+
 // 활성 메뉴: 흰 글자 (기본 + hover)
 .site-nav .nav-list-item .nav-list-link.active {
   color: #fff;
