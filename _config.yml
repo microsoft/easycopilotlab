@@ -2,8 +2,8 @@ title: "문과생을 위한 Copilot Studio"
 description: "개발자 없이 만드는 우리 팀 전용 AI — 완전 정복 1일 과정"
 theme: just-the-docs
 
-url: ""
-baseurl: ""
+url: "https://microsoft.github.io"
+baseurl: "/easycopilotlab"
 
 # 검색 설정
 search_enabled: true
@@ -40,7 +40,7 @@ callouts:
 # 링크
 aux_links:
   "GitHub":
-    - "//github.com/"
+    - "https://github.com/microsoft/easycopilotlab"
 aux_links_new_tab: true
 
 # 푸터
