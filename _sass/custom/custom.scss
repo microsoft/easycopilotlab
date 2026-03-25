@@ -1,0 +1,11 @@
+// 타임테이블 컬럼 폭 조정
+.main-content table {
+  table-layout: auto;
+
+  th:nth-child(1), td:nth-child(1) { width: 3%; }   // #
+  th:nth-child(2), td:nth-child(2) { width: 8%; }   // 시간
+  th:nth-child(3), td:nth-child(3) { width: 15%; }  // 모듈
+  th:nth-child(4), td:nth-child(4) { width: auto; }  // 제목 — 남은 공간 차지
+  th:nth-child(5), td:nth-child(5) { width: 7%; }   // 소요
+  th:nth-child(6), td:nth-child(6) { width: 12%; }  // 수강생 역할
+}

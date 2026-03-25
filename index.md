@@ -89,7 +89,20 @@ nav_order: 0
 - ✅ Microsoft 365 계정 로그인 가능
 - ✅ [Copilot Studio](https://copilotstudio.microsoft.com) 접속 가능
 - ✅ Microsoft Teams 설치 및 로그인 완료
-- ✅ 실습에 사용할 문서 파일 준비 (강사가 안내)
+- ✅ 실습에 사용할 문서 파일 다운로드 (아래 참조)
+
+### 📂 실습 파일 다운로드
+
+| # | 파일 | 설명 |
+|:--|:-----|:-----|
+| 1 | [FAQ.docx](assets/files/FAQ.docx) | 자주 묻는 질문 모음 |
+| 2 | [경비처리_가이드.docx](assets/files/경비처리_가이드.docx) | 경비 처리 절차 안내 |
+| 3 | [담당자정보.docx](assets/files/담당자정보.docx) | 부서별 담당자 연락처 |
+| 4 | [복리후생_안내.docx](assets/files/복리후생_안내.docx) | 복리후생 제도 안내 |
+| 5 | [휴가_근태_가이드.docx](assets/files/휴가_근태_가이드.docx) | 휴가·근태 관련 규정 |
+
+{: .tip }
+> 위 파일들은 실습 중 에이전트의 **지식(교과서)** 소스로 사용합니다. 미리 다운로드해 주세요.
 
 {: .highlight }
 > 모든 실습은 웹 브라우저에서 진행됩니다. 별도의 프로그램 설치가 필요 없습니다.
