@@ -16,8 +16,8 @@ search:
 # 네비게이션
 heading_anchors: true
 
-# 색상
-color_scheme: light
+# 색상 — ocean | lavender | forest | sunset | light | dark
+color_scheme: ocean
 
 # Callouts
 callouts:
