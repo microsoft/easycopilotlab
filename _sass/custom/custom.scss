@@ -4,6 +4,11 @@
     table-layout: auto;
     width: 100%;
   }
+  th, td {
+    &:first-child { min-width: 2rem; width: 3%; }       // #
+    &:nth-child(2) { min-width: 3.5rem; width: 7%; }    // 시간
+    &:nth-child(5) { min-width: 3rem; width: 5%; }      // 소요
+  }
 }
 
 // 활성 메뉴: 흰 글자 (기본 + hover)
