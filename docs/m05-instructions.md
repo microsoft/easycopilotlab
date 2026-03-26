@@ -64,11 +64,14 @@ nav_order: 6
 
 ---
 
-## 실습: 지침 작성 + 테스트
+## 실습: 지침 업그레이드 + 테스트
 
 ### 지침 템플릿
 
-아래 텍스트를 Copilot Studio의 지침 섹션에 붙여넣으세요.
+M3에서 에이전트 빌더에 입력한 지침은 간단했습니다.  
+이제 Copilot Studio에서 **더 정교한 지침으로 업그레이드**하세요.
+
+Copilot Studio → HR 도우미 에이전트 → **지침** 섹션의 내용을 아래로 교체합니다:
 
 <details markdown="1">
 <summary><strong>지침 (클릭해서 펼치기)</strong></summary>
