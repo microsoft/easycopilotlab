@@ -120,7 +120,7 @@ M365 Copilot 안에 내장된 **간편 에이전트 생성 도구**입니다.
 
 고객 응대·영업·협상 상황을 시뮬레이션하고, 대화가 끝나면 피드백을 줍니다.
 
-<details>
+<details markdown="1">
 <summary><strong>지침 (클릭해서 펼치기)</strong></summary>
 
 ```
@@ -160,7 +160,7 @@ M365 Copilot 안에 내장된 **간편 에이전트 생성 도구**입니다.
 
 사용자가 입력한 문장을 4가지 스타일(비즈니스/캐주얼/격식/요약)로 변환합니다.
 
-<details>
+<details markdown="1">
 <summary><strong>지침 (클릭해서 펼치기)</strong></summary>
 
 ```
@@ -199,7 +199,7 @@ M365 Copilot 안에 내장된 **간편 에이전트 생성 도구**입니다.
 
 하나의 주제에 대해 4명의 전문가 페르소나가 각자 의견을 내고 토론합니다.
 
-<details>
+<details markdown="1">
 <summary><strong>지침 (클릭해서 펼치기)</strong></summary>
 
 ```
@@ -247,7 +247,7 @@ M365 Copilot 안에 내장된 **간편 에이전트 생성 도구**입니다.
 
 회의 내용 텍스트를 붙여넣으면 구조화된 회의록으로 자동 정리합니다.
 
-<details>
+<details markdown="1">
 <summary><strong>지침 (클릭해서 펼치기)</strong></summary>
 
 ```
@@ -293,7 +293,7 @@ M365 Copilot 안에 내장된 **간편 에이전트 생성 도구**입니다.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><strong>테스트용 목업 회의록 (클릭해서 펼치기)</strong></summary>
 
 ```
@@ -317,7 +317,7 @@ M365 Copilot 안에 내장된 **간편 에이전트 생성 도구**입니다.
 
 영수증 이미지나 내용을 넣으면 경비 항목을 자동 추출·정리합니다.
 
-<details>
+<details markdown="1">
 <summary><strong>지침 (클릭해서 펼치기)</strong></summary>
 
 ```
@@ -368,7 +368,7 @@ M365 Copilot 안에 내장된 **간편 에이전트 생성 도구**입니다.
 
 발표자료 내용을 붙여넣으면 구조·디자인·전달력 관점에서 피드백을 줍니다.
 
-<details>
+<details markdown="1">
 <summary><strong>지침 (클릭해서 펼치기)</strong></summary>
 
 ```
