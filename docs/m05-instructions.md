@@ -70,6 +70,9 @@ nav_order: 6
 
 아래 텍스트를 Copilot Studio의 지침 섹션에 붙여넣으세요.
 
+<details markdown="1">
+<summary><strong>지침 (클릭해서 펼치기)</strong></summary>
+
 ```
 ## 역할
 당신은 우리 회사의 HR/총무 전담 도우미입니다.
@@ -87,6 +90,8 @@ nav_order: 6
   HR팀(내선 1234)에 문의해 주세요"
 - 개인정보(급여, 인사평가): 담당자 연결 안내
 ```
+
+</details>
 
 ### 테스트 3종
 

@@ -91,6 +91,9 @@ flowchart LR
 
 **프롬프트 내용 (복사해서 붙여넣기):**
 
+<details markdown="1">
+<summary><strong>프롬프트 (클릭해서 펼치기)</strong></summary>
+
 ```
 아래 문의 접수 정보를 바탕으로, 담당자에게 보낼 안내 메일 본문을 HTML 형식으로 작성해 주세요.
 
@@ -103,6 +106,8 @@ flowchart LR
 - 마지막에 "이 메일은 HR도우미 에이전트가 자동으로 전달한 문의입니다." 문구 포함
 - HTML 태그만 출력 (```html 등 코드 블록 마크업 제외)
 ```
+
+</details>
 
 **입력 매개변수 매핑:**
 - `mySender` ← 동적 콘텐츠 `mySender` (트리거 입력)
@@ -136,10 +141,15 @@ flowchart LR
 
 M5에서 작성한 지침의 STRICT RULES에 추가:
 
+<details markdown="1">
+<summary><strong>추가 규칙 (클릭해서 펼치기)</strong></summary>
+
 ```
 - "담당자한테 문의 넣어줘" 등 요청 → Request Topic 호출
 - 담당자 메일 주소는 담당자정보 지식에서 검색하고, 없으면 사용자에게 질문
 ```
+
+</details>
 
 ---
 
