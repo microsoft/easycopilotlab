@@ -61,15 +61,16 @@ nav_order: 0
 | 5 | 11:45 | [MODULE 5 ⭐](docs/m05-instructions) | 지침(채용공고) 작성 + 엔진 선택 | 25분 | 🟢 직접 작성 + 테스트 |
 | — | 12:10 | 🍱 점심 | | 90분 | |
 | 6 | 13:40 | [MODULE 6 ⭐](docs/m06-knowledge) | 교과서 연결 — 파일 직접 업로드 + WorkIQ | 45분 | 🟢 직접 실습 |
-| 7 | 14:25 | [MODULE 7 ⭐](docs/m07-topic-variables) | 대본 + 포스트잇 변수 | 30분 | 🟡 복붙 + 확인 |
-| — | 14:55 | ☕ 휴식② | | 15분 | |
-| 8 | 15:10 | [MODULE 8](docs/m08-deployment) | 게시·배포 — Copilot에서 에이전트 사용 | 20분 | 🟢 직접 실습 |
-| 9 | 15:30 | [MODULE 9 ⭐](docs/m09-flow-card) | 손발 달기 — Flow + 메일로 문의 전달 | 50분 | 🟡 복붙 + 결과 확인 |
-| — | 16:20 | ☕ 휴식③ | | 15분 | |
-| 10 | 16:35 | [MODULE 10](docs/m10-conversation-log) | 신입사원의 일기 — 대화기록 Excel 저장 | 20분 | 👀 강사 데모 |
-| 11 | 16:55 | [MODULE 11](docs/m11-ai-prompt) | AI 프롬프트 — Flow에 AI 심기 | 20분 | 👀 강사 데모 |
-| 12 | 17:15 | [MODULE 12](docs/m12-future-vision) | 미래 비전 — 멀티에이전트 + MCP + 자율 트리거 | 15분 | 👀 강사 데모 |
-| 13 | 17:30 | [MODULE 13 ⭐](docs/m13-design-complete) | 나만의 에이전트 설계서 완성 | 20분 | 🟢 설계서 완성 |
+| 7 | 14:25 | [MODULE 7 ⭐](docs/m07-topic-variables) | 대본 + 포스트잇 변수 | 35분 | 🟡 복붙 + 확인 |
+| — | 15:00 | ☕ 휴식② | | 15분 | |
+| 8 | 15:15 | [MODULE 8](docs/m08-deployment) | 게시(Publish) + 공유 — Copilot에서 에이전트 사용 | 20분 | 🟢 직접 실습 |
+| 9 | 15:35 | [MODULE 9 ⭐](docs/m09-flow-create) | 손발 달기 — Power Automate Flow 만들기 | 30분 | 🟡 복붙 + 확인 |
+| 10 | 16:05 | [MODULE 10 ⭐](docs/m10-flow-connect) | 메일 전달 연결 — Topic + 테스트 + 재게시 | 20분 | 🟡 복붙 + 결과 확인 |
+| — | 16:25 | ☕ 휴식③ | | 15분 | |
+| 11 | 16:40 | [MODULE 11 ⭐](docs/m11-conversation-log) | 신입사원의 일기 — 대화기록 Excel 저장 | 25분 | 🟢 직접 실습 |
+| 12 | 17:05 | [MODULE 12](docs/m12-ai-prompt) | AI 프롬프트 — Flow에 AI 심기 | 15분 | 👀 강사 데모 |
+| 13 | 17:20 | [MODULE 13](docs/m13-future-vision) | 미래 비전 — 멀티에이전트 + MCP + 자율 트리거 | 10분 | 👀 강사 데모 |
+| 14 | 17:30 | [MODULE 14 ⭐](docs/m14-design-complete) | 나만의 에이전트 설계서 완성 | 20분 | 🟢 설계서 완성 |
 | — | 17:50 | 🎉 종료 | Q&A · 트러블슈팅 (18:00까지 10분 버퍼) | | |
 {: .timetable}
 
@@ -90,7 +91,15 @@ nav_order: 0
 - ✅ Microsoft 365 계정 로그인 가능
 - ✅ [Copilot Studio](https://copilotstudio.microsoft.com) 접속 가능
 - ✅ Microsoft Teams 설치 및 로그인 완료
+- ✅ [Power Automate](https://make.powerautomate.com) 접속 가능
+- ✅ 인스턴트 클라우드 흐름 생성 권한 확인 완료
+- ✅ AI Builder 프롬프트 사용 가능 여부 확인 완료
+- ✅ Office 365 Outlook 커넥터로 메일 발송 가능
+- ✅ OneDrive for Business + Excel Online (Business) 사용 가능
 - ✅ 실습에 사용할 문서 파일 다운로드 (아래 참조)
+
+{: .warning }
+> 일부 조직은 Power Automate, AI Builder, Outlook 커넥터, OneDrive 사용에 관리자 승인이나 라이선스 확인이 필요합니다. 오전 세션 시작 전에 미리 점검해 주세요.
 
 ### 📂 실습 파일 다운로드
 
