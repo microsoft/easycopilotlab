@@ -134,6 +134,50 @@ continues typing — casual, quick interaction. A dotted line divides the two sc
 Both scenarios show the same AI rookie character.
 ```
 
+### M2 인포그래픽 — 인컨텍스트 워크플로
+
+**파일명:** `assets/images/m02/incontext-workflow.png`
+
+```
+Clean infographic showing a vertical conversation timeline on a white background. 16:9.
+
+A single chat window (rounded rectangle with a subtle border) contains a TOP-TO-BOTTOM 
+sequence of 7 chat bubbles, alternating sides like a real chat UI:
+
+  1. LEFT (user, light gray bubble): speech icon + "Copilot에게 일반 질문"
+     — 내일 A사 미팅 준비해야 해
+  
+  2. LEFT (user, orange-tinted bubble with @ icon): "@영업지원"
+     — A사 최근 영업 히스토리 알려줘
+     RIGHT (agent reply, soft blue bubble): sales data summary
+  
+  3. LEFT (user, light gray bubble): general Copilot chat — context released
+  
+  4. LEFT (user, green-tinted bubble with @ icon): "@리서치"
+     — 반도체 산업 최신 트렌드 검색해줘
+     RIGHT (agent reply, soft green bubble): research results
+  
+  5. LEFT (user, light gray bubble): Copilot에게 요청 — 지금까지 대화 내용 종합 정리
+  
+  6. LEFT (user, purple-tinted bubble with @ icon): "@Word"
+     — 미팅 브리핑 문서로 저장
+  
+  7. RIGHT (Copilot, blue bubble): completed briefing document icon
+
+On the LEFT margin, a vertical dotted line connects all steps with small numbered 
+circles (①②③④⑤⑥⑦). Different @ agents are color-coded:
+  - @영업지원 = orange accent
+  - @리서치 = green accent  
+  - @Word = purple accent
+  - Copilot (general) = gray
+
+At the bottom, a small caption area with the metaphor: 
+"Copilot = 지휘자, 에이전트 = 전문가 팀"
+
+Flat vector style. Same warm pastel palette as other module images. 
+No actual text in the image — use icons and visual cues only.
+```
+
 ---
 
 ## M3. 첫번째 에이전트 — 에이전트 빌더 실습
