@@ -1,6 +1,7 @@
 ---
 title: "M3. 에이전트 만들기 시작"
 nav_order: 4
+has_children: true
 ---
 
 # 첫번째 에이전트 만들기 — 에이전트 빌더로 충분할까?
