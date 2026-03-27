@@ -1,5 +1,5 @@
 ---
-title: "M7. 지식"
+title: "M7. 3요소 지식"
 nav_order: 8
 ---
 

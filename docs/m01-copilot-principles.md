@@ -1,5 +1,5 @@
 ---
-title: "M1. 동작원리"
+title: "M1. 코파일럿 동작원리"
 nav_order: 2
 ---
 

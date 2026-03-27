@@ -1,5 +1,5 @@
 ---
-title: "M15. MCP"
+title: "M15. 도구 — MCP"
 nav_order: 16
 ---
 

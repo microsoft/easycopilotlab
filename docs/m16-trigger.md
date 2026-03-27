@@ -1,5 +1,5 @@
 ---
-title: "M16. 트리거"
+title: "M16. 도구 — 트리거"
 nav_order: 17
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "M6. 지침"
+title: "M6. 2요소 지침"
 nav_order: 7
 ---
 

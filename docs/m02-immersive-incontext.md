@@ -1,5 +1,5 @@
 ---
-title: "M2. 몰입형 vs 인컨텍스트"
+title: "M2. 에이전트의 사용방식"
 nav_order: 3
 ---
 

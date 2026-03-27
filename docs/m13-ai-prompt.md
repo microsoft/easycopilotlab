@@ -1,5 +1,5 @@
 ---
-title: "M13. AI 프롬프트"
+title: "M13. 도구 — AI 프롬프트"
 nav_order: 14
 ---
 
