@@ -30,6 +30,16 @@
   }
 }
 
+// 사이드바 너비 확장 (모듈 제목 한 줄 표시)
+@media (min-width: 50rem) {
+  .side-bar {
+    width: 18rem;
+  }
+  .main-content-wrap {
+    margin-left: 18rem;
+  }
+}
+
 // 활성 메뉴: 흰 글자 (기본 + hover)
 .site-nav .nav-list-item .nav-list-link.active {
   color: #fff;
