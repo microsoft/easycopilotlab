@@ -1,5 +1,5 @@
 ---
-title: "실습 — Copilot Studio로 가져오기"
+title: "실습② — Copilot Studio로 가져오기"
 parent: "M3. 에이전트 만들기 시작"
 nav_order: 2
 ---

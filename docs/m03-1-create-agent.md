@@ -1,5 +1,5 @@
 ---
-title: "실습 — HR 도우미 만들기"
+title: "실습① — HR 도우미 만들기"
 parent: "M3. 에이전트 만들기 시작"
 nav_order: 1
 ---
