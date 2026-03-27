@@ -43,3 +43,8 @@
     color: #fff;
   }
 }
+
+// 모든 메뉴 항목: hover 시 흰 글자
+.site-nav .nav-list-link:hover {
+  color: #fff;
+}
