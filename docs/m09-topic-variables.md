@@ -1,6 +1,7 @@
 ---
 title: "M9. 도구 — 토픽과 변수"
 nav_order: 10
+has_children: true
 ---
 
 # 도구 — 토픽과 변수
@@ -68,81 +69,27 @@ Flow: 포스트잇의 정보를 사용해서 실행
 
 ## 실습 ①: FAQ Topic 만들기
 
-| 항목 | 내용 |
-|:-----|:-----|
-| **Topic 이름** | FAQ Topic |
-| **역할** | FAQ·복리후생·경비·휴가 문서에서 답변 찾기 → 결과 저장 |
-| **글로벌 변수** | `Global.FAQ_result` |
-
-### Step-by-Step
-
-1. Copilot Studio → 에이전트 → 좌측 **"토픽"** 클릭
-2. **"+ 토픽 추가"** → **"새로 만들기"**
-3. Topic 이름 입력: `FAQ Topic`
-4. 편집 화면이 열리면 아래 순서로 노드를 구성합니다:
-
-#### 노드 1 — 트리거 (자동 생성됨)
-- "Topic이 트리거될 때" 노드가 자동으로 만들어져 있습니다.
-- **Description** 입력: `사내 규정, 복리후생, 연차, 경비처리 등 FAQ 질문에 답변하는 대본`
-
-#### 노드 2 — 지식 검색 (생성형 답변)
-- 트리거 아래 **"+"** 클릭 → **"지식 검색"** 노드 추가
-- 검색 대상: **모든 지식 소스** (기본값)
-- 입력: `Activity.Text` (사용자 질문)
-- 출력 저장 변수: **변수 선택 → "새 변수 만들기"**
-  - 이름: `FAQ_result`
-  - **"글로벌 변수로 설정"** 체크 → `Global.FAQ_result`가 됨
-
-#### 노드 3 — 메시지
-- **"+"** 클릭 → **"메시지 보내기"** 노드 추가
-- 메시지 내용: `{Global.FAQ_result}` (변수 삽입 버튼 사용)
-
-5. 오른쪽 **저장** 클릭
-
-{: .tip }
-> 트리거의 **Description**이 핵심입니다. 오케스트레이터가 이 설명을 보고 "FAQ Topic을 쓸지 말지"를 판단합니다.
+{: .important }
+> 📌 이 실습은 별도 페이지에서 진행합니다.  
+> [실습 ①: FAQ Topic 만들기](m09-1-faq-topic)를 완료하고 돌아오세요.
 
 ---
 
 ## 실습 ②: Contact Topic 만들기
 
-| 항목 | 내용 |
-|:-----|:-----|
-| **Topic 이름** | Contact Topic |
-| **역할** | 담당자정보.docx만 검색 → 담당자 반환 |
-| **글로벌 변수** | `Global.Contact_result` |
-
-### Step-by-Step
-
-FAQ Topic과 동일한 방식으로 생성하되, 아래만 다릅니다:
-
-1. Topic 이름: `Contact Topic`
-2. 트리거 Description: `담당자 이름, 연락처, 이메일을 조회하는 대본`
-3. 지식 검색 노드: 검색 대상을 **"담당자정보.docx"만 선택** (특정 지식 소스 지정)
-4. 출력 변수: `Global.Contact_result` (글로벌 변수로 설정)
-5. 메시지 노드: `{Global.Contact_result}`
-6. **저장**
+{: .important }
+> 📌 이 실습은 별도 페이지에서 진행합니다.  
+> [실습 ②: Contact Topic 만들기](m09-2-contact-topic)를 완료하고 돌아오세요.
 
 ---
 
 ## 실습 ③: STRICT RULES 추가
 
-M6에서 작성한 지침에 아래 내용을 **추가**하세요:
+{: .important }
+> 📌 이 실습은 별도 페이지에서 진행합니다.  
+> [실습 ③: STRICT RULES 추가](m09-3-strict-rules)를 완료하고 돌아오세요.
 
-<details markdown="1">
-<summary><strong>STRICT RULES (클릭해서 펼치기)</strong></summary>
-
-```
-## STRICT RULES
-- 담당자를 찾아달라는 요청 → Contact Topic 호출
-- 그 외 사내 규정/복리후생/연차/경비 질문 → FAQ Topic 호출
-- Topic에서 결과를 못 찾으면 "HR팀 내선 1234로 문의해 주세요" 안내
-```
-
-</details>
-
-{: .warning }
-> STRICT RULES를 추가하지 않으면 오케스트레이터가 Topic을 **올바르게 선택**하지 못할 수 있습니다.
+---
 
 ## Topic 선택 우선순위
 

@@ -1,6 +1,7 @@
 ---
 title: "M12. 도구 — 에이전트 흐름"
 nav_order: 13
+has_children: true
 ---
 
 # 도구  에이전트 흐름
@@ -63,57 +64,19 @@ flowchart LR
 
 ---
 
-## 실습 : Power Automate 흐름 만들기
-
-### 흐름 구조  RequestByEmail
-
-| 항목 | 내용 |
-|:-----|:-----|
-| **흐름 이름** | RequestByEmail |
-| **트리거** | Copilot Studio에서 흐름을 호출할 때 |
-| **입력 ** | `myRequest` (텍스트): 문의 내용 |
-| **입력 ** | `mySender` (텍스트): 문의자 이름 |
-| **입력 ** | `myEmail` (텍스트): 담당자 메일 주소 |
-| **동작 ** | AI 프롬프트로 메일 본문 생성 |
-| **동작 ** | Office 365 Outlook으로 메일 발송 |
-| **출력** | `myReturn`: 완료 메시지 |
-
-### 실습 순서
-
-1. [Power Automate](https://make.powerautomate.com) 접속
-2. **만들기  즉시 클라우드 흐름** 선택
-3. 트리거: **Copilot Studio에서 흐름을 호출할 때** 선택
-4. 입력 변수 3개 추가 (`myRequest`, `mySender`, `myEmail`)
-5. **AI Builder  AI 프롬프트** 동작 추가  메일 본문 생성 프롬프트 입력
-6. **Office 365 Outlook  메일 보내기** 동작 추가
-7. 출력 변수 `myReturn` 추가
-8. **저장  게시**
+## 실습 ①: Power Automate 흐름 만들기
 
 {: .important }
-> AI Builder 프롬프트는 AI Builder 크레딧이 필요합니다. 조직 정책에 따라 사용 불가일 수 있습니다. 이 경우 AI 프롬프트 단계를 건너뛰고 직접 메일 본문을 작성합니다.
-
-{: .note }
-> 이 모듈의 목표는 **텍스트 AI 프롬프트를 한 번 넣어 보는 것**입니다. AI 프롬프트의 종류와 확장 시나리오는 다음 M13에서 따로 정리합니다.
+> 📌 이 실습은 별도 페이지에서 진행합니다.  
+> [실습 ①: 흐름 만들기](m12-1-create-flow)를 완료하고 돌아오세요.
 
 ---
 
-## 실습 : 에이전트에 흐름 연결하기
+## 실습 ②: 에이전트에 흐름 연결하기
 
-### Request Topic 만들기
-
-1. Copilot Studio  **토픽  + 토픽 추가**
-2. 이름: `Request Topic`
-3. 질문 노드: 문의 내용 수집  변수 저장
-4. 작업 노드: **RequestByEmail** 흐름 호출
-5. 입력 매핑:
-   - `myRequest`  문의 내용 변수
-   - `mySender`  `System.User.DisplayName`
-   - `myEmail`  담당자 메일 주소
-6. 메시지 노드: 전달 완료 메시지 출력
-7. **저장  게시**
-
-{: .tip }
-> 지침의 STRICT RULES에 "담당자 문의가 필요할 때는 반드시 Request Topic을 실행하라"고 추가하면 오케스트레이터가 이 토픽을 더 잘 채택합니다.
+{: .important }
+> 📌 이 실습은 별도 페이지에서 진행합니다.  
+> [실습 ②: 에이전트에 흐름 연결](m12-2-connect-flow)을 완료하고 돌아오세요.
 
 ---
 
