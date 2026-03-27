@@ -1,5 +1,5 @@
 ---
-title: "M3a. 도구 — 샘플 에이전트"
+title: "M3a. 부록 — 샘플 에이전트"
 nav_order: 4.5
 ---
 
@@ -343,4 +343,4 @@ nav_order: 4.5
 
 ---
 
-다음 모듈: [M4. 4가지 구성요소](m04-four-components)
+다음 모듈: [M4. 에이전트의 구성요소](m04-four-components)

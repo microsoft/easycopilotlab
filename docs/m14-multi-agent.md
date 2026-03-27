@@ -131,4 +131,4 @@ flowchart TD
 
 ---
 
-다음 모듈: [M15. MCP](m15-mcp)
+다음 모듈: [M15. 도구 — MCP](m15-mcp)

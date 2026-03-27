@@ -125,4 +125,4 @@ flowchart LR
 
 ---
 
-다음 모듈: [M13. AI 프롬프트](m13-ai-prompt)
+다음 모듈: [M13. 도구 — AI 프롬프트](m13-ai-prompt)

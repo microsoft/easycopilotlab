@@ -150,4 +150,4 @@ graph LR
 
 ---
 
-다음 모듈: [M14. 멀티에이전트](m14-multi-agent)
+다음 모듈: [M14. 도구 — 멀티에이전트](m14-multi-agent)

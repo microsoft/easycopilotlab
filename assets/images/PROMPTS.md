@@ -317,6 +317,40 @@ rookie is reaching for one of the tools with an eager expression. "Choosing the 
 tool for the job."
 ```
 
+### M8 인포그래픽 — 오케스트레이터의 도구 채택 흐름
+
+**파일명:** `assets/images/m08/tool-selection.png`
+
+```
+Clean infographic diagram on a white/light gray background. 16:9 aspect ratio.
+
+TOP CENTER: A user icon inside a rounded rectangle with a speech bubble — 
+"사용자 입력".
+
+Arrow pointing DOWN to:
+
+CENTER (largest element, visually dominant): A bold dark blue (#1a3a5c) rounded
+rectangle labeled "🚦 오케스트레이터 판단" with a magnifying glass icon examining
+a scroll/description document. Inside, a small banner reads:
+"📝 Description을 보고 도구를 선택"
+"🧭 지침에 따라 도구를 선택"
+
+From the orchestrator box, FOUR arrows fan out downward to four equally-spaced 
+rounded cards in a single row:
+
+  Card 1 (soft blue #e8eef6): book + magnifying glass icon — "📚 지식 검색으로 답변"
+  Card 2 (soft mint #d1fae5): clapperboard icon — "🎬 토픽 실행"
+  Card 3 (soft coral #ffe4e6): plug + flow icon — "🔌 흐름/커넥터 호출"
+  Card 4 (soft lavender #ede9fe): two-figure handshake icon — "🤝 다른 에이전트 호출"
+
+Each card has a thin colored border matching its background tint but darker.
+
+At the bottom, a subtle caption bar: "설명(Description)이 명확해야 AI가 도구를 찾는다"
+
+Flat vector style, same warm pastel palette as other module images. 
+No actual Korean text in the image — use icons and visual cues only.
+```
+
 ---
 
 ## M9. 토픽과 변수

@@ -115,4 +115,4 @@ nav_order: 6
 
 ---
 
-다음 모듈: [M6. 지침](m06-instructions)
+다음 모듈: [M6. 2요소 지침](m06-instructions)

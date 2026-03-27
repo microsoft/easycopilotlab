@@ -160,4 +160,4 @@ ChatGPT에 질문을 입력하면, AI에게 직접 말하는 것 같습니다.
 
 ---
 
-다음 모듈: [M2. 몰입형 vs 인컨텍스트](m02-immersive-incontext)
+다음 모듈: [M2. 에이전트의 사용방식](m02-immersive-incontext)
