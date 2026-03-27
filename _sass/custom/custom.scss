@@ -30,8 +30,14 @@
   }
 }
 
-// 활성 메뉴: 흰 글자 (기본 + hover)
+// 활성 메뉴: 흰 글자 (기본 + hover + 자식 메뉴)
 .site-nav .nav-list-item .nav-list-link.active {
+  color: #fff;
+  &:hover {
+    color: #fff;
+  }
+}
+.site-nav .nav-list .nav-list .nav-list-link.active {
   color: #fff;
   &:hover {
     color: #fff;
