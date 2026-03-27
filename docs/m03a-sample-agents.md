@@ -1,5 +1,5 @@
 ---
-title: "M3a. 샘플 에이전트"
+title: "M3a. 도구 — 샘플 에이전트"
 nav_order: 4.5
 ---
 
