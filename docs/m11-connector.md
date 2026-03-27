@@ -10,13 +10,13 @@ nav_order: 12
 |:-----|:-----|:-----------|
 | 15:20 | 30분 | 🟢 직접 실습 |
 
-![M11 커넥터 — 자동으로 일기 쓰는 AI](../assets/images/m11/hero.png)
-
 ## 목차
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
+
+![M11 커넥터 — 자동으로 일기 쓰는 AI](../assets/images/m11/hero.png)
 
 ---
 

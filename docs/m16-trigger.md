@@ -10,13 +10,13 @@ nav_order: 17
 |:-----|:-----|:-----------|
 | 17:25 | 25분 |  직접 실습 |
 
-![M16 트리거 — 잠든 AI가 이벤트로 깨어난다](../assets/images/m16/hero.png)
-
 ## 목차
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
+
+![M16 트리거 — 잠든 AI가 이벤트로 깨어난다](../assets/images/m16/hero.png)
 
 ---
 

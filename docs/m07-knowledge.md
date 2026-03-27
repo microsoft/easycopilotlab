@@ -10,13 +10,13 @@ nav_order: 8
 |:-----|:-----|:-----------|
 | 13:30 | 30분 | 🟢 직접 실습 |
 
-![M7 지식 — 교과서 업로드](../assets/images/m07/hero.png)
-
 ## 목차
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
+
+![M7 지식 — 교과서 업로드](../assets/images/m07/hero.png)
 
 ---
 

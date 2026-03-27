@@ -10,13 +10,13 @@ nav_order: 4
 |:-----|:-----|:-----------|
 | 10:05 | 30분 | 🟢 직접 만들기 |
 
-![M3 첫번째 에이전트 — 30초 만에 탄생](../assets/images/m03/hero.png)
-
 ## 목차
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
+
+![M3 첫번째 에이전트 — 30초 만에 탄생](../assets/images/m03/hero.png)
 
 ---
 

@@ -10,13 +10,13 @@ nav_order: 7
 |:-----|:-----|:-----------|
 | 13:00 | 30분 | 🟢 직접 작성 + 테스트 |
 
-![M6 지침 — 채용공고 작성하기](../assets/images/m06/hero.png)
-
 ## 목차
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
+
+![M6 지침 — 채용공고 작성하기](../assets/images/m06/hero.png)
 
 ---
 

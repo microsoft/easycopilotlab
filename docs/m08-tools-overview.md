@@ -10,13 +10,13 @@ nav_order: 9
 |:-----|:-----|:-----------|
 | 14:00 | 10분 |  보기 |
 
-![M8 도구들 — 도구 선반에서 골라 쓰기](../assets/images/m08/hero.png)
-
 ## 목차
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
+
+![M8 도구들 — 도구 선반에서 골라 쓰기](../assets/images/m08/hero.png)
 
 ---
 

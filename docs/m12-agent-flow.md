@@ -10,13 +10,13 @@ nav_order: 13
 |:-----|:-----|:-----------|
 | 15:50 | 30분 |  직접 실습 |
 
-![M12 에이전트 흐름 — 여러 단계 자동화 컨베이어 벨트](../assets/images/m12/hero.png)
-
 ## 목차
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
+
+![M12 에이전트 흐름 — 여러 단계 자동화 컨베이어 벨트](../assets/images/m12/hero.png)
 
 ---
 

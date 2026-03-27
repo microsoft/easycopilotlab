@@ -10,13 +10,13 @@ nav_order: 15
 |:-----|:-----|:-----------|
 | 16:45 | 25분 |  직접 실습 |
 
-![M14 멀티에이전트 — 컨시어지가 전문가를 연결](../assets/images/m14/hero.png)
-
 ## 목차
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
+
+![M14 멀티에이전트 — 컨시어지가 전문가를 연결](../assets/images/m14/hero.png)
 
 ---
 

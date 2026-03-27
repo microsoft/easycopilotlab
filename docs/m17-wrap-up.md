@@ -10,13 +10,13 @@ nav_order: 18
 |:-----|:-----|:-----------|
 | 17:50 | 10분 | 💬 Q&A |
 
-![M17 마무리 — 신입사원 성장 완료](../assets/images/m17/hero.png)
-
 ## 목차
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
+
+![M17 마무리 — 신입사원 성장 완료](../assets/images/m17/hero.png)
 
 ---
 

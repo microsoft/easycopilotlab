@@ -10,13 +10,13 @@ nav_order: 16
 |:-----|:-----|:-----------|
 | 17:10 | 15분 |  직접 실습 |
 
-![M15 MCP — 만능 어댑터 하나로 외부 연결](../assets/images/m15/hero.png)
-
 ## 목차
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
+
+![M15 MCP — 만능 어댑터 하나로 외부 연결](../assets/images/m15/hero.png)
 
 ---
 

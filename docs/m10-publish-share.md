@@ -10,13 +10,13 @@ nav_order: 11
 |:-----|:-----|:-----------|
 | 15:00 | 20분 | 🟢 직접 실습 |
 
-![M10 게시와 공유 — 발사 버튼 누르기](../assets/images/m10/hero.png)
-
 ## 목차
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
+
+![M10 게시와 공유 — 발사 버튼 누르기](../assets/images/m10/hero.png)
 
 ---
 

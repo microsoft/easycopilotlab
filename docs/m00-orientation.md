@@ -10,13 +10,13 @@ nav_order: 1
 |:-----|:-----|:-----------|
 | 09:30 | 10분 | 👀 보기 |
 
-![M0 오리엔테이션 — AI 신입사원의 첫 출근](../assets/images/m00/hero.png)
-
 ## 목차
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
+
+![M0 오리엔테이션 — AI 신입사원의 첫 출근](../assets/images/m00/hero.png)
 
 ---
 

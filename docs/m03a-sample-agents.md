@@ -10,13 +10,13 @@ nav_order: 4.5
 |:-----|:-----|:-----------|
 | 자율 | 자율 | 🟢 직접 만들기 |
 
-![M3a 샘플 에이전트 — 6가지 캐릭터 만나기](../assets/images/m03a/hero.png)
-
 ## 목차
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
+
+![M3a 샘플 에이전트 — 6가지 캐릭터 만나기](../assets/images/m03a/hero.png)
 
 ---
 

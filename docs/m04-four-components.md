@@ -10,13 +10,13 @@ nav_order: 5
 |:-----|:-----|:-----------|
 | 10:35 | 20분 |  보기 |
 
-![M4 4가지 구성요소 — 두뇌 + 채용공고 + 교과서 + 손발](../assets/images/m04/hero.png)
-
 ## 목차
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
+
+![M4 4가지 구성요소 — 두뇌 + 채용공고 + 교과서 + 손발](../assets/images/m04/hero.png)
 
 ---
 

@@ -10,13 +10,13 @@ nav_order: 6
 |:-----|:-----|:-----------|
 | 11:10 | 20분 |  직접 실습 |
 
-![M5 오케스트레이터 — 자동변속 엔진](../assets/images/m05/hero.png)
-
 ## 목차
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
+
+![M5 오케스트레이터 — 자동변속 엔진](../assets/images/m05/hero.png)
 
 ---
 

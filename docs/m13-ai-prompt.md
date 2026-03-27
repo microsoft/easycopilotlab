@@ -10,13 +10,13 @@ nav_order: 14
 |:-----|:-----|:-----------|
 | 16:20 | 10분 | 👀 강사 데모 |
 
-![M13 AI 프롬프트 — 흐름 안에 AI를 심다](../assets/images/m13/hero.png)
-
 ## 목차
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
+
+![M13 AI 프롬프트 — 흐름 안에 AI를 심다](../assets/images/m13/hero.png)
 
 ---
 

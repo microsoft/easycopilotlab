@@ -26,16 +26,28 @@ possibilities." Morning sunlight streams through the windows.
 
 ---
 
-## M1. 동작원리 — 코파일럿과 에이전트의 동작원리
+## M1. 동작원리 — 당신은 AI와 대화하고 있지 않다
 
 **파일명:** `assets/images/m01/hero.png`
 
 ```
-The AI rookie stands behind a kitchen counter acting as a chef. On the counter, various 
-ingredients are labeled with icons: an envelope (email), a calendar, a folder, a chat bubble. 
-The AI rookie is mixing these ingredients in a large bowl. A thought bubble above shows a 
-beautifully plated dish (the answer). The metaphor: "good ingredients = good answer." 
-A traffic cop figure (the orchestrator) stands nearby directing which ingredients to use.
+Center of the image: a large, prominent traffic controller / orchestrator character 
+(a friendly robot wearing a dispatcher headset and a vest labeled with a gear icon) 
+stands between a human user on the LEFT and a glowing LLM brain on the RIGHT. 
+
+The orchestrator holds a clipboard (system prompt) in one hand. With the other hand, 
+it directs multiple actions simultaneously — like an air traffic controller: 
+(1) reading a document/file, (2) searching the web with a magnifying glass on a globe, 
+(3) running code on a small screen showing brackets, (4) generating an image on a canvas, 
+(5) pulling data from email/calendar icons.
+
+Crucially, there is NO direct line between the human and the LLM brain. ALL arrows 
+go THROUGH the orchestrator. The human speaks to the orchestrator, the orchestrator 
+gathers and processes, then passes everything to the LLM, and returns the answer.
+
+The mood is "revelation — you thought you were talking to the brain, but actually 
+the dispatcher runs the show." The AI rookie character watches from behind the 
+orchestrator, learning the truth.
 ```
 
 ---

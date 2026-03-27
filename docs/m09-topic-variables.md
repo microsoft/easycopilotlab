@@ -10,13 +10,13 @@ nav_order: 10
 |:-----|:-----|:-----------|
 | 14:10 | 35분 | 🟢 직접 실습 |
 
-![M9 토픽과 변수 — 대본과 포스트잇](../assets/images/m09/hero.png)
-
 ## 목차
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
+
+![M9 토픽과 변수 — 대본과 포스트잇](../assets/images/m09/hero.png)
 
 ---
 

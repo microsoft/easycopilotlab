@@ -10,13 +10,13 @@ nav_order: 3
 |:-----|:-----|:-----------|
 | 09:50 | 15분 | 👀 보기 |
 
-![M2 몰입형 vs 인컨텍스트 — 전용 창구와 옆자리 동료](../assets/images/m02/hero.png)
-
 ## 목차
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
+
+![M2 몰입형 vs 인컨텍스트 — 전용 창구와 옆자리 동료](../assets/images/m02/hero.png)
 
 ---
 
