@@ -47,89 +47,7 @@ ChatGPT에 질문을 입력하면, AI에게 직접 말하는 것 같습니다.
 오케스트레이터는 단순한 중계기가 아닙니다.  
 **판단하고, 수집하고, 가공하고, 행동하는 주체**입니다.
 
-```mermaid
-flowchart TB
-    U["👤 사용자"] --> O["🚦 오케스트레이터"]
-    
-    O --> SP["📋 시스템 프롬프트 적용\n목적 · 태도 · 제한사항"]
-    SP --> J{"어떤 수단이 필요한가?"}
-    
-    J --> T1["📎 첨부파일 읽기"]
-    J --> T2["🔍 Bing 웹 검색"]
-    J --> T3["🎨 이미지 생성"]
-    J --> T4["🐍 Python 코드 실행"]
-    J --> T5["📧 메일 · 📁 파일 · 📅 일정"]
-    J --> T6["💬 이전 대화 기록 참조"]
-    
-    T1 & T2 & T3 & T4 & T5 & T6 --> LLM["🧠 LLM"]
-    LLM --> A["💬 답변"]
-
-    style O fill:#1a3a5c,color:#fff,stroke:#2563eb,stroke-width:3px
-    style SP fill:#2563eb,color:#fff,stroke:#1a3a5c
-    style J fill:#e8eef6,color:#1a3a5c,stroke:#2563eb,stroke-width:2px
-    style LLM fill:#f7f9fc,color:#1a3a5c,stroke:#cbd5e0,stroke-width:2px
-    style U fill:#fff,color:#1a3a5c,stroke:#cbd5e0
-    style A fill:#fff,color:#1a3a5c,stroke:#cbd5e0
-    style T1 fill:#e8eef6,color:#2c3e50,stroke:#2563eb
-    style T2 fill:#e8eef6,color:#2c3e50,stroke:#2563eb
-    style T3 fill:#e8eef6,color:#2c3e50,stroke:#2563eb
-    style T4 fill:#e8eef6,color:#2c3e50,stroke:#2563eb
-    style T5 fill:#e8eef6,color:#2c3e50,stroke:#2563eb
-    style T6 fill:#e8eef6,color:#2c3e50,stroke:#2563eb
-```
-
-<div style="display:flex; justify-content:center; margin:1.5rem 0;">
-<table style="border:none; border-collapse:collapse; text-align:center; background:transparent;">
-<tr style="border:none;">
-  <td colspan="6" style="border:none; padding:0 0 4px 0;">
-    <div style="display:inline-block; background:#fff; border:2px solid #cbd5e0; border-radius:50%; width:64px; height:64px; line-height:64px; font-size:28px;">👤</div><br/>
-    <small style="color:#4a5568;">사용자 질문</small>
-  </td>
-</tr>
-<tr style="border:none;"><td colspan="6" style="border:none; padding:2px 0; color:#2563eb; font-size:22px;">⬇</td></tr>
-<tr style="border:none;">
-  <td colspan="6" style="border:none; padding:0;">
-    <div style="background:linear-gradient(135deg,#1a3a5c,#2563eb); color:#fff; border-radius:12px; padding:14px 24px; display:inline-block; font-size:15px; font-weight:bold; letter-spacing:0.5px;">
-      🚦 오케스트레이터
-    </div>
-  </td>
-</tr>
-<tr style="border:none;">
-  <td colspan="6" style="border:none; padding:4px 0 2px 0;">
-    <div style="background:#edf2f7; border:1px solid #cbd5e0; border-radius:8px; padding:8px 18px; display:inline-block; font-size:13px; color:#1a3a5c;">
-      📋 <b>시스템 프롬프트</b> — 목적 · 태도 · 제한사항
-    </div>
-  </td>
-</tr>
-<tr style="border:none;">
-  <td colspan="6" style="border:none; padding:2px 0 6px 0;">
-    <span style="display:inline-block; background:#e8eef6; border:1px dashed #2563eb; border-radius:8px; padding:6px 14px; font-size:12px; color:#2563eb; font-weight:bold;">
-      ❓ 어떤 수단이 필요한가?
-    </span>
-  </td>
-</tr>
-<tr style="border:none;">
-  <td style="border:none; padding:3px 6px;"><div style="background:#e8eef6; border:1px solid #2563eb; border-radius:8px; padding:8px 10px; font-size:12px; color:#2c3e50; min-width:80px;">📎<br/>첨부파일<br/>읽기</div></td>
-  <td style="border:none; padding:3px 6px;"><div style="background:#e8eef6; border:1px solid #2563eb; border-radius:8px; padding:8px 10px; font-size:12px; color:#2c3e50; min-width:80px;">🔍<br/>Bing<br/>웹 검색</div></td>
-  <td style="border:none; padding:3px 6px;"><div style="background:#e8eef6; border:1px solid #2563eb; border-radius:8px; padding:8px 10px; font-size:12px; color:#2c3e50; min-width:80px;">🎨<br/>이미지<br/>생성</div></td>
-  <td style="border:none; padding:3px 6px;"><div style="background:#e8eef6; border:1px solid #2563eb; border-radius:8px; padding:8px 10px; font-size:12px; color:#2c3e50; min-width:80px;">🐍<br/>Python<br/>코드 실행</div></td>
-  <td style="border:none; padding:3px 6px;"><div style="background:#e8eef6; border:1px solid #2563eb; border-radius:8px; padding:8px 10px; font-size:12px; color:#2c3e50; min-width:80px;">📧<br/>메일·파일<br/>일정</div></td>
-  <td style="border:none; padding:3px 6px;"><div style="background:#e8eef6; border:1px solid #2563eb; border-radius:8px; padding:8px 10px; font-size:12px; color:#2c3e50; min-width:80px;">💬<br/>대화 기록<br/>참조</div></td>
-</tr>
-<tr style="border:none;"><td colspan="6" style="border:none; padding:2px 0; color:#2563eb; font-size:22px;">⬇</td></tr>
-<tr style="border:none;">
-  <td colspan="6" style="border:none; padding:0 0 4px 0;">
-    <div style="display:inline-block; background:#f7f9fc; border:2px solid #cbd5e0; border-radius:10px; padding:8px 20px; font-size:14px; color:#1a3a5c;">🧠 <b>LLM</b></div>
-  </td>
-</tr>
-<tr style="border:none;"><td colspan="6" style="border:none; padding:2px 0; color:#2563eb; font-size:22px;">⬇</td></tr>
-<tr style="border:none;">
-  <td colspan="6" style="border:none; padding:0;">
-    <div style="display:inline-block; background:#fff; border:2px solid #cbd5e0; border-radius:10px; padding:8px 20px; font-size:14px; color:#1a3a5c;">💬 <b>답변</b></div>
-  </td>
-</tr>
-</table>
-</div>
+![오케스트레이터 구조 — 사용자와 LLM 사이에서 판단하고 행동하는 중개자](../assets/images/m01/orchestrator-flow.png)
 
 오케스트레이터가 하는 일을 세 가지로 정리하면:
 
@@ -140,13 +58,13 @@ flowchart TB
 > "너는 Microsoft 365 Copilot이다. 사용자의 업무를 돕는 것이 목적이다. 정치적 의견은 말하지 마라. 답변은 한국어로 하라."
 
 이 시스템 프롬프트가 AI의 **목적, 태도, 제약**을 결정합니다.  
-같은 GPT-4o 모델이라도, 시스템 프롬프트가 다르면 전혀 다른 AI처럼 동작합니다.
+같은 GPT-5 모델이라도, 시스템 프롬프트가 다르면 전혀 다른 AI처럼 동작합니다.
 
 | 서비스 | 같은 LLM | 시스템 프롬프트 | 결과 |
 |:-------|:---------|:------------|:-----|
-| ChatGPT | GPT-4o | "범용 AI 어시스턴트" | 무엇이든 대답하는 만능 비서 |
-| Copilot | GPT-4o | "M365 업무 도우미, 회사 데이터 참조" | 내 이메일·파일을 아는 업무 도우미 |
-| **우리가 만들 에이전트** | GPT-4o | **"HR 전문 도우미, 사내 규정 참조"** | **HR 질문만 답하는 전문가** |
+| ChatGPT | GPT-5 | "범용 AI 어시스턴트" | 무엇이든 대답하는 만능 비서 |
+| Copilot | GPT-5 | "M365 업무 도우미, 회사 데이터 참조" | 내 이메일·파일을 아는 업무 도우미 |
+| **우리가 만들 에이전트** | GPT-5 | **"HR 전문 도우미, 사내 규정 참조"** | **HR 질문만 답하는 전문가** |
 
 {: .highlight }
 > 오늘 오후 실습에서 여러분이 작성할 **지침(Instructions)**이 바로 이 시스템 프롬프트입니다.
@@ -184,93 +102,9 @@ flowchart TB
 
 이 원리를 이해하면, ChatGPT와 Copilot이 왜 다른지 명확해집니다.
 
-```mermaid
-flowchart TB
-    subgraph A ["ChatGPT"]
-        direction TB
-        Q1["👤 질문"] --> O1["🚦 범용 오케스트레이터\n웹검색 · 코드실행"]
-    end
-    
-    subgraph B ["Copilot"]
-        direction TB
-        Q2["👤 질문"] --> O2["🚦 M365 오케스트레이터\n업무특화 · M365데이터"]
-    end
-    
-    subgraph C ["우리 에이전트"]
-        direction TB
-        Q3["👤 질문"] --> O3["🚦 우리가 만든 오케스트레이터\nHR특화 · 사내규정 · 커넥터"]
-    end
-    
-    O1 & O2 & O3 --> LLM["🧠 같은 GPT-4o"]
+![같은 LLM, 다른 오케스트레이터 — ChatGPT vs Copilot vs 우리 에이전트](../assets/images/m01/orchestrator-compare.png)
 
-    style O1 fill:#6b7280,color:#fff,stroke:#4b5563,stroke-width:2px
-    style O2 fill:#2563eb,color:#fff,stroke:#1a3a5c,stroke-width:2px
-    style O3 fill:#1a3a5c,color:#fff,stroke:#2563eb,stroke-width:3px
-    style LLM fill:#f7f9fc,color:#1a3a5c,stroke:#cbd5e0,stroke-width:2px
-```
-
-<div style="display:flex; justify-content:center; margin:1.5rem 0;">
-<table style="border:none; border-collapse:collapse; text-align:center; background:transparent; max-width:720px;">
-<tr style="border:none;">
-  <td style="border:none; padding:6px 10px; vertical-align:top; width:33%;">
-    <div style="border:2px solid #cbd5e0; border-radius:12px; padding:14px 10px; background:#fff;">
-      <div style="font-size:13px; color:#6b7280; font-weight:bold; margin-bottom:8px;">ChatGPT</div>
-      <div style="background:#6b7280; color:#fff; border-radius:8px; padding:10px 8px; font-size:12px; line-height:1.6;">
-        🚦 <b>범용 오케스트레이터</b><br/>
-        <span style="font-size:11px;">웹검색 · 코드실행 · 이미지생성</span>
-      </div>
-      <div style="margin-top:8px; font-size:11px; color:#6b7280; line-height:1.5;">
-        📋 "범용 AI 어시스턴트"<br/>
-        🗂 사용자가 직접 제공
-      </div>
-    </div>
-  </td>
-  <td style="border:none; padding:6px 10px; vertical-align:top; width:33%;">
-    <div style="border:2px solid #2563eb; border-radius:12px; padding:14px 10px; background:#fff;">
-      <div style="font-size:13px; color:#2563eb; font-weight:bold; margin-bottom:8px;">Copilot</div>
-      <div style="background:#2563eb; color:#fff; border-radius:8px; padding:10px 8px; font-size:12px; line-height:1.6;">
-        🚦 <b>M365 오케스트레이터</b><br/>
-        <span style="font-size:11px;">업무특화 · M365데이터 · 웹검색</span>
-      </div>
-      <div style="margin-top:8px; font-size:11px; color:#2563eb; line-height:1.5;">
-        📋 "M365 업무 도우미"<br/>
-        🗂 이메일 · 파일 · 일정 · Teams
-      </div>
-    </div>
-  </td>
-  <td style="border:none; padding:6px 10px; vertical-align:top; width:33%;">
-    <div style="border:3px solid #1a3a5c; border-radius:12px; padding:14px 10px; background:#f7f9fc; box-shadow:0 2px 8px rgba(26,58,92,0.15);">
-      <div style="font-size:13px; color:#1a3a5c; font-weight:bold; margin-bottom:8px;">⭐ 우리 에이전트</div>
-      <div style="background:linear-gradient(135deg,#1a3a5c,#2563eb); color:#fff; border-radius:8px; padding:10px 8px; font-size:12px; line-height:1.6;">
-        🚦 <b>우리가 만든 오케스트레이터</b><br/>
-        <span style="font-size:11px;">HR특화 · 사내규정 · 커넥터 · 흐름</span>
-      </div>
-      <div style="margin-top:8px; font-size:11px; color:#1a3a5c; line-height:1.5;">
-        📋 "HR 전문 도우미"<br/>
-        🗂 사내규정 · Excel · 커넥터
-      </div>
-    </div>
-  </td>
-</tr>
-<tr style="border:none;">
-  <td colspan="3" style="border:none; padding:4px 0; color:#2563eb; font-size:18px;">⬇&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⬇&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⬇</td>
-</tr>
-<tr style="border:none;">
-  <td colspan="3" style="border:none; padding:0;">
-    <div style="display:inline-block; background:#f7f9fc; border:2px solid #cbd5e0; border-radius:10px; padding:10px 40px; font-size:14px; color:#1a3a5c;">
-      🧠 <b>같은 GPT-4o 엔진</b>
-    </div>
-  </td>
-</tr>
-<tr style="border:none;">
-  <td colspan="3" style="border:none; padding:6px 0 0 0;">
-    <span style="font-size:12px; color:#4a5568;">LLM은 같다. <b style="color:#1a3a5c;">오케스트레이터가 다르면 결과가 다르다.</b></span>
-  </td>
-</tr>
-</table>
-</div>
-
-세 서비스 모두 **같은 GPT-4o**를 사용할 수 있습니다.  
+세 서비스 모두 **같은 GPT-5**를 사용할 수 있습니다.  
 하지만 결과가 다른 이유는 **오케스트레이터가 다르기 때문**입니다.
 
 | 비교 | ChatGPT | Copilot | 우리가 만들 에이전트 |

@@ -50,6 +50,75 @@ the dispatcher runs the show." The AI rookie character watches from behind the
 orchestrator, learning the truth.
 ```
 
+### M1 인포그래픽 ① — 오케스트레이터 구조도
+
+**파일명:** `assets/images/m01/orchestrator-flow.png`
+
+```
+Clean infographic diagram on a white/light gray background. Top-down vertical flow.
+
+TOP: A person icon labeled "사용자 질문" inside a rounded rectangle.
+Arrow pointing DOWN to:
+
+MIDDLE (largest element, highlighted): A bold dark blue (#1a3a5c) rounded rectangle 
+labeled "🚦 오케스트레이터" with a gradient from dark navy to bright blue (#2563eb). 
+Inside this box, two sub-layers are visible:
+
+  Layer 1: A light blue (#e8eef6) banner reading "📋 시스템 프롬프트 — 목적 · 태도 · 제한사항"
+  
+  Layer 2: A row of 6 equally-sized rounded cards in light blue (#e8eef6) with thin 
+  blue (#2563eb) borders, each showing an icon and short Korean label:
+    📎 첨부파일 읽기 | 🔍 웹 검색 | 🎨 이미지 생성 | 🐍 코드 실행 | 📧 메일·파일·일정 | 💬 대화 기록
+
+Arrow pointing DOWN to:
+
+BOTTOM-LEFT: A light rounded rectangle "🧠 LLM"
+Arrow pointing DOWN to:
+BOTTOM: A rounded rectangle "💬 답변"
+
+IMPORTANT: There must be NO direct arrow from the person to the LLM. Everything flows 
+THROUGH the orchestrator box. The orchestrator box should be visually dominant — at least 
+3x the size of other elements. Use the color palette: #1a3a5c (dark navy), #2563eb (blue), 
+#e8eef6 (light blue), #f7f9fc (near-white), #cbd5e0 (gray border). 
+No text other than labels. Flat vector style, 16:9 aspect ratio.
+```
+
+### M1 인포그래픽 ② — 같은 LLM, 다른 오케스트레이터
+
+**파일명:** `assets/images/m01/orchestrator-compare.png`
+
+```
+Clean infographic comparing three AI services side by side. White background, 16:9.
+
+THREE COLUMNS, equally spaced:
+
+COLUMN 1 — "ChatGPT" (gray theme #6b7280):
+  Top: person icon → arrow down →
+  Middle: gray rounded rectangle "🚦 범용 오케스트레이터" with sub-text 
+  "웹검색 · 코드실행 · 이미지생성"
+  Below: small text "📋 범용 AI 어시스턴트" and "🗂 사용자가 직접 제공"
+
+COLUMN 2 — "Copilot" (blue theme #2563eb):
+  Top: person icon → arrow down →
+  Middle: blue rounded rectangle "🚦 M365 오케스트레이터" with sub-text 
+  "업무특화 · M365데이터 · 웹검색"
+  Below: small text "📋 M365 업무 도우미" and "🗂 이메일 · 파일 · 일정 · Teams"
+
+COLUMN 3 — "우리 에이전트" (dark navy theme #1a3a5c, with a star badge, 
+  slightly larger/emphasized with a subtle drop shadow):
+  Top: person icon → arrow down →
+  Middle: dark navy-to-blue gradient rounded rectangle "🚦 우리가 만든 오케스트레이터" 
+  with sub-text "HR특화 · 사내규정 · 커넥터 · 흐름"
+  Below: small text "📋 HR 전문 도우미" and "🗂 사내규정 · Excel · 커넥터"
+
+ALL THREE columns have arrows converging DOWN to a single shared element at the bottom:
+  A light rounded rectangle "🧠 같은 GPT-5 엔진"
+
+Below that, a single line caption: "LLM은 같다. 오케스트레이터가 다르면 결과가 다르다."
+
+Flat vector style, consistent with the orchestrator-flow image. Same color palette.
+```
+
 ---
 
 ## M2. 몰입형 vs 인컨텍스트
