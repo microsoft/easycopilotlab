@@ -192,6 +192,46 @@ knowledge yet). Surrounding shelves show empty slots where textbooks and tools w
 later. The mood is quick and simple — "30 seconds to create."
 ```
 
+### M3 인포그래픽 — 에이전트 빌더 vs Copilot Studio
+
+**파일명:** `assets/images/m03/builder-vs-studio.png`
+
+```
+Clean infographic showing two concentric circles (or two nested rounded rectangles) 
+on a white background. 16:9.
+
+INNER CIRCLE (smaller, solid fill in soft blue #e8eef6, labeled "에이전트 빌더"):
+  Contains icons for the capabilities already available:
+  - Globe icon (웹사이트 지식)
+  - SharePoint icon (SharePoint 지식)
+  - Palette icon (이미지 생성)
+  - Code brackets icon (코드 인터프리터)
+  - Graph/network icon (MS Graph)
+  A small badge reads "Copilot Studio 라이트"
+
+OUTER RING (larger, gradient fill from #2563eb to #1a3a5c, labeled "Copilot Studio"):
+  Contains additional icons arranged around the outer ring, 
+  each representing capabilities ONLY in the full version:
+  - Document/PDF icon (파일 업로드)
+  - Database icon (Dataverse)
+  - Magnifying glass with AI sparkle (AI Search)
+  - Script/clapperboard icon (토픽)
+  - Plug icon (커넥터 1,400+)
+  - Conveyor belt icon (에이전트 흐름)
+  - Sparkle-brain icon (AI 프롬프트)
+  - Two figures icon (멀티에이전트)
+  - Globe with plug icon (MCP)
+  - Alarm bell icon (트리거)
+
+The visual metaphor: the inner circle (에이전트 빌더) is already substantial and 
+capable, but the outer ring (Copilot Studio) expands the reach significantly.
+
+An arrow at the bottom points from inner to outer with a label area suggesting: 
+"더 다양한 지식 + 더 다양한 도구"
+
+Flat vector style, same warm pastel palette. No text other than labels.
+```
+
 ---
 
 ## M3a. 샘플 에이전트 체험
