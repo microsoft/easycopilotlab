@@ -53,25 +53,28 @@ nav_order: 0
 | # | 시간 | 모듈 | 제목 | 소요 | 수강생 역할 |
 |:--|:-----|:-----|:-----|:-----|:-----------|
 | 0 | 09:30 | [MODULE 0](docs/m00-orientation) | 오리엔테이션 — 오늘 만들 에이전트 미리보기 | 10분 | 👀 보기 |
-| 1 | 09:40 | [MODULE 1](docs/m01-copilot-principles) | Copilot 원리 — 오케스트레이터와 재료 | 20분 | 👀 보기 |
-| 2 | 10:00 | [MODULE 2](docs/m02-immersive-incontext) | 몰입형 vs 인컨텍스트 | 15분 | 👀 보기 |
-| 3 | 10:15 | [MODULE 3 ⭐](docs/m03-agent-builder) | HR 도우미 만들기 + Copilot Studio 전환 | 45분 | 🟢 직접 만들기 |
-| — | 11:00 | ☕ 휴식① | | 15분 | |
-| 4 | 11:15 | [MODULE 4 ⭐](docs/m04-frame-design) | 생성형 선언 + 4가지 구성요소 + 설계서 작성 | 30분 | 🟢 설계서 작성 |
-| 5 | 11:45 | [MODULE 5 ⭐](docs/m05-instructions) | 지침(채용공고) 작성 + 엔진 선택 | 25분 | 🟢 직접 작성 + 테스트 |
-| — | 12:10 | 🍱 점심 | | 90분 | |
-| 6 | 13:40 | [MODULE 6 ⭐](docs/m06-knowledge) | 교과서 연결 — 파일 직접 업로드 + WorkIQ | 45분 | 🟢 직접 실습 |
-| 7 | 14:25 | [MODULE 7 ⭐](docs/m07-topic-variables) | 대본 + 포스트잇 변수 | 35분 | 🟡 복붙 + 확인 |
-| — | 15:00 | ☕ 휴식② | | 15분 | |
-| 8 | 15:15 | [MODULE 8](docs/m08-deployment) | 게시(Publish) + 공유 — Copilot에서 에이전트 사용 | 20분 | 🟢 직접 실습 |
-| 9 | 15:35 | [MODULE 9 ⭐](docs/m09-flow-create) | 손발 달기 — Power Automate Flow 만들기 | 30분 | 🟡 복붙 + 확인 |
-| 10 | 16:05 | [MODULE 10 ⭐](docs/m10-flow-connect) | 메일 전달 연결 — Topic + 테스트 + 재게시 | 20분 | 🟡 복붙 + 결과 확인 |
-| — | 16:25 | ☕ 휴식③ | | 15분 | |
-| 11 | 16:40 | [MODULE 11 ⭐](docs/m11-conversation-log) | 신입사원의 일기 — 대화기록 Excel 저장 | 25분 | 🟢 직접 실습 |
-| 12 | 17:05 | [MODULE 12](docs/m12-ai-prompt) | AI 프롬프트 — Flow에 AI 심기 | 15분 | 👀 강사 데모 |
-| 13 | 17:20 | [MODULE 13](docs/m13-future-vision) | 미래 비전 — 멀티에이전트 + MCP + 자율 트리거 | 10분 | 👀 강사 데모 |
-| 14 | 17:30 | [MODULE 14 ⭐](docs/m14-design-complete) | 나만의 에이전트 설계서 완성 | 20분 | 🟢 설계서 완성 |
-| — | 17:50 | 🎉 종료 | Q&A · 트러블슈팅 (18:00까지 10분 버퍼) | | |
+| 1 | 09:40 | [MODULE 1](docs/m01-copilot-principles) | 코파일럿과 에이전트의 동작원리 | 10분 | 👀 보기 |
+| 2 | 09:50 | [MODULE 2](docs/m02-immersive-incontext) | 에이전트의 사용 방식 — 몰입형 vs 인컨텍스트 | 15분 | 👀 보기 |
+| 3 | 10:05 | [MODULE 3 ⭐](docs/m03-agent-builder) | 첫번째 에이전트 만들기 — 에이전트 빌더 실습 | 30분 | 🟢 직접 만들기 |
+| 3a | — | [MODULE 3a](docs/m03a-sample-agents) | 부록 — 6가지 샘플 에이전트 체험 | 자율 | 🟢 자율 실습 |
+| 4 | 10:35 | [MODULE 4](docs/m04-four-components) | 에이전트의 4가지 구성요소 + Copilot Studio 둘러보기 | 20분 | 👀 보기 |
+| — | 10:55 | ☕ 휴식① | | 15분 | |
+| 5 | 11:10 | [MODULE 5 ⭐](docs/m05-orchestrator) | 1요소 오케스트레이터 — 모델 변경 + 설정 실습 | 20분 | 🟢 직접 실습 |
+| — | 11:30 | 🍱 점심 | | 90분 | |
+| 6 | 13:00 | [MODULE 6 ⭐](docs/m06-instructions) | 2요소 지침 — 좋은 지침 만들기 + 실습 | 30분 | 🟢 직접 작성 + 테스트 |
+| 7 | 13:30 | [MODULE 7 ⭐](docs/m07-knowledge) | 3요소 지식 — RAG 개념 + 참조문서 업로드 실습 | 30분 | 🟢 직접 실습 |
+| 8 | 14:00 | [MODULE 8](docs/m08-tools-overview) | 4요소 도구들 — 도구가 채택되는 원리 | 10분 | 👀 보기 |
+| 9 | 14:10 | [MODULE 9 ⭐](docs/m09-topic-variables) | 도구 — 토픽과 변수 | 35분 | 🟢 직접 실습 |
+| — | 14:45 | ☕ 휴식② | | 15분 | |
+| 10 | 15:00 | [MODULE 10 ⭐](docs/m10-publish-share) | 에이전트 게시와 공유 — Copilot에서 에이전트 사용 | 20분 | 🟢 직접 실습 |
+| 11 | 15:20 | [MODULE 11 ⭐](docs/m11-connector) | 도구 — 커넥터 | 30분 | 🟢 직접 실습 |
+| 12 | 15:50 | [MODULE 12 ⭐](docs/m12-agent-flow) | 도구 — 에이전트 흐름 | 30분 | 🟢 직접 실습 |
+| 13 | 16:20 | [MODULE 13](docs/m13-ai-prompt) | 고급도구 — AI 프롬프트 | 10분 | 👀 강사 데모 |
+| — | 16:30 | ☕ 휴식③ | | 15분 | |
+| 14 | 16:45 | [MODULE 14 ⭐](docs/m14-multi-agent) | 고급도구 — 멀티에이전트 | 25분 | 🟢 직접 실습 |
+| 15 | 17:10 | [MODULE 15 ⭐](docs/m15-mcp) | 고급도구 — MCP | 15분 | 🟢 직접 실습 |
+| 16 | 17:25 | [MODULE 16 ⭐](docs/m16-trigger) | 고급도구 — 트리거 | 25분 | 🟢 직접 실습 |
+| — | 17:50 | 🎉 [마무리](docs/m17-wrap-up) | 돌아보기 · Q&A · 트러블슈팅 | 10분 | |
 {: .timetable}
 
 | 구분 | 시간 |
@@ -79,7 +82,7 @@ nav_order: 0
 | 교육 | 365분 (6시간 5분) |
 | 점심 | 90분 |
 | 휴식 | 45분 (15분 × 3회) |
-| 버퍼 | 10분 |
+| Q&A | 10분 |
 | **합계** | **510분 (8시간 30분)** |
 
 ---
