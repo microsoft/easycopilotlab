@@ -70,12 +70,11 @@ nav_order: 3
 | **언어** | **한국어** 선택 |
 | **솔루션** | 방금 만든 `HR 도우미 솔루션` 선택 |
 
-![이미지](../assets/images/m03/image25.png)
-
 5. **만들기** 클릭
 
-![이미지](../assets/images/m03/image26.png)
+![이미지](../assets/images/m03/image25.png)
 
+![이미지](../assets/images/m03/image26.png)
 
 {: .important }
 > **"고급 만들기"** 를 사용해야 언어와 솔루션을 직접 지정할 수 있습니다.  
