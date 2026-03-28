@@ -35,7 +35,7 @@ callouts:
     color: red
   note:
     title: 참고
-    color: grey-lt
+    color: grey-dk
 
 # 링크
 aux_links:
