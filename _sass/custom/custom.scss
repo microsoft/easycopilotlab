@@ -48,3 +48,9 @@
 .site-nav .nav-list-link:hover {
   color: #fff;
 }
+
+// 본문 이미지: 회색 테두리
+.main-content img {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

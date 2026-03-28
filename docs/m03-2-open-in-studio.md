@@ -24,6 +24,11 @@ nav_order: 2
 ## Step 1 — Copilot Studio 열기
 에이전트 빌더 화면에서 **"Copilot Studio에서 편집"** (또는 ⚙️ 설정 → "Copilot Studio에서 열기")을 클릭합니다.
 
+![이미지](../assets/images/m03/image14.png)
+
+
+---
+
 ## Step 2 — Copilot Studio 확인
 Copilot Studio가 열리면:
 - **이름:** HR 도우미 (그대로 유지)
