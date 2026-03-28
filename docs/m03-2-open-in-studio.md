@@ -26,6 +26,11 @@ nav_order: 2
 
 ![이미지](../assets/images/m03/image14.png)
 
+![이미지](../assets/images/m03/image15.png)
+
+![이미지](../assets/images/m03/image16.png)
+
+![이미지](../assets/images/m03/image17.png)
 
 ---
 
@@ -39,9 +44,11 @@ Copilot Studio가 열리면:
 > 같은 에이전트인데, **편집 도구만 바뀌었습니다.**  
 > 스마트폰 카메라(에이전트 빌더)로 찍은 사진을 포토샵(Copilot Studio)에서 보정하는 것과 같습니다.
 
-{: .important }
-> 이 HR 도우미 에이전트를 **오늘 하루 동안 점점 완성**해 갑니다.  
-> M6에서 지침을 다듬고, M7에서 지식을 연결하고, M9에서 Topic을 추가하고, M12에서 흐름을 붙입니다.
+![이미지](../assets/images/m03/image18.png)
+
+![이미지](../assets/images/m03/image19.png)
+
+![이미지](../assets/images/m03/image20.png)
 
 ---
 
