@@ -45,8 +45,9 @@
 }
 
 // 모든 메뉴 항목: hover 시 흰 글자
-.site-nav .nav-list-link:hover {
-  color: #fff;
+.site-nav .nav-list .nav-list-item .nav-list-link:hover,
+.site-nav .nav-list .nav-list .nav-list-item .nav-list-link:hover {
+  color: #fff !important;
 }
 
 // 본문 이미지: 회색 테두리
