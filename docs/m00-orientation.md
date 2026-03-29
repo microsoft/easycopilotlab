@@ -52,7 +52,7 @@ nav_order: 1
 "연차 며칠이나 남았어요?" 같은 질문에 **업로드한 문서(교과서)를 기반으로** 자동 답변합니다. 출처도 함께 표시됩니다.
 
 <details markdown="1">
-<summary><strong>지침 (클릭해서 펼치기)</strong></summary>
+<summary><strong>스크린샷 (클릭해서 펼치기)</strong></summary>
 
 ![이미지](../assets/images/m00/image.png)
 
@@ -62,27 +62,47 @@ nav_order: 1
 
 "경비처리 담당자 누구예요?" → 업로드한 담당자 문서에서 **이름·연락처·이메일**을 즉시 찾아줍니다.
 
+<details markdown="1">
+<summary><strong>스크린샷 (클릭해서 펼치기)</strong></summary>
+
 ![이미지](../assets/images/m00/image1.png)
+
+</details>
 
 ### 3. 복리후생 안내
 
 "복지포인트 사용처 알려줘" → 여러 문서를 **동시에 참조**해서 답합니다.
 교과서를 여러 권 들고 있는 신입사원인 셈입니다.
 
+<details markdown="1">
+<summary><strong>스크린샷 (클릭해서 펼치기)</strong></summary>
+
 ![이미지](../assets/images/m00/image3.png)
+
+</details>
 
 ### 4. 메일로 문의 전달
 
 "담당자한테 직접 문의하고 싶어요" → 에이전트가 담당자 메일 주소를 확인하고, 문의 내용을 정리해서 **이메일(편지봉투)**로 자동 전달합니다.
 
+<details markdown="1">
+<summary><strong>스크린샷 (클릭해서 펼치기)</strong></summary>
+
 ![이미지](../assets/images/m00/image2.png)
+
+</details>
 
 ### 5. 대화기록 자동 저장
 
 누가, 언제, 뭘 물어봤는지 **Excel에 자동 기록**됩니다.
 관리자 입장에서 에이전트 활용 현황을 한눈에 볼 수 있습니다.
 
+<details markdown="1">
+<summary><strong>스크린샷 (클릭해서 펼치기)</strong></summary>
+
 ![이미지](../assets/images/m00/image4.png)
+
+</details>
 
 ---
 
