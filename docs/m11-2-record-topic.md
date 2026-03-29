@@ -21,6 +21,12 @@ nav_order: 2
 4. 트리거 유형 목록에서 **"응답 후(After response)"** 선택
    - 이것이 "AI가 응답을 생성할 때마다 자동 실행"의 의미입니다
 
+![이미지](../assets/images/m11/image6.png)
+
+![이미지](../assets/images/m11/image7.png)
+
+![이미지](../assets/images/m11/image8.png)
+
 {: .highlight }
 > 일반 Topic의 트리거는 **"문구(Phrases)"**입니다. Record Topic은 **"응답 후"** 트리거를 사용하기 때문에, 사용자가 특정 말을 하지 않아도 **매번 자동으로 실행**됩니다.
 
@@ -30,6 +36,14 @@ nav_order: 2
 6. 커넥터 검색창에서 **"Excel"** 검색 → **"Excel Online (Business)"** 선택
 7. 동작 목록에서 **"표에 행 추가"** 선택
 8. 연결 승인 팝업이 나타나면 **"승인"** 클릭 (Microsoft 365 계정으로 로그인)
+
+![이미지](../assets/images/m11/image9.png)
+
+![이미지](../assets/images/m11/image10.png)
+
+![이미지](../assets/images/m11/image11.png)
+
+![이미지](../assets/images/m11/image12.png)
 
 ## Step 3 — Excel 파일 연결 + 매핑
 
@@ -42,6 +56,10 @@ nav_order: 2
 | 파일 | `대화기록.xlsx` 선택 |
 | 표 | `표1` 선택 |
 
+   ![이미지](../assets/images/m11/image13.png)
+
+   ![이미지](../assets/images/m11/image14.png)
+
 10. 컬럼 매핑 (각 컬럼 오른쪽 입력란 클릭 → 변수 삽입):
 
 | Excel 컬럼 | 매핑 값 | 설명 |
@@ -51,7 +69,17 @@ nav_order: 2
 | 질문 | `System.Activity.Text` | 사용자 입력 |
 | 답변 | `System.Response.FormattedText` | 에이전트 응답 |
 
-11. **저장**
+   ![이미지](../assets/images/m11/image15.png)
+
+   ![이미지](../assets/images/m11/image16.png)
+
+11. **속성** 클릭
+
+   ![이미지](../assets/images/m11/image17.png)
+
+   ![이미지](../assets/images/m11/image18.png)
+
+12. **저장**
 
 {: .tip }
 > 이 Topic은 사용자가 직접 호출하지 않습니다. "응답이 생성될 때마다 실행"되는 자동 Topic이고, 안에서 **Excel 커넥터를 바로 호출**합니다.
@@ -66,6 +94,10 @@ nav_order: 2
 
 {: .important }
 > Excel에 시간·사용자·질문·답변이 쌓이는 걸 확인하면 성공입니다.
+
+   ![이미지](../assets/images/m11/image19.png)
+
+   ![이미지](../assets/images/m11/image20.png)
 
 ---
 

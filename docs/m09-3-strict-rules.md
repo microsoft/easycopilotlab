@@ -25,7 +25,11 @@ M6에서 작성한 지침에 아래 내용을 **추가**하세요:
 
 ![이미지](../assets/images/m09/image23.png)
 
+지침 입력칸에 "/"를 입력하면 다양한 명령어가 나오는데, 그 중 **원하는 토픽**를 선택하여 추가할 수 있습니다.
+
 ![이미지](../assets/images/m09/image24.png)
+
+이전의 두개의 토픽에서 만들었던 글로벌 변수는 `Global.Contact_result`, `Global.HRdoc_result`입니다. 지침 내에서 "/" 입력 후 "global"을 검색하여 해당 변수를 선택하면, 지침에 정확한 변수명이 들어가게 됩니다.
 
 ![이미지](../assets/images/m09/image25.png)
 

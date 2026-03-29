@@ -26,6 +26,16 @@ nav_order: 1
 3. 표 전체 선택 → **"삽입" → "표"** → 확인
 4. **저장**
 
+![이미지](../assets/images/m11/image.png)
+
+![이미지](../assets/images/m11/image2.png)
+
+![이미지](../assets/images/m11/image3.png)
+
+![이미지](../assets/images/m11/image4.png)
+
+![이미지](../assets/images/m11/image5.png)
+
 {: .tip }
 > 반드시 **표(Table)**로 만들어야 Copilot Studio의 Excel 커넥터에서 행을 추가할 수 있습니다.
 

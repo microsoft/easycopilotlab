@@ -32,6 +32,22 @@ HRdoc Topic과 동일한 방식으로 생성하되, 아래만 다릅니다:
 
 ![이미지](../assets/images/m09/image14.png)
 
+![이미지](../assets/images/m09/image15.png)
+
+![이미지](../assets/images/m09/image16.png)
+
+![이미지](../assets/images/m09/image17.png)
+
+![이미지](../assets/images/m09/image18.png)
+
+![이미지](../assets/images/m09/image19.png)
+
+![이미지](../assets/images/m09/image20.png)
+
+![이미지](../assets/images/m09/image21.png)
+
+![이미지](../assets/images/m09/image22.png)
+
 {: .highlight }
 > 파이프라인 정리:  
 > 담당자를 찾아달라는 요청 → **Contact Topic 호출** → `Global.Contact_result`에 담당자 정보 저장 → **오케스트레이터가 지침에 따라 해당 정보를 활용하여 답변**
