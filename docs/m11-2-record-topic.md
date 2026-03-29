@@ -89,6 +89,15 @@ Topic 이름을 `Record Topic`으로 입력하고, 트리거 노드의 **"트리
 
    Row의 "..." 버튼을 클릭하고 **수식** 탭에서 컬럼 매핑 수식을 입력한 후 **"삽입"**을 클릭합니다.
 
+   ```
+{
+    시간: Now(),
+    사용자: System.User.PrincipalName,
+    질문: System.Activity.Text,
+    답변: System.Response.FormattedText
+}
+   ```
+
    ![수식 입력 — 시간: Now(), 사용자: System.User.PrincipalName, 질문: System.Activity.Text 입력](../assets/images/m11/image15.png)
 
    Row에 수식이 설정된 것을 확인합니다.
