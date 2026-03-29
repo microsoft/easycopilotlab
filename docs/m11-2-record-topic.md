@@ -15,7 +15,7 @@ nav_order: 2
 
 ## Step 1 — Topic 생성 + 트리거 설정
 
-1. Copilot Studio → **토픽** → **"+ 토픽 추가"** → **"새로 만들기"**
+1. Copilot Studio → **토픽** → **"+ 토픽 추가"** → **"새로 시작"**
 2. Topic 이름: `Record Topic`
 3. 트리거 노드 클릭 → **"트리거 변경"** 선택
 4. 트리거 유형 목록에서 **"응답 후(After response)"** 선택

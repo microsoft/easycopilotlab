@@ -31,11 +31,11 @@ nav_order: 18
 | 3 | AI 모델 변경 + 설정 조정 | M5 | ☐ |
 | 4 | 지침(행동매뉴얼) 작성 — 역할·범위·태도·원칙 | M6 | ☐ |
 | 5 | 지식(교과서) 5개 파일 업로드 | M7 | ☐ |
-| 6 | FAQ Topic + Contact Topic 생성 | M9 | ☐ |
+| 6 | HRdoc Topic + Contact Topic 생성 | M9 | ☐ |
 | 7 | STRICT RULES 추가 | M9 | ☐ |
 | 8 | Copilot에서 게시 + 몰입형/@호출 테스트 | M10 | ☐ |
 | 9 | Record Topic + Excel 커넥터로 대화기록 자동 저장 | M11 | ☐ |
-| 10 | RequestByEmail 흐름 + Request Topic 연결 | M12 | ☐ |
+| 10 | flow_HRRequest 흐름 + STRICT RULES로 호출 연결 | M12 | ☐ |
 | 11 | 슈퍼 호스트 + 법무 에이전트 (멀티에이전트) | M14 | ☐ |
 | 12 | MCP 서버 연결 | M15 | ☐ |
 | 13 | Forms 트리거 + AI 초안 생성 흐름 | M16 | ☐ |
