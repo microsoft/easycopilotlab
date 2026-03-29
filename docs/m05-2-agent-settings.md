@@ -21,6 +21,8 @@ nav_order: 2
 2. 에이전트 화면 **상단 우측의 ⚙️ 설정** 버튼 클릭
 3. 왼쪽 메뉴에서 **생성형 AI** 선택
 
+![이미지](../assets/images/m05/image2.png)
+
 ---
 
 ## Step 2 — 각 항목 설정
@@ -41,12 +43,24 @@ nav_order: 2
 {: .note }
 > 각 설정의 의미를 지금 완벽하게 이해할 필요는 없습니다. 이후 모듈에서 해당 기능을 직접 사용하면서 자연스럽게 체감하게 됩니다.
 
+![이미지](../assets/images/m05/image3.png)
+
+![이미지](../assets/images/m05/image4.png)
+
+![이미지](../assets/images/m05/image5.png)
+
+![이미지](../assets/images/m05/image6.png)
+
+![이미지](../assets/images/m05/image7.png)
+
 ---
 
 ## Step 3 — 저장 및 닫기
 
 1. 설정 화면 하단의 **"저장"** 버튼 클릭
 2. 저장이 완료되면 우측 상단의 **"✕"** 를 클릭하여 설정을 닫고 에이전트로 돌아갑니다
+
+![이미지](../assets/images/m05/image8.png)
 
 ---
 
