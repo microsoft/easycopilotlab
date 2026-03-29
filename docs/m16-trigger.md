@@ -72,7 +72,9 @@ flowchart LR
 ---
 
 {: .important }
-> 👉 [실습: Forms 트리거 연결](m16-1-forms-trigger)
+> 👉 [실습①: Forms 설문 만들기](m16-1-forms-trigger)
+>
+> 👉 [실습②: 트리거 연결 및 테스트](m16-2-trigger-test)
 
 ---
 
