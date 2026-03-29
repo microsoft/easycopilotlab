@@ -79,7 +79,7 @@ Flow: 포스트잇의 정보를 사용해서 실행
 
 {: .important }
 > 📌 이 실습은 별도 페이지에서 진행합니다.  
-> [실습 ①: HRdoc Topic 만들기](m09-1-faq-topic)를 완료하고 돌아오세요.
+> [실습 ①: HRdoc Topic 만들기](m09-1-hrdoc-topic)를 완료하고 돌아오세요.
 
 ---
 
@@ -120,7 +120,7 @@ Flow: 포스트잇의 정보를 사용해서 실행
 
 | # | 질문 | 기대 동작 |
 |:--|:-----|:---------|
-| 1 | "연차 며칠이야?" | HRdoc Topic 호출 → `Global.FAQ_result` 활용 답변 |
+| 1 | "연차 며칠이야?" | HRdoc Topic 호출 → `Global.HRdoc_result` 활용 답변 |
 | 2 | "경비처리 담당자 알려줘" | Contact Topic 호출 → `Global.Contact_result` 활용 답변 |
 | 3 | "경비처리 방법이랑 담당자 같이 알려줘" | 두 Topic 순차 호출 → 통합 답변 |
 | 4 | "아까 찾은 담당자한테 문의하고 싶어" | 포스트잇(글로벌 변수) 활용 확인 |
