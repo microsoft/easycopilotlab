@@ -30,9 +30,13 @@ nav_order: 1
 3. Topic 이름 입력: `HRdoc Topic`
 4. 편집 화면이 열리면 아래 순서로 노드를 구성합니다:
 
-![이미지](../assets/images/m09/image.png)
+**① 토픽 목록 → "+ 토픽 추가" → "새로 시작"**
 
-![이미지](../assets/images/m09/image2.png)
+![토픽 목록 — "+ 토픽 추가" → "새로 시작" 선택](../assets/images/m09/image.png)
+
+**② 토픽 이름 입력: HRdoc Topic**
+
+![토픽 편집 — "HRdoc Topic" 이름 입력 및 트리거 노드](../assets/images/m09/image2.png)
 
 ---
 
@@ -40,42 +44,52 @@ nav_order: 1
 - "Topic이 트리거될 때" 노드가 자동으로 만들어져 있습니다.
 - **Description** 입력: `이 토픽은 사내 규정, 복리후생, 연차, 휴가, 경비처리 등 HR/총무 관련 질문에 답변을 제공합니다.`
 
-![이미지](../assets/images/m09/image3.png)
+![트리거 노드 — Description에 HR/총무 관련 설명 입력](../assets/images/m09/image3.png)
 
 ---
 
 ### 노드 2 — 지식 검색 (생성형 답변)
 - 트리거 아래 **"+"** 클릭 → **"지식 검색"** 노드 추가
 
-![이미지](../assets/images/m09/image4.png)
+!["+" 메뉴 → 고급 → "생성형 답변" 선택](../assets/images/m09/image4.png)
 
 - 입력: `Activity.Text` (사용자 질문)
 
-![이미지](../assets/images/m09/image5.png)
+입력란 우측 "..." 버튼을 클릭합니다.
 
-![이미지](../assets/images/m09/image6.png)
+![생성형 답변 만들기 — 입력란 "..." 버튼 클릭](../assets/images/m09/image5.png)
 
-![이미지](../assets/images/m09/image7.png)
+변수 선택 팝업에서 **시스템** 탭 → `Activity.Text`를 선택합니다.
+
+![변수 선택 — 시스템 탭에서 Activity.Text 선택](../assets/images/m09/image6.png)
+
+입력에 Activity.Text가 설정된 것을 확인합니다.
+
+![생성형 답변 — 입력에 Activity.Text 설정 완료](../assets/images/m09/image7.png)
 
 - 검색 대상: **선택한 원본만 검색** → **관련문서들** 체크
 
-![이미지](../assets/images/m09/image8.png)
+![데이터 원본 — "선택한 원본만 검색" 토글 및 관련 문서 체크](../assets/images/m09/image8.png)
 
 - 고급 설정 펼치기 → **메시지 보내기** 토글 끄기 (중요!)
 
-![이미지](../assets/images/m09/image9.png)
+![고급 설정 — "메시지 보내기" 체크 해제 및 "변수 선택" 클릭](../assets/images/m09/image9.png)
 
 - 출력 저장 변수: **변수 선택 → "새 변수 만들기"**
   - 이름: `HRdoc_result`
   - **"글로벌 변수로 설정"** 체크 → `Global.HRdoc_result`가 됨
 
-![이미지](../assets/images/m09/image9.png)
+변수 선택 팝업에서 **"새로 만들기"** 버튼을 클릭합니다.
 
-![이미지](../assets/images/m09/image10.png)
+![변수 선택 — "새로 만들기" 버튼 클릭](../assets/images/m09/image10.png)
 
-![이미지](../assets/images/m09/image11.png)
+새 변수(Var1)가 생성됩니다. "다음 이름으로 봇 응답 저장"에 변수가 설정된 것을 확인합니다.
 
-![이미지](../assets/images/m09/image12.png)
+![새 변수 생성 — Var1 변수가 "봇 응답 저장"에 설정됨](../assets/images/m09/image11.png)
+
+변수 속성 패널에서 이름을 `HRdoc_result`로 변경하고, 사용량을 **"전역(모든 토픽에서 액세스 가능)"**으로 설정합니다.
+
+![변수 속성 — 이름: HRdoc_result, 사용량: 전역 설정](../assets/images/m09/image12.png)
 
 ### ⚠️ 메시지 노드는 추가하지 않습니다
 

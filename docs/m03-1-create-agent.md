@@ -23,7 +23,7 @@ nav_order: 1
 1. [M365 Copilot](https://copilot.microsoft.com) 또는 Teams Copilot 채팅 접속
 2. **새 에이전트** 선택
 
-![이미지](../assets/images/m03/image.png)
+![M365 Copilot 화면 — 좌측 "새 에이전트" 메뉴 선택](../assets/images/m03/image.png)
 
 ---
 
@@ -50,7 +50,7 @@ nav_order: 1
 - 개인정보(급여, 인사평가): 담당자 연결 안내
 ```
 
-![이미지](../assets/images/m03/image2.png)
+![Agent Builder — 이름(HR 도우미), 설명, 지침 입력 화면](../assets/images/m03/image2.png)
 
 ---
 
@@ -63,7 +63,7 @@ nav_order: 1
 | 2 | "복지포인트 사용처 알려줘" | 모른다고 하거나 **엉뚱한 정보를 지어냄** |
 | 3 | "오늘 주식 시세 알려줘" | ⚠️ 범위 밖 → 거절 메시지가 나오는지 확인 |
 
-![이미지](../assets/images/m03/image3.png)
+![테스트(시도) 탭 — 복지포인트·주식시세·경비처리 질문 및 답변 확인](../assets/images/m03/image3.png)
 
 ---
 
@@ -78,9 +78,13 @@ nav_order: 1
 
 → 에이전트의 답변 톤과 형식이 즉시 바뀌는 것을 확인!
 
-![이미지](../assets/images/m03/image5.png)
+지침의 태도 설정을 "반말로 간결하게", "100자 이내, 이모지 포함" 등으로 변경해 보세요.
 
-![이미지](../assets/images/m03/image4.png)
+![지침 수정 — "반말로 간결하게", "100자 이내, 이모지 포함" 하이라이트](../assets/images/m03/image5.png)
+
+지침 변경 후 동일한 질문을 다시 해 보면 답변의 톤과 형식이 즉시 바뀌는 것을 확인할 수 있습니다.
+
+![지침 변경 후 테스트 — 반말+이모지 적용된 답변 확인](../assets/images/m03/image4.png)
 
 {: .tip }
 > 지침에 **역할·범위·태도·원칙**을 명확히 쓸수록 에이전트가 똑똑해집니다.  
@@ -91,33 +95,43 @@ nav_order: 1
 ## Step 5 — 에이전트 만들기
 자동저장된 에이전트를 테스트한 후, 실제로 배포합니다. 만들기 버튼을 누르면, 여러분의 코파일럿에 HR 도우미가 생깁니다!
 
-![이미지](../assets/images/m03/image6.png)
+![Agent Builder — 상단 우측 "만들기" 버튼 클릭](../assets/images/m03/image6.png)
 
-![이미지](../assets/images/m03/image7.png)
+"만들기" 버튼을 누르면 에이전트 생성이 시작됩니다. 완료될 때까지 잠시 기다려 주세요.
+
+![에이전트 만드는 중 — 완료 대기 화면](../assets/images/m03/image7.png)
 
 에이전트가 다 만들어지면, "에이전트로 이동" 버튼을 눌러서 실제로 대화해 보세요. 
 
-![이미지](../assets/images/m03/image8.png)
+![에이전트 생성 완료 — "에이전트로 이동" 버튼 클릭](../assets/images/m03/image8.png)
 
 ---
 
 ## Step 6 — 몰입형 환경에서 대화하기
 에이전트와 1:1로 대화할 수 있는 몰입형 환경이 열립니다. 여기서 질문을 입력해 보세요:
 
-![이미지](../assets/images/m03/image9.png)
+![몰입형 환경 — HR 도우미 1:1 대화 시작 화면](../assets/images/m03/image9.png)
 
-![이미지](../assets/images/m03/image10.png)
+질문을 입력하면 에이전트가 답변합니다. 아직 지식이 없으므로 그럴듯한 답변만 나옵니다.
+
+![몰입형 — "승진시험 자격 알려줘요" 질문에 대한 답변 확인](../assets/images/m03/image10.png)
 
 ---
 
 ## Step 7 — 인컨텍스트 질문 체험
 이제 코파일럿의 대화 창에서 @ HR 도우미를 불러서 질문해 보세요. 대화 기록이 인컨텍스트로 전달되는 것을 확인할 수 있습니다.
 
-![이미지](../assets/images/m03/image11.png)
+대화창에서 **@** 를 입력하면 에이전트 목록이 표시됩니다. HR 도우미를 선택하세요.
 
-![이미지](../assets/images/m03/image12.png)
+![인컨텍스트 — @ 입력 후 에이전트 목록에서 HR 도우미 선택](../assets/images/m03/image11.png)
 
-![이미지](../assets/images/m03/image13.png)
+@HR 도우미 태그가 표시된 상태에서 질문을 입력합니다.
+
+![인컨텍스트 — @HR 도우미 태그 후 질문 입력](../assets/images/m03/image12.png)
+
+HR 도우미가 답변하고, 동시에 다른 에이전트(Idea Coach)도 응답하는 것을 확인할 수 있습니다.
+
+![인컨텍스트 — HR 도우미 답변 + Idea Coach 응답 확인](../assets/images/m03/image13.png)
 
 ---
 

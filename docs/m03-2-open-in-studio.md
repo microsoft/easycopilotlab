@@ -24,19 +24,19 @@ nav_order: 2
 ## Step 1 — Copilot Studio 열기
 좌측 에이전트 목록에서 "..."를 클릭하여 나오는 메뉴에서 "편집"을 클릭합니다.
 
-![이미지](../assets/images/m03/image14.png)
+![에이전트 목록 — "..." 메뉴에서 "편집" 클릭](../assets/images/m03/image14.png)
 
 에이전트의 편집 화면에서 상단의 "..." 메뉴를 클릭하여 나오는 메뉴에서 "Copilot Studio에 복사"를 클릭합니다.
 
-![이미지](../assets/images/m03/image15.png)
+![에이전트 편집 화면 — "..." 메뉴에서 "Copilot Studio에 복사" 클릭](../assets/images/m03/image15.png)
 
 Copilot Studio 에 복사되는 내용과 복사되지 않는 내용을 확인할 수 있습니다. "시작" 버튼을 클릭합니다.
 
-![이미지](../assets/images/m03/image16.png)
+![Copilot Studio에 복사 — 복사 내용 확인 후 "시작" 버튼 클릭](../assets/images/m03/image16.png)
 
 어떤 파워플랫폼 환경에 복사할지 묻는 창이 뜹니다. 강사가 지정한 환경이 있으면 해당 환경을 선택하고, 그렇지 않으면 기본 환경(Default Environment)을 선택합니다.
 
-![이미지](../assets/images/m03/image17.png)
+![환경 선택 — 파워플랫폼 환경 목록에서 대상 환경 선택](../assets/images/m03/image17.png)
 
 ---
 
@@ -52,15 +52,15 @@ Copilot Studio가 열리면:
 
 코파일럿 스튜디오에 에이전트가 복사되어 만들어 졌습니다. 아직 저장된 상태는 아니므로 상단의 "만들기" 버튼을 클릭하여 저장합니다.
 
-![이미지](../assets/images/m03/image18.png)
+![에이전트 구축 화면 — 상단 "만들기" 버튼 클릭하여 저장](../assets/images/m03/image18.png)
 
 에이전트가 최초 만들어 질 때 "이 기능은 에이전트 설정을 완료할 때까지 사용할 수 없습니다"라는 메시지가 보입니다. 잠시 기다리면 메시지가 사라지고, 에이전트가 정상적으로 작동하는 것을 확인할 수 있습니다.
 
-![이미지](../assets/images/m03/image19.png)
+![에이전트 설정 완료 대기 — 설정 완료 메시지 및 테스트 패널](../assets/images/m03/image19.png)
 
 에이전트가 만들어 졌고, 테스트도 정상적으로 작동하는 것을 확인할 수 있습니다.
 
-![이미지](../assets/images/m03/image20.png)
+![에이전트 테스트 — 정상 작동 확인](../assets/images/m03/image20.png)
 
 ---
 

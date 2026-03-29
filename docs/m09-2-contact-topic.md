@@ -21,32 +21,70 @@ nav_order: 2
 
 ## Step-by-Step
 
-HRdoc Topic과 동일한 방식으로 생성하되, 아래만 다릅니다:
+HRdoc Topic과 동일한 방식으로 생성하되, **검색 대상**과 **변수 이름**만 다릅니다.
 
-1. Topic 이름: `Contact Topic`
-2. 트리거 Description: `이 토픽은 담당자 이름, 연락처, 이메일을 조회하여 제공합니다`
-3. 지식 검색 노드: 검색 대상을 **"담당자정보.docx"만 선택** (특정 지식 소스 지정)
-4. 출력 변수: `Global.Contact_result` (글로벌 변수로 설정)
-5. **메시지 노드는 추가하지 않습니다** (HRdoc Topic과 동일)
-6. **저장**
+### 1. 새 토픽 생성
 
-![이미지](../assets/images/m09/image14.png)
+**토픽** 탭 → **"+ 토픽 추가"** → **"새로 시작"** 클릭
 
-![이미지](../assets/images/m09/image15.png)
+![토픽 추가 — 새로 시작](../assets/images/m09/image14.png)
 
-![이미지](../assets/images/m09/image16.png)
+### 2. 이름 & 트리거 설명 입력
 
-![이미지](../assets/images/m09/image17.png)
+- 토픽 이름: `Contact Topic`
+- 토픽이 수행하는 작업 설명: `이 토픽은 담당자 이름, 연락처, 이메일을 조회하여 제공합니다`
 
-![이미지](../assets/images/m09/image18.png)
+![토픽 이름과 트리거 설명](../assets/images/m09/image15.png)
 
-![이미지](../assets/images/m09/image19.png)
+### 3. 생성형 답변 만들기 노드 — 지식 소스 지정
 
-![이미지](../assets/images/m09/image20.png)
+**+** 버튼 → **"생성형 답변 만들기"** 노드를 추가합니다.  
+데이터 원본의 **"편집"** 클릭 → **"선택한 원본만 검색"** 을 켜고 **"담당자정보.docx"만 체크**합니다.
 
-![이미지](../assets/images/m09/image21.png)
+![지식 소스 — 담당자정보.docx만 선택](../assets/images/m09/image16.png)
 
-![이미지](../assets/images/m09/image22.png)
+{: .important }
+> HRdoc Topic에서는 모든 문서를 검색했지만, Contact Topic은 **담당자정보.docx만** 검색하도록 제한합니다.
+
+### 4. 고급 설정 — 메시지 보내기 해제 & 변수 저장 선택
+
+오른쪽 속성 패널에서:
+- **고급** 섹션을 펼칩니다.
+- **"메시지 보내기"** 체크를 **해제**합니다.
+- **"다음 이름으로 봇 응답 저장"** 에서 **"변수 선택"** 을 클릭합니다.
+
+![고급 설정 — 메시지 보내기 해제, 변수 선택](../assets/images/m09/image17.png)
+
+### 5. 새 변수 만들기
+
+변수 선택 팝업에서 **"새 변수 만들기"** 를 클릭합니다.
+
+![새 변수 만들기 클릭](../assets/images/m09/image18.png)
+
+### 6. 변수 생성 확인
+
+새 변수 `Var1`이 자동 생성됩니다.
+
+![Var1 변수 생성됨](../assets/images/m09/image19.png)
+
+### 7. 변수 이름 변경 & 글로벌 설정
+
+변수를 클릭하여 속성 패널을 열고:
+- **변수 이름**: `Contact_result` (→ `Global.Contact_result`)
+- **사용량**: **"전역(모든 토픽에서 액세스 가능)"** 선택
+- 우측 상단 **"저장"** 클릭
+
+![변수 이름 Contact_result, 전역 설정](../assets/images/m09/image20.png)
+
+### 8. (확인) 변수 패널에서 글로벌 변수 확인
+
+토픽 상단 **"… 자세히"** → **"{x} 변수"** 를 클릭하면 변수 목록을 확인할 수 있습니다.
+
+![자세히 메뉴 — 변수 선택](../assets/images/m09/image21.png)
+
+전역(2)에 **`Global.Contact_result`** 와 **`Global.HRdoc_result`** 가 모두 표시되면 정상입니다.
+
+![글로벌 변수 2개 확인](../assets/images/m09/image22.png)
 
 {: .highlight }
 > 파이프라인 정리:  

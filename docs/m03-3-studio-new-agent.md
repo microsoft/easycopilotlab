@@ -31,7 +31,7 @@ nav_order: 3
 2. 왼쪽 상단의 **환경(Environment)** 이 올바른지 확인
    - 강사가 지정한 환경이 있으면 해당 환경으로 전환
 
-![이미지](../assets/images/m03/image21.png)
+![Copilot Studio — 환경 선택 팝업 (prod kr 선택)](../assets/images/m03/image21.png)
 
 ---
 
@@ -48,11 +48,19 @@ nav_order: 3
 {: .tip }
 > 솔루션은 에이전트·흐름·커넥터 등을 묶는 **컨테이너**입니다. 실무에서도 솔루션 단위로 관리하면 환경 간 이동이 깔끔합니다.
 
-![이미지](../assets/images/m03/image22.png)
+아래 스크린샷을 참고하여 각 단계를 진행하세요.
 
-![이미지](../assets/images/m03/image23.png)
+**① 살펴보기 메뉴 → 솔루션 선택**
 
-![이미지](../assets/images/m03/image24.png)
+![살펴보기 메뉴 — 솔루션 선택](../assets/images/m03/image22.png)
+
+**② + 새 솔루션 → 이름 입력 후 "만들기" 클릭**
+
+![새 솔루션 — 이름 입력 후 "만들기" 버튼 클릭](../assets/images/m03/image23.png)
+
+**③ 솔루션 생성 완료 (빈 솔루션 화면)**
+
+![솔루션 생성 완료 — 빈 솔루션 화면](../assets/images/m03/image24.png)
 
 ---
 
@@ -72,9 +80,13 @@ nav_order: 3
 
 5. **만들기** 클릭
 
-![이미지](../assets/images/m03/image25.png)
+**① 에이전트 목록 → "고급 만들기" 버튼 클릭**
 
-![이미지](../assets/images/m03/image26.png)
+![에이전트 목록 — "고급 만들기" 버튼 클릭](../assets/images/m03/image25.png)
+
+**② 에이전트 설정 — 한국어 선택, 솔루션 지정, "확인 및 만들기" 클릭**
+
+![에이전트 설정 — 한국어 선택, 솔루션 지정, "확인 및 만들기" 클릭](../assets/images/m03/image26.png)
 
 {: .important }
 > **"고급 만들기"** 를 사용해야 언어와 솔루션을 직접 지정할 수 있습니다.  
@@ -89,7 +101,7 @@ nav_order: 3
 - **기본 언어**: 한국어로 설정되어 있는지 확인
 - **솔루션**: 왼쪽 메뉴 → 솔루션에서 `HR 도우미 솔루션` 안에 에이전트가 들어있는지 확인
 
-![이미지](../assets/images/m03/image27.png)
+![에이전트 생성 완료 — HR 도우미 개요 및 테스트 확인](../assets/images/m03/image27.png)
 
 ---
 

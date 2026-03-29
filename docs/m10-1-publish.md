@@ -45,17 +45,29 @@ nav_order: 1
 
    ![채널 탭 — 게시 완료](../assets/images/m10/image5.png)
 
-   ![이미지](../assets/images/m10/image6.png)
+3. Microsoft 채널 영역에서 **"Teams 및 Microsoft 365 Copilot"** 클릭
 
-   ![이미지](../assets/images/m10/image7.png)
+   ![Teams 및 M365 Copilot 채널 선택](../assets/images/m10/image6.png)
 
-   ![이미지](../assets/images/m10/image8.png)
+4. 오른쪽 패널에서 **Microsoft 365 켜기** 체크박스가 선택되어 있는지 확인한 뒤, 하단의 **"채널 추가"** 클릭
 
-   ![이미지](../assets/images/m10/image9.png)
+   ![채널 추가 버튼 클릭](../assets/images/m10/image7.png)
 
-   ![이미지](../assets/images/m10/image10.png)
+5. 상단에 **"채널이 추가되었습니다"** 성공 메시지가 표시됩니다.
 
-   ![이미지](../assets/images/m10/image11.png)
+   ![채널 추가 성공 메시지](../assets/images/m10/image8.png)
+
+6. 같은 패널에서 **"Microsoft 365에서 에이전트 보기"** 링크를 클릭하면 M365 Copilot 앱으로 이동합니다.
+
+   ![Microsoft 365에서 에이전트 보기](../assets/images/m10/image9.png)
+
+7. Microsoft 365 Copilot 화면에서 **HR 도우미** 에이전트가 표시됩니다. **"추가"** 버튼을 클릭하세요.
+
+   ![M365 Copilot에서 에이전트 추가](../assets/images/m10/image10.png)
+
+8. 에이전트가 추가되면 **HR 도우미** 대화 화면이 열립니다. 이제 M365 Copilot 안에서 직접 에이전트를 사용할 수 있습니다.
+
+   ![HR 도우미 대화 화면](../assets/images/m10/image11.png)
 
 {: .tip }
 > **"Teams 및 Microsoft 365 Copilot"** 채널이 연결되어 있어야 실습 ②(몰입형)과 실습 ③(@호출)에서 에이전트를 사용할 수 있습니다.

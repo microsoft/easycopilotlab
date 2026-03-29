@@ -16,25 +16,42 @@ nav_order: 1
 {: .important }
 > **OneDrive for Business**와 **Excel Online (Business)** 접근 권한이 있어야 합니다. 조직 정책상 OneDrive 사용이 제한되어 있으면 같은 구조로 **SharePoint 문서 라이브러리**를 사용해도 됩니다.
 
-1. **OneDrive** 접속 → 새 Excel 파일 생성: `대화기록.xlsx`
-2. **Sheet1**에 테이블 만들기:
+### 1. OneDrive에서 새 Excel 파일 생성
+
+**OneDrive** 접속 → **"+ 만들기 또는 업로드"** → **"Excel 통합 문서"** 클릭
+
+![OneDrive — Excel 통합 문서 만들기](../assets/images/m11/image.png)
+
+### 2. 헤더 행 입력
+
+Sheet1의 **A1:D1** 셀에 아래 4개 열 이름을 입력합니다.
 
 | 시간 | 사용자 | 질문 | 답변 |
 |:-----|:------|:-----|:-----|
-| (비워두기) | | | |
 
-3. 표 전체 선택 → **"삽입" → "표"** → 확인
-4. **저장**
+![헤더 행 입력 — 시간, 사용자, 질문, 답변](../assets/images/m11/image2.png)
 
-![이미지](../assets/images/m11/image.png)
+### 3. 표(Table)로 변환 — 범위 선택 & 삽입
 
-![이미지](../assets/images/m11/image2.png)
+**A1:D2** 영역을 드래그하여 선택한 뒤, 상단 **"삽입"** 탭 → **"테이블"** 클릭
 
-![이미지](../assets/images/m11/image3.png)
+![삽입 탭 — 테이블 버튼](../assets/images/m11/image3.png)
 
-![이미지](../assets/images/m11/image4.png)
+### 4. 테이블 만들기 확인
 
-![이미지](../assets/images/m11/image5.png)
+**"테이블 만들기"** 대화상자에서:
+- 데이터 범위: `A1:D2`
+- **"표에 머리글이 있습니다"** 체크 확인
+- **"확인"** 클릭
+
+![테이블 만들기 대화상자](../assets/images/m11/image4.png)
+
+### 5. 테이블 생성 완료 & 파일 이름 변경
+
+테이블이 생성되면 헤더에 필터 드롭다운이 표시되고, **"표 디자인"** 탭이 나타납니다.  
+파일 이름을 **"대화기록"** 으로 변경하고 저장합니다.
+
+![테이블 생성 완료 — 표 디자인 탭 확인](../assets/images/m11/image5.png)
 
 {: .tip }
 > 반드시 **표(Table)**로 만들어야 Copilot Studio의 Excel 커넥터에서 행을 추가할 수 있습니다.

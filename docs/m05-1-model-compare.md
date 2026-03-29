@@ -22,7 +22,9 @@ nav_order: 1
 5. 오른쪽 테스트 창에서 같은 질문 입력
 6. 답변 길이·표현 방식이 어떻게 달라지는지 비교
 
-![이미지](../assets/images/m05/image1.png)
+아래와 같이 AI 모델 드롭다운에서 **GPT-4.1**, **GPT-5 Chat**, **Claude Sonnet 4.6** 등 다양한 모델을 선택할 수 있습니다.
+
+![AI 모델 선택 드롭다운](../assets/images/m05/image1.png)
 
 ### 비교할 질문 예시
 

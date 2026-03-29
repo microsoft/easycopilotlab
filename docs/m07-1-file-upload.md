@@ -23,7 +23,7 @@ nav_order: 1
 | 경비처리_가이드.docx | 출장·법인카드·청구 절차 | 서술형 |
 | 휴가_근태_가이드.docx | 연차·반차·병가·특별휴가 | 서술형 |
 
-![이미지](../assets/images/m07/image.png)
+![업로드할 문서 5종 파일 목록](../assets/images/m07/image.png)
 
 ## Step-by-Step
 
@@ -33,15 +33,27 @@ nav_order: 1
 4. 각 파일 상태가 **"Ready"**가 될 때까지 대기 (1~3분)
 5. Ready 확인되면 **지식 소스 활성화 완료!**
 
-![이미지](../assets/images/m07/image2.png)
+아래 스크린샷을 참고하여 각 단계를 진행하세요.
 
-![이미지](../assets/images/m07/image3.png)
+**① 지식 탭 → "참조 자료 원본 추가" 화면**
 
-![이미지](../assets/images/m07/image4.png)
+![지식 탭 — "참조 자료 원본 추가" 화면](../assets/images/m07/image2.png)
 
-![이미지](../assets/images/m07/image5.png)
+**② 파일 업로드 영역 (드래그&드롭)**
 
-![이미지](../assets/images/m07/image6.png)
+![참조 자료 추가 — 파일 업로드 드래그&드롭 영역](../assets/images/m07/image3.png)
+
+**③ 5개 파일 선택 완료 → "에이전트에 추가" 클릭**
+
+![파일 업로드 — 5개 파일 선택 후 "에이전트에 추가" 버튼 클릭](../assets/images/m07/image4.png)
+
+**④ 참조 자료 상태 — "진행 중" 표시**
+
+![참조 자료 목록 — 상태 "진행 중"](../assets/images/m07/image5.png)
+
+**⑤ 모든 파일 "준비" 완료 확인**
+
+![참조 자료 목록 — 모두 "준비" 완료](../assets/images/m07/image6.png)
 
 ---
 
@@ -56,7 +68,7 @@ nav_order: 1
 | 3 | "복지포인트 사용처 알려줘" | ❌ "정보를 찾을 수 없습니다" | ✅ 복리후생_안내.docx 기반 상세 답변 |
 | 4 | "출장 경비 청구 어떻게?" | ❌ (답변 불가) | ✅ 경비처리_가이드.docx 기반 절차 안내 |
 
-![이미지](../assets/images/m07/image7.png)
+![테스트 — "경비처리 담당자 누구야?" 질문에 담당자정보.docx 기반 답변](../assets/images/m07/image7.png)
 
 {: .important }
 > Before/After의 차이가 **교과서의 힘**입니다. 같은 에이전트인데 지식을 추가하자 완전히 달라집니다.
