@@ -25,7 +25,7 @@ has_children: true
 
 - **에이전트 흐름(Agent Flow)**이 커넥터와 무엇이 다른지
 - Power Automate로 **담당자에게 문의 메일 보내기** 흐름 만들기
-- 에이전트에서 흐름을 **도구로 연결**하고 호출하는 방법
+- 에이전트에서 흐름을 **도구로 추가**하고, **지침(STRICT RULES)**으로 호출하는 방법
 - 간단한 **AI 프롬프트**를 흐름 안에 한 단계로 넣어보는 방법
 
 {: .highlight }
@@ -51,12 +51,13 @@ has_children: true
 
 ```mermaid
 flowchart LR
-    A[ 담당자한테\n문의 넣어줘] --> B[ Request Topic\n정보 수집]
-    B --> C[ 에이전트 흐름\nRequestByEmail]
-    C --> C1[ AI 프롬프트\n메일 본문 생성]
-    C1 --> D[ 담당자 메일로\n문의 내용 전달]
-    D --> E[ 전달 완료되었습니다]
+    A[🗣 담당자한테\n문의 넣어줘] --> B[🧠 오케스트레이터\nSTRICT RULES 확인]
+    B --> C[⚙️ 에이전트 흐름\nRequestByEmail]
+    C --> C1[🤖 AI 프롬프트\n메일 본문 생성]
+    C1 --> D[📧 담당자 메일로\n문의 내용 전달]
+    D --> E[✅ 전달 완료되었습니다]
 
+    style B fill:#e8f4fd,stroke:#0078d4
     style C fill:#ffd,stroke:#cc0
     style C1 fill:#ffd,stroke:#cc0
     style D fill:#ffd,stroke:#cc0
@@ -72,18 +73,18 @@ flowchart LR
 
 ---
 
-## 실습 ②: 에이전트에 흐름 연결하기
+## 실습 ②: 지침으로 흐름 호출하기
 
 {: .important }
 > 📌 이 실습은 별도 페이지에서 진행합니다.  
-> [실습 ②: 에이전트에 흐름 연결](m12-2-connect-flow)을 완료하고 돌아오세요.
+> [실습 ②: 지침으로 흐름 호출](m12-2-connect-flow)을 완료하고 돌아오세요.
 
 ---
 
 ## 핵심 정리
 
 1. 에이전트 흐름 = 여러 단계를 묶어 자동화하는 Power Automate 흐름
-2. 에이전트에서 흐름을 **도구(Action)**로 연결하면 대화로 자동화 실행 가능
+2. 흐름을 **도구로 추가** + **지침(STRICT RULES)**에 호출 규칙 작성 → 토픽 없이도 호출 가능
 3. AI 프롬프트를 흐름 안에 넣으면 메일 본문도 AI가 자동 작성
 
 ---
