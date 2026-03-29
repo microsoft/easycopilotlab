@@ -25,7 +25,7 @@ has_children: true
 
 - **MCP(Model Context Protocol)**란 무엇인지
 - Copilot Studio에서 MCP 서버를 에이전트에 연결하는 방법
-- 강사가 제공한 **네이버 검색 MCP**, **주가 조회 MCP** 연결 실습
+- **Microsoft Learn MCP** 서버를 연결하여 기술문서 검색 도구 활용 실습
 
 {: .highlight }
 > MCP는 외부 서비스를 표준화된 방식으로 에이전트에 연결하는 프로토콜입니다. MCP 서버 하나만 연결하면 해당 서비스의 모든 기능을 에이전트가 도구로 쓸 수 있습니다.
