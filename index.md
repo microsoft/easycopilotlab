@@ -4,133 +4,133 @@ layout: home
 nav_order: 0
 ---
 
-# 문과생을 위한 Copilot Studio
+# Copilot Studio for Non-Developers
 {: .fs-9 }
 
-개발자 없이 만드는 우리 팀 전용 AI — 완전 정복 1일 과정
+Build your team's own AI without a developer — A full-day hands-on course
 {: .fs-6 .fw-300 }
 
 {: .warning }
-> 이 과정은 **2026년 3월** 시점의 기능과 UI를 기준으로 제작되었습니다.  
-> Microsoft Copilot과 Copilot Studio는 매우 빠른 속도로 기능 추가와 개선이 이루어지고 있어, 시간이 지남에 따라 실제 화면이나 기능이 이 과정의 내용과 달라질 수 있습니다.
+> This course was created based on features and UI as of **March 2026**.  
+> Microsoft Copilot and Copilot Studio are evolving rapidly, so the actual screens and features may differ from what is shown in this course over time.
 
 ---
 
-## 이 과정이 특별한 이유
+## What Makes This Course Special
 
-> *"지침 잘 쓰는 사람이 에이전트 잘 만듭니다. 이건 이과 영역이 아니에요."*
+> *"People who write great instructions build great agents. This isn't a developer's job."*
 
-에이전트의 품질은 코딩 실력이 아니라 **지침의 품질**로 결정됩니다.
-맥락 이해, 글쓰기, 설득, 스토리텔링 — 이것이 바로 여러분의 강점이자 Copilot Studio에서 가장 중요한 능력입니다.
+Agent quality is determined not by coding skills, but by the **quality of your instructions**.
+Context understanding, writing, persuasion, storytelling — these are your strengths, and they are the most important skills in Copilot Studio.
 
-| 여러분의 강점 | Copilot Studio에서의 역할 |
+| Your Strengths | Role in Copilot Studio |
 |:------------|:------------------------|
-| 맥락 이해 | 지침의 역할·범위·원칙 설계 |
-| 글쓰기 | 지침·대본(Topic) 텍스트 작성 |
-| 설득·커뮤니케이션 | 에이전트 말투·태도 설계 |
-| 스토리텔링 | 대화 흐름(Topic) 설계 |
-| 현업 도메인 지식 | 지식 소스(문서) 기획·구성 |
+| Context understanding | Designing the agent's role, scope, and principles |
+| Writing | Authoring instructions and script (Topic) text |
+| Persuasion & communication | Designing the agent's tone and attitude |
+| Storytelling | Designing conversation flows (Topics) |
+| Domain expertise | Planning and organizing knowledge sources (documents) |
 
 ---
 
-## 비유 시스템 — 이 용어만 기억하세요
+## Analogy System — Just Remember These Terms
 
-이 과정에서는 낯선 기술 용어 대신 **익숙한 비유**를 사용합니다.
+Throughout this course, we use **familiar analogies** instead of unfamiliar technical jargon.
 
-| 개념 | 비유 | 한 줄 설명 |
+| Concept | Analogy | One-Line Description |
 |:-----|:-----|:---------|
-| 에이전트 | 🧑‍💼 신입사원 | 지시대로 움직이는 AI 직원 |
-| 지침 | 📋 행동매뉴얼 | 에이전트의 역할·태도·범위를 정의 |
-| 지식 | 📚 교과서 | 에이전트가 답변의 근거로 삼는 자료 |
-| 변수 | 📝 포스트잇 | 대화 중 메모해두고 나중에 꺼내 쓰는 것 |
-| Topic | 🎬 대본 | 특정 상황에서 에이전트가 따르는 흐름 |
-| Flow | 🤲 손발 | 에이전트가 실제로 행동하게 해주는 것 |
-| 메일 전달 | ✉️ 편지봉투 | 문의 내용을 담당자에게 이메일로 전달 |
+| Agent | 🧑‍💼 New employee | An AI worker that follows your instructions |
+| Instructions | 📋 Behavior manual | Defines the agent's role, attitude, and scope |
+| Knowledge | 📚 Textbook | Reference materials the agent uses to answer questions |
+| Variable | 📝 Sticky note | Something jotted down during a conversation and used later |
+| Topic | 🎬 Script | A flow the agent follows in specific situations |
+| Flow | 🤲 Hands and feet | What enables the agent to take real-world actions |
+| Email forwarding | ✉️ Envelope | Forwarding an inquiry to the right person via email |
 
 ---
 
-## ⏱️ 전체 타임테이블
+## ⏱️ Full Timetable
 
-운영 시간: **09:30 ~ 18:00** (총 8시간 30분)
+Course hours: **09:30 – 18:00** (8 hours 30 minutes total)
 {: .fs-5 }
 
-| # | 시간 | 모듈 | 제목 | 소요 | 수강생 역할 |
+| # | Time | Module | Title | Duration | Participant Role |
 |:--|:-----|:-----|:-----|:-----|:-----------|
-| 0 | 09:30 | [MODULE 0](docs/m00-orientation) | 오리엔테이션 — 오늘 만들 에이전트 미리보기 | 10분 | 👀 보기 |
-| 1 | 09:40 | [MODULE 1](docs/m01-copilot-principles) | 코파일럿과 에이전트의 동작원리 | 10분 | 👀 보기 |
-| 2 | 09:50 | [MODULE 2](docs/m02-immersive-incontext) | 에이전트의 사용 방식 — 몰입형 vs 인컨텍스트 | 15분 | 👀 보기 |
-| 3 | 10:05 | [MODULE 3 ⭐](docs/m03-agent-builder) | 첫번째 에이전트 만들기 — 에이전트 빌더 실습 | 30분 | 🟢 직접 만들기 |
-| 3a | — | [MODULE 3a](docs/m03a-sample-agents) | 부록 — 6가지 샘플 에이전트 체험 | 자율 | 🟢 자율 실습 |
-| 4 | 10:35 | [MODULE 4](docs/m04-four-components) | 에이전트의 4가지 구성요소 + Copilot Studio 둘러보기 | 20분 | 👀 보기 |
-| — | 10:55 | ☕ 휴식① | | 15분 | |
-| 5 | 11:10 | [MODULE 5 ⭐](docs/m05-orchestrator) | 1요소 오케스트레이터 — 모델 변경 + 설정 실습 | 20분 | 🟢 직접 실습 |
-| — | 11:30 | 🍱 점심 | | 90분 | |
-| 6 | 13:00 | [MODULE 6 ⭐](docs/m06-instructions) | 2요소 지침 — 좋은 지침 만들기 + 실습 | 30분 | 🟢 직접 작성 + 테스트 |
-| 7 | 13:30 | [MODULE 7 ⭐](docs/m07-knowledge) | 3요소 지식 — RAG 개념 + 참조문서 업로드 실습 | 30분 | 🟢 직접 실습 |
-| 8 | 14:00 | [MODULE 8](docs/m08-tools-overview) | 4요소 도구들 — 도구가 채택되는 원리 | 10분 | 👀 보기 |
-| 9 | 14:10 | [MODULE 9 ⭐](docs/m09-topic-variables) | 도구 — 토픽과 변수 | 35분 | 🟢 직접 실습 |
-| — | 14:45 | ☕ 휴식② | | 15분 | |
-| 10 | 15:00 | [MODULE 10 ⭐](docs/m10-publish-share) | 에이전트 게시와 공유 — Copilot에서 에이전트 사용 | 20분 | 🟢 직접 실습 |
-| 11 | 15:20 | [MODULE 11 ⭐](docs/m11-connector) | 도구 — 커넥터 | 30분 | 🟢 직접 실습 |
-| 12 | 15:50 | [MODULE 12 ⭐](docs/m12-agent-flow) | 도구 — 에이전트 흐름 | 30분 | 🟢 직접 실습 |
-| 13 | 16:20 | [MODULE 13](docs/m13-ai-prompt) | 고급도구 — AI 프롬프트 | 10분 | 👀 강사 데모 |
-| — | 16:30 | ☕ 휴식③ | | 15분 | |
-| 14 | 16:45 | [MODULE 14 ⭐](docs/m14-multi-agent) | 고급도구 — 멀티에이전트 | 25분 | 🟢 직접 실습 |
-| 15 | 17:10 | [MODULE 15 ⭐](docs/m15-mcp) | 고급도구 — MCP | 15분 | 🟢 직접 실습 |
-| 16 | 17:25 | [MODULE 16 ⭐](docs/m16-trigger) | 고급도구 — 트리거 | 25분 | 🟢 직접 실습 |
-| — | 17:50 | 🎉 [마무리](docs/m17-wrap-up) | 돌아보기 · Q&A · 트러블슈팅 | 10분 | |
+| 0 | 09:30 | [MODULE 0](docs/m00-orientation) | Orientation — Preview the Agent You'll Build Today | 10 min | 👀 Watch |
+| 1 | 09:40 | [MODULE 1](docs/m01-copilot-principles) | How Copilot and Agents Work | 10 min | 👀 Watch |
+| 2 | 09:50 | [MODULE 2](docs/m02-immersive-incontext) | Agent Usage — Immersive vs In-Context | 15 min | 👀 Watch |
+| 3 | 10:05 | [MODULE 3 ⭐](docs/m03-agent-builder) | Build Your First Agent — Agent Builder Hands-On | 30 min | 🟢 Build It |
+| 3a | — | [MODULE 3a](docs/m03a-sample-agents) | Appendix — Try 6 Sample Agents | Self-paced | 🟢 Self-Paced |
+| 4 | 10:35 | [MODULE 4](docs/m04-four-components) | The 4 Components of an Agent + Copilot Studio Tour | 20 min | 👀 Watch |
+| — | 10:55 | ☕ Break ① | | 15 min | |
+| 5 | 11:10 | [MODULE 5 ⭐](docs/m05-orchestrator) | Component 1: Orchestrator — Change Model + Settings | 20 min | 🟢 Hands-On |
+| — | 11:30 | 🍱 Lunch | | 90 min | |
+| 6 | 13:00 | [MODULE 6 ⭐](docs/m06-instructions) | Component 2: Instructions — Writing Good Instructions | 30 min | 🟢 Write + Test |
+| 7 | 13:30 | [MODULE 7 ⭐](docs/m07-knowledge) | Component 3: Knowledge — RAG Concepts + Upload Docs | 30 min | 🟢 Hands-On |
+| 8 | 14:00 | [MODULE 8](docs/m08-tools-overview) | Component 4: Tools — How Tools Get Selected | 10 min | 👀 Watch |
+| 9 | 14:10 | [MODULE 9 ⭐](docs/m09-topic-variables) | Tools — Topics and Variables | 35 min | 🟢 Hands-On |
+| — | 14:45 | ☕ Break ② | | 15 min | |
+| 10 | 15:00 | [MODULE 10 ⭐](docs/m10-publish-share) | Publish & Share — Use Your Agent in Copilot | 20 min | 🟢 Hands-On |
+| 11 | 15:20 | [MODULE 11 ⭐](docs/m11-connector) | Tools — Connectors | 30 min | 🟢 Hands-On |
+| 12 | 15:50 | [MODULE 12 ⭐](docs/m12-agent-flow) | Tools — Agent Flows | 30 min | 🟢 Hands-On |
+| 13 | 16:20 | [MODULE 13](docs/m13-ai-prompt) | Advanced Tools — AI Prompts | 10 min | 👀 Instructor Demo |
+| — | 16:30 | ☕ Break ③ | | 15 min | |
+| 14 | 16:45 | [MODULE 14 ⭐](docs/m14-multi-agent) | Advanced Tools — Multi-Agent | 25 min | 🟢 Hands-On |
+| 15 | 17:10 | [MODULE 15 ⭐](docs/m15-mcp) | Advanced Tools — MCP | 15 min | 🟢 Hands-On |
+| 16 | 17:25 | [MODULE 16 ⭐](docs/m16-trigger) | Advanced Tools — Triggers | 25 min | 🟢 Hands-On |
+| — | 17:50 | 🎉 [Wrap-Up](docs/m17-wrap-up) | Review · Q&A · Troubleshooting | 10 min | |
 {: .timetable}
 
-| 구분 | 시간 |
+| Category | Time |
 |:-----|:-----|
-| 교육 | 365분 (6시간 5분) |
-| 점심 | 90분 |
-| 휴식 | 45분 (15분 × 3회) |
-| Q&A | 10분 |
-| **합계** | **510분 (8시간 30분)** |
+| Training | 365 min (6 hrs 5 min) |
+| Lunch | 90 min |
+| Breaks | 45 min (15 min × 3) |
+| Q&A | 10 min |
+| **Total** | **510 min (8 hrs 30 min)** |
 
 ---
 
-## 사전 준비
+## Prerequisites
 
-시작하기 전에 다음을 확인해 주세요:
+Before starting, please verify the following:
 
-- ✅ Microsoft 365 계정 로그인 가능
-- ✅ [Copilot Studio](https://copilotstudio.microsoft.com) 접속 가능
-- ✅ Microsoft Teams 설치 및 로그인 완료
-- ✅ [Power Automate](https://make.powerautomate.com) 접속 가능
-- ✅ 인스턴트 클라우드 흐름 생성 권한 확인 완료
-- ✅ AI Builder 프롬프트 사용 가능 여부 확인 완료
-- ✅ Office 365 Outlook 커넥터로 메일 발송 가능
-- ✅ OneDrive for Business + Excel Online (Business) 사용 가능
-- ✅ 실습에 사용할 문서 파일 다운로드 (아래 참조)
+- ✅ Able to sign in with a Microsoft 365 account
+- ✅ Can access [Copilot Studio](https://copilotstudio.microsoft.com)
+- ✅ Microsoft Teams installed and signed in
+- ✅ Can access [Power Automate](https://make.powerautomate.com)
+- ✅ Permission to create instant cloud flows confirmed
+- ✅ AI Builder prompt availability confirmed
+- ✅ Able to send email via the Office 365 Outlook connector
+- ✅ OneDrive for Business + Excel Online (Business) available
+- ✅ Lab files downloaded (see below)
 
 {: .warning }
-> 일부 조직은 Power Automate, AI Builder, Outlook 커넥터, OneDrive 사용에 관리자 승인이나 라이선스 확인이 필요합니다. 오전 세션 시작 전에 미리 점검해 주세요.
+> Some organizations require admin approval or license verification for Power Automate, AI Builder, the Outlook connector, and OneDrive. Please check before the morning session begins.
 
-### 📂 실습 파일 다운로드
+### 📂 Download Lab Files
 
-| # | 파일 | 설명 |
+| # | File | Description |
 |:--|:-----|:-----|
-| 1 | [FAQ.docx](assets/files/FAQ.docx) | 자주 묻는 질문 모음 |
-| 2 | [경비처리_가이드.docx](assets/files/경비처리_가이드.docx) | 경비 처리 절차 안내 |
-| 3 | [담당자정보.docx](assets/files/담당자정보.docx) | 부서별 담당자 연락처 |
-| 4 | [복리후생_안내.docx](assets/files/복리후생_안내.docx) | 복리후생 제도 안내 |
-| 5 | [휴가_근태_가이드.docx](assets/files/휴가_근태_가이드.docx) | 휴가·근태 관련 규정 |
+| 1 | [FAQ.docx](assets/files/FAQ.docx) | Frequently asked questions |
+| 2 | [경비처리_가이드.docx](assets/files/경비처리_가이드.docx) | Expense processing guide |
+| 3 | [담당자정보.docx](assets/files/담당자정보.docx) | Department contact information |
+| 4 | [복리후생_안내.docx](assets/files/복리후생_안내.docx) | Employee benefits guide |
+| 5 | [휴가_근태_가이드.docx](assets/files/휴가_근태_가이드.docx) | Leave and attendance policy |
 
 {: .tip }
-> 위 파일들은 실습 중 에이전트의 **지식(교과서)** 소스로 사용합니다. 미리 다운로드해 주세요.
+> These files will be used as the agent's **knowledge (textbook)** sources during the labs. Please download them in advance.
 
 {: .highlight }
-> 모든 실습은 웹 브라우저에서 진행됩니다. 별도의 프로그램 설치가 필요 없습니다.
+> All labs are conducted in a web browser. No additional software installation is required.
 
 ---
 
-## 참조 링크
+## Reference Links
 
-| 자료 | URL |
+| Resource | URL |
 |:-----|:----|
-| Copilot Studio 공식 문서 | [learn.microsoft.com/microsoft-copilot-studio](https://learn.microsoft.com/microsoft-copilot-studio/) |
-| MS Learn 학습 경로 | [learn.microsoft.com/training](https://learn.microsoft.com/training/paths/work-power-virtual-agents/) |
-| Power Automate 문서 | [learn.microsoft.com/power-automate](https://learn.microsoft.com/power-automate/) |
-| Copilot Studio 커뮤니티 | [community.powerplatform.com](https://community.powerplatform.com/galleries/communitycontent/?v=copilot-studio) |
+| Copilot Studio Official Docs | [learn.microsoft.com/microsoft-copilot-studio](https://learn.microsoft.com/microsoft-copilot-studio/) |
+| MS Learn Learning Path | [learn.microsoft.com/training](https://learn.microsoft.com/training/paths/work-power-virtual-agents/) |
+| Power Automate Docs | [learn.microsoft.com/power-automate](https://learn.microsoft.com/power-automate/) |
+| Copilot Studio Community | [community.powerplatform.com](https://community.powerplatform.com/galleries/communitycontent/?v=copilot-studio) |

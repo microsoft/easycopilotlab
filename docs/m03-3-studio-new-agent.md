@@ -1,17 +1,17 @@
 ---
-title: "실습③ — Copilot Studio에서 새 에이전트 만들기"
-parent: "M3. 에이전트 만들기 시작"
+title: "Lab ③ — Create a New Agent in Copilot Studio"
+parent: "M3. Getting Started with Building Agents"
 nav_order: 3
 ---
 
-# 실습 ③: Copilot Studio에서 새 에이전트 만들기
+# Lab ③: Create a New Agent in Copilot Studio
 {: .no_toc }
 
-| 시간 | 소요 | 수강생 역할 |
-|:-----|:-----|:-----------|
-| 10:30 | 10분 | 🟢 직접 만들기 |
+| Time | Duration | Participant Role |
+|:-----|:---------|:----------------|
+| 10:30 | 10 min | 🟢 Hands-on |
 
-## 목차
+## Table of Contents
 {: .no_toc .text-delta }
 
 1. TOC
@@ -20,92 +20,92 @@ nav_order: 3
 ---
 
 {: .warning }
-> 실습 ②에서 에이전트 빌더 → Copilot Studio로 가져오면 빠르고 편리하지만, **에이전트 언어가 영어로 고정**되고 변경할 수 없습니다.  
-> 이 실습에서는 Copilot Studio에서 **처음부터** 에이전트를 만들어 **한국어 에이전트**를 생성합니다.
+> Importing from Agent Builder → Copilot Studio (Lab ②) is quick and convenient, but the **agent language gets locked to English** and cannot be changed.  
+> In this lab, we create an agent **from scratch** in Copilot Studio to set up a **Korean-language agent**.
 
 ---
 
-## Step 1 — Copilot Studio 접속 및 환경 확인
+## Step 1 — Access Copilot Studio and Verify the Environment
 
-1. [Copilot Studio](https://copilotstudio.microsoft.com) 접속
-2. 왼쪽 상단의 **환경(Environment)** 이 올바른지 확인
-   - 강사가 지정한 환경이 있으면 해당 환경으로 전환
+1. Go to [Copilot Studio](https://copilotstudio.microsoft.com)
+2. Verify that the **Environment** in the top-left corner is correct
+   - If your instructor has specified an environment, switch to that one
 
-![이미지](../assets/images/m03/image21.png)
+![Image](../assets/images/m03/image21.png)
 
 ---
 
-## Step 2 — 솔루션 만들기
+## Step 2 — Create a Solution
 
-에이전트를 독립된 솔루션에 넣으면 나중에 내보내기(Export)나 이동이 편리합니다.
+Placing your agent in a dedicated solution makes it easier to export or move later.
 
-1. 왼쪽 메뉴에서 **솔루션** 선택
-2. **+ 새 솔루션** 클릭
-3. 이름: `HR 도우미 솔루션` (또는 원하는 이름)
-4. 게시자: 기본 게시자 선택
-5. **만들기** 클릭
+1. Select **Solutions** from the left menu
+2. Click **+ New solution**
+3. Name: `HR Assistant Solution` (or any name you prefer)
+4. Publisher: Select the default publisher
+5. Click **Create**
 
 {: .tip }
-> 솔루션은 에이전트·흐름·커넥터 등을 묶는 **컨테이너**입니다. 실무에서도 솔루션 단위로 관리하면 환경 간 이동이 깔끔합니다.
+> A solution is a **container** that bundles agents, flows, connectors, and more. Managing things at the solution level in production makes moving between environments much cleaner.
 
-![이미지](../assets/images/m03/image22.png)
+![Image](../assets/images/m03/image22.png)
 
-![이미지](../assets/images/m03/image23.png)
+![Image](../assets/images/m03/image23.png)
 
-![이미지](../assets/images/m03/image24.png)
+![Image](../assets/images/m03/image24.png)
 
 ---
 
-## Step 3 — 고급 만들기로 에이전트 생성
+## Step 3 — Create an Agent with Advanced Create
 
-1. 왼쪽 메뉴에서 **에이전트** 선택
-2. 에이전트 목록 상단의 **+ 새 에이전트** 클릭
-3. ⚠️ "빈 에이전트 만들기" 대신 → **"고급 만들기"** 버튼 클릭
-4. 설정 입력:
+1. Select **Agents** from the left menu
+2. Click **+ New agent** at the top of the agent list
+3. ⚠️ Instead of "Create a blank agent" → click the **"Advanced Create"** button
+4. Enter the settings:
 
-| 항목 | 값 |
-|:-----|:---|
-| **이름** | HR 도우미 |
-| **설명** | 우리 회사 HR/총무 관련 질문에 답하는 도우미 에이전트 |
-| **언어** | **한국어** 선택 |
-| **솔루션** | 방금 만든 `HR 도우미 솔루션` 선택 |
+| Field | Value |
+|:------|:------|
+| **Name** | HR Assistant |
+| **Description** | An assistant agent that answers HR and general affairs questions for our company |
+| **Language** | Select **Korean** |
+| **Solution** | Select the `HR Assistant Solution` you just created |
 
-5. **만들기** 클릭
+5. Click **Create**
 
-![이미지](../assets/images/m03/image25.png)
+![Image](../assets/images/m03/image25.png)
 
-![이미지](../assets/images/m03/image26.png)
+![Image](../assets/images/m03/image26.png)
 
 {: .important }
-> **"고급 만들기"** 를 사용해야 언어와 솔루션을 직접 지정할 수 있습니다.  
-> "빈 에이전트 만들기"로 만들면 언어가 영어로 고정되고 솔루션도 기본값이 사용됩니다.
+> You must use **"Advanced Create"** to specify the language and solution directly.  
+> If you use "Create a blank agent," the language will be locked to English and the default solution will be used.
 
 ---
 
-## Step 4 — 에이전트 확인
+## Step 4 — Verify the Agent
 
-새 에이전트가 열리면 아래를 확인합니다:
+Once the new agent opens, check the following:
 
-- **기본 언어**: 한국어로 설정되어 있는지 확인
-- **솔루션**: 왼쪽 메뉴 → 솔루션에서 `HR 도우미 솔루션` 안에 에이전트가 들어있는지 확인
+- **Primary language**: Confirm it is set to Korean
+- **Solution**: Go to Solutions in the left menu and verify the agent is inside the `HR Assistant Solution`
 
-![이미지](../assets/images/m03/image27.png)
+![Image](../assets/images/m03/image27.png)
 
 ---
 
-## 실습 ② 에이전트와의 차이
+## Differences from the Lab ② Agent
 
-| 항목 | 실습 ② (에이전트 빌더 → 가져오기) | 실습 ③ (Copilot Studio 고급 만들기) |
+| Item | Lab ② (Agent Builder → Import) | Lab ③ (Copilot Studio Advanced Create) |
 |:-----|:---:|:---:|
-| 생성 속도 | 빠름 (30초) | 약간 느림 (2~3분) |
-| 에이전트 언어 | 영어 (변경 불가) | **한국어 직접 선택** |
-| 솔루션 지정 | 기본 솔루션 | **원하는 솔루션 선택** |
-| 내보내기/이동 | 불편 | **솔루션 단위로 깔끔** |
+| Creation speed | Fast (30 seconds) | Slightly slower (2–3 minutes) |
+| Agent language | English (cannot be changed) | **Korean — directly selectable** |
+| Solution assignment | Default solution | **Choose your own solution** |
+| Export/migration | Inconvenient | **Clean, solution-based** |
 
 {: .highlight }
-> **이후 실습에서는 이 실습 ③에서 만든 에이전트를 계속 사용합니다.**  
-> M6 지침 → M7 지식 → M9 토픽 → M12 흐름까지 이 에이전트에 기능을 추가해 나갑니다.
+> **All subsequent labs will continue using the agent created in this Lab ③.**  
+> From M6 Instructions → M7 Knowledge → M9 Topics → M12 Flows, we'll keep adding capabilities to this agent.
 
 ---
 
-실습을 완료했으면 [M3 본문으로 돌아가세요](m03-agent-builder).
+Once you've completed this lab, [return to the M3 main page](m03-agent-builder).

@@ -1,52 +1,52 @@
 ---
-title: "실습 — 파일 업로드"
-parent: "M7. 3요소 지식"
+title: "Lab — File Upload"
+parent: "M7. Element 3 — Knowledge"
 nav_order: 1
 ---
 
-# 실습: 파일 업로드
+# Lab: File Upload
 {: .no_toc }
 
-| 시간 | 소요 | 수강생 역할 |
-|:-----|:-----|:-----------|
-| 13:30 | 15분 | 🟢 직접 실습 |
+| Time | Duration | Participant Role |
+|:-----|:---------|:-----------------|
+| 13:30 | 15 min | 🟢 Hands-on Lab |
 
 ---
 
-## 업로드할 문서 5종
+## 5 Documents to Upload
 
-| 파일명 | 내용 | 형태 |
-|:-------|:-----|:-----|
-| FAQ.docx | 자주 묻는 질문·답변 | Q&A 구조화 |
-| 담당자정보.docx | 부서별 담당자 이름·연락처 | 표 형식 |
-| 복리후생_안내.docx | 복지포인트·건강검진·경조사 | 서술형 |
-| 경비처리_가이드.docx | 출장·법인카드·청구 절차 | 서술형 |
-| 휴가_근태_가이드.docx | 연차·반차·병가·특별휴가 | 서술형 |
+| File Name | Content | Format |
+|:----------|:--------|:-------|
+| FAQ.docx | Frequently asked questions & answers | Q&A structured |
+| 담당자정보.docx | Contact persons by department — names & phone numbers | Table format |
+| 복리후생_안내.docx | Benefits points, health checkups, congratulations & condolences | Narrative |
+| 경비처리_가이드.docx | Business travel, corporate card, expense claim procedures | Narrative |
+| 휴가_근태_가이드.docx | Annual leave, half-day leave, sick leave, special leave | Narrative |
 
 ## Step-by-Step
 
-1. **Copilot Studio** → 에이전트 편집 → 좌측 메뉴 **"지식"** 클릭
-2. **"파일 업로드"** 선택
-3. 5개 파일을 **드래그&드롭** 또는 선택
-4. 각 파일 상태가 **"Ready"**가 될 때까지 대기 (1~3분)
-5. Ready 확인되면 **지식 소스 활성화 완료!**
+1. **Copilot Studio** → Edit agent → Click **"Knowledge"** in the left menu
+2. Select **"File upload"**
+3. **Drag & drop** or select all 5 files
+4. Wait until each file status shows **"Ready"** (1–3 minutes)
+5. Once all show Ready — **knowledge source activation is complete!**
 
 ---
 
-## 테스트: Before vs After
+## Test: Before vs After
 
-파일 업로드 전후로 같은 질문의 답변이 어떻게 달라지는지 확인하세요.
+Check how answers to the same questions change before and after uploading the files.
 
-| # | 질문 | 업로드 전 | 업로드 후 |
-|:--|:-----|:---------|:---------|
-| 1 | "연차 며칠이야?" | ❌ "답변을 드리기 어렵습니다" | ✅ FAQ.docx 기반 구체적 답변 + 인용 |
-| 2 | "경비처리 담당자 누구야?" | ❌ "담당자 연결을 안내합니다" | ✅ 담당자정보.docx 기반 이름·연락처 |
-| 3 | "복지포인트 사용처 알려줘" | ❌ "정보를 찾을 수 없습니다" | ✅ 복리후생_안내.docx 기반 상세 답변 |
-| 4 | "출장 경비 청구 어떻게?" | ❌ (답변 불가) | ✅ 경비처리_가이드.docx 기반 절차 안내 |
+| # | Question | Before Upload | After Upload |
+|:--|:---------|:-------------|:-------------|
+| 1 | "How many vacation days do I get?" | ❌ "I'm unable to provide an answer" | ✅ Specific answer based on FAQ.docx + citation |
+| 2 | "Who handles expense reports?" | ❌ "Let me connect you to a representative" | ✅ Name & contact info based on 담당자정보.docx |
+| 3 | "Where can I use my benefits points?" | ❌ "I couldn't find that information" | ✅ Detailed answer based on 복리후생_안내.docx |
+| 4 | "How do I submit a travel expense claim?" | ❌ (Unable to answer) | ✅ Step-by-step procedure based on 경비처리_가이드.docx |
 
 {: .important }
-> Before/After의 차이가 **교과서의 힘**입니다. 같은 에이전트인데 지식을 추가하자 완전히 달라집니다.
+> The Before/After difference is **the power of the textbook**. Same agent — but adding knowledge transforms it completely.
 
 ---
 
-실습을 완료했으면 [M7 본문으로 돌아가세요](m07-knowledge).
+Once you've completed this lab, [return to the M7 main page](m07-knowledge).

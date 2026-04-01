@@ -1,95 +1,95 @@
 ---
-title: "M16. 도구 — 트리거"
+title: "M16. Tools — Triggers"
 nav_order: 17
 has_children: true
 ---
 
-# 고급도구  트리거
+# Advanced Tools — Triggers
 {: .no_toc }
 
-| 시간 | 소요 | 수강생 역할 |
-|:-----|:-----|:-----------|
-| 17:25 | 25분 |  직접 실습 |
+| Time | Duration | Participant Role |
+|:-----|:---------|:-----------------|
+| 17:25 | 25 min | 🟢 Hands-on Lab |
 
-## 목차
+## Table of Contents
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
 
-![M16 트리거 — 잠든 AI가 이벤트로 깨어난다](../assets/images/m16/hero.png)
+![M16 Triggers — A Sleeping AI Awakened by Events](../assets/images/m16/hero.png)
 
 ---
 
-## 이 모듈에서 배우는 것
+## What You'll Learn in This Module
 
-- **트리거(Trigger)**란 무엇인지  에이전트가 대화 없이 스스로 깨어나는 방법
-- **Forms로 HR 문의가 오면** 답변 초안을 자동 생성하는 흐름
-- 담당자에게 **초안 + 원문 문의**를 함께 전달하는 구조
-- **휴먼인더루프(Human-in-the-Loop)** 개념 이해
+- What a **Trigger** is — how an agent wakes up on its own without a conversation
+- A flow that **automatically drafts a response when an HR inquiry arrives via Forms**
+- A structure that sends both the **draft and the original inquiry** to the person in charge
+- Understanding the concept of **Human-in-the-Loop**
 
 {: .highlight }
-> 지금까지의 에이전트는 사용자가 말을 걸어야 작동했습니다. 트리거를 연결하면 **Forms 제출, 메일 수신, 일정 도래** 같은 이벤트가 에이전트를 깨울 수 있습니다.
+> Until now, agents only worked when a user initiated a conversation. By connecting triggers, events such as **Forms submissions, incoming emails, or scheduled times** can wake the agent up.
 
 ---
 
-## 트리거란?
+## What Is a Trigger?
 
-| 방식 | 설명 | 예시 |
-|:-----|:-----|:-----|
-| **대화 트리거** (기존) | 사용자가 말을 걸어야 시작 | "연차 문의해줘" |
-| **이벤트 트리거** (이번) | 외부 이벤트가 에이전트를 실행 | Forms 제출, 메일 수신, 스케줄 |
+| Type | Description | Example |
+|:-----|:------------|:--------|
+| **Conversation Trigger** (existing) | Starts when a user sends a message | "I have a leave request question" |
+| **Event Trigger** (this module) | An external event starts the agent | Forms submission, incoming email, schedule |
 
 ---
 
-## 전체 흐름 구조
+## End-to-End Flow
 
 ```mermaid
 flowchart LR
-    A[ Forms\nHR 문의 제출] --> B[ Power Automate\n트리거]
-    B --> C[ AI 프롬프트\n답변 초안 생성]
-    C --> D[ 담당자에게\n원문 + 초안 전달]
-    D --> E[ 담당자\n검토 후 최종 답변]
+    A[ Forms\nHR inquiry submitted] --> B[ Power Automate\nTrigger]
+    B --> C[ AI Prompt\nGenerate draft response]
+    C --> D[ Send to assignee\nOriginal + Draft]
+    D --> E[ Assignee\nReview & send final reply]
 
     style B fill:#ffd,stroke:#cc0
     style C fill:#ffd,stroke:#cc0
 ```
 
 {: .note }
-> 담당자가 AI 초안을 **검토하고 수정해서** 최종 발송  이것이 **휴먼인더루프**입니다. AI가 전부 하는 것이 아니라, 사람이 최종 판단을 유지합니다.
+> The assignee **reviews and edits** the AI-generated draft before sending the final reply — this is **Human-in-the-Loop**. AI doesn't do everything; a human retains final judgment.
 
 ---
 
-## 휴먼인더루프(Human-in-the-Loop)
+## Human-in-the-Loop
 
-| 자동화 단계 | 역할 |
-|:-----------|:-----|
-| AI | 문의 내용 분석 + 답변 초안 생성 |
-| 담당자 | 초안 검토  수정(필요시)  최종 발송 |
+| Stage | Role |
+|:------|:-----|
+| AI | Analyze the inquiry + generate a draft response |
+| Assignee | Review the draft → edit if needed → send the final reply |
 
-장점: AI의 속도 + 사람의 판단 = **정확하고 빠른 업무 처리**
+Benefit: AI's speed + human judgment = **fast and accurate task execution**
 
 ---
 
 {: .important }
-> 👉 [실습: Forms 트리거 연결](m16-1-forms-trigger)
+> 👉 [Lab: Connect a Forms Trigger](m16-1-forms-trigger)
 
 ---
 
-## 핵심 정리
+## Key Takeaways
 
-1. 트리거 = 대화 없이 외부 이벤트로 에이전트(흐름)를 실행
-2. Forms  AI 초안 생성  담당자 검토 = 휴먼인더루프
-3. AI가 **속도**를 담당하고, 사람이 **판단**을 담당하는 협업 구조
-
----
-
-## 마무리 멘트
-
-강사는 아래처럼 마무리하면 자연스럽습니다.
-
-> 오늘 우리는 에이전트의 **두뇌(오케스트레이터)**, **행동매뉴얼(지침)**, **교과서(지식)**, **손발(도구)**을 하나씩 붙여 왔습니다. 그리고 마지막으로, 사용자가 말을 걸기 전에도 움직일 수 있는 **트리거**까지 연결했습니다. 이제 이 에이전트는 단순히 답만 하는 챗봇이 아니라, 우리 팀 업무를 실제로 보조하는 작업 시스템에 가까워졌습니다. 남은 시간에는 직접 써 보면서, 어느 부분을 우리 조직 시나리오에 맞게 바꾸면 좋을지 함께 점검하겠습니다.
+1. Trigger = run an agent (or flow) from an external event without a conversation
+2. Forms → AI-generated draft → assignee review = Human-in-the-Loop
+3. A collaboration model where AI handles **speed** and humans handle **judgment**
 
 ---
 
-다음 모듈: [마무리](m17-wrap-up)
+## Closing Remarks
+
+The instructor can use the following wrap-up:
+
+> Today we've assembled the agent piece by piece — its **brain (orchestrator)**, **behavior manual (instructions)**, **textbook (knowledge)**, and **hands and feet (tools)**. And finally, we connected **triggers** so the agent can act even before a user says a word. This agent is no longer a simple chatbot that only answers questions — it's becoming a real work system that supports your team's operations. In the remaining time, let's try it out together and discuss which parts you'd want to customize for your organization's specific scenarios.
+
+---
+
+Next module: [Wrap-Up](m17-wrap-up)

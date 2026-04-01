@@ -1,17 +1,17 @@
 ---
-title: "실습② — Copilot Studio로 가져오기"
-parent: "M3. 에이전트 만들기 시작"
+title: "Lab ② — Import into Copilot Studio"
+parent: "M3. Getting Started with Building Agents"
 nav_order: 2
 ---
 
-# 실습 ②: Copilot Studio로 가져오기
+# Lab ②: Import into Copilot Studio
 {: .no_toc }
 
-| 시간 | 소요 | 수강생 역할 |
-|:-----|:-----|:-----------|
-| 10:20 | 10분 | 🟢 직접 만들기 |
+| Time | Duration | Participant Role |
+|:-----|:---------|:----------------|
+| 10:20 | 10 min | 🟢 Hands-on |
 
-## 목차
+## Table of Contents
 {: .no_toc .text-delta }
 
 1. TOC
@@ -19,49 +19,49 @@ nav_order: 2
 
 ---
 
-에이전트 빌더로 만든 HR 도우미는 **그대로 Copilot Studio에서 열 수 있습니다.**
+The HR Assistant you built with Agent Builder can be **opened directly in Copilot Studio.**
 
-## Step 1 — Copilot Studio 열기
-좌측 에이전트 목록에서 "..."를 클릭하여 나오는 메뉴에서 "편집"을 클릭합니다.
+## Step 1 — Open Copilot Studio
+In the agent list on the left, click "..." to open the menu, then click "Edit."
 
-![이미지](../assets/images/m03/image14.png)
+![Image](../assets/images/m03/image14.png)
 
-에이전트의 편집 화면에서 상단의 "..." 메뉴를 클릭하여 나오는 메뉴에서 "Copilot Studio에 복사"를 클릭합니다.
+In the agent editing screen, click the "..." menu at the top, then select "Copy to Copilot Studio."
 
-![이미지](../assets/images/m03/image15.png)
+![Image](../assets/images/m03/image15.png)
 
-Copilot Studio 에 복사되는 내용과 복사되지 않는 내용을 확인할 수 있습니다. "시작" 버튼을 클릭합니다.
+You'll see a summary of what will and won't be copied to Copilot Studio. Click the "Start" button.
 
-![이미지](../assets/images/m03/image16.png)
+![Image](../assets/images/m03/image16.png)
 
-어떤 파워플랫폼 환경에 복사할지 묻는 창이 뜹니다. 강사가 지정한 환경이 있으면 해당 환경을 선택하고, 그렇지 않으면 기본 환경(Default Environment)을 선택합니다.
+A dialog will ask which Power Platform environment to copy the agent to. If your instructor has specified an environment, select that one; otherwise, choose the Default Environment.
 
-![이미지](../assets/images/m03/image17.png)
+![Image](../assets/images/m03/image17.png)
 
 ---
 
-## Step 2 — Copilot Studio 확인
-Copilot Studio가 열리면:
-- **이름:** HR 도우미 (그대로 유지)
-- **지침:** 에이전트 빌더에서 입력한 내용이 반영되어 있음
-- **좌측 메뉴:** 지식, 토픽, 액션 등 새로운 메뉴가 보임
+## Step 2 — Verify in Copilot Studio
+Once Copilot Studio opens:
+- **Name:** HR Assistant (unchanged)
+- **Instructions:** The content you entered in Agent Builder is carried over
+- **Left menu:** New menu items appear — Knowledge, Topics, Actions, etc.
 
 {: .highlight }
-> 같은 에이전트인데, **편집 도구만 바뀌었습니다.**  
-> 스마트폰 카메라(에이전트 빌더)로 찍은 사진을 포토샵(Copilot Studio)에서 보정하는 것과 같습니다.
+> It's the same agent — only the **editing tool has changed.**  
+> Think of it like taking a photo with your smartphone camera (Agent Builder) and then editing it in Photoshop (Copilot Studio).
 
-코파일럿 스튜디오에 에이전트가 복사되어 만들어 졌습니다. 아직 저장된 상태는 아니므로 상단의 "만들기" 버튼을 클릭하여 저장합니다.
+The agent has been copied and created in Copilot Studio. It hasn't been saved yet, so click the "Create" button at the top to save it.
 
-![이미지](../assets/images/m03/image18.png)
+![Image](../assets/images/m03/image18.png)
 
-에이전트가 최초 만들어 질 때 "이 기능은 에이전트 설정을 완료할 때까지 사용할 수 없습니다"라는 메시지가 보입니다. 잠시 기다리면 메시지가 사라지고, 에이전트가 정상적으로 작동하는 것을 확인할 수 있습니다.
+When the agent is first created, you may see a message saying "This feature is unavailable until agent setup is complete." Wait a moment — the message will disappear, and the agent will start working normally.
 
-![이미지](../assets/images/m03/image19.png)
+![Image](../assets/images/m03/image19.png)
 
-에이전트가 만들어 졌고, 테스트도 정상적으로 작동하는 것을 확인할 수 있습니다.
+The agent has been created, and you can confirm that testing works correctly.
 
-![이미지](../assets/images/m03/image20.png)
+![Image](../assets/images/m03/image20.png)
 
 ---
 
-실습을 완료했으면 [M3 본문으로 돌아가세요](m03-agent-builder).
+Once you've completed this lab, [return to the M3 main page](m03-agent-builder).

@@ -1,99 +1,99 @@
 ---
-title: "M5. 1요소 오케스트레이터와 AI"
+title: "M5. Component 1 — Orchestrator & AI"
 nav_order: 6
 has_children: true
 ---
 
-# 1요소 오케스트레이터  모델 변경 + 설정 실습
+# Component 1: Orchestrator — Model Selection + Settings Lab
 {: .no_toc }
 
-| 시간 | 소요 | 수강생 역할 |
-|:-----|:-----|:-----------|
-| 11:10 | 20분 |  직접 실습 |
+| Time | Duration | Participant Role |
+|:-----|:---------|:-----------------|
+| 11:10 | 20 min | 🟢 Hands-on lab |
 
-## 목차
+## Table of Contents
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
 
-![M5 오케스트레이터 — 자동변속 엔진](../assets/images/m05/hero.png)
+![M5 Orchestrator — The Automatic Transmission Engine](../assets/images/m05/hero.png)
 
 ---
 
-## 이 모듈에서 배우는 것
+## What You'll Learn in This Module
 
-- **오케스트레이터**가 에이전트에서 하는 역할
-- AI 모델을 변경하면 결과가 어떻게 달라지는지
-- 에이전트 설정(응답 길이언어안전성)을 조정하는 방법
+- The **role of the Orchestrator** within an agent
+- How changing the AI model affects the results
+- How to adjust agent settings (response length, language, safety)
 
 {: .highlight }
-> 오케스트레이터는 에이전트의 두뇌입니다. 어떤 엔진을 쓰느냐에 따라 답변의 깊이, 속도, 비용이 달라집니다.
+> The Orchestrator is the brain of the agent. Depending on which engine you choose, the depth, speed, and cost of responses will vary.
 
 ---
 
-## 오케스트레이터란?
+## What Is the Orchestrator?
 
-오케스트레이터는 사용자의 말을 받아 **어떤 도구(지식/토픽/흐름)를 쓸지 판단**하고, **최종 답변을 생성**하는 AI 모델입니다.
+The Orchestrator is the AI model that receives the user's message, **decides which tool (Knowledge / Topic / Flow) to use**, and **generates the final response**.
 
-| 역할 | 설명 |
-|:-----|:-----|
-| 의도 파악 | 사용자가 무엇을 원하는지 판단 |
-| 도구 선택 | 지식 검색 vs 토픽 실행 vs 흐름 호출 결정 |
-| 답변 생성 | 수집한 정보를 바탕으로 최종 응답 작성 |
+| Role | Description |
+|:-----|:------------|
+| Intent recognition | Determines what the user is asking for |
+| Tool selection | Decides between knowledge search vs. Topic execution vs. Flow invocation |
+| Response generation | Composes the final answer based on gathered information |
 
 ---
 
-## Copilot Studio에서 모델 선택하기
+## Selecting a Model in Copilot Studio
 
-**설정  생성형 AI  AI 모델** 에서 변경 가능합니다.
+You can change the model under **Settings → Generative AI → AI Model**.
 
 {: .note }
-> 실제로 보이는 모델 목록은 **테넌트, 시점, 라이선스, 프리뷰 활성화 여부**에 따라 다를 수 있습니다. 아래 표는 대표 예시로 이해하세요.
+> The actual list of available models may vary depending on your **tenant, timing, license, and preview opt-in status**. The tables below are representative examples.
 
-### OpenAI 모델
+### OpenAI Models
 
-| 모델 | 특징 | 비고 |
-|:-----|:-----|:-----|
-| **GPT-4.1** | 대부분 작업과 빠른 분석에 적합 | ✅ 기본값 |
-| GPT-5 Chat | 대부분 작업에 적합 | |
-| GPT-5 Auto | 채팅과 추론 간에 자동으로 전환 | 프리뷰 |
-| GPT-5 Reasoning | 가장 까다로운 작업을 위한 최대 수준의 깊이와 정확도 | 프리뷰 |
+| Model | Characteristics | Notes |
+|:------|:----------------|:------|
+| **GPT-4.1** | Suitable for most tasks and quick analysis | ✅ Default |
+| GPT-5 Chat | Suitable for most tasks | |
+| GPT-5 Auto | Automatically switches between chat and reasoning | Preview |
+| GPT-5 Reasoning | Maximum depth and accuracy for the most demanding tasks | Preview |
 
-### Anthropic 모델
+### Anthropic Models
 
-| 모델 | 특징 |
-|:-----|:-----|
-| **Claude Sonnet 4.5** | 일반 작업 및 콘텐츠 만들기 지원 |
-| Claude Sonnet 4.6 | 일반 작업 및 콘텐츠 만들기 지원 |
-| Claude Opus 4.6 | 심층 추론 및 구조적 문제 해결 수행 |
+| Model | Characteristics |
+|:------|:----------------|
+| **Claude Sonnet 4.5** | Supports general tasks and content creation |
+| Claude Sonnet 4.6 | Supports general tasks and content creation |
+| Claude Opus 4.6 | Deep reasoning and structured problem solving |
 
 {: .tip }
-> 이 모듈에서는 **기본값(GPT-4.1)**으로 시작합니다. 실습 ①에서 모델을 변경하여 결과 차이를 직접 체험해보세요.  
+> In this module, we start with the **default (GPT-4.1)**. In Lab ①, try changing the model to experience the differences firsthand.  
 ---
 
-## 실습 ①: 모델을 바꾸고 결과 비교하기
+## Lab ①: Change the Model and Compare Results
 
 {: .important }
-> 📌 이 실습은 별도 페이지에서 진행합니다.  
-> [실습 ①: 모델 변경 + 비교](m05-1-model-compare)를 완료하고 돌아오세요.
+> 📌 This lab is on a separate page.  
+> Complete [Lab ①: Model Change + Comparison](m05-1-model-compare) and then come back.
 
 ---
 
-## 실습 ②: 에이전트 설정 변경
+## Lab ②: Change Agent Settings
 
 {: .important }
-> 📌 이 실습은 별도 페이지에서 진행합니다.  
-> [실습 ②: 에이전트 설정 변경](m05-2-agent-settings)을 완료하고 돌아오세요.
+> 📌 This lab is on a separate page.  
+> Complete [Lab ②: Change Agent Settings](m05-2-agent-settings) and then come back.
 
 ---
 
-## 핵심 정리
+## Key Takeaways
 
-1. 오케스트레이터 = 에이전트의 두뇌  의도 파악  도구 선택  답변 생성
-2. 모델을 바꾸면 답변의 깊이속도비용이 달라진다
-3. 설정에서 응답 길이안전성을 조정할 수 있다
+1. Orchestrator = the agent's brain → Intent recognition → Tool selection → Response generation
+2. Changing the model affects response depth, speed, and cost
+3. You can adjust response length and safety levels in Settings
 
 ---
 
-다음 모듈: [M6. 2요소 지침](m06-instructions)
+Next module: [M6. Component 2 — Instructions](m06-instructions)

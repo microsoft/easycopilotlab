@@ -1,68 +1,68 @@
 ---
-title: "M15. 도구 — MCP"
+title: "M15. Tools — MCP"
 nav_order: 16
 has_children: true
 ---
 
-# 고급도구  MCP
+# Advanced Tools — MCP
 {: .no_toc }
 
-| 시간 | 소요 | 수강생 역할 |
-|:-----|:-----|:-----------|
-| 17:10 | 15분 |  직접 실습 |
+| Time | Duration | Participant Role |
+|:-----|:---------|:-----------------|
+| 17:10 | 15 min | 🟢 Hands-on Lab |
 
-## 목차
+## Table of Contents
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
 
-![M15 MCP — 만능 어댑터 하나로 외부 연결](../assets/images/m15/hero.png)
+![M15 MCP — Connect to External Services with One Universal Adapter](../assets/images/m15/hero.png)
 
 ---
 
-## 이 모듈에서 배우는 것
+## What You'll Learn in This Module
 
-- **MCP(Model Context Protocol)**란 무엇인지
-- Copilot Studio에서 MCP 서버를 에이전트에 연결하는 방법
-- 강사가 제공한 **네이버 검색 MCP**, **주가 조회 MCP** 연결 실습
+- What **MCP (Model Context Protocol)** is
+- How to connect an MCP server to an agent in Copilot Studio
+- Hands-on lab connecting the **Naver Search MCP** and **Stock Price MCP** provided by the instructor
 
 {: .highlight }
-> MCP는 외부 서비스를 표준화된 방식으로 에이전트에 연결하는 프로토콜입니다. MCP 서버 하나만 연결하면 해당 서비스의 모든 기능을 에이전트가 도구로 쓸 수 있습니다.
+> MCP is a protocol that connects external services to agents in a standardized way. By connecting a single MCP server, the agent can use all of that service's capabilities as tools.
 
 ---
 
-## MCP란?
+## What Is MCP?
 
-**Model Context Protocol**  AI 모델이 외부 서비스도구와 통신하기 위한 표준 규격입니다.
+**Model Context Protocol** is a standard specification that allows AI models to communicate with external services and tools.
 
-| 기존 방식 | MCP 방식 |
-|:---------|:--------|
-| 커넥터마다 개별 설정 | MCP 서버 하나로 수십 개 도구 연결 |
-| Microsoft 생태계 중심 | 모든 서비스 연결 가능 |
-| 개발자가 커넥터 제작 필요 | MCP 서버만 있으면 즉시 사용 |
+| Traditional Approach | MCP Approach |
+|:---------------------|:-------------|
+| Individual setup per connector | Connect dozens of tools via a single MCP server |
+| Centered on the Microsoft ecosystem | Can connect to any service |
+| Developers must build custom connectors | Ready to use as soon as an MCP server exists |
 
 ---
 
 {: .important }
-> 👉 [실습: MCP 서버 연결](m15-1-mcp-connect)
+> 👉 [Lab: Connect an MCP Server](m15-1-mcp-connect)
 
 ---
 
-## M16로 넘어가기
+## Transition to M16
 
-강사는 아래처럼 연결하면 자연스럽습니다.
+The instructor can use the following transition:
 
-> 방금은 에이전트가 **대화 중에 사용할 수 있는 도구의 범위**를 바깥으로 확장했습니다. 다음 M16에서는 한 단계 더 나아가, 아예 **대화가 없어도 에이전트가 시작되는 조건**을 붙여보겠습니다. 즉, 무엇을 할 수 있는가에서 끝나지 않고, **언제 자동으로 움직일 것인가**까지 확장하는 단계입니다.
-
----
-
-## 핵심 정리
-
-1. MCP = 외부 서비스를 에이전트 도구로 연결하는 표준 프로토콜
-2. MCP 서버 URL 하나로 수십 개 기능을 한번에 연결 가능
-3. 직접 만들 수도 있고, 공개된 MCP 서버를 가져다 쓸 수도 있다
+> We just expanded the **range of tools the agent can use during a conversation** to include external services. In the next module, M16, we'll go one step further and define **conditions that start the agent even without a conversation**. In other words, we're moving beyond what the agent can do and into **when it should act automatically**.
 
 ---
 
-다음 모듈: [M16. 도구 — 트리거](m16-trigger)
+## Key Takeaways
+
+1. MCP = a standard protocol for connecting external services as agent tools
+2. A single MCP server URL can provide dozens of capabilities at once
+3. You can build your own MCP server or use publicly available ones
+
+---
+
+Next module: [M16. Tools — Triggers](m16-trigger)

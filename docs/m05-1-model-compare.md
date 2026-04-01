@@ -1,39 +1,39 @@
 ---
-title: "실습① — 모델 변경 + 비교"
-parent: "M5. 1요소 오케스트레이터와 AI"
+title: "Lab ① — Model Change + Comparison"
+parent: "M5. Component 1 — Orchestrator & AI"
 nav_order: 1
 ---
 
-# 실습 ①: 모델을 바꾸고 결과 비교하기
+# Lab ①: Change the Model and Compare Results
 {: .no_toc }
 
-| 시간 | 소요 | 수강생 역할 |
-|:-----|:-----|:-----------|
-| 11:10 | 10분 | 🟢 직접 실습 |
+| Time | Duration | Participant Role |
+|:-----|:---------|:-----------------|
+| 11:10 | 10 min | 🟢 Hands-on lab |
 
 ---
 
-### 실습 순서
+### Lab Steps
 
-1. Copilot Studio → HR 도우미 에이전트 열기
-2. 현재 선택된 AI 모델 확인
-3. 모델 변경 후 **반영되기 까지 기다리기** 
-4. 오른쪽 테스트 창에서 새로운 세션 시작
-5. 오른쪽 테스트 창에서 같은 질문 입력
-6. 답변 길이·표현 방식이 어떻게 달라지는지 비교
+1. Copilot Studio → Open the HR Assistant agent
+2. Check the currently selected AI model
+3. Change the model and **wait for it to take effect**
+4. Start a new session in the test pane on the right
+5. Enter the same question in the test pane on the right
+6. Compare how the response length and phrasing differ
 
-![이미지](../assets/images/m05/image1.png)
+![Image](../assets/images/m05/image1.png)
 
-### 비교할 질문 예시
+### Sample Questions for Comparison
 
 ```
-연차는 몇 일이야?
-경비 처리하려면 어떻게 해?
+How many days of annual leave do I get?
+How do I submit an expense claim?
 ```
 
 {: .tip }
-> 답변의 정확도보다 **표현 방식과 길이**의 차이를 집중해서 봅니다. 지식(교과서)이 아직 없기 때문에 정확한 답변보다는 모델별 특성 차이를 보는 것이 목적입니다.
+> Focus on the **differences in phrasing and length** rather than accuracy. Since we haven't added any knowledge (textbook) yet, the goal is to observe how different models behave — not to get accurate answers.
 
 ---
 
-실습을 완료했으면 [M5 본문으로 돌아가세요](m05-orchestrator).
+Once you've completed the lab, [return to the M5 main page](m05-orchestrator).

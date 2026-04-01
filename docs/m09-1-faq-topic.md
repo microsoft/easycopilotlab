@@ -1,52 +1,52 @@
 ---
-title: "실습① — FAQ Topic 만들기"
-parent: "M9. 도구 — 토픽과 변수"
+title: "Lab ① — Create the FAQ Topic"
+parent: "M9. Tools — Topics and Variables"
 nav_order: 1
 ---
 
-# 실습 ①: FAQ Topic 만들기
+# Lab ①: Create the FAQ Topic
 {: .no_toc }
 
-| 시간 | 소요 | 수강생 역할 |
-|:-----|:-----|:-----------|
-| 14:10 | 10분 | 🟢 직접 실습 |
+| Time | Duration | Participant Role |
+|:-----|:---------|:-----------------|
+| 14:10 | 10 min | 🟢 Hands-on Lab |
 
 ---
 
-| 항목 | 내용 |
-|:-----|:-----|
-| **Topic 이름** | FAQ Topic |
-| **역할** | FAQ·복리후생·경비·휴가 문서에서 답변 찾기 → 결과 저장 |
-| **글로벌 변수** | `Global.FAQ_result` |
+| Item | Details |
+|:-----|:--------|
+| **Topic Name** | FAQ Topic |
+| **Role** | Find answers from FAQ, benefits, expense, and leave documents → Save results |
+| **Global Variable** | `Global.FAQ_result` |
 
 ## Step-by-Step
 
-1. Copilot Studio → 에이전트 → 좌측 **"토픽"** 클릭
-2. **"+ 토픽 추가"** → **"새로 만들기"**
-3. Topic 이름 입력: `FAQ Topic`
-4. 편집 화면이 열리면 아래 순서로 노드를 구성합니다:
+1. Copilot Studio → Agent → Click **"Topics"** on the left
+2. **"+ Add a topic"** → **"Create new"**
+3. Enter Topic name: `FAQ Topic`
+4. When the editing screen opens, configure the nodes in this order:
 
-### 노드 1 — 트리거 (자동 생성됨)
-- "Topic이 트리거될 때" 노드가 자동으로 만들어져 있습니다.
-- **Description** 입력: `사내 규정, 복리후생, 연차, 경비처리 등 FAQ 질문에 답변하는 대본`
+### Node 1 — Trigger (auto-generated)
+- A "When the topic is triggered" node is automatically created.
+- Enter the **Description**: `A script that answers FAQ questions about company policies, benefits, annual leave, expense processing, etc.`
 
-### 노드 2 — 지식 검색 (생성형 답변)
-- 트리거 아래 **"+"** 클릭 → **"지식 검색"** 노드 추가
-- 검색 대상: **모든 지식 소스** (기본값)
-- 입력: `Activity.Text` (사용자 질문)
-- 출력 저장 변수: **변수 선택 → "새 변수 만들기"**
-  - 이름: `FAQ_result`
-  - **"글로벌 변수로 설정"** 체크 → `Global.FAQ_result`가 됨
+### Node 2 — Knowledge Search (Generative Answers)
+- Click **"+"** below the trigger → Add a **"Knowledge search"** node
+- Search target: **All knowledge sources** (default)
+- Input: `Activity.Text` (user's question)
+- Output variable: **Select variable → "Create new variable"**
+  - Name: `FAQ_result`
+  - Check **"Set as global variable"** → It becomes `Global.FAQ_result`
 
-### 노드 3 — 메시지
-- **"+"** 클릭 → **"메시지 보내기"** 노드 추가
-- 메시지 내용: `{Global.FAQ_result}` (변수 삽입 버튼 사용)
+### Node 3 — Message
+- Click **"+"** → Add a **"Send a message"** node
+- Message content: `{Global.FAQ_result}` (use the variable insert button)
 
-5. 오른쪽 **저장** 클릭
+5. Click **Save** on the right
 
 {: .tip }
-> 트리거의 **Description**이 핵심입니다. 오케스트레이터가 이 설명을 보고 "FAQ Topic을 쓸지 말지"를 판단합니다.
+> The trigger's **Description** is the key. The orchestrator reads this description to decide "whether or not to use the FAQ Topic."
 
 ---
 
-실습을 완료했으면 [M9 본문으로 돌아가세요](m09-topic-variables).
+Once you've completed this lab, [return to the M9 main page](m09-topic-variables).

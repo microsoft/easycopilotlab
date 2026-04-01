@@ -1,187 +1,187 @@
 ---
-title: "M3. 에이전트 만들기 시작"
+title: "M3. Getting Started with Building Agents"
 nav_order: 4
 has_children: true
 ---
 
-# 첫번째 에이전트 만들기 — 에이전트 빌더로 충분할까?
+# Building Your First Agent — Is Agent Builder Enough?
 {: .no_toc }
 
-| 시간 | 소요 | 수강생 역할 |
-|:-----|:-----|:-----------|
-| 10:05 | 30분 | 🟢 직접 만들기 |
+| Time | Duration | Participant Role |
+|:-----|:---------|:----------------|
+| 10:05 | 30 min | 🟢 Hands-on |
 
-## 목차
+## Table of Contents
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
 
-![M3 첫번째 에이전트 — 30초 만에 탄생](../assets/images/m03/hero.png)
+![M3 Your First Agent — Born in 30 Seconds](../assets/images/m03/hero.png)
 
 ---
 
-## 이 모듈에서 배우는 것
+## What You'll Learn in This Module
 
-- M365 Copilot **에이전트 빌더**로 HR 도우미 에이전트를 직접 만들기
-- 에이전트 빌더가 **이미 갖추고 있는 기능** — 지식 연결, 이미지 생성, 코드 인터프리터
-- 에이전트 빌더만으로도 **충분히 쓸 만한 에이전트**를 만들 수 있다는 사실
-- 그럼에도 **Copilot Studio를 선택하는 두 가지 이유**
-
----
-
-## 에이전트 빌더란?
-
-M365 Copilot 안에 내장된 **간편 에이전트 생성 도구**입니다.  
-자연어로 설명하면 30초 만에 에이전트가 만들어집니다.
-
-에이전트 빌더의 정식 명칭은 **Copilot Studio 라이트**입니다.  
-라이트 버전이라고 해서 무시할 수준이 아닙니다 — 충분히 강력합니다.
+- Build an HR Assistant agent hands-on using the M365 Copilot **Agent Builder**
+- Discover the capabilities **Agent Builder already has** — knowledge connections, image generation, code interpreter
+- See that Agent Builder alone can produce **a perfectly usable agent**
+- Understand the **two reasons you'd choose Copilot Studio** instead
 
 ---
 
-## 실습 ①: HR 도우미 에이전트 만들기
+## What Is Agent Builder?
+
+Agent Builder is a **simple agent creation tool** built right into M365 Copilot.  
+Describe what you want in natural language and your agent is ready in 30 seconds.
+
+Agent Builder's official name is **Copilot Studio Lite**.  
+Don't underestimate the "Lite" label — it's surprisingly powerful.
+
+---
+
+## Lab ①: Create an HR Assistant Agent
 
 {: .important }
-> 📌 이 실습은 별도 페이지에서 진행합니다.  
-> [실습 ①: HR 도우미 에이전트 만들기](m03-1-create-agent)를 완료하고 돌아오세요.
+> 📌 This lab is on a separate page.  
+> Complete [Lab ①: Create an HR Assistant Agent](m03-1-create-agent) and then come back here.
 
 ---
 
-## 에이전트 빌더, 생각보다 강력하다
+## Agent Builder Is More Powerful Than You Think
 
-"에이전트 빌더는 간단한 것만 할 수 있다"고 생각할 수 있지만, **사실이 아닙니다.**
+You might assume Agent Builder can only handle simple tasks — **that's not true.**
 
-### 에이전트 빌더가 이미 제공하는 기능
+### Capabilities Agent Builder Already Provides
 
-| 기능 | 설명 |
-|:-----|:-----|
-| **지식 연결** | 웹사이트 URL, SharePoint 사이트를 지식 소스로 연결 가능 |
-| **이미지 생성** | DALL-E 기반 이미지 생성 도구 내장 |
-| **코드 인터프리터** | Python 코드 실행 — 데이터 분석, 차트 생성 가능 |
-| **이미지 분석** | Graph connector를 통한 이미지 분석 도구 지원 |
-| **MS Graph 연결** | Graph connector를 통해 M365 데이터 접근 |
+| Capability | Description |
+|:-----------|:------------|
+| **Knowledge connections** | Connect website URLs and SharePoint sites as knowledge sources |
+| **Image generation** | Built-in DALL-E-based image generation tool |
+| **Code interpreter** | Run Python code — data analysis and chart creation |
+| **Image analysis** | Image analysis tool support via Graph connectors |
+| **MS Graph connection** | Access M365 data through Graph connectors |
 
 {: .highlight }
-> 에이전트 빌더(Copilot Studio 라이트)만으로도 **충분히 쓸 만한 에이전트**를 만들 수 있습니다.  
-> 지식을 연결하고, 이미지를 생성하고, 데이터를 분석하는 에이전트가 **코드 한 줄 없이** 가능합니다.
+> Agent Builder (Copilot Studio Lite) alone can produce **a perfectly usable agent**.  
+> An agent that connects to knowledge, generates images, and analyzes data — **all without a single line of code**.
 
 ---
 
-## 그럼 왜 Copilot Studio가 필요한가?
+## So Why Do You Need Copilot Studio?
 
-에이전트 빌더로 충분한 경우가 많습니다.  
-하지만 **두 가지 경우**에는 Copilot Studio(풀 버전)가 필요합니다.
+Agent Builder is sufficient in many cases.  
+However, there are **two scenarios** where you need Copilot Studio (the full version).
 
-### 이유 1: 더 다양한 지식 소스
+### Reason 1: More Knowledge Sources
 
-| 지식 소스 | 에이전트 빌더 | Copilot Studio |
-|:---------|:----------:|:------------:|
-| 웹사이트 URL | ✅ | ✅ |
+| Knowledge Source | Agent Builder | Copilot Studio |
+|:-----------------|:------------:|:--------------:|
+| Website URLs | ✅ | ✅ |
 | SharePoint | ✅ | ✅ |
-| 파일 직접 업로드 (Word, PDF 등) | ❌ | ✅ |
-| Dataverse 테이블 | ❌ | ✅ |
-| AI Search 인덱스 | ❌ | ✅ |
-| Azure OpenAI 커스텀 지식 | ❌ | ✅ |
+| Direct file uploads (Word, PDF, etc.) | ❌ | ✅ |
+| Dataverse tables | ❌ | ✅ |
+| AI Search indexes | ❌ | ✅ |
+| Azure OpenAI custom knowledge | ❌ | ✅ |
 
-### 이유 2: 더 다양한 도구
+### Reason 2: More Tools
 
-| 도구 유형 | 에이전트 빌더 | Copilot Studio |
-|:---------|:----------:|:------------:|
-| 이미지 생성 (DALL-E) | ✅ | ✅ |
-| 코드 인터프리터 | ✅ | ✅ |
-| **토픽(대본형 대화 흐름)** | ❌ | ✅ |
-| **커넥터 (1,400+ 외부 서비스)** | ❌ | ✅ |
-| **에이전트 흐름 (Power Automate)** | ❌ | ✅ |
-| **AI 프롬프트 (흐름 내 AI)** | ❌ | ✅ |
-| **멀티에이전트 (에이전트 간 연결)** | ❌ | ✅ |
-| **MCP (외부 프로토콜 연결)** | ❌ | ✅ |
-| **트리거 (이벤트 기반 자동 실행)** | ❌ | ✅ |
-| **배포 채널 (Teams, 웹, 앱 등)** | 제한적 | ✅ |
+| Tool Type | Agent Builder | Copilot Studio |
+|:----------|:------------:|:--------------:|
+| Image generation (DALL-E) | ✅ | ✅ |
+| Code interpreter | ✅ | ✅ |
+| **Topics (scripted conversation flows)** | ❌ | ✅ |
+| **Connectors (1,400+ external services)** | ❌ | ✅ |
+| **Agent flows (Power Automate)** | ❌ | ✅ |
+| **AI prompts (AI within flows)** | ❌ | ✅ |
+| **Multi-agent (agent-to-agent connections)** | ❌ | ✅ |
+| **MCP (external protocol connections)** | ❌ | ✅ |
+| **Triggers (event-based automation)** | ❌ | ✅ |
+| **Deployment channels (Teams, web, apps, etc.)** | Limited | ✅ |
 
-![에이전트 빌더 vs Copilot Studio — 지식과 도구의 범위 비교](../assets/images/m03/builder-vs-studio.png)
+![Agent Builder vs Copilot Studio — Comparing the scope of knowledge and tools](../assets/images/m03/builder-vs-studio.png)
 
 {: .highlight }
-> **에이전트 빌더 = 충분히 강력한 기본기.**  
-> **Copilot Studio = 더 넓은 지식과 더 많은 도구.**  
-> 어디까지 필요한지에 따라 선택하면 됩니다.
+> **Agent Builder = a powerful foundation.**  
+> **Copilot Studio = broader knowledge and more tools.**  
+> Choose based on how far your requirements go.
 
 ---
 
-## 언제 어떤 것을 선택하는가?
+## When Should You Choose Which?
 
-| 요건 | 에이전트 빌더로 충분 | Copilot Studio 필요 |
-|:-----|:-----------------:|:-----------------:|
-| 웹사이트/SharePoint 기반 FAQ 봇 | ✅ | |
-| 이미지 생성이 가능한 마케팅 도우미 | ✅ | |
-| 데이터 분석(코드 인터프리터) 활용 | ✅ | |
-| **사내 PDF/Word 문서를 직접 참조** | | ✅ |
-| **AI Search 인덱스 연결** | | ✅ |
-| **레거시 시스템 API 연동** | | ✅ |
-| **대화 흐름 제어 (토픽)** | | ✅ |
-| **메일 발송, Excel 기록 등 자동화** | | ✅ |
-| **여러 에이전트 협업 (멀티에이전트)** | | ✅ |
+| Requirement | Agent Builder Is Enough | Copilot Studio Needed |
+|:------------|:----------------------:|:---------------------:|
+| FAQ bot based on website/SharePoint | ✅ | |
+| Marketing assistant with image generation | ✅ | |
+| Data analysis using code interpreter | ✅ | |
+| **Reference internal PDF/Word documents directly** | | ✅ |
+| **Connect to AI Search indexes** | | ✅ |
+| **Integrate with legacy system APIs** | | ✅ |
+| **Control conversation flows (Topics)** | | ✅ |
+| **Automate email sending, Excel logging, etc.** | | ✅ |
+| **Multi-agent collaboration** | | ✅ |
 
 {: .tip }
-> 오늘 과정에서는 Copilot Studio의 풀 기능을 배우지만, 실무에서 에이전트 빌더만으로 해결되는 경우도 많습니다. **"가장 단순한 도구로 충분히 되는지"를 먼저 판단**하는 것이 좋습니다.
+> Today's course covers the full capabilities of Copilot Studio, but in practice, Agent Builder alone handles many real-world scenarios. **Always start by asking "Can the simplest tool do the job?"**
 
 ---
 
-## 실습 ②: Copilot Studio로 가져오기
+## Lab ②: Import into Copilot Studio
 
 {: .important }
-> 📌 이 실습은 별도 페이지에서 진행합니다.  
-> [실습 ②: Copilot Studio로 가져오기](m03-2-open-in-studio)를 완료하고 돌아오세요.
+> 📌 This lab is on a separate page.  
+> Complete [Lab ②: Import into Copilot Studio](m03-2-open-in-studio) and then come back here.
 
 ---
 
-## 실습 ③: Copilot Studio에서 새 에이전트 만들기
+## Lab ③: Create a New Agent in Copilot Studio
 
-실습 ②에서 가져온 에이전트는 **언어가 영어로 고정**되어 변경할 수 없습니다.  
-Copilot Studio에서 처음부터 만들면 **한국어 에이전트 + 독립 솔루션**으로 구성할 수 있습니다.
+The agent imported in Lab ② has its **language locked to English** and cannot be changed.  
+By creating from scratch in Copilot Studio, you can set up a **Korean-language agent in its own solution**.
 
 {: .important }
-> 📌 이 실습은 별도 페이지에서 진행합니다.  
-> [실습 ③: Copilot Studio에서 새 에이전트 만들기](m03-3-studio-new-agent)를 완료하고 돌아오세요.
+> 📌 This lab is on a separate page.  
+> Complete [Lab ③: Create a New Agent in Copilot Studio](m03-3-studio-new-agent) and then come back here.
 
 ---
 
 {: .tip }
-> 시간이 남거나 다양한 에이전트를 체험해 보고 싶다면, [M3a. 샘플 에이전트 체험](m03a-sample-agents) 부록에서 **6가지 샘플 지침**을 복사·붙여넣기해 보세요.
+> If you have extra time or want to explore different types of agents, check out the [M3a. Sample Agents](m03a-sample-agents) appendix and try **6 sample instructions** by copy-and-paste.
 
 ---
 
-## 핵심 정리
+## Key Takeaways
 
-1. 에이전트 빌더로 **HR 도우미**를 30초 만에 생성
-2. 에이전트 빌더도 **지식 연결, 이미지 생성, 코드 인터프리터**를 제공한다 — 간단한 에이전트는 이것만으로 충분
-3. Copilot Studio가 필요한 이유는 **두 가지** — 더 다양한 지식 소스, 더 다양한 도구
-4. 에이전트 빌더에서 가져온 에이전트는 **영어 고정** → Copilot Studio **고급 만들기**로 한국어 에이전트 생성
-5. **이후 실습은 실습 ③에서 만든 에이전트**를 계속 사용하며 지침·지식·Topic·Flow를 붙여 완성한다
+1. Created an **HR Assistant** in 30 seconds with Agent Builder
+2. Agent Builder already offers **knowledge connections, image generation, and code interpreter** — simple agents need nothing more
+3. The **two reasons** you need Copilot Studio — more knowledge sources and more tools
+4. Agents imported from Agent Builder are **locked to English** → Use Copilot Studio **Advanced Create** to build a Korean-language agent
+5. **All subsequent labs continue with the agent from Lab ③** — we'll keep adding instructions, knowledge, Topics, and Flows to complete it
 
 ---
 
 ## FAQ
 
-| 질문 | 답변 |
-|:-----|:-----|
-| 에이전트 빌더에서 만든 걸 그대로 Copilot Studio에서 열 수 있나요? | 네, 같은 에이전트입니다. 편집 도구만 바뀌는 것입니다. |
-| 에이전트 빌더만으로 충분한 경우도 있나요? | **네.** 웹/SharePoint 지식 + 이미지 생성 + 코드 인터프리터면 충분한 경우가 많습니다. |
-| 그럼 왜 Copilot Studio를 배우나요? | 사내 문서 직접 참조, 레거시 시스템 연동, 대화 흐름 제어 등 **범위를 넘는 요건**이 있을 때 필요하기 때문입니다. |
-| M3에서 만든 HR 도우미를 계속 쓰나요? | 네, **실습 ③**에서 만든 에이전트를 오늘 하루 동안 계속 사용합니다. |
-| 영어로 지침을 써야 더 잘 되나요? | 한국어로 작성해도 잘 작동합니다. 한국어 지침 권장. |
-| 에이전트 빌더에서 가져온 에이전트는 왜 안 쓰나요? | 언어가 영어로 고정되어 변경할 수 없습니다. 실습 ③에서 한국어로 새로 만듭니다. |
-| 솔루션을 꼭 만들어야 하나요? | 필수는 아니지만, 솔루션 안에 만들면 내보내기/이동이 편리합니다. |
+| Question | Answer |
+|:---------|:-------|
+| Can I open an Agent Builder agent directly in Copilot Studio? | Yes — it's the same agent. Only the editing tool changes. |
+| Are there cases where Agent Builder alone is sufficient? | **Yes.** Web/SharePoint knowledge + image generation + code interpreter covers many scenarios. |
+| Then why learn Copilot Studio? | Because you'll need it when requirements go beyond Agent Builder — direct internal document references, legacy system integrations, conversation flow control, etc. |
+| Will we keep using the HR Assistant from M3? | Yes — the agent created in **Lab ③** will be used throughout the rest of the day. |
+| Do instructions work better in English? | Instructions work well in Korean too. Writing them in Korean is recommended. |
+| Why don't we use the agent imported from Agent Builder? | Its language is locked to English and can't be changed. We create a new Korean-language agent in Lab ③. |
+| Do I have to create a solution? | It's not required, but creating agents inside a solution makes exporting and moving them much easier. |
 
 ---
 
-## 참조 자료
+## References
 
-| 자료 | 링크 |
-|:-----|:-----|
-| M365 Copilot 에이전트 빌더 | [learn.microsoft.com](https://learn.microsoft.com/microsoft-365-copilot/extensibility/copilot-studio-agent-builder) |
-| Copilot Studio 시작하기 | [learn.microsoft.com](https://learn.microsoft.com/microsoft-copilot-studio/fundamentals-get-started) |
+| Resource | Link |
+|:---------|:-----|
+| M365 Copilot Agent Builder | [learn.microsoft.com](https://learn.microsoft.com/microsoft-365-copilot/extensibility/copilot-studio-agent-builder) |
+| Getting Started with Copilot Studio | [learn.microsoft.com](https://learn.microsoft.com/microsoft-copilot-studio/fundamentals-get-started) |
 
 ---
 
-다음 모듈: [M4. 에이전트의 구성요소](m04-four-components)
+Next module: [M4. The Components of an Agent](m04-four-components)

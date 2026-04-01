@@ -1,42 +1,42 @@
 ---
-title: "실습 — MCP 서버 연결"
-parent: "M15. 도구 — MCP"
+title: "Lab — Connect an MCP Server"
+parent: "M15. Tools — MCP"
 nav_order: 1
 ---
 
-# 실습: MCP 서버 연결하기
+# Lab: Connect an MCP Server
 {: .no_toc }
 
-| 시간 | 소요 | 수강생 역할 |
-|:-----|:-----|:-----------|
-| 17:10 | 10분 | 🟢 직접 실습 |
+| Time | Duration | Participant Role |
+|:-----|:---------|:-----------------|
+| 17:10 | 10 min | 🟢 Hands-on Lab |
 
 ---
 
-## 사전 준비
+## Prerequisites
 
-강사가 제공한 MCP 서버 URL을 준비합니다:
+Have the MCP server URLs provided by the instructor ready:
 
-| MCP 서버 | 기능 |
-|:---------|:-----|
-| 네이버 검색 MCP | 네이버 뉴스·검색 결과 조회 |
-| 주가 조회 MCP | 국내·해외 주가 실시간 조회 |
+| MCP Server | Function |
+|:-----------|:---------|
+| Naver Search MCP | Query Naver news and search results |
+| Stock Price MCP | Look up domestic and international stock prices in real time |
 
-## 연결 순서
+## Steps
 
-1. Copilot Studio → HR 도우미(또는 슈퍼 호스트) 에이전트 열기
-2. **작업 → + 작업 추가 → MCP 서버 추가** 선택
-3. 강사가 제공한 **MCP 서버 URL** 입력
-4. 연결 확인 후 사용 가능한 도구 목록 확인
-5. **저장**
-6. 테스트: "삼성전자 주가 알려줘" / "오늘 IT 뉴스 검색해줘" 입력
+1. Copilot Studio → Open the HR Assistant (or Super Host) agent
+2. Select **Actions → + Add an action → Add MCP server**
+3. Enter the **MCP server URL** provided by the instructor
+4. Confirm the connection and review the list of available tools
+5. Click **Save**
+6. Test: Enter "What's the Samsung Electronics stock price?" / "Search today's IT news"
 
 {: .note }
-> MCP 서버는 강사가 별도로 제공합니다. 서버 URL이 없으면 이 실습을 진행할 수 없습니다.
+> The MCP server is provided separately by the instructor. You cannot complete this lab without the server URL.
 
 {: .tip }
-> MCP 도구도 Description이 중요합니다. 어떤 상황에서 이 도구를 써야 하는지 지침에 명시하면 오케스트레이터가 더 잘 채택합니다.
+> The Description matters for MCP tools, too. If you specify in the instructions when the agent should use each tool, the orchestrator will select it more reliably.
 
 ---
 
-실습을 완료했으면 [M15 본문으로 돌아가세요](m15-mcp).
+Once you've completed the lab, [return to the M15 overview](m15-mcp).

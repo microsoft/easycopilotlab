@@ -1,115 +1,115 @@
 ---
-title: "실습 — 지침 업그레이드 + 테스트"
-parent: "M6. 2요소 지침"
+title: "Lab — Upgrade Instructions + Test"
+parent: "M6. Component 2 — Instructions"
 nav_order: 1
 ---
 
-# 실습: 지침 업그레이드 + 테스트
+# Lab: Upgrade Instructions + Test
 {: .no_toc }
 
-| 시간 | 소요 | 수강생 역할 |
-|:-----|:-----|:-----------|
-| 13:00 | 15분 | 🟢 직접 작성 + 테스트 |
+| Time | Duration | Participant Role |
+|:-----|:---------|:-----------------|
+| 13:00 | 15 min | 🟢 Write + Test |
 
 ---
 
-## M3 지침 vs M6 지침
+## M3 Instructions vs M6 Instructions
 
-M3 실습에서 입력한 지침은 **기본 뼈대** 수준이었습니다.  
-M6에서는 좋은 지침 6원칙을 적용하여 **전문가 수준의 지침**으로 업그레이드합니다.
+The instructions you entered in the M3 lab were a **basic skeleton**.  
+In M6, we apply the 6 principles of good instructions to upgrade them to **professional-grade instructions**.
 
-| 비교 | M3 지침 (기본) | M6 지침 (업그레이드) |
-|:-----|:------------|:-----------------|
-| 역할 | "HR/총무 전담 도우미" | 소속·전문 분야·대상까지 명시 |
-| 범위 | 포함만 나열 | 포함 + **제외 항목** 명시 |
-| 태도 | "존칭, 간결하게" | 출력 형식(번호 목록, 이모지) 지정 |
-| 원칙 | 모를 때 안내 1줄 | 에스컬레이션 시나리오별 분류 |
-| 예시 | 없음 | **Few-shot 예시 QA** 포함 |
-| 길이 | 일괄 200자 | 상황별 길이 분류 |
+| Comparison | M3 Instructions (Basic) | M6 Instructions (Upgraded) |
+|:-----------|:-----------------------|:---------------------------|
+| Role | "Dedicated HR/Admin assistant" | Specifies department, expertise, and target audience |
+| Scope | Only lists inclusions | Includes **exclusions** as well |
+| Tone | "Polite, concise" | Specifies output format (numbered lists, emoji) |
+| Principles | One line about handling unknowns | Escalation classified by scenario |
+| Examples | None | **Few-shot example Q&A** included |
+| Length | Flat 200 characters | Length varies by situation |
 
 ---
 
-## Step 1 — 지침 교체
+## Step 1 — Replace Instructions
 
-Copilot Studio → HR 도우미 에이전트 → **지침** 섹션의 내용을 아래로 **전체 교체**합니다:
+Copilot Studio → HR Assistant agent → **Replace the entire content** of the **Instructions** section with the following:
 
 <details markdown="1">
-<summary><strong>업그레이드 지침 (클릭해서 펼치기)</strong></summary>
+<summary><strong>Upgraded Instructions (click to expand)</strong></summary>
 
 ```
-## 역할
-당신은 ABC 주식회사 경영지원본부 소속 HR/총무 전담 도우미입니다.
-전 직원(정규직, 계약직, 인턴)을 대상으로 사내 규정 안내를 담당합니다.
+## Role
+You are the dedicated HR/Admin assistant for ABC Corporation's Business Support Division.
+You serve all employees (full-time, contract, and interns) by providing guidance on company policies.
 
-## 범위
-### 답변 가능 (포함)
-- 복리후생 (복지포인트, 건강검진, 동호회 지원)
-- 연차/휴가 (연차 일수, 반차, 경조사 휴가, 출산휴가)
-- 경비처리 (법인카드, 출장비, 택시비 정산)
-- 사내 규정 (복장 규정, 근무시간, 재택근무)
+## Scope
+### Can Answer (Included)
+- Benefits (welfare points, health checkups, club support)
+- Leave (annual leave days, half-days, family event leave, parental leave)
+- Expense claims (corporate card, travel expenses, taxi fare reimbursement)
+- Company policies (dress code, working hours, remote work)
 
-### 답변 불가 (제외)
-- 채용/면접 프로세스 → "채용팀(recruit@abc.co.kr)에 문의해 주세요"
-- 급여/성과급 금액 → "급여팀(내선 5678)에 문의해 주세요"
-- 인사평가/승진 → "HR BP(내선 9012)에 문의해 주세요"
-- 업무와 무관한 질문 (날씨, 주식, 잡담) → "저는 HR/총무 관련 질문만 도와드릴 수 있습니다 😊"
+### Cannot Answer (Excluded)
+- Recruitment/interview process → "Please contact the Recruiting Team (recruit@abc.co.kr)"
+- Salary/bonuses → "Please contact the Payroll Team (ext. 5678)"
+- Performance reviews/promotions → "Please contact your HR BP (ext. 9012)"
+- Questions unrelated to work (weather, stocks, small talk) → "I can only help with HR/Admin related questions 😊"
 
-## 태도
-- 한국어 존칭을 사용합니다
-- 핵심을 먼저 한 줄로 말하고, 세부 내용은 번호 목록으로 정리합니다
-- 단순 질문: 100자 이내 / 절차 안내: 번호 목록으로 300자 이내
-- 각 답변 마지막에 "더 궁금한 점이 있으시면 말씀해 주세요 😊"를 붙입니다
+## Tone
+- Use polite, formal language
+- Lead with one key sentence, then organize details in a numbered list
+- Simple questions: within 100 characters / Procedure guidance: numbered list within 300 characters
+- End each response with "If you have any other questions, feel free to ask 😊"
 
-## 원칙
-- 지식에 없는 내용은 절대 추측하지 않습니다
-- 지식에 없으면: "정확한 답변을 드리기 어렵습니다. HR팀(내선 1234)에 문의해 주세요"
-- 개인정보 관련: 절대 답변하지 않고 담당자를 안내합니다
-- 법률/세무 관련: "전문가 확인이 필요한 사항입니다. 법무팀(내선 3456)에 문의해 주세요"
+## Principles
+- Never guess about information not found in the knowledge base
+- If not in the knowledge base: "I'm unable to provide an accurate answer. Please contact the HR team (ext. 1234)"
+- Personal information: Never respond; always direct to the appropriate contact
+- Legal/tax matters: "This requires expert verification. Please contact the Legal Team (ext. 3456)"
 
-## 예시
-사용자: "연차 며칠이야?"
-도우미: "입사 1년 차 기준 15일입니다.
-1. 1년 미만: 매월 1일씩 발생 (최대 11일)
-2. 1년 이상: 15일 (3년차부터 2년마다 1일 추가)
-3. 반차(0.5일) 사용 가능
+## Examples
+User: "How many days of annual leave do I get?"
+Assistant: "For first-year employees, it's 15 days.
+1. Under 1 year: 1 day accrues per month (up to 11 days)
+2. 1 year or more: 15 days (1 extra day added every 2 years starting from year 3)
+3. Half-day leave (0.5 days) is available
 
-더 궁금한 점이 있으시면 말씀해 주세요 😊"
+If you have any other questions, feel free to ask 😊"
 ```
 
 </details>
 
 ---
 
-## Step 2 — 테스트 5종
+## Step 2 — Run 5 Test Questions
 
-지침을 교체한 후, 아래 5가지 질문으로 **업그레이드 효과를 확인**하세요:
+After replacing the instructions, test with these 5 questions to **verify the upgrade**:
 
-| # | 질문 | 기대 반응 | 확인 포인트 |
-|:--|:-----|:---------|:-----------|
-| 1 | "연차 며칠이야?" | ✅ 번호 목록으로 정리된 답변 | Few-shot 예시 형식을 따르는지 |
-| 2 | "경비처리 어떻게 해?" | ✅ 절차를 번호 목록으로 안내 | 300자 이내 + 이모지 포함 여부 |
-| 3 | "오늘 날씨 어때?" | 🚫 HR 전용 안내 + 이모지 | 제외 항목 문구 그대로 나오는지 |
-| 4 | "내 급여가 얼마야?" | 🔒 급여팀 내선 5678 안내 | 제외 항목별 다른 안내처 |
-| 5 | "채용 절차 알려줘" | 🔒 채용팀 이메일 안내 | 제외 항목별 다른 안내처 |
+| # | Question | Expected Response | What to Check |
+|:--|:---------|:------------------|:--------------|
+| 1 | "How many days of annual leave do I get?" | ✅ Answer organized in a numbered list | Does it follow the few-shot example format? |
+| 2 | "How do I submit an expense claim?" | ✅ Procedure explained in a numbered list | Within 300 characters + includes emoji? |
+| 3 | "How's the weather today?" | 🚫 HR-only message + emoji | Does it use the exact exclusion wording? |
+| 4 | "How much is my salary?" | 🔒 Directs to Payroll Team ext. 5678 | Different contact for each exclusion category? |
+| 5 | "Tell me about the hiring process" | 🔒 Directs to Recruiting Team email | Different contact for each exclusion category? |
 
 {: .highlight }
-> M3 지침에서는 테스트 3·4·5가 모두 같은 거절 메시지였지만, 업그레이드 지침에서는 **질문 유형별로 다른 담당자를 안내**합니다.
+> With the M3 instructions, tests 3, 4, and 5 all returned the same rejection message. With the upgraded instructions, the agent now **directs to a different contact person depending on the question type**.
 
 ---
 
-## Step 3 — 지침 한 줄 변경 체험
+## Step 3 — Experiment with a One-Line Change
 
-아래 중 하나를 변경하고 다시 같은 질문을 해 보세요:
+Try changing one of the following, then ask the same question again:
 
-| 변경 항목 | 변경 전 | 변경 후 | 예상 효과 |
-|:---------|:-------|:-------|:---------|
-| 말투 | "존칭" | "반말로 친근하게" | 톤이 완전히 바뀜 |
-| 길이 | "300자 이내" | "50자 이내" | 답변이 극도로 짧아짐 |
-| 이모지 | "😊를 붙입니다" | 삭제 | 이모지가 사라짐 |
+| Change | Before | After | Expected Effect |
+|:-------|:-------|:------|:----------------|
+| Tone | "Polite language" | "Casual and friendly" | Completely changes the tone |
+| Length | "Within 300 characters" | "Within 50 characters" | Responses become extremely short |
+| Emoji | "Add 😊" | Remove it | Emoji disappears |
 
 {: .tip }
-> 텍스트 한 줄의 변경이 에이전트의 성격을 완전히 바꿉니다. **지침 = 에이전트의 DNA**입니다.
+> A single line of text can completely change the agent's personality. **Instructions = the agent's DNA**.
 
 ---
 
-실습을 완료했으면 [M6 본문으로 돌아가세요](m06-instructions).
+Once you've completed the lab, [return to the M6 main page](m06-instructions).

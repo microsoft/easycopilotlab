@@ -1,95 +1,95 @@
 ---
-title: "M0. 오리엔테이션"
+title: "M0. Orientation"
 nav_order: 1
 ---
 
-# 오리엔테이션 — 오늘 만들 에이전트 미리보기
+# Orientation — Preview the Agent You'll Build Today
 {: .no_toc }
 
-| 시간 | 소요 | 수강생 역할 |
+| Time | Duration | Participant Role |
 |:-----|:-----|:-----------|
-| 09:30 | 10분 | 👀 보기 |
+| 09:30 | 10 min | 👀 Watch |
 
-## 목차
+## Table of Contents
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
 
-![M0 오리엔테이션 — AI 신입사원의 첫 출근](../assets/images/m00/hero.png)
+![M0 Orientation — Your AI new employee's first day at work](../assets/images/m00/hero.png)
 
 ---
 
-## 이 모듈에서 배우는 것
+## What You'll Learn in This Module
 
-- 오늘 하루 동안 만들 **HR/총무 에이전트의 완성된 모습** 확인
-- "코딩 없이 만들 수 있다"는 사실을 **눈으로 확인**
-- 오늘 과정의 **전체 흐름** 파악
+- See the **finished version** of the HR/Admin agent you'll build today
+- **See for yourself** that it can be built without any code
+- Understand the **overall flow** of today's course
 
 {: .highlight }
-> 오늘 오후가 끝나면, 여러분의 PC에 **AI 직원**이 한 명 생깁니다. 코드 한 줄 없이요.
+> By the end of today, you'll have an **AI employee** on your PC. Without writing a single line of code.
 
 ---
 
-## 이런 질문, 하루에 몇 번 받으세요?
+## How Many Times a Day Do You Get These Questions?
 
-- "연차 며칠 남았어요?"
-- "경비처리 누구한테 하면 돼요?"
-- "복지포인트 어디서 써요?"
+- "How many vacation days do I have left?"
+- "Who do I contact for expense claims?"
+- "Where can I use my benefits points?"
 
-하루 5번이면, 일주일 25번, 한 달이면 100번입니다.
+Five times a day means 25 times a week, and 100 times a month.
 
-오늘 만들 에이전트가 이 **100번을 대신 답해줍니다.**
-
----
-
-## 완성된 에이전트가 하는 일 5가지
-
-오늘 과정이 끝나면 아래 5가지를 모두 할 수 있는 에이전트를 갖게 됩니다.
-
-### 1. FAQ 자동 답변
-
-"연차 며칠이나 남았어요?" 같은 질문에 **업로드한 문서(교과서)를 기반으로** 자동 답변합니다. 출처도 함께 표시됩니다.
-
-### 2. 담당자 조회
-
-"경비처리 담당자 누구예요?" → 업로드한 담당자 문서에서 **이름·연락처·이메일**을 즉시 찾아줍니다.
-
-### 3. 복리후생 안내
-
-"복지포인트 사용처 알려줘" → 여러 문서를 **동시에 참조**해서 답합니다.
-교과서를 여러 권 들고 있는 신입사원인 셈입니다.
-
-### 4. 메일로 문의 전달
-
-"담당자한테 직접 문의하고 싶어요" → 에이전트가 담당자 메일 주소를 확인하고, 문의 내용을 정리해서 **이메일(편지봉투)**로 자동 전달합니다.
-
-### 5. 대화기록 자동 저장
-
-누가, 언제, 뭘 물어봤는지 **Excel에 자동 기록**됩니다.
-관리자 입장에서 에이전트 활용 현황을 한눈에 볼 수 있습니다.
+The agent you'll build today will **answer all 100 of those for you.**
 
 ---
 
-## 오늘의 여정 한눈에 보기
+## 5 Things the Finished Agent Can Do
 
-| 단계 | 내용 | 모듈 |
+By the end of today's course, you'll have an agent that can do all five of the following.
+
+### 1. Automatic FAQ Responses
+
+For questions like "How many vacation days do I have left?", the agent **answers automatically based on the uploaded documents (textbooks)**. Sources are displayed alongside the answer.
+
+### 2. Contact Person Lookup
+
+"Who handles expense claims?" → The agent instantly finds the **name, phone number, and email** from the uploaded contact document.
+
+### 3. Employee Benefits Guide
+
+"Where can I use my benefits points?" → The agent **references multiple documents simultaneously** to answer.
+Think of it as a new employee carrying several textbooks at once.
+
+### 4. Forward Inquiries via Email
+
+"I want to contact the person in charge directly." → The agent looks up the contact's email address, compiles the inquiry, and **automatically sends it via email (envelope)**.
+
+### 5. Auto-Save Conversation Logs
+
+Who asked what, and when — it's all **automatically logged in Excel**.
+From an admin's perspective, you can see agent usage at a glance.
+
+---
+
+## Today's Journey at a Glance
+
+| Step | What You'll Do | Module |
 |:-----|:-----|:-----|
-| ① 원리 이해 | Copilot의 작동 원리와 사용 방식 | M1 ~ M2 |
-| ② 에이전트 생성 | 30초 만에 첫 에이전트 만들기 | M3 |
-| ③ 구성요소 + 행동매뉴얼 + 교과서 | 프레임 이해 + 지침 작성 + 지식 연결 | M4 ~ M7 |
-| ④ 도구 개념 + 대본 작성 | 도구 원리 + Topic과 변수로 똑똑하게 | M8 ~ M9 |
-| ⑤ 게시 + 공유 | Copilot에서 에이전트 사용 준비 | M10 |
-| ⑥ 손발 달기 | 커넥터 + 에이전트 흐름으로 행동 추가 | M11 ~ M12 |
-| ⑦ 고급 도구 | AI 프롬프트 · 멀티에이전트 · MCP · 트리거 | M13 ~ M16 |
+| ① Understand the Principles | How Copilot works and how to use it | M1 – M2 |
+| ② Create an Agent | Build your first agent in 30 seconds | M3 |
+| ③ Components + Behavior Manual + Textbook | Understand the framework + Write instructions + Connect knowledge | M4 – M7 |
+| ④ Tool Concepts + Script Writing | Tool principles + Get smart with Topics and variables | M8 – M9 |
+| ⑤ Publish + Share | Get your agent ready to use in Copilot | M10 |
+| ⑥ Add Hands and Feet | Add actions with connectors + agent flows | M11 – M12 |
+| ⑦ Advanced Tools | AI Prompts · Multi-Agent · MCP · Triggers | M13 – M16 |
 
 ---
 
-## 핵심 정리
+## Key Takeaway
 
 {: .important }
-> **행동매뉴얼 하나로, 오늘 우리 팀에 AI 신입이 생깁니다.**
+> **With just one behavior manual, your team gets an AI new employee today.**
 
 ---
 
-다음 모듈: [M1. 코파일럿 동작원리](m01-copilot-principles)
+Next module: [M1. How Copilot Works](m01-copilot-principles)

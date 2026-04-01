@@ -1,76 +1,76 @@
 ---
-title: "M8. 4요소 도구들"
+title: "M8. Element 4 — Tools"
 nav_order: 9
 ---
 
-# 4요소 도구들  도구가 채택되는 원리
+# Element 4 — Tools: How the Orchestrator Selects Tools
 {: .no_toc }
 
-| 시간 | 소요 | 수강생 역할 |
-|:-----|:-----|:-----------|
-| 14:00 | 10분 |  보기 |
+| Time | Duration | Participant Role |
+|:-----|:---------|:-----------------|
+| 14:00 | 10 min | 👀 Watch |
 
-## 목차
+## Table of Contents
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
 
-![M8 도구들 — 도구 선반에서 골라 쓰기](../assets/images/m08/hero.png)
+![M8 Tools — Picking from the Tool Shelf](../assets/images/m08/hero.png)
 
 ---
 
-## 이 모듈에서 배우는 것
+## What You'll Learn in This Module
 
-- 에이전트에서 **도구(Tool)**란 무엇인지
-- 오케스트레이터가 도구를 **채택하는 기준**
-- 이 과정에서 다룰 도구의 종류와 순서
+- What a **Tool** is in the context of an agent
+- The **criteria** the orchestrator uses to select tools
+- The types of tools covered in this course and their order
 
 {: .highlight }
-> 지침과 지식을 갖춘 HR 도우미가 이제 **행동**을 할 차례입니다. 도구가 연결되는 순간, 에이전트는 말만 하는 챗봇에서 실제로 일하는 AI 직원이 됩니다.
+> Our HR assistant now has Instructions and Knowledge. It's time for it to take **action**. The moment tools are connected, the agent transforms from a chatbot that only talks into an AI employee that actually gets work done.
 
 ---
 
-## 남은 건 다 도구다
+## Everything Else Is a Tool
 
-오케스트레이터지침지식을 제외한 **모든 것은 도구**입니다.
+Apart from the Orchestrator, Instructions, and Knowledge, **everything else is a tool**.
 
-| 도구 종류 | 설명 | 배울 모듈 |
-|:---------|:-----|:---------|
-| **토픽** | 특정 상황에서 실행되는 대본 | M9 |
-| **커넥터** | Microsoft 365 앱과 직접 연결 | M11 |
-| **에이전트 흐름** | Power Automate로 복잡한 자동화 | M12 |
-| **AI 프롬프트** | Flow 안에서 AI 로직 실행 | M13 |
-| **멀티에이전트** | 다른 에이전트를 도구로 호출 | M14 |
-| **MCP** | 외부 서비스를 도구로 연결 | M15 |
-| **트리거** | 특정 이벤트가 에이전트를 깨움 | M16 |
+| Tool Type | Description | Module |
+|:----------|:------------|:-------|
+| **Topic** | A script that runs in a specific situation | M9 |
+| **Connector** | Direct connection to Microsoft 365 apps | M11 |
+| **Agent Flow** | Complex automation via Power Automate | M12 |
+| **AI Prompt** | AI logic executed inside a Flow | M13 |
+| **Multi-Agent** | Calling another agent as a tool | M14 |
+| **MCP** | Connecting external services as tools | M15 |
+| **Trigger** | A specific event that wakes the agent | M16 |
 
 ---
 
-## 도구가 채택되는 원리
+## How the Orchestrator Selects Tools
 
-오케스트레이터는 사용자의 말을 보고 **어떤 도구를 쓸지 스스로 결정**합니다.
+The orchestrator looks at the user's message and **decides on its own which tool to use**.
 
-![오케스트레이터의 도구 채택 흐름 — 사용자 입력 → 판단 → 지식/토픽/흐름/에이전트](../assets/images/m08/tool-selection.png)
+![Orchestrator tool selection flow — User input → Decision → Knowledge / Topic / Flow / Agent](../assets/images/m08/tool-selection.png)
 
-### 도구가 채택되려면?
+### What Does It Take for a Tool to Be Selected?
 
-두 가지가 중요합니다:
+Two things matter:
 
-1. **Description(설명)**  도구에 달린 설명이 명확해야 AI가 언제 쓸지 판단 가능
-2. **지침을 통한 도구 지정**  지침에 "이런 상황에서는 이 도구를 써라"고 명시 가능
+1. **Description** — The tool's description must be clear so the AI can judge when to use it
+2. **Specifying tools via Instructions** — You can explicitly state in your Instructions: "Use this tool in this situation"
 
 {: .tip }
-> Description이 불명확하면 오케스트레이터가 도구를 무시합니다. 도구를 만들 때 **"이 도구는 언제 쓰는 것인지"**를 Description에 명확히 적어두세요.
+> If the Description is vague, the orchestrator will ignore the tool. When creating a tool, clearly write **"when should this tool be used"** in the Description.
 
 ---
 
-## 핵심 정리
+## Key Takeaways
 
-1. 도구 = 에이전트가 실제로 **행동**하게 해주는 것
-2. 오케스트레이터는 Description을 보고 도구를 스스로 선택
-3. M9~M16에서 도구를 하나씩 직접 만든다
+1. Tools = What lets an agent actually **take action**
+2. The orchestrator reads the Description and selects tools on its own
+3. In M9–M16, we'll build tools one by one
 
 ---
 
-다음 모듈: [M9. 도구 — 토픽과 변수](m09-topic-variables)
+Next module: [M9. Tools — Topics and Variables](m09-topic-variables)

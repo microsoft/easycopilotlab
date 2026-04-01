@@ -1,40 +1,40 @@
 ---
-title: "실습② — 슈퍼 호스트 만들기"
-parent: "M14. 도구 — 멀티에이전트"
+title: "Lab ② — Create the Super Host"
+parent: "M14. Tools — Multi-Agent"
 nav_order: 2
 ---
 
-# 실습: 슈퍼 호스트 에이전트 만들기
+# Lab: Create the Super Host Agent
 {: .no_toc }
 
-| 시간 | 소요 | 수강생 역할 |
-|:-----|:-----|:-----------|
-| 16:55 | 10분 | 🟢 직접 실습 |
+| Time | Duration | Participant Role |
+|:-----|:---------|:-----------------|
+| 16:55 | 10 min | 🟢 Hands-on Lab |
 
 ---
 
-1. Copilot Studio → **+ 새 에이전트**
-2. 이름: `슈퍼 호스트`
-3. **작업 → + 작업 추가 → 에이전트 연결** 선택
-4. **HR 도우미** 연결 → Description에 "HR, 복리후생, 연차, 경비 관련 질문" 입력
-5. **법무 에이전트** 연결 → Description에 "계약, 규정, 컴플라이언스 관련 질문" 입력
-6. 지침 작성:
-   - "HR 관련 질문은 HR 도우미에게, 법무 관련 질문은 법무 에이전트에게 위임하라"
-7. **저장 → 게시**
-8. 테스트: HR 질문 / 법무 질문을 섞어서 입력하고 어느 에이전트로 가는지 확인
+1. Copilot Studio → **+ New agent**
+2. Name: `Super Host`
+3. **Actions → + Add action → Connect an agent**
+4. Connect **HR Assistant** → Enter Description: "Questions about HR, benefits, leave, and expenses"
+5. Connect **Legal Agent** → Enter Description: "Questions about contracts, policies, and compliance"
+6. Write instructions:
+   - "Delegate HR-related questions to the HR Assistant, and legal-related questions to the Legal Agent"
+7. **Save → Publish**
+8. Test: Enter a mix of HR and legal questions and verify which agent handles each one
 
-## 테스트 질문 예시
+## Sample Test Questions
 
-| # | 질문 | 기대 라우팅 |
-|:--|:-----|:----------|
-| 1 | "연차 며칠이야?" | → HR 도우미 |
-| 2 | "근로계약서 수습 기간 규정 알려줘" | → 법무 에이전트 |
-| 3 | "복지포인트 사용처 알려줘" | → HR 도우미 |
-| 4 | "개인정보 보호법에서 동의 철회 절차가 어떻게 돼?" | → 법무 에이전트 |
+| # | Question | Expected Routing |
+|:--|:---------|:-----------------|
+| 1 | "How many leave days do I have?" | → HR Assistant |
+| 2 | "What's the probation period policy in the employment contract?" | → Legal Agent |
+| 3 | "Where can I use my welfare points?" | → HR Assistant |
+| 4 | "What's the consent withdrawal process under the data protection law?" | → Legal Agent |
 
 {: .tip }
-> 각 에이전트의 **Description이 명확할수록** 슈퍼 호스트가 올바른 에이전트를 선택합니다. Description을 구체적으로 작성하세요.
+> The **clearer each agent's Description**, the better the Super Host selects the right agent. Write your Descriptions as specifically as possible.
 
 ---
 
-실습을 완료했으면 [M14 본문으로 돌아가세요](m14-multi-agent).
+Once you have completed this lab, [return to the M14 main page](m14-multi-agent).

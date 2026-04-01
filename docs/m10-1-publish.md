@@ -1,28 +1,28 @@
 ---
-title: "실습① — 게시(Publish)"
-parent: "M10. 게시와 공유"
+title: "Lab ① — Publish"
+parent: "M10. Publishing & Sharing"
 nav_order: 1
 ---
 
-# 실습 ①: 게시(Publish)
+# Lab ①: Publish
 {: .no_toc }
 
-| 시간 | 소요 | 수강생 역할 |
-|:-----|:-----|:-----------|
-| 15:00 | 5분 | 🟢 직접 실습 |
+| Time | Duration | Participant Role |
+|:-----|:---------|:-----------------|
+| 15:00 | 5 min | 🟢 Hands-on Lab |
 
 ---
 
 ## Step-by-Step
 
-1. Copilot Studio → 에이전트 편집 화면
-2. 우측 상단 **"게시(Publish)"** 클릭
-3. 게시 확인 대화상자 → **"게시"** 클릭
-4. 게시 완료 (1~2분 소요)
+1. Copilot Studio → Agent editing screen
+2. Click **"Publish"** in the top-right corner
+3. In the confirmation dialog → click **"Publish"**
+4. Publishing completes (takes 1–2 minutes)
 
 {: .highlight }
-> 게시 = 최신 변경사항을 **실사용 버전**에 반영하는 단계입니다. 게시하지 않으면 테스트 패널에서만 확인됩니다.
+> Publish = the step that deploys your latest changes to the **live version**. Without publishing, changes are only visible in the test panel.
 
 ---
 
-실습을 완료했으면 [M10 본문으로 돌아가세요](m10-publish-share).
+Once you've completed this lab, [return to the M10 main page](m10-publish-share).

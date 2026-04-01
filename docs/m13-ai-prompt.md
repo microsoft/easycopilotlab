@@ -1,153 +1,153 @@
 ---
-title: "M13. 도구 — AI 프롬프트"
+title: "M13. Tools — AI Prompt"
 nav_order: 14
 ---
 
-# 고급도구 — AI 프롬프트
+# Advanced Tools — AI Prompt
 {: .no_toc }
 
-| 시간 | 소요 | 수강생 역할 |
-|:-----|:-----|:-----------|
-| 16:20 | 10분 | 👀 강사 데모 |
+| Time | Duration | Participant Role |
+|:-----|:---------|:-----------------|
+| 16:20 | 10 min | 👀 Instructor Demo |
 
-## 목차
+## Table of Contents
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
 
-![M13 AI 프롬프트 — 흐름 안에 AI를 심다](../assets/images/m13/hero.png)
+![M13 AI Prompt — Embedding AI inside a flow](../assets/images/m13/hero.png)
 
 ---
 
-## 이 모듈에서 배우는 것
+## What You Will Learn
 
-- **AI 프롬프트** = Flow 안에 AI를 심는 기능
-- **4가지 유형** 구분 (텍스트·멀티모달·코드 인터프리터·Word 출력)
-- M3 샘플의 **내부 동작 원리** 이해
-- 실무 적용 아이디어
+- **AI Prompt** = a feature that embeds AI inside a Flow
+- Distinguishing the **4 prompt types** (Text · Multimodal · Code Interpreter · Word Output)
+- Understanding the **inner workings** of the M3 samples
+- Ideas for real-world applications
 
 {: .highlight }
-> M12에서 문의 메일을 보내는 흐름에 **텍스트 AI 프롬프트를 한 단계 넣어** 메일 본문을 생성해 봤습니다. 이 모듈에서는 방금 사용한 기능을 분해해서, **AI 프롬프트가 무엇이고 어디까지 확장할 수 있는지**를 정리합니다.
+> In M12, we added **a text-based AI Prompt step** to the inquiry email flow to generate the email body. In this module, we break down the feature we just used and explore **what AI Prompt is and how far it can be extended**.
 
 ---
 
-## Flow에 AI를 심는다
+## Embedding AI in a Flow
 
-Power Automate 흐름의 기본 뼈대는 **규칙 기반 자동화**입니다.  
-"이 입력을 받으면 이걸 실행해라" — 정해진 순서대로 동작합니다.
+The basic backbone of a Power Automate flow is **rule-based automation**.  
+"When this input is received, execute this action" — it runs in a predetermined sequence.
 
-여기에 AI 프롬프트를 추가하면, 흐름 안에 **생성·분류·요약 같은 AI 단계**가 들어갑니다.
+When you add an AI Prompt, the flow gains **AI-powered steps such as generation, classification, and summarization**.
 
-| 상태 | Flow의 성격 |
-|:-----|:-----------|
-| **AI 프롬프트 전** | 규칙 기반 자동화 — 정해진 대로 실행 |
-| **AI 프롬프트 후** | 판단하는 자동화 — 프롬프트로 AI가 분석·생성·분류 |
+| State | Nature of the Flow |
+|:------|:-------------------|
+| **Before AI Prompt** | Rule-based automation — runs as prescribed |
+| **After AI Prompt** | Intelligent automation — AI analyzes, generates, and classifies via prompt |
 
 {: .highlight }
-> **AI 프롬프트 하나가 추가되면, 규칙 기반 흐름 안에 AI 판단 단계가 들어옵니다.**
+> **Adding a single AI Prompt introduces an AI decision-making step into a rule-based flow.**
 
 ---
 
-## 4가지 AI 프롬프트 유형
+## The 4 Types of AI Prompt
 
-| 유형 | 하는 일 | 예시 | 오늘 과정과 연결 |
-|:-----|:--------|:-----|:----------------|
-| **텍스트** | 생성·분류·요약·추출 | 고객 문의 → 카테고리 자동 분류 | **M12** 문의 내용을 메일 본문으로 생성 |
-| **멀티모달** | 이미지·문서 인식 | 영수증 사진 → 금액·날짜 추출 | 오늘은 소개만, 이후 확장 예시 |
-| **코드 인터프리터** | AI가 코드를 만들어 실행 | PDF 10장 → Excel 경비 보고서 | 오늘은 소개만, 이후 확장 예시 |
-| **Word 출력** | 텍스트 → 문서 자동 생성 | 회의록 → Word 보고서 | **M3 샘플 D**를 문서 자동화로 확장하는 방향 |
+| Type | What It Does | Example | Connection to Today's Course |
+|:-----|:-------------|:--------|:----------------------------|
+| **Text** | Generate · Classify · Summarize · Extract | Customer inquiry → Automatic category classification | **M12** Generated email body from inquiry content |
+| **Multimodal** | Image & document recognition | Receipt photo → Extract amount & date | Introduction only today; expansion examples later |
+| **Code Interpreter** | AI writes and runs code | 10 receipt PDFs → Excel expense report | Introduction only today; expansion examples later |
+| **Word Output** | Text → Automatic document generation | Meeting notes → Word report | Extending **M3 Sample D** toward document automation |
 
 ---
 
-## 유형 ① — 텍스트: 자동 분류
+## Type ① — Text: Automatic Classification
 
-고객 문의가 들어오면 AI가 자동으로 카테고리를 분류합니다.
+When a customer inquiry comes in, AI automatically classifies it into a category.
 
-**예시:**
+**Example:**
 
-| 입력 | AI 분류 결과 |
-|:-----|:-----------|
-| "인터넷이 안 돼요" | **기술지원** |
-| "청구서가 이상해요" | **청구** |
-| "주차장 위치가 어디에요?" | **일반문의** |
+| Input | AI Classification Result |
+|:------|:------------------------|
+| "My internet isn't working" | **Technical Support** |
+| "My invoice looks wrong" | **Billing** |
+| "Where is the parking lot?" | **General Inquiry** |
 
 {: .tip }
-> 프롬프트 텍스트만 바꾸면 분류 기준도 바뀝니다. 코드 한 줄 필요 없습니다.
+> Just change the prompt text and the classification criteria change too. No code required.
 
-**🔗 실전 활용:** 이 텍스트 유형은 **답변 초안 자동 생성**에도 쓸 수 있습니다.  
-예: Forms로 접수된 문의 → AI가 사내 FAQ 기반으로 답변 초안 생성 → 관리자에게 메일 전달  
-(M13 "실전 시나리오"에서 전체 흐름을 살펴봅니다)
-
----
-
-## 유형 ② — 멀티모달: 영수증 인식
-
-영수증 사진을 넣으면 AI가 금액, 일자, 가맹점을 자동으로 추출합니다.
-
-| 입력 | AI 추출 결과 |
-|:-----|:-----------|
-| 📷 영수증 이미지 | 금액: 45,000원 |
-| | 일자: 2026-03-20 |
-| | 가맹점: ○○커피 |
+**🔗 Real-world use:** This text type can also be used to **auto-generate draft responses**.  
+Example: Inquiry submitted via Forms → AI drafts a response based on internal FAQ → Email forwarded to an admin  
+(We walk through the full flow in the M13 "Real-World Scenarios" section)
 
 ---
 
-## 유형 ③ — 코드 인터프리터 / 유형 ④ — Word 출력
+## Type ② — Multimodal: Receipt Recognition
 
-| 유형 | 입력 | 출력 | 연결 |
-|:-----|:-----|:-----|:-----|
-| **코드 인터프리터** | 영수증 PDF 10장 | Excel 경비 보고서 | 대량 파일 처리 확장 예시 |
-| **Word 출력** | 회의록 텍스트 | Word 보고서 (참석자·결정사항·후속조치) | M3 샘플 D |
+Upload a receipt photo and AI automatically extracts the amount, date, and merchant.
+
+| Input | AI Extraction Result |
+|:------|:--------------------|
+| 📷 Receipt image | Amount: ₩45,000 |
+| | Date: 2026-03-20 |
+| | Merchant: ○○ Coffee |
 
 ---
 
-## 오늘 과정과의 연결
+## Type ③ — Code Interpreter / Type ④ — Word Output
 
-오늘 실습에서 가장 직접적으로 사용한 것은 **텍스트 AI 프롬프트**입니다.  
-M12에서 문의 내용을 받아 **비즈니스 메일 본문을 자동 생성**한 것이 바로 그 예시입니다.
+| Type | Input | Output | Connection |
+|:-----|:------|:-------|:-----------|
+| **Code Interpreter** | 10 receipt PDFs | Excel expense report | Bulk file processing expansion example |
+| **Word Output** | Meeting notes text | Word report (attendees · decisions · follow-ups) | M3 Sample D |
 
-M3의 회의록 정리 샘플은 지금 당장 Word 파일을 만들지는 않지만, 나중에 **Word 출력 프롬프트**로 확장할 수 있는 대표 사례입니다.
+---
 
-M3의 이메일 초안 작성기는 코드 인터프리터보다는 **텍스트 생성 프롬프트**와 더 가깝습니다. 코드 인터프리터는 여러 파일을 계산·변환·분석해 결과물을 만드는 시나리오에서 더 적합합니다.
+## Connection to Today's Course
+
+The most directly used feature in today's labs was the **text-based AI Prompt**.  
+In M12, we took inquiry content and **automatically generated a professional email body** — that was a prime example.
+
+The meeting notes summarizer in M3 doesn't produce a Word file right now, but it is a representative use case that can later be extended with a **Word Output Prompt**.
+
+The email draft generator in M3 is closer to a **text generation prompt** than to Code Interpreter. Code Interpreter is better suited for scenarios involving calculations, transformations, and analysis across multiple files.
 
 ```mermaid
 graph LR
-    A[M12 문의 내용] --> B[텍스트<br>AI 프롬프트]
-    B --> C[문의 메일 본문 생성]
-    D[M3 샘플 D<br>회의록 정리] --> E[Word 출력으로 확장 가능한 예시]
+    A[M12 Inquiry content] --> B[Text<br>AI Prompt]
+    B --> C[Generate email body]
+    D[M3 Sample D<br>Meeting notes] --> E[Can be extended with Word Output]
 ```
 
 ---
 
-## 핵심 정리
+## Key Takeaways
 
-1. **AI 프롬프트** = Flow 안에 AI를 심는 기능
-2. **4가지 유형:** 텍스트, 멀티모달, 코드 인터프리터, Word 출력
-3. M3 샘플의 내부 엔진이 바로 **AI 프롬프트**
-4. 코드 없이, **프롬프트 텍스트 하나**로 Flow에 AI 추가
+1. **AI Prompt** = a feature that embeds AI inside a Flow
+2. **4 types:** Text, Multimodal, Code Interpreter, Word Output
+3. The engine behind the M3 samples is the **AI Prompt**
+4. Add AI to a Flow with **just a single prompt text** — no code needed
 
 ---
 
 ## FAQ
 
-| 질문 | 답변 |
-|:-----|:-----|
-| AI 프롬프트는 추가 비용이 있나요? | Copilot Studio 라이선스에 포함된 AI 크레딧이 있습니다. 대량 사용 시 크레딧 소비량을 확인하세요. |
-| 한국어 문서도 잘 인식하나요? | 네, 최신 모델은 한국어 문서·이미지 인식 성능이 매우 좋습니다. |
-| 에이전트 없이 AI 프롬프트만 쓸 수 있나요? | 네! Power Automate Flow에서 단독으로도 사용 가능합니다. |
+| Question | Answer |
+|:---------|:-------|
+| Does AI Prompt cost extra? | AI credits are included with your Copilot Studio license. Check credit consumption for high-volume usage. |
+| Does it recognize non-English documents well? | Yes, the latest models have excellent multilingual document and image recognition. |
+| Can I use AI Prompt without an agent? | Yes! It can be used standalone in a Power Automate Flow. |
 
 ---
 
-## 참조 자료
+## References
 
-| 자료 | 링크 |
-|:-----|:-----|
-| AI 프롬프트 개요 | [learn.microsoft.com](https://learn.microsoft.com/ai-builder/prompts-overview) |
+| Resource | Link |
+|:---------|:-----|
+| AI Prompt Overview | [learn.microsoft.com](https://learn.microsoft.com/ai-builder/prompts-overview) |
 | Power Automate + AI Builder | [learn.microsoft.com](https://learn.microsoft.com/ai-builder/use-in-flow-overview) |
-| 멀티모달 프롬프트 | [learn.microsoft.com](https://learn.microsoft.com/ai-builder/azure-openai-model-pautate) |
-| 코드 인터프리터 | [learn.microsoft.com](https://learn.microsoft.com/ai-builder/prebuilt-prompts) |
+| Multimodal Prompt | [learn.microsoft.com](https://learn.microsoft.com/ai-builder/azure-openai-model-pautate) |
+| Code Interpreter | [learn.microsoft.com](https://learn.microsoft.com/ai-builder/prebuilt-prompts) |
 
 ---
 
-다음 모듈: [M14. 도구 — 멀티에이전트](m14-multi-agent)
+Next module: [M14. Tools — Multi-Agent](m14-multi-agent)

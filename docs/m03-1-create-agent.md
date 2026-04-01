@@ -1,17 +1,17 @@
 ---
-title: "실습① — HR 도우미 만들기"
-parent: "M3. 에이전트 만들기 시작"
+title: "Lab ① — Create an HR Assistant"
+parent: "M3. Getting Started with Building Agents"
 nav_order: 1
 ---
 
-# 실습 ①: HR 도우미 에이전트 만들기
+# Lab ①: Create an HR Assistant Agent
 {: .no_toc }
 
-| 시간 | 소요 | 수강생 역할 |
-|:-----|:-----|:-----------|
-| 10:05 | 15분 | 🟢 직접 만들기 |
+| Time | Duration | Participant Role |
+|:-----|:---------|:----------------|
+| 10:05 | 15 min | 🟢 Hands-on |
 
-## 목차
+## Table of Contents
 {: .no_toc .text-delta }
 
 1. TOC
@@ -19,106 +19,106 @@ nav_order: 1
 
 ---
 
-## Step 1 — 에이전트 빌더 접속
-1. [M365 Copilot](https://copilot.microsoft.com) 또는 Teams Copilot 채팅 접속
-2. **새 에이전트** 선택
+## Step 1 — Access Agent Builder
+1. Go to [M365 Copilot](https://copilot.microsoft.com) or open Teams Copilot Chat
+2. Select **New agent**
 
-![이미지](../assets/images/m03/image.png)
-
----
-
-## Step 2 — 이름과 지침 입력
-
-- **이름:** `HR 도우미`
-- **설명:** `우리 회사 HR/총무 관련 질문에 답하는 도우미 에이전트`  
-- **지침(Instructions)** 입력란에 아래 내용을 복사해서 붙여넣으세요:
-
-```
-## 역할
-당신은 우리 회사의 HR/총무 전담 도우미입니다.
-
-## 범위
-복리후생, 연차/휴가, 경비처리, 사내 규정에 관한 질문에만 답변합니다.
-
-## 태도
-- 한국어 존칭을 사용합니다
-- 핵심을 먼저 말하고, 부가 설명은 뒤에
-- 200자 이내로 간결하게
-
-## 원칙
-- 모르는 내용: "정확한 답변을 드리기 어렵습니다. HR팀(내선 1234)에 문의해 주세요"
-- 개인정보(급여, 인사평가): 담당자 연결 안내
-```
-
-![이미지](../assets/images/m03/image2.png)
+![Image](../assets/images/m03/image.png)
 
 ---
 
-## Step 3 — 테스트: 답변 확인
-테스트 패널에서 아래 질문을 하나씩 입력해 보세요:
+## Step 2 — Enter the Name and Instructions
 
-| # | 테스트 질문 | 관찰 포인트 |
-|:--|:---------|:-----------|
-| 1 | "경비처리 어떻게 해?" | 그럴듯하지만 **우리 회사 절차가 아닌 추측** |
-| 2 | "복지포인트 사용처 알려줘" | 모른다고 하거나 **엉뚱한 정보를 지어냄** |
-| 3 | "오늘 주식 시세 알려줘" | ⚠️ 범위 밖 → 거절 메시지가 나오는지 확인 |
+- **Name:** `HR Assistant`
+- **Description:** `An assistant agent that answers HR and general affairs questions for our company`  
+- Copy and paste the following into the **Instructions** field:
 
-![이미지](../assets/images/m03/image3.png)
+```
+## Role
+You are our company's dedicated HR and General Affairs assistant.
+
+## Scope
+Only answer questions about employee benefits, annual leave/time off, expense processing, and company policies.
+
+## Tone
+- Use polite, professional language
+- Lead with the key point, then add supporting details
+- Keep responses concise (under 200 characters)
+
+## Principles
+- Unknown topics: "I'm unable to provide an accurate answer. Please contact the HR team (ext. 1234)."
+- Personal information (salary, performance reviews): Direct the user to the appropriate contact
+```
+
+![Image](../assets/images/m03/image2.png)
+
+---
+
+## Step 3 — Test: Check the Responses
+Enter the following questions one at a time in the test panel:
+
+| # | Test Question | What to Observe |
+|:--|:-------------|:----------------|
+| 1 | "How do I submit an expense report?" | Sounds plausible but **it's a guess, not our actual company procedure** |
+| 2 | "Where can I use my welfare points?" | Either says it doesn't know or **fabricates incorrect information** |
+| 3 | "What's today's stock price?" | ⚠️ Out of scope → Check if a rejection message appears |
+
+![Image](../assets/images/m03/image3.png)
 
 ---
 
 {: .warning }
-> 답변이 부정확한 이유는 에이전트 빌더의 한계가 **아닙니다**.  
-> 아직 **지식(교과서)을 연결하지 않았기 때문**입니다. 다음 단계에서 해결합니다.
+> The inaccurate responses are **not** a limitation of Agent Builder.  
+> It's because we haven't **connected any knowledge (the textbook) yet**. We'll fix this in the next step.
 
-## Step 4 — 지침 수정 체험
-지침의 태도를 한 줄 수정해 보세요:
-- "존칭" → "반말로 간결하게"
-- 또는 "200자 이내" → "100자 이내, 이모지 포함"
+## Step 4 — Try Modifying the Instructions
+Make a small change to the tone section of the instructions:
+- Change "polite, professional language" → "casual and brief"
+- Or change "under 200 characters" → "under 100 characters, include emojis"
 
-→ 에이전트의 답변 톤과 형식이 즉시 바뀌는 것을 확인!
+→ Notice how the agent's response tone and format change immediately!
 
-![이미지](../assets/images/m03/image5.png)
+![Image](../assets/images/m03/image5.png)
 
-![이미지](../assets/images/m03/image4.png)
+![Image](../assets/images/m03/image4.png)
 
 {: .tip }
-> 지침에 **역할·범위·태도·원칙**을 명확히 쓸수록 에이전트가 똑똑해집니다.  
-> 이것이 M6에서 본격적으로 다듬을 핵심입니다.
+> The more clearly you define **role, scope, tone, and principles** in the instructions, the smarter the agent becomes.  
+> This is the key concept we'll refine in depth during M6.
 
 ---
 
-## Step 5 — 에이전트 만들기
-자동저장된 에이전트를 테스트한 후, 실제로 배포합니다. 만들기 버튼을 누르면, 여러분의 코파일럿에 HR 도우미가 생깁니다!
+## Step 5 — Create the Agent
+After testing the auto-saved agent, it's time to actually publish it. Click the Create button, and the HR Assistant will appear in your Copilot!
 
-![이미지](../assets/images/m03/image6.png)
+![Image](../assets/images/m03/image6.png)
 
-![이미지](../assets/images/m03/image7.png)
+![Image](../assets/images/m03/image7.png)
 
-에이전트가 다 만들어지면, "에이전트로 이동" 버튼을 눌러서 실제로 대화해 보세요. 
+Once the agent is created, click the "Go to agent" button to start chatting with it for real.
 
-![이미지](../assets/images/m03/image8.png)
-
----
-
-## Step 6 — 몰입형 환경에서 대화하기
-에이전트와 1:1로 대화할 수 있는 몰입형 환경이 열립니다. 여기서 질문을 입력해 보세요:
-
-![이미지](../assets/images/m03/image9.png)
-
-![이미지](../assets/images/m03/image10.png)
+![Image](../assets/images/m03/image8.png)
 
 ---
 
-## Step 7 — 인컨텍스트 질문 체험
-이제 코파일럿의 대화 창에서 @ HR 도우미를 불러서 질문해 보세요. 대화 기록이 인컨텍스트로 전달되는 것을 확인할 수 있습니다.
+## Step 6 — Chat in the Immersive Experience
+An immersive experience opens where you can have a 1:1 conversation with your agent. Try entering some questions here:
 
-![이미지](../assets/images/m03/image11.png)
+![Image](../assets/images/m03/image9.png)
 
-![이미지](../assets/images/m03/image12.png)
-
-![이미지](../assets/images/m03/image13.png)
+![Image](../assets/images/m03/image10.png)
 
 ---
 
-실습을 완료했으면 [M3 본문으로 돌아가세요](m03-agent-builder).
+## Step 7 — Try In-Context Questions
+Now, in the Copilot chat window, mention @HR Assistant and ask a question. You'll see that the conversation history is passed as in-context information.
+
+![Image](../assets/images/m03/image11.png)
+
+![Image](../assets/images/m03/image12.png)
+
+![Image](../assets/images/m03/image13.png)
+
+---
+
+Once you've completed this lab, [return to the M3 main page](m03-agent-builder).

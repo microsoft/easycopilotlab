@@ -1,34 +1,34 @@
 ---
-title: "실습① — Excel 파일 준비"
-parent: "M11. 도구 — 커넥터"
+title: "Lab ① — Prepare the Excel File"
+parent: "M11. Tools — Connectors"
 nav_order: 1
 ---
 
-# 실습 ①: Excel 파일 준비
+# Lab ①: Prepare the Excel File
 {: .no_toc }
 
-| 시간 | 소요 | 수강생 역할 |
-|:-----|:-----|:-----------|
-| 15:20 | 5분 | 🟢 직접 실습 |
+| Time | Duration | Participant Role |
+|:-----|:---------|:-----------------|
+| 15:20 | 5 min | 🟢 Hands-on Lab |
 
 ---
 
 {: .important }
-> **OneDrive for Business**와 **Excel Online (Business)** 접근 권한이 있어야 합니다. 조직 정책상 OneDrive 사용이 제한되어 있으면 같은 구조로 **SharePoint 문서 라이브러리**를 사용해도 됩니다.
+> You need access to **OneDrive for Business** and **Excel Online (Business)**. If your organization's policies restrict OneDrive usage, you can use a **SharePoint document library** with the same structure instead.
 
-1. **OneDrive** 접속 → 새 Excel 파일 생성: `대화기록.xlsx`
-2. **Sheet1**에 테이블 만들기:
+1. Go to **OneDrive** → create a new Excel file: `대화기록.xlsx`
+2. Create a table in **Sheet1**:
 
-| 시간 | 사용자 | 질문 | 답변 |
-|:-----|:------|:-----|:-----|
-| (비워두기) | | | |
+| Time | User | Question | Answer |
+|:-----|:-----|:---------|:-------|
+| (leave empty) | | | |
 
-3. 표 전체 선택 → **"삽입" → "표"** → 확인
-4. **저장**
+3. Select the entire range → **"Insert" → "Table"** → confirm
+4. **Save**
 
 {: .tip }
-> 반드시 **표(Table)**로 만들어야 Copilot Studio의 Excel 커넥터에서 행을 추가할 수 있습니다.
+> You must format it as a **Table** for Copilot Studio's Excel connector to be able to add rows.
 
 ---
 
-실습을 완료했으면 [M11 본문으로 돌아가세요](m11-connector).
+Once you've completed this lab, [return to the M11 main page](m11-connector).

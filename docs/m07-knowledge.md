@@ -1,119 +1,119 @@
 ---
-title: "M7. 3요소 지식"
+title: "M7. Element 3 — Knowledge"
 nav_order: 8
 has_children: true
 ---
 
-# 3요소 지식 — RAG 개념 + 참조문서 업로드
+# Element 3 — Knowledge: RAG Concepts + Reference Document Upload
 {: .no_toc }
 
-| 시간 | 소요 | 수강생 역할 |
-|:-----|:-----|:-----------|
-| 13:30 | 30분 | 🟢 직접 실습 |
+| Time | Duration | Participant Role |
+|:-----|:---------|:-----------------|
+| 13:30 | 30 min | 🟢 Hands-on Lab |
 
-## 목차
+## Table of Contents
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
 
-![M7 지식 — 교과서 업로드](../assets/images/m07/hero.png)
+![M7 Knowledge — Uploading the Textbook](../assets/images/m07/hero.png)
 
 ---
 
-## 이 모듈에서 배우는 것
+## What You'll Learn in This Module
 
-- Copilot Studio에 **파일을 직접 업로드**하여 지식 소스 연결
-- 지식 소스 추가 **전후 답변 품질 비교** 체험
-- 4가지 지식 연결 방식의 차이 이해
-- **문서 구조**가 답변 품질에 미치는 영향
+- Connect a knowledge source by **uploading files directly** to Copilot Studio
+- Experience the **before-and-after difference** in answer quality after adding a knowledge source
+- Understand the differences between 4 ways to connect knowledge
+- How **document structure** affects answer quality
 
 ---
 
-## 아는 만큼 답한다
+## The More It Knows, the Better It Answers
 
-M6에서 지침(행동매뉴얼)을 작성했습니다.  
-이제 신입사원에게 **교과서**를 줄 차례입니다.
+In M6, we wrote Instructions (the behavior manual).  
+Now it's time to give our new employee a **textbook**.
 
 {: .note }
-> M6에서 같은 질문을 테스트했을 때는 **범위와 태도**만 확인했습니다. 이 모듈에서는 같은 질문이 **회사 문서 기반 답변**으로 바뀌는지 비교합니다.
+> When we tested the same questions in M6, we only checked **scope and tone**. In this module, we'll compare whether those same questions now produce **answers based on company documents**.
 
-| 상태 | 비유 | 에이전트 답변 |
-|:-----|:-----|:------------|
-| 지침만 | 행동매뉴얼만 받은 신입사원 | "정확한 답변을 드리기 어렵습니다..." |
-| 지침 **+ 지식** | 행동매뉴얼 + 교과서를 받은 신입사원 | "문서에 따르면..." (정확하고 구체적) |
+| State | Analogy | Agent Response |
+|:------|:--------|:---------------|
+| Instructions only | New employee with only a behavior manual | "I'm unable to provide an accurate answer..." |
+| Instructions **+ Knowledge** | New employee with a behavior manual + textbook | "According to the document..." (accurate and specific) |
 
 {: .highlight }
-> **교과서가 좋아야 답변이 좋습니다.** 이것이 M1에서 배운 "재료가 다르면 답이 달라진다"의 실전 적용입니다.
+> **The better the textbook, the better the answers.** This is the real-world application of what we learned in M1: "Different ingredients produce different results."
 
 ---
 
-## 4가지 지식 연결 방식
+## 4 Ways to Connect Knowledge
 
-| 방식 | 난이도 | 최신 유지 | 권한 제어 | 추천 |
-|:-----|:------|:---------|:---------|:-----|
-| **파일 업로드** ← 오늘 실습 | ⭐ 쉬움 | 수동 | ❌ | ✅ **입문자 1단계** |
-| 웹사이트 URL | ⭐⭐ | 주기적 | ❌ | 2단계 |
-| SharePoint | ⭐⭐⭐ | 자동 | ✅ | 운영 단계 |
-| Dataverse | ⭐⭐⭐ | 실시간 | ✅ | 고급 |
+| Method | Difficulty | Stays Up-to-Date | Access Control | Recommended |
+|:-------|:----------|:-----------------|:---------------|:------------|
+| **File Upload** ← Today's lab | ⭐ Easy | Manual | ❌ | ✅ **Beginner Step 1** |
+| Website URL | ⭐⭐ | Periodic | ❌ | Step 2 |
+| SharePoint | ⭐⭐⭐ | Automatic | ✅ | Production |
+| Dataverse | ⭐⭐⭐ | Real-time | ✅ | Advanced |
 
 {: .tip }
-> 오늘은 **파일 업로드**로 시작합니다. 가장 쉽고 빠릅니다. 운영 단계에서 SharePoint로 전환하면 됩니다.
+> Today we start with **File Upload**. It's the easiest and fastest. You can switch to SharePoint when moving to production.
 
 ---
 
-## 실습: 파일 업로드
+## Lab: File Upload
 
 {: .important }
-> 📌 이 실습은 별도 페이지에서 진행합니다.  
-> [실습: 파일 업로드](m07-1-file-upload)를 완료하고 돌아오세요.
+> 📌 This lab is on a separate page.  
+> Complete [Lab: File Upload](m07-1-file-upload) and come back here.
 
 ---
 
-## 문서 작성 베스트 프랙티스
+## Document Authoring Best Practices
 
-에이전트가 더 정확하게 답하려면, **문서 구조**가 중요합니다.
+For your agent to answer more accurately, **document structure** matters.
 
-| 원칙 | 설명 | 예시 |
-|:-----|:-----|:-----|
-| **Q&A 구조** | 질문-답변 쌍으로 작성 | Q: 연차는 몇 일? A: 15일입니다 |
-| **명확한 제목** | 섹션 제목, 소제목 활용 | `## 복지포인트` → `### 사용처` |
-| **표 활용** | 구조화된 데이터는 표로 | 담당자·연락처 등 |
-| **짧은 문장** | 한 문장 50자 이내 | 긴 문장보다 명확성 우선 |
+| Principle | Description | Example |
+|:----------|:------------|:--------|
+| **Q&A Format** | Write as question-answer pairs | Q: How many vacation days? A: 15 days |
+| **Clear Headings** | Use section headings and subheadings | `## Benefits Points` → `### Where to Use` |
+| **Use Tables** | Present structured data in tables | Contact persons, phone numbers, etc. |
+| **Short Sentences** | Keep sentences under 50 characters | Prioritize clarity over long sentences |
 
 {: .tip }
-> **구조화된 문서(Q&A·표) > 서술형 문서** — AI가 구조화된 정보에서 더 정확하게 답변합니다.
+> **Structured documents (Q&A / tables) > Narrative documents** — AI answers more accurately from structured information.
 
 ---
 
-## 핵심 정리
+## Key Takeaways
 
-1. 지식 = 교과서 — **교과서가 좋아야 답변이 좋다**
-2. 파일 업로드가 가장 **쉽고 빠른** 시작점
-3. **Q&A 구조 + 표** 형식 문서가 최적
-4. Before/After 테스트로 효과 직접 확인
+1. Knowledge = Textbook — **The better the textbook, the better the answers**
+2. File Upload is the **easiest and fastest** starting point
+3. Documents in **Q&A + table** format work best
+4. Verify the impact with Before/After testing
 
 ---
 
 ## FAQ
 
-| 질문 | 답변 |
-|:-----|:-----|
-| PDF도 업로드 되나요? | 네. Word, PDF, TXT, Excel 모두 지원됩니다. |
-| 파일을 나중에 바꾸면 반영되나요? | 수동 업데이트가 필요합니다. 기존 파일 삭제 후 새 파일을 업로드하세요. |
-| 파일 용량 제한이 있나요? | 파일당 제한이 있습니다. 큰 파일은 분할 업로드하세요. |
-| 기밀 문서도 올려도 되나요? | Copilot Studio 내에서만 사용됩니다. M365 보안 정책이 적용됩니다. |
+| Question | Answer |
+|:---------|:-------|
+| Can I upload PDFs? | Yes. Word, PDF, TXT, and Excel are all supported. |
+| If I replace a file later, will it update automatically? | Manual updates are required. Delete the existing file and upload the new one. |
+| Is there a file size limit? | There is a per-file limit. Split large files before uploading. |
+| Is it safe to upload confidential documents? | They are used only within Copilot Studio. M365 security policies apply. |
 
 ---
 
-## 참조 자료
+## References
 
-| 자료 | 링크 |
-|:-----|:-----|
-| 지식 소스 연결 | [learn.microsoft.com](https://learn.microsoft.com/microsoft-copilot-studio/knowledge-copilot-studio) |
-| 파일 업로드 지식 소스 | [learn.microsoft.com](https://learn.microsoft.com/microsoft-copilot-studio/knowledge-add-file-upload) |
-| 지식 문서 작성 모범 사례 | [learn.microsoft.com](https://learn.microsoft.com/microsoft-copilot-studio/guidance/building-agents-knowledge) |
+| Resource | Link |
+|:---------|:-----|
+| Connecting Knowledge Sources | [learn.microsoft.com](https://learn.microsoft.com/microsoft-copilot-studio/knowledge-copilot-studio) |
+| File Upload Knowledge Source | [learn.microsoft.com](https://learn.microsoft.com/microsoft-copilot-studio/knowledge-add-file-upload) |
+| Knowledge Document Best Practices | [learn.microsoft.com](https://learn.microsoft.com/microsoft-copilot-studio/guidance/building-agents-knowledge) |
 
 ---
 
-다음 모듈: [M8. 4요소 도구들](m08-tools-overview)
+Next module: [M8. Element 4 — Tools](m08-tools-overview)

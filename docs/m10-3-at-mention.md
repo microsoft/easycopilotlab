@@ -1,24 +1,24 @@
 ---
-title: "실습③ — @호출 테스트"
-parent: "M10. 게시와 공유"
+title: "Lab ③ — @Mention Test"
+parent: "M10. Publishing & Sharing"
 nav_order: 3
 ---
 
-# 실습 ③: @호출 테스트 (인컨텍스트)
+# Lab ③: @Mention Test (In-Context)
 {: .no_toc }
 
-| 시간 | 소요 | 수강생 역할 |
-|:-----|:-----|:-----------|
-| 15:10 | 5분 | 🟢 직접 실습 |
+| Time | Duration | Participant Role |
+|:-----|:---------|:-----------------|
+| 15:10 | 5 min | 🟢 Hands-on Lab |
 
 ---
 
-M2에서 배운 **인컨텍스트** 방식입니다. 다른 업무 중 빠르게 질문할 때 편합니다.
+This is the **in-context** mode you learned about in M2. It's convenient for quickly asking a question while working on something else.
 
-1. M365 Copilot 채팅 열기 (Teams 또는 브라우저)
-2. 입력: `@에이전트이름 복지포인트 사용처 알려줘`
-3. 에이전트가 답변하는 것 확인
+1. Open M365 Copilot Chat (Teams or browser)
+2. Type: `@YourAgentName Where can I use my welfare points?`
+3. Confirm the agent responds
 
 ---
 
-실습을 완료했으면 [M10 본문으로 돌아가세요](m10-publish-share).
+Once you've completed this lab, [return to the M10 main page](m10-publish-share).

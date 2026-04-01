@@ -1,61 +1,61 @@
 ---
-title: "실습① — 법무 에이전트 만들기"
-parent: "M14. 도구 — 멀티에이전트"
+title: "Lab ① — Create a Legal Agent"
+parent: "M14. Tools — Multi-Agent"
 nav_order: 1
 ---
 
-# 실습: 법무 에이전트 만들기
+# Lab: Create a Legal Agent
 {: .no_toc }
 
-| 시간 | 소요 | 수강생 역할 |
-|:-----|:-----|:-----------|
-| 16:45 | 10분 | 🟢 직접 실습 |
+| Time | Duration | Participant Role |
+|:-----|:---------|:-----------------|
+| 16:45 | 10 min | 🟢 Hands-on Lab |
 
 ---
 
-## Step 1 — 에이전트 생성
+## Step 1 — Create the Agent
 
-1. Copilot Studio → **+ 새 에이전트**
-2. 이름: `법무 에이전트`
+1. Copilot Studio → **+ New agent**
+2. Name: `Legal Agent`
 
-## Step 2 — 지침 입력
+## Step 2 — Enter Instructions
 
 <details markdown="1">
-<summary><strong>지침 (클릭해서 펼치기)</strong></summary>
+<summary><strong>Instructions (click to expand)</strong></summary>
 
 ```
-## 역할
-당신은 우리 회사의 법무/컴플라이언스 전담 도우미입니다.
+## Role
+You are our company's dedicated legal and compliance assistant.
 
-## 범위
-계약, 사내 규정, 법률 검토, 컴플라이언스에 관한 질문에만 답변합니다.
+## Scope
+Only answer questions about contracts, internal policies, legal reviews, and compliance.
 
-## 태도
-- 한국어 존칭을 사용합니다
-- 법률 용어는 쉽게 풀어서 설명합니다
-- 핵심 결론을 먼저 말하고, 근거 조항은 뒤에 인용합니다
+## Tone
+- Use polite, professional language
+- Explain legal terms in plain language
+- State the key conclusion first, then cite the supporting clauses afterward
 
-## 원칙
-- 지식에 없는 내용: "정확한 법률 검토가 필요합니다. 법무팀(내선 5678)에 문의해 주세요"
-- 법률 자문에 해당하는 질문: "이 내용은 법률 자문에 해당하므로, 법무팀 담당자와 직접 상담해 주세요"
-- 답변 시 반드시 출처(법령명, 조항)를 함께 표시합니다
+## Principles
+- If the answer is not in your knowledge: "This requires a formal legal review. Please contact the Legal team (ext. 5678)."
+- If the question constitutes legal advice: "This falls under legal counsel. Please consult directly with a Legal team representative."
+- Always include the source (law name, article number) in your response
 ```
 
 </details>
 
-## Step 3 — 지식 소스 연결 (웹사이트)
+## Step 3 — Connect a Knowledge Source (Website)
 
-법무 에이전트에게 **교과서**를 줍니다. 국가법령정보센터(법제처)를 지식 소스로 연결합니다.
+Give the Legal Agent a **textbook**. Connect a public legal information website as a knowledge source.
 
-1. 좌측 **"지식"** 클릭 → **"+ 지식 추가"**
-2. **"웹사이트"** 선택
-3. URL 입력: `https://law.go.kr/`
-4. 이름: `국가법령정보센터`
-5. **저장**
+1. Click **"Knowledge"** on the left → **"+ Add knowledge"**
+2. Select **"Website"**
+3. Enter URL: `https://law.go.kr/`
+4. Name: `National Law Information Center`
+5. **Save**
 
 {: .note }
-> 웹사이트 지식 소스는 해당 사이트의 공개 콘텐츠를 주기적으로 크롤링하여 참조합니다. 실습 환경에서 크롤링이 제한될 수 있으며, 이 경우 법무 관련 샘플 문서를 파일로 업로드해도 됩니다.
+> A website knowledge source periodically crawls the site's public content for reference. Crawling may be restricted in lab environments — if so, you can upload sample legal documents as files instead.
 
 ---
 
-실습을 완료했으면 [M14 본문으로 돌아가세요](m14-multi-agent).
+Once you have completed this lab, [return to the M14 main page](m14-multi-agent).

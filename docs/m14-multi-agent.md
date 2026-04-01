@@ -1,76 +1,76 @@
 ---
-title: "M14. 도구 — 멀티에이전트"
+title: "M14. Tools — Multi-Agent"
 nav_order: 15
 has_children: true
 ---
 
-# 고급도구  멀티에이전트
+# Advanced Tools — Multi-Agent
 {: .no_toc }
 
-| 시간 | 소요 | 수강생 역할 |
-|:-----|:-----|:-----------|
-| 16:45 | 25분 |  직접 실습 |
+| Time | Duration | Participant Role |
+|:-----|:---------|:-----------------|
+| 16:45 | 25 min | 🟢 Hands-on Lab |
 
-## 목차
+## Table of Contents
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
 
-![M14 멀티에이전트 — 컨시어지가 전문가를 연결](../assets/images/m14/hero.png)
+![M14 Multi-Agent — A concierge connecting specialists](../assets/images/m14/hero.png)
 
 ---
 
-## 이 모듈에서 배우는 것
+## What You Will Learn
 
-- **멀티에이전트**란 무엇인지  에이전트가 도구로 다른 에이전트를 호출
-- **슈퍼 호스트 에이전트** 구조 설계
-- HR 에이전트와 법무 에이전트(신규)를 연결하는 실습
+- What **Multi-Agent** means — an agent invoking other agents as tools
+- Designing the **Super Host Agent** architecture
+- Hands-on: connecting the HR Agent and a new Legal Agent
 
 {: .highlight }
-> 에이전트는 도구로서 **다른 에이전트를 호출**할 수 있습니다. 슈퍼 호스트 에이전트가 사용자의 질문을 받아 HR 에이전트 또는 법무 에이전트에게 위임합니다.
+> An agent can **invoke other agents as tools**. The Super Host agent receives the user's question and delegates it to either the HR Agent or the Legal Agent.
 
 ---
 
-## 멀티에이전트 구조
+## Multi-Agent Architecture
 
 ```mermaid
 flowchart TD
-    U[ 사용자] --> S[ 슈퍼 호스트 에이전트]
-    S --> H[ HR 도우미\n복리후생  연차  경비]
-    S --> L[ 법무 에이전트\n계약  규정  컴플라이언스]
+    U[User] --> S[Super Host Agent]
+    S --> H[HR Assistant\nBenefits · Leave · Expenses]
+    S --> L[Legal Agent\nContracts · Policies · Compliance]
 ```
 
-| 역할 | 에이전트 | 설명 |
-|:-----|:---------|:-----|
-| 슈퍼 호스트 | 새로 만드는 에이전트 | 사용자 질문을 받아 적절한 전문 에이전트에게 위임 |
-| HR 도우미 | 오늘 만든 에이전트 | HR복리후생 전문 |
-| 법무 에이전트 | 실습 중 신규 생성 | 계약규정컴플라이언스 전문 |
+| Role | Agent | Description |
+|:-----|:------|:------------|
+| Super Host | New agent (created now) | Receives user questions and delegates to the appropriate specialist agent |
+| HR Assistant | Agent built earlier today | Specializes in HR & employee benefits |
+| Legal Agent | New agent (created in this lab) | Specializes in contracts, policies & compliance |
 
 ---
 
-## 실습 ①: 법무 에이전트 만들기
+## Lab ①: Create a Legal Agent
 
 {: .important }
-> 📌 이 실습은 별도 페이지에서 진행합니다.  
-> [실습 ①: 법무 에이전트 만들기](m14-1-legal-agent)를 완료하고 돌아오세요.
+> 📌 This lab is on a separate page.  
+> Complete [Lab ①: Create a Legal Agent](m14-1-legal-agent) and come back here.
 
 ---
 
-## 실습 ②: 슈퍼 호스트 에이전트 만들기
+## Lab ②: Create the Super Host Agent
 
 {: .important }
-> 📌 이 실습은 별도 페이지에서 진행합니다.  
-> [실습 ②: 슈퍼 호스트 만들기](m14-2-super-host)를 완료하고 돌아오세요.
+> 📌 This lab is on a separate page.  
+> Complete [Lab ②: Create the Super Host](m14-2-super-host) and come back here.
 
 ---
 
-## 핵심 정리
+## Key Takeaways
 
-1. 멀티에이전트 = 에이전트가 도구로 다른 에이전트를 호출
-2. 슈퍼 호스트는 전문 에이전트들의 **코디네이터** 역할
-3. 각 에이전트의 Description이 라우팅의 핵심
+1. Multi-Agent = an agent invoking other agents as tools
+2. The Super Host serves as a **coordinator** for the specialist agents
+3. Each agent's Description is the key to accurate routing
 
 ---
 
-다음 모듈: [M15. 도구 — MCP](m15-mcp)
+Next module: [M15. Tools — MCP](m15-mcp)

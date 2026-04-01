@@ -1,31 +1,31 @@
 ---
-title: "실습② — 몰입형 테스트"
-parent: "M10. 게시와 공유"
+title: "Lab ② — Immersive Test"
+parent: "M10. Publishing & Sharing"
 nav_order: 2
 ---
 
-# 실습 ②: Copilot에서 에이전트 사용 (몰입형)
+# Lab ②: Use the Agent in Copilot (Immersive)
 {: .no_toc }
 
-| 시간 | 소요 | 수강생 역할 |
-|:-----|:-----|:-----------|
-| 15:05 | 5분 | 🟢 직접 실습 |
+| Time | Duration | Participant Role |
+|:-----|:---------|:-----------------|
+| 15:05 | 5 min | 🟢 Hands-on Lab |
 
 ---
 
-M2에서 배운 **몰입형** 방식입니다. 에이전트 전용 화면에서 1:1로 대화합니다.
+This is the **immersive** mode you learned about in M2. You'll have a 1:1 conversation with the agent on its dedicated screen.
 
 ## Step-by-Step
 
-1. [M365 Copilot](https://copilot.microsoft.com) 접속 (또는 Teams Copilot)
-2. 에이전트 목록에서 **만든 에이전트 이름 클릭**
-3. 에이전트 전용 화면이 열림
-4. 질문 입력: **"복지포인트 사용처 알려줘"**
-5. 에이전트가 답변하는 것 확인! 🎉
+1. Go to [M365 Copilot](https://copilot.microsoft.com) (or Teams Copilot)
+2. In the agent list, **click your agent's name**
+3. The agent's dedicated screen opens
+4. Enter a question: **"Where can I use my welfare points?"**
+5. Confirm the agent responds! 🎉
 
 {: .tip }
-> 몰입형은 에이전트와 **집중 대화**할 때 적합합니다. 여러 질문을 연속으로 하거나 깊이 있는 상담이 필요할 때 사용하세요.
+> Immersive mode is ideal for **focused conversations** with the agent. Use it when you need to ask multiple questions in a row or have an in-depth consultation.
 
 ---
 
-실습을 완료했으면 [M10 본문으로 돌아가세요](m10-publish-share).
+Once you've completed this lab, [return to the M10 main page](m10-publish-share).

@@ -1,41 +1,41 @@
 ---
-title: "실습 — Forms 트리거 연결"
-parent: "M16. 도구 — 트리거"
+title: "Lab — Connect a Forms Trigger"
+parent: "M16. Tools — Triggers"
 nav_order: 1
 ---
 
-# 실습: Forms 트리거 연결하기
+# Lab: Connect a Forms Trigger
 {: .no_toc }
 
-| 시간 | 소요 | 수강생 역할 |
-|:-----|:-----|:-----------|
-| 17:25 | 20분 | 🟢 직접 실습 |
+| Time | Duration | Participant Role |
+|:-----|:---------|:-----------------|
+| 17:25 | 20 min | 🟢 Hands-on Lab |
 
 ---
 
-## 사전 준비
+## Prerequisites
 
-1. Microsoft Forms에서 **HR 문의 폼** 생성
-   - 질문 ①: 이름
-   - 질문 ②: 부서
-   - 질문 ③: 문의 내용
-2. 폼 URL 복사해두기
+1. Create an **HR Inquiry Form** in Microsoft Forms
+   - Question ①: Name
+   - Question ②: Department
+   - Question ③: Inquiry details
+2. Copy the form URL
 
-## 실습 순서
+## Steps
 
-1. Power Automate → **+ 새 흐름 → 자동화된 클라우드 흐름**
-2. 트리거: **Forms → 새 응답이 제출될 때** 선택
-3. 폼 ID: 위에서 만든 HR 문의 폼 선택
-4. **Forms → 응답 세부 정보 가져오기** 동작 추가
-5. **AI Builder → AI 프롬프트** 동작 추가
-   - 프롬프트: "다음 HR 문의에 대한 답변 초안을 작성해줘: [문의내용]"
-6. **Office 365 Outlook → 메일 보내기** 동작 추가
-   - 수신: 담당자 메일
-   - 본문: 원문 문의 + AI 생성 초안
-7. **저장 → 테스트**
-   - Forms에서 테스트 문의 제출
-   - 담당자 메일로 초안이 도착하는지 확인
+1. Power Automate → **+ New flow → Automated cloud flow**
+2. Trigger: Select **Forms → When a new response is submitted**
+3. Form ID: Select the HR Inquiry Form you created above
+4. Add the **Forms → Get response details** action
+5. Add the **AI Builder → AI Prompt** action
+   - Prompt: "Draft a response to the following HR inquiry: [Inquiry details]"
+6. Add the **Office 365 Outlook → Send an email** action
+   - To: Assignee's email address
+   - Body: Original inquiry + AI-generated draft
+7. **Save → Test**
+   - Submit a test inquiry through Forms
+   - Verify that the draft arrives in the assignee's inbox
 
 ---
 
-실습을 완료했으면 [M16 본문으로 돌아가세요](m16-trigger).
+Once you've completed the lab, [return to the M16 overview](m16-trigger).

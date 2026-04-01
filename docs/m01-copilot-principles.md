@@ -1,163 +1,163 @@
 ---
-title: "M1. 코파일럿 동작원리"
+title: "M1. How Copilot Works"
 nav_order: 2
 ---
 
-# 코파일럿과 에이전트의 동작원리 — 당신은 AI와 대화하고 있지 않다
+# How Copilot and Agents Work — You're Not Talking Directly to AI
 {: .no_toc }
 
-| 시간 | 소요 | 수강생 역할 |
+| Time | Duration | Participant Role |
 |:-----|:-----|:-----------|
-| 09:40 | 10분 | 👀 보기 |
+| 09:40 | 10 min | 👀 Watch |
 
-## 목차
+## Table of Contents
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
 
-![M1 동작원리 — 당신은 AI와 대화하고 있지 않다](../assets/images/m01/hero.png)
+![M1 How It Works — You're not talking directly to AI](../assets/images/m01/hero.png)
 
 ---
 
-## 이 모듈에서 배우는 것
+## What You'll Learn in This Module
 
-- 우리가 AI와 직접 대화한다는 것은 **착각**이라는 사실
-- 인간과 LLM 사이에서 대화를 **중개하는 오케스트레이터**가 진짜 핵심이라는 점
-- 오케스트레이터가 **시스템 프롬프트**와 **도구**를 통해 AI의 행동을 결정하는 원리
-- Copilot의 오케스트레이터가 답변을 위해 **동원하는 수단들**
+- The fact that talking directly to AI is actually a **misconception**
+- That the **orchestrator — a mediator between you and the LLM** — is the real key player
+- How the orchestrator determines AI behavior through **system prompts** and **tools**
+- The **resources Copilot's orchestrator mobilizes** to generate answers
 
 ---
 
-## 당신은 AI와 대화하고 있지 않다
+## You're Not Talking Directly to AI
 
-ChatGPT에 질문을 입력하면, AI에게 직접 말하는 것 같습니다.  
-하지만 **아닙니다.**
+When you type a question into ChatGPT, it feels like you're speaking directly to AI.  
+But **you're not.**
 
-여러분과 LLM(대형 언어 모델) 사이에는 보이지 않는 **중개자**가 있습니다.  
-이 중개자가 **오케스트레이터**입니다.
+Between you and the LLM (Large Language Model), there's an invisible **mediator**.  
+That mediator is the **orchestrator**.
 
 {: .warning }
-> 우리가 사용하는 거의 모든 AI 챗봇 — ChatGPT, Copilot, Gemini, Claude — 에는 오케스트레이터가 있습니다. AI가 혼자 대답하는 서비스는 사실상 없습니다.
+> Nearly every AI chatbot we use — ChatGPT, Copilot, Gemini, Claude — has an orchestrator. There's virtually no service where AI answers entirely on its own.
 
 ---
 
-## 오케스트레이터가 하는 일
+## What the Orchestrator Does
 
-오케스트레이터는 단순한 중계기가 아닙니다.  
-**판단하고, 수집하고, 가공하고, 행동하는 주체**입니다.
+The orchestrator is not a simple relay.  
+It's the entity that **judges, gathers, processes, and takes action**.
 
-![오케스트레이터 구조 — 사용자와 LLM 사이에서 판단하고 행동하는 중개자](../assets/images/m01/orchestrator-flow.png)
+![Orchestrator architecture — A mediator that judges and acts between the user and the LLM](../assets/images/m01/orchestrator-flow.png)
 
-오케스트레이터가 하는 일을 세 가지로 정리하면:
+Here's what the orchestrator does, in three parts:
 
-### 1. 성격을 부여한다 — 시스템 프롬프트
+### 1. It Assigns a Personality — The System Prompt
 
-오케스트레이터는 LLM에게 질문을 넘기기 **전에**, 시스템 프롬프트를 먼저 설정합니다.
+The orchestrator sets the system prompt **before** passing the question to the LLM.
 
-> "너는 Microsoft 365 Copilot이다. 사용자의 업무를 돕는 것이 목적이다. 정치적 의견은 말하지 마라. 답변은 한국어로 하라."
+> "You are Microsoft 365 Copilot. Your purpose is to assist users with their work. Do not express political opinions. Respond in the user's language."
 
-이 시스템 프롬프트가 AI의 **목적, 태도, 제약**을 결정합니다.  
-같은 GPT-5 모델이라도, 시스템 프롬프트가 다르면 전혀 다른 AI처럼 동작합니다.
+This system prompt determines the AI's **purpose, attitude, and constraints**.  
+Even with the same GPT-5 model, a different system prompt makes the AI behave like a completely different assistant.
 
-| 서비스 | 같은 LLM | 시스템 프롬프트 | 결과 |
+| Service | Same LLM | System Prompt | Result |
 |:-------|:---------|:------------|:-----|
-| ChatGPT | GPT-5 | "범용 AI 어시스턴트" | 무엇이든 대답하는 만능 비서 |
-| Copilot | GPT-5 | "M365 업무 도우미, 회사 데이터 참조" | 내 이메일·파일을 아는 업무 도우미 |
-| **우리가 만들 에이전트** | GPT-5 | **"HR 전문 도우미, 사내 규정 참조"** | **HR 질문만 답하는 전문가** |
+| ChatGPT | GPT-5 | "General-purpose AI assistant" | An all-purpose assistant that answers anything |
+| Copilot | GPT-5 | "M365 work assistant, references company data" | A work assistant that knows my emails and files |
+| **Our Agent** | GPT-5 | **"HR specialist, references company policies"** | **An expert that only answers HR questions** |
 
 {: .highlight }
-> 오늘 오후 실습에서 여러분이 작성할 **지침(Instructions)**이 바로 이 시스템 프롬프트입니다.
+> The **instructions** you'll write during this afternoon's lab are exactly this system prompt.
 
-### 2. 수단을 동원한다 — 도구 호출
+### 2. It Mobilizes Resources — Tool Calls
 
-오케스트레이터는 질문에 답하기 위해 **할 수 있는 모든 수단을 동원**합니다.
+The orchestrator **uses every resource available** to answer a question.
 
-| 상황 | 오케스트레이터가 하는 일 |
+| Situation | What the Orchestrator Does |
 |:-----|:---------------------|
-| 사용자가 파일을 첨부했다 | 📎 파일 내용을 읽어서 LLM에 전달 |
-| "오늘 환율 알려줘" | 🔍 Bing 검색으로 최신 환율을 가져온 뒤 LLM에 전달 |
-| "이 데이터로 그래프 그려줘" | 🐍 Python 코드를 작성·실행하여 차트 생성 |
-| "이 내용을 그림으로 만들어줘" | 🎨 DALL-E로 이미지를 생성 |
-| "지난주 팀 회의 내용 정리해줘" | 📧 Teams 대화 기록을 검색하여 LLM에 전달 |
-| 이전 대화에서 선호도를 말했다 | 💬 대화 기록에서 사용자 선호를 추출하여 반영 |
+| User attached a file | 📎 Reads the file content and passes it to the LLM |
+| "What's the exchange rate today?" | 🔍 Fetches the latest rate via Bing search, then passes it to the LLM |
+| "Draw a chart from this data" | 🐍 Writes and executes Python code to generate the chart |
+| "Turn this into an image" | 🎨 Generates an image with DALL-E |
+| "Summarize last week's team meeting" | 📧 Searches Teams conversation history and passes it to the LLM |
+| User mentioned preferences earlier | 💬 Extracts user preferences from conversation history and applies them |
 
-이 중 어느 것도 LLM이 스스로 하는 일이 아닙니다.  
-**모두 오케스트레이터가 판단하고 실행하는 일**입니다.
+None of these are things the LLM does on its own.  
+**They are all judged and executed by the orchestrator.**
 
 {: .tip }
-> LLM은 텍스트를 생성하는 엔진일 뿐입니다. 인터넷을 검색하거나, 파일을 읽거나, 코드를 실행하는 것은 **오케스트레이터의 판단 아래 도구가 수행하는 것**입니다.
+> The LLM is just a text generation engine. Searching the web, reading files, or running code is **performed by tools under the orchestrator's direction**.
 
-### 3. 맥락을 관리한다 — 대화 기록과 사용자 정보
+### 3. It Manages Context — Conversation History and User Information
 
-오케스트레이터는 한 번의 질문만 보는 것이 아닙니다.
+The orchestrator doesn't just look at a single question.
 
-- **이전 대화 기록**을 기억하여 "아까 그 파일"이라고 하면 무슨 파일인지 파악
-- 사용자가 선호하는 **언어, 호칭, 답변 스타일**을 대화에서 추출하여 반영
-- 필요하면 **사용자에게 되물어서** 모호한 질문을 명확히 함
+- It **remembers previous conversation history**, so when you say "that file from earlier," it knows which file you mean
+- It extracts the user's preferred **language, form of address, and response style** from the conversation and applies them
+- When needed, it **asks clarifying questions** to resolve ambiguous queries
 
 ---
 
-## 같은 LLM, 다른 오케스트레이터, 다른 결과
+## Same LLM, Different Orchestrator, Different Results
 
-이 원리를 이해하면, ChatGPT와 Copilot이 왜 다른지 명확해집니다.
+Once you understand this principle, it becomes clear why ChatGPT and Copilot behave differently.
 
-![같은 LLM, 다른 오케스트레이터 — ChatGPT vs Copilot vs 우리 에이전트](../assets/images/m01/orchestrator-compare.png)
+![Same LLM, different orchestrators — ChatGPT vs Copilot vs Our Agent](../assets/images/m01/orchestrator-compare.png)
 
-세 서비스 모두 **같은 GPT-5**를 사용할 수 있습니다.  
-하지만 결과가 다른 이유는 **오케스트레이터가 다르기 때문**입니다.
+All three services can use the **same GPT-5**.  
+But the results differ because **the orchestrators are different**.
 
-| 비교 | ChatGPT | Copilot | 우리가 만들 에이전트 |
+| Comparison | ChatGPT | Copilot | Our Agent |
 |:-----|:--------|:--------|:-----------------|
-| **시스템 프롬프트** | 범용 어시스턴트 | M365 업무 도우미 | HR 전문 도우미 |
-| **접근 가능한 데이터** | 없음 (사용자가 직접 제공) | 이메일, 파일, 일정, Teams | 사내 규정 문서, Excel, 커넥터 |
-| **사용 가능한 도구** | 웹검색, 코드실행, 이미지생성 | + M365 Graph API | + 토픽, 커넥터, 에이전트 흐름 |
-| **결과** | 일반적인 답변 | 내 업무 맥락이 반영된 답변 | **우리 회사 HR 규정에 맞는 답변** |
+| **System Prompt** | General assistant | M365 work assistant | HR specialist |
+| **Accessible Data** | None (user provides it) | Email, files, calendar, Teams | Company policy docs, Excel, connectors |
+| **Available Tools** | Web search, code execution, image generation | + M365 Graph API | + Topics, connectors, agent flows |
+| **Result** | Generic answers | Answers with my work context | **Answers aligned with our company's HR policies** |
 
 ---
 
-## 오늘 우리가 하는 일의 본질
+## The Essence of What We're Doing Today
 
-오늘 하루 동안 우리가 하는 것은 결국 이것입니다:
+Everything we do today boils down to this:
 
-> **우리만의 오케스트레이터를 설계하는 것**
+> **Designing our own orchestrator**
 
-| 오케스트레이터 구성요소 | 오늘 실습에서 하는 일 | 모듈 |
+| Orchestrator Component | What We'll Do in the Lab | Module |
 |:---------------------|:-------------------|:-----|
-| 시스템 프롬프트 (성격) | **지침** 작성 | M6 |
-| 참조 데이터 (지식) | **지식 소스** 연결 | M7 |
-| 도구 (행동 수단) | **토픽, 커넥터, 흐름** 연결 | M8~M16 |
-| 판단 엔진 (두뇌) | **오케스트레이터 설정** | M5 |
+| System Prompt (personality) | Write **instructions** | M6 |
+| Reference Data (knowledge) | Connect **knowledge sources** | M7 |
+| Tools (action capabilities) | Connect **Topics, connectors, flows** | M8–M16 |
+| Decision Engine (brain) | Configure the **orchestrator settings** | M5 |
 
 ---
 
-## 핵심 정리
+## Key Takeaways
 
-1. 우리는 AI와 직접 대화하지 않는다 — **오케스트레이터가 중개**한다
-2. 오케스트레이터가 **시스템 프롬프트**로 AI의 성격과 제약을 결정한다
-3. 오케스트레이터가 **모든 수단을 동원**하여 답변을 만든다 — 파일 읽기, 웹 검색, 코드 실행, 이미지 생성 모두 오케스트레이터의 판단
-4. 같은 LLM이라도 **오케스트레이터가 다르면 전혀 다른 결과**가 나온다
-5. 오늘 우리가 하는 일은 **우리만의 오케스트레이터를 설계하는 것**이다
+1. We don't talk directly to AI — the **orchestrator mediates**
+2. The orchestrator determines the AI's personality and constraints via the **system prompt**
+3. The orchestrator **mobilizes every resource** to generate answers — file reading, web search, code execution, and image generation are all orchestrator decisions
+4. Even with the same LLM, **a different orchestrator produces entirely different results**
+5. What we're doing today is **designing our own orchestrator**
 
 ---
 
 ## FAQ
 
-| 질문 | 답변 |
+| Question | Answer |
 |:-----|:-----|
-| ChatGPT와 Copilot의 가장 큰 차이는? | LLM이 아니라 **오케스트레이터**가 다릅니다. Copilot은 M365 데이터에 접근하는 오케스트레이터를 가지고 있습니다. |
-| AI가 거짓말(할루시네이션)을 하면? | LLM은 본질적으로 "그럴듯한 다음 단어"를 생성합니다. 이를 줄이는 것이 오케스트레이터의 역할이며, **지식 소스 연결**과 **지침 설정**이 핵심 수단입니다. |
-| 왜 에이전트를 따로 만들어야 하나요? | Copilot은 범용 오케스트레이터입니다. 우리 회사 HR 규정을 모릅니다. **특화된 오케스트레이터**를 만들어야 정확한 답변이 나옵니다. |
+| What's the biggest difference between ChatGPT and Copilot? | It's not the LLM — it's the **orchestrator**. Copilot has an orchestrator that accesses M365 data. |
+| What if the AI hallucinates? | LLMs inherently generate "the most plausible next word." Reducing hallucinations is the orchestrator's job, and the key tools are **connecting knowledge sources** and **configuring instructions**. |
+| Why do we need to build a separate agent? | Copilot is a general-purpose orchestrator. It doesn't know our company's HR policies. We need to build a **specialized orchestrator** to get accurate answers. |
 
 ---
 
-## 참조 자료
+## Reference Materials
 
-| 자료 | 링크 |
+| Resource | Link |
 |:-----|:-----|
-| Microsoft Copilot 공식 문서 | [learn.microsoft.com/copilot](https://learn.microsoft.com/copilot/) |
-| Copilot Studio 시작하기 | [learn.microsoft.com](https://learn.microsoft.com/microsoft-copilot-studio/fundamentals-get-started) |
+| Microsoft Copilot Official Docs | [learn.microsoft.com/copilot](https://learn.microsoft.com/copilot/) |
+| Getting Started with Copilot Studio | [learn.microsoft.com](https://learn.microsoft.com/microsoft-copilot-studio/fundamentals-get-started) |
 
 ---
 
-다음 모듈: [M2. 에이전트의 사용방식](m02-immersive-incontext)
+Next module: [M2. Agent Usage](m02-immersive-incontext)

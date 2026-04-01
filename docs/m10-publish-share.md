@@ -1,128 +1,128 @@
 ---
-title: "M10. 게시와 공유"
+title: "M10. Publishing & Sharing"
 nav_order: 11
 has_children: true
 ---
 
-# 에이전트 게시와 공유 — Copilot에서 에이전트 사용
+# Publishing & Sharing Your Agent — Using Agents in Copilot
 {: .no_toc }
 
-| 시간 | 소요 | 수강생 역할 |
-|:-----|:-----|:-----------|
-| 15:00 | 20분 | 🟢 직접 실습 |
+| Time | Duration | Participant Role |
+|:-----|:---------|:-----------------|
+| 15:00 | 20 min | 🟢 Hands-on Lab |
 
-## 목차
+## Table of Contents
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
 
-![M10 게시와 공유 — 발사 버튼 누르기](../assets/images/m10/hero.png)
+![M10 Publishing & Sharing — Pressing the Launch Button](../assets/images/m10/hero.png)
 
 ---
 
-## 이 모듈에서 배우는 것
+## What You'll Learn in This Module
 
-- Copilot Studio에서 에이전트를 **게시(Publish)**
-- **M365 Copilot에서 에이전트 사용** — 몰입형(전용 화면) + @호출
-- 다른 사람과 사용할 수 있도록 **공유(Share)**
-- **재게시** 개념 이해
-
----
-
-## 용어 먼저 정리
-
-| 용어 | 뜻 |
-|:-----|:---|
-| **게시(Publish)** | Copilot Studio의 최신 변경사항을 사용 채널에 반영할 준비를 하는 단계 |
-| **사용 채널** | M365 Copilot, Teams, 웹사이트처럼 실제로 에이전트를 쓰는 위치 |
-| **공유(Share)** | 특정 동료나 조직이 그 에이전트를 사용할 수 있게 권한을 주는 단계 |
+- **Publish** an agent from Copilot Studio
+- **Use the agent in M365 Copilot** — Immersive (dedicated screen) + @mention
+- **Share** the agent so others can use it
+- Understand the concept of **republishing**
 
 ---
 
-## 사용 채널 4가지
+## Key Terms
 
-| 채널 | 추천 상황 | 오늘 실습 |
-|:-----|:---------|:---------|
-| **M365 Copilot (몰입형)** | 에이전트 전용 화면에서 집중 대화 | ✅ 실습 |
-| **M365 Copilot (@호출)** | 빠르게 사용 (인컨텍스트) | ✅ 실습 |
-| Microsoft Teams | 팀 내부용·협업 도구 연동 | 소개만 |
-| 웹사이트 임베드 | 외부 고객 대상 | 소개만 |
+| Term | Definition |
+|:-----|:-----------|
+| **Publish** | The step that prepares the latest changes in Copilot Studio for deployment to a channel |
+| **Channel** | Where the agent is actually used — M365 Copilot, Teams, a website, etc. |
+| **Share** | The step that grants specific colleagues or an organization permission to use the agent |
 
 ---
 
-## 실습 ①: 게시(Publish)
+## Four Available Channels
+
+| Channel | Recommended For | Today's Lab |
+|:--------|:---------------|:------------|
+| **M365 Copilot (Immersive)** | Focused conversations on a dedicated agent screen | ✅ Lab |
+| **M365 Copilot (@mention)** | Quick, in-context use | ✅ Lab |
+| Microsoft Teams | Internal team use & collaboration tool integration | Overview only |
+| Website Embed | External customer-facing scenarios | Overview only |
+
+---
+
+## Lab ①: Publish
 
 {: .important }
-> 📌 이 실습은 별도 페이지에서 진행합니다.  
-> [실습 ①: 게시(Publish)](m10-1-publish)를 완료하고 돌아오세요.
+> 📌 This lab is on a separate page.  
+> Complete [Lab ①: Publish](m10-1-publish) and then come back here.
 
 ---
 
-## 실습 ②: Copilot에서 에이전트 사용 (몰입형)
+## Lab ②: Use the Agent in Copilot (Immersive)
 
 {: .important }
-> 📌 이 실습은 별도 페이지에서 진행합니다.  
-> [실습 ②: 몰입형 테스트](m10-2-immersive)를 완료하고 돌아오세요.
+> 📌 This lab is on a separate page.  
+> Complete [Lab ②: Immersive Test](m10-2-immersive) and then come back here.
 
 ---
 
-## 실습 ③: @호출 테스트 (인컨텍스트)
+## Lab ③: @Mention Test (In-Context)
 
 {: .important }
-> 📌 이 실습은 별도 페이지에서 진행합니다.  
-> [실습 ③: @호출 테스트](m10-3-at-mention)를 완료하고 돌아오세요.
+> 📌 This lab is on a separate page.  
+> Complete [Lab ③: @Mention Test](m10-3-at-mention) and then come back here.
 
 ---
 
-## 게시 후 공유
+## Sharing After Publishing
 
-에이전트를 동료와 공유하려면:
-- 에이전트 **설정 → 공유** → 동료 이메일 입력
-- 또는 관리자가 **조직 전체 사용 정책**으로 노출
+To share the agent with colleagues:
+- Go to agent **Settings → Share** → enter a colleague's email
+- Or have an admin expose it through an **organization-wide usage policy**
 
 ---
 
-## 재게시
+## Republishing
 
 {: .important }
-> **게시는 1회성이 아닙니다.** 에이전트를 수정할 때마다 다시 게시해야 Copilot에 반영됩니다.
+> **Publishing is not a one-time action.** Every time you modify the agent, you must publish again for the changes to take effect in Copilot.
 
-M11~M12에서 커넥터·흐름을 추가한 뒤 → **다시 게시 버튼** 누르기  
-→ Copilot의 에이전트에 새 기능이 즉시 반영됩니다.
+After adding connectors and flows in M11–M12 → click the **Publish button** again  
+→ The new capabilities are immediately reflected in the Copilot agent.
 
 ---
 
-## 핵심 정리
+## Key Takeaways
 
-1. **게시** = 최신 버전을 사용 채널에 반영하는 단계
-2. **몰입형** = Copilot에서 에이전트 이름 클릭 → 전용 화면에서 집중 대화
-3. **@호출** = Copilot 채팅에서 빠르게 질문
-4. **공유** = 다른 사람이 쓸 수 있도록 권한을 주는 단계
-5. **수정 후에는 반드시 재게시**
+1. **Publish** = the step that deploys the latest version to a channel
+2. **Immersive** = click the agent name in Copilot → focused conversation on a dedicated screen
+3. **@Mention** = quickly ask a question from within Copilot Chat
+4. **Share** = grant others permission to use the agent
+5. **Always republish after making changes**
 
 ---
 
 ## FAQ
 
-| 질문 | 답변 |
-|:-----|:-----|
-| Copilot에서 에이전트가 안 보여요 | 게시 후 1~3분 소요됩니다. 새로고침 후 다시 확인해 보세요. |
-| @호출이 안 됩니다 | 게시 여부 확인, Copilot 채널 활성화 확인, 관리자 정책 확인이 필요합니다. |
-| 다른 팀원도 바로 쓸 수 있나요? | 공유 설정에서 추가하거나 관리자 정책으로 조직 전체에 노출할 수 있습니다. |
-| 게시를 되돌릴 수 있나요? | 채널에서 비활성화하거나 에이전트를 비게시 상태로 전환할 수 있습니다. |
+| Question | Answer |
+|:---------|:-------|
+| I can't see my agent in Copilot | It takes 1–3 minutes after publishing. Try refreshing and checking again. |
+| @mention isn't working | Verify the agent is published, the Copilot channel is enabled, and admin policies allow it. |
+| Can other team members use it right away? | Add them via the Share settings, or have an admin expose the agent organization-wide. |
+| Can I undo a publish? | You can deactivate the channel or switch the agent to an unpublished state. |
 
 ---
 
-## 참조 자료
+## Reference Materials
 
-| 자료 | 링크 |
-|:-----|:-----|
-| 에이전트 게시 기본 | [learn.microsoft.com](https://learn.microsoft.com/microsoft-copilot-studio/publication-fundamentals-publish-channels) |
-| Teams에 에이전트 배포 | [learn.microsoft.com](https://learn.microsoft.com/microsoft-copilot-studio/publication-add-bot-to-microsoft-teams) |
-| M365 Copilot 에이전트 연결 | [learn.microsoft.com](https://learn.microsoft.com/microsoft-365-copilot/extensibility/) |
-| 에이전트 공유 및 협업 | [learn.microsoft.com](https://learn.microsoft.com/microsoft-copilot-studio/admin-share-bots) |
+| Resource | Link |
+|:---------|:-----|
+| Agent Publishing Basics | [learn.microsoft.com](https://learn.microsoft.com/microsoft-copilot-studio/publication-fundamentals-publish-channels) |
+| Deploy Agent to Teams | [learn.microsoft.com](https://learn.microsoft.com/microsoft-copilot-studio/publication-add-bot-to-microsoft-teams) |
+| M365 Copilot Agent Integration | [learn.microsoft.com](https://learn.microsoft.com/microsoft-365-copilot/extensibility/) |
+| Agent Sharing & Collaboration | [learn.microsoft.com](https://learn.microsoft.com/microsoft-copilot-studio/admin-share-bots) |
 
 ---
 
-다음 모듈: [M11. 도구 — 커넥터](m11-connector)
+Next module: [M11. Tools — Connectors](m11-connector)

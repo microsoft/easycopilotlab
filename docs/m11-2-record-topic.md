@@ -1,72 +1,72 @@
 ---
-title: "실습② — Record Topic + Excel 커넥터"
-parent: "M11. 도구 — 커넥터"
+title: "Lab ② — Record Topic + Excel Connector"
+parent: "M11. Tools — Connectors"
 nav_order: 2
 ---
 
-# 실습 ②: Record Topic에서 Excel 커넥터 연결하기
+# Lab ②: Connect the Excel Connector in the Record Topic
 {: .no_toc }
 
-| 시간 | 소요 | 수강생 역할 |
-|:-----|:-----|:-----------|
-| 15:25 | 20분 | 🟢 직접 실습 |
+| Time | Duration | Participant Role |
+|:-----|:---------|:-----------------|
+| 15:25 | 20 min | 🟢 Hands-on Lab |
 
 ---
 
-## Step 1 — Topic 생성 + 트리거 설정
+## Step 1 — Create the Topic + Set the Trigger
 
-1. Copilot Studio → **토픽** → **"+ 토픽 추가"** → **"새로 만들기"**
-2. Topic 이름: `Record Topic`
-3. 트리거 노드 클릭 → **"트리거 변경"** 선택
-4. 트리거 유형 목록에서 **"응답 후(After response)"** 선택
-   - 이것이 "AI가 응답을 생성할 때마다 자동 실행"의 의미입니다
+1. Copilot Studio → **Topics** → **"+ Add a topic"** → **"From blank"**
+2. Topic name: `Record Topic`
+3. Click the trigger node → select **"Change trigger"**
+4. From the trigger type list, select **"After response"**
+   - This means "automatically runs every time the AI generates a response"
 
 {: .highlight }
-> 일반 Topic의 트리거는 **"문구(Phrases)"**입니다. Record Topic은 **"응답 후"** 트리거를 사용하기 때문에, 사용자가 특정 말을 하지 않아도 **매번 자동으로 실행**됩니다.
+> A regular Topic's trigger is **"Phrases"**. Because the Record Topic uses an **"After response"** trigger, it **runs automatically every time** — even without the user saying anything specific.
 
-## Step 2 — Excel 커넥터 추가
+## Step 2 — Add the Excel Connector
 
-5. 트리거 아래 **"+"** 클릭 → **"작업 호출"** 선택
-6. 커넥터 검색창에서 **"Excel"** 검색 → **"Excel Online (Business)"** 선택
-7. 동작 목록에서 **"표에 행 추가"** 선택
-8. 연결 승인 팝업이 나타나면 **"승인"** 클릭 (Microsoft 365 계정으로 로그인)
+5. Click **"+"** below the trigger → select **"Call an action"**
+6. Search for **"Excel"** in the connector search bar → select **"Excel Online (Business)"**
+7. From the action list, select **"Add a row into a table"**
+8. When the connection authorization popup appears, click **"Authorize"** (sign in with your Microsoft 365 account)
 
-## Step 3 — Excel 파일 연결 + 매핑
+## Step 3 — Connect the Excel File + Map Columns
 
-9. 설정 항목을 아래와 같이 지정합니다:
+9. Set the configuration fields as follows:
 
-| 항목 | 값 |
-|:-----|:---|
-| 위치 | **OneDrive for Business** |
-| 문서 라이브러리 | (기본값) |
-| 파일 | `대화기록.xlsx` 선택 |
-| 표 | `표1` 선택 |
+| Field | Value |
+|:------|:------|
+| Location | **OneDrive for Business** |
+| Document Library | (default) |
+| File | Select `대화기록.xlsx` |
+| Table | Select `Table1` |
 
-10. 컬럼 매핑 (각 컬럼 오른쪽 입력란 클릭 → 변수 삽입):
+10. Column mapping (click the input field to the right of each column → insert variable):
 
-| Excel 컬럼 | 매핑 값 | 설명 |
-|:-----------|:---------|:-----|
-| 시간 | `utcNow()` (수식 입력) | 현재 시각 |
-| 사용자 | `System.User.PrincipalName` | 질문한 사람 |
-| 질문 | `System.Activity.Text` | 사용자 입력 |
-| 답변 | `System.Response.FormattedText` | 에이전트 응답 |
+| Excel Column | Mapped Value | Description |
+|:-------------|:-------------|:------------|
+| Time | `utcNow()` (enter as formula) | Current timestamp |
+| User | `System.User.PrincipalName` | Person who asked |
+| Question | `System.Activity.Text` | User input |
+| Answer | `System.Response.FormattedText` | Agent response |
 
-11. **저장**
+11. **Save**
 
 {: .tip }
-> 이 Topic은 사용자가 직접 호출하지 않습니다. "응답이 생성될 때마다 실행"되는 자동 Topic이고, 안에서 **Excel 커넥터를 바로 호출**합니다.
+> This Topic is not invoked by the user directly. It's an automatic Topic that "runs every time a response is generated," and it **calls the Excel connector directly** from within.
 
 ---
 
-## 테스트
+## Test
 
-1. 테스트 패널에서 아무 질문 입력: **"연차 며칠이야?"**
-2. 에이전트가 답변
-3. **OneDrive → 대화기록.xlsx** 열기 → 새 행이 추가되어 있는지 확인! 🎉
+1. Enter any question in the test panel: **"How many vacation days do I have?"**
+2. The agent responds
+3. Open **OneDrive → 대화기록.xlsx** → verify that a new row has been added! 🎉
 
 {: .important }
-> Excel에 시간·사용자·질문·답변이 쌓이는 걸 확인하면 성공입니다.
+> If you can see the Time, User, Question, and Answer being populated in Excel, you've succeeded.
 
 ---
 
-실습을 완료했으면 [M11 본문으로 돌아가세요](m11-connector).
+Once you've completed this lab, [return to the M11 main page](m11-connector).

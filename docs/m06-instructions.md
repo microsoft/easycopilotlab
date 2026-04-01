@@ -1,114 +1,114 @@
 ---
-title: "M6. 2요소 지침"
+title: "M6. Component 2 — Instructions"
 nav_order: 7
 has_children: true
 ---
 
-# 2요소 지침 — 좋은 지침 만들기
+# Component 2: Instructions — Writing Effective Instructions
 {: .no_toc }
 
-| 시간 | 소요 | 수강생 역할 |
-|:-----|:-----|:-----------|
-| 13:00 | 30분 | 🟢 직접 작성 + 테스트 |
+| Time | Duration | Participant Role |
+|:-----|:---------|:-----------------|
+| 13:00 | 30 min | 🟢 Write + Test |
 
-## 목차
+## Table of Contents
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
 
-![M6 지침 — 행동매뉴얼 작성하기](../assets/images/m06/hero.png)
+![M6 Instructions — Writing the Behavior Manual](../assets/images/m06/hero.png)
 
 ---
 
-## 이 모듈에서 배우는 것
+## What You'll Learn in This Module
 
-- 지침의 **4가지 요소** (역할·범위·태도·원칙)
-- 좋은 지침 **6원칙** 체험
-- 지침 입력 후 **답변 차이 직접 확인**
-- 엔진(모델) 선택 기준
+- The **4 elements** of instructions (Role · Scope · Tone · Principles)
+- Hands-on experience with the **6 principles** of good instructions
+- **See the difference** in responses after entering instructions
+- Criteria for choosing an engine (model)
 
 ---
 
-## 지침 = AI 신입의 행동매뉴얼
+## Instructions = The New Employee's Behavior Manual
 
-행동매뉴얼을 잘 써야 신입이 제대로 일합니다.  
-**지침을 잘 써야 좋은 에이전트가 됩니다.**
+A behavior manual must be well-written for the new employee to do their job properly.  
+**Well-written instructions make a great agent.**
 
 {: .highlight }
-> 지침 작성은 글쓰기 능력이 핵심입니다. **문과생의 영역**입니다.
+> Writing instructions is all about writing skills. **This is the liberal arts domain.**
 
 ---
 
-## 지침의 4가지 요소
+## The 4 Elements of Instructions
 
-| 요소 | 핵심 질문 | 예시 |
-|:-----|:---------|:-----|
-| **역할** | "당신은 누구인가?" | "당신은 HR 도우미입니다" |
-| **범위** | "무엇을 담당하는가?" | "복리후생, 연차, 경비처리" |
-| **태도** | "어떻게 말하는가?" | "친절하고 간결하게, 존칭 사용" |
-| **원칙** | "반드시 지켜야 할 것은?" | "모르면 담당자 연결 안내" |
+| Element | Key Question | Example |
+|:--------|:-------------|:--------|
+| **Role** | "Who are you?" | "You are the HR Assistant" |
+| **Scope** | "What do you cover?" | "Benefits, annual leave, expense claims" |
+| **Tone** | "How do you speak?" | "Friendly and concise, use polite language" |
+| **Principles** | "What must you always follow?" | "If unsure, direct to the appropriate contact" |
 
 ---
 
-## 좋은 지침 6원칙
+## 6 Principles of Good Instructions
 
-| # | 원칙 | ❌ 나쁜 예 | ✅ 좋은 예 |
-|:--|:-----|:----------|:----------|
-| 1 | **역할은 구체적으로** | "AI 도우미" | "우리 회사 HR 전담 도우미" |
-| 2 | **범위는 포함만 명시** | "정치 하지 마" | "복리후생·연차·경비만 답변" |
-| 3 | **태도는 행동 지침으로** | "친절해" | "모든 답변을 존칭으로, 핵심 먼저" |
-| 4 | **모르는 경우의 행동 정의** | (빠뜨림) | "HR팀 내선 1234로 안내" |
-| 5 | **언어·형식 명시** | (미지정) | "한국어로 답변, 200자 이내" |
-| 6 | **짧을수록 좋다** | 1000자 장문 | 200~500자, 구조화 |
+| # | Principle | ❌ Bad Example | ✅ Good Example |
+|:--|:---------|:---------------|:----------------|
+| 1 | **Be specific about the role** | "AI assistant" | "Our company's dedicated HR assistant" |
+| 2 | **Define scope by what's included** | "Don't talk about politics" | "Only answer about benefits, leave, and expenses" |
+| 3 | **Make tone actionable** | "Be friendly" | "Use polite language in all responses; lead with the key point" |
+| 4 | **Define behavior when unsure** | (omitted) | "Direct to HR team at ext. 1234" |
+| 5 | **Specify language and format** | (unspecified) | "Respond in Korean, within 200 characters" |
+| 6 | **Shorter is better** | 1,000-character essay | 200–500 characters, structured |
 
 {: .warning }
-> 원칙 4를 빠뜨리면 에이전트가 모르는 것을 **지어냅니다**(할루시네이션). 반드시 "모를 때 행동"을 정의하세요.
+> If you skip Principle 4, the agent will **make things up** (hallucination). Always define what the agent should do when it doesn't know the answer.
 
 ---
 
-## 실습: 지침 업그레이드 + 테스트
+## Lab: Upgrade Instructions + Test
 
 {: .important }
-> 📌 이 실습은 별도 페이지에서 진행합니다.  
-> [실습: 지침 업그레이드 + 테스트](m06-1-instructions-lab)를 완료하고 돌아오세요.
+> 📌 This lab is on a separate page.  
+> Complete [Lab: Upgrade Instructions + Test](m06-1-instructions-lab) and then come back.
 
 ---
 
-## M7로 넘어가기
+## Transitioning to M7
 
-강사는 아래처럼 연결하면 자연스럽습니다.
+Here's a natural way for the instructor to bridge to the next module:
 
-> 지금은 신입사원에게 **행동매뉴얼만 준 상태**입니다. 그래서 말투와 범위는 맞출 수 있지만, 우리 회사 규정까지 정확히 알 수는 없습니다. 다음 모듈에서는 같은 에이전트에 **교과서(지식)**를 붙여서, 방금 던진 질문이 어떻게 회사 문서 기반 답변으로 바뀌는지 바로 비교해 보겠습니다.
+> Right now, we've only given the new employee a **behavior manual**. So they can match the right tone and stay within scope, but they can't know our company's specific policies accurately. In the next module, we'll add a **textbook (Knowledge)** to the same agent, and you'll see firsthand how the same questions get answered based on actual company documents.
 
 ---
 
-## 핵심 정리
+## Key Takeaways
 
-1. 지침 = 행동매뉴얼 — **역할·범위·태도·원칙** 4가지 요소
-2. "모를 때 행동"을 반드시 정의 (할루시네이션 방지)
+1. Instructions = Behavior manual — **Role · Scope · Tone · Principles** (4 elements)
+2. Always define "what to do when unsure" (prevents hallucination)
 
 ---
 
 ## FAQ
 
-| 질문 | 답변 |
-|:-----|:-----|
-| 지침을 영어로 써야 더 잘 작동하나요? | 한국어로 작성해도 잘 작동합니다. 한국어 지침 권장. |
-| 지침이 너무 길면? | 200~500자가 적당합니다. 너무 길면 오히려 혼란을 줍니다. |
-| "하지 마"를 쓰면? | 가능하지만 "대신 이렇게 해"가 더 효과적입니다. |
-| 모르는 경우를 정의 안 하면? | 에이전트가 답을 지어냅니다(할루시네이션). 반드시 정의하세요. |
+| Question | Answer |
+|:---------|:-------|
+| Do instructions work better in English? | Instructions work well in Korean too. Writing in Korean is recommended. |
+| What if the instructions are too long? | 200–500 characters is ideal. Too long actually causes confusion. |
+| What about using "don't do X"? | It works, but "do Y instead" is more effective. |
+| What if I don't define the "unsure" case? | The agent will make up answers (hallucination). Always define it. |
 
 ---
 
-## 참조 자료
+## Reference Materials
 
-| 자료 | 링크 |
-|:-----|:-----|
-| 지침 작성 가이드 | [learn.microsoft.com](https://learn.microsoft.com/microsoft-copilot-studio/guidance/building-agents-instructions) |
-| 에이전트 모델 선택 | [learn.microsoft.com](https://learn.microsoft.com/microsoft-copilot-studio/advanced-generative-answers-overview) |
-| 테스트 및 디버깅 | [learn.microsoft.com](https://learn.microsoft.com/microsoft-copilot-studio/authoring-test-bot) |
+| Resource | Link |
+|:---------|:-----|
+| Instructions Writing Guide | [learn.microsoft.com](https://learn.microsoft.com/microsoft-copilot-studio/guidance/building-agents-instructions) |
+| Agent Model Selection | [learn.microsoft.com](https://learn.microsoft.com/microsoft-copilot-studio/advanced-generative-answers-overview) |
+| Testing and Debugging | [learn.microsoft.com](https://learn.microsoft.com/microsoft-copilot-studio/authoring-test-bot) |
 
 ---
 
-다음 모듈: [M7. 3요소 지식](m07-knowledge)
+Next module: [M7. Component 3 — Knowledge](m07-knowledge)
