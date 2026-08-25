@@ -62,3 +62,7 @@ exclude:
   - Gemfile.lock
   - node_modules/
   - vendor/
+
+# /latest 는 Jekyll 이 처리하지 않고 그대로 내보냅니다
+keep_files:
+  - latest
