@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" font-family="'Segoe UI','Malgun Gothic',sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#9aa0a6"/>
+    </marker>
+    <marker id="ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#2f6fb5"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="900" height="560" fill="#ffffff"/>
+
+  <!-- 1 user -->
+  <rect x="40" y="24" width="300" height="56" rx="8" fill="#f4f5f7"/>
+  <text x="60" y="48" font-size="14" font-weight="600" fill="#1b1b1b">사용자</text>
+  <text x="60" y="68" font-size="13" fill="#5f6368">경비처리 담당자 알려줘</text>
+
+  <!-- 2 orchestrator pick -->
+  <rect x="40" y="112" width="380" height="74" rx="8" fill="#eaf1fa" stroke="#2f6fb5"/>
+  <text x="60" y="136" font-size="14" font-weight="600" fill="#1b4d85">오케스트레이터</text>
+  <text x="60" y="157" font-size="13" fill="#1b1b1b">어느 토픽을 실행할지 고릅니다</text>
+  <text x="60" y="176" font-size="12" fill="#5f6368">판단 근거는 각 토픽에 적어 둔 설명</text>
+
+  <!-- 3 topic -->
+  <rect x="40" y="218" width="380" height="74" rx="8" fill="#f4f5f7"/>
+  <text x="60" y="242" font-size="14" font-weight="600" fill="#1b1b1b">Contact 토픽</text>
+  <text x="60" y="263" font-size="13" fill="#1b1b1b">대본대로 실행합니다</text>
+  <text x="60" y="282" font-size="12" fill="#5f6368">묻고, 찾고, 결과를 상자에 담아 둡니다</text>
+
+  <!-- 4 variable -->
+  <rect x="470" y="218" width="390" height="86" rx="8" fill="#fdf6e3" stroke="#e0c98a"/>
+  <text x="490" y="242" font-size="14" font-weight="600" fill="#8a6d1f">글로벌 변수</text>
+  <text x="490" y="263" font-size="13" fill="#1b1b1b">Global.Contact_Result</text>
+  <text x="490" y="283" font-size="12" fill="#5f6368">담당자 정경비 / 02-1234-5702</text>
+  <text x="490" y="299" font-size="11" fill="#8a6d1f">대화가 끝날 때까지 담고 있습니다</text>
+
+  <!-- 5 orchestrator answer -->
+  <rect x="40" y="336" width="380" height="74" rx="8" fill="#eaf1fa" stroke="#2f6fb5"/>
+  <text x="60" y="360" font-size="14" font-weight="600" fill="#1b4d85">오케스트레이터</text>
+  <text x="60" y="381" font-size="13" fill="#1b1b1b">상자를 열어 답변을 씁니다</text>
+  <text x="60" y="400" font-size="12" fill="#5f6368">문장의 형식과 말투는 지침을 따릅니다</text>
+
+  <!-- 6 answer -->
+  <rect x="40" y="442" width="380" height="56" rx="8" fill="#f4f5f7"/>
+  <text x="60" y="466" font-size="14" font-weight="600" fill="#1b1b1b">답변</text>
+  <text x="60" y="486" font-size="13" fill="#5f6368">경비처리 담당자는 정경비님입니다</text>
+
+  <!-- 7 later flow -->
+  <rect x="470" y="380" width="390" height="118" rx="8" fill="#f4f5f7"/>
+  <text x="490" y="404" font-size="14" font-weight="600" fill="#1b1b1b">그다음 질문에서</text>
+  <text x="490" y="426" font-size="13" fill="#5f6368">아까 찾은 담당자한테 문의 넣어줘</text>
+  <text x="490" y="452" font-size="13" fill="#1b1b1b">에이전트 흐름이 같은 상자를 꺼내 씁니다</text>
+  <text x="490" y="474" font-size="12" fill="#5f6368">담당자를 다시 묻지 않아도 됩니다</text>
+  <text x="490" y="491" font-size="11" fill="#5f6368">M13에서 이어집니다</text>
+
+  <!-- arrows -->
+  <path d="M190 84 L190 108" stroke="#9aa0a6" stroke-width="1.6" fill="none" marker-end="url(#a)"/>
+  <path d="M190 190 L190 214" stroke="#2f6fb5" stroke-width="1.8" fill="none" marker-end="url(#ab)"/>
+  <path d="M424 255 L466 255" stroke="#9aa0a6" stroke-width="1.6" fill="none" marker-end="url(#a)"/>
+  <path d="M190 296 L190 332" stroke="#9aa0a6" stroke-width="1.6" fill="none" marker-end="url(#a)"/>
+  <path d="M665 308 L665 330 L230 330 L230 332" stroke="#9aa0a6" stroke-width="1.6" fill="none" marker-end="url(#a)" stroke-dasharray="4 3"/>
+  <path d="M190 414 L190 438" stroke="#9aa0a6" stroke-width="1.6" fill="none" marker-end="url(#a)"/>
+  <path d="M700 308 L700 376" stroke="#9aa0a6" stroke-width="1.6" fill="none" marker-end="url(#a)" stroke-dasharray="4 3"/>
+
+  <text x="40" y="536" font-size="12" fill="#5f6368">토픽은 알아낸 것을 상자에 담아 두고, 말로 옮기는 일은 오케스트레이터가 맡습니다</text>
+</svg>
