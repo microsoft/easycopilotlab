@@ -1261,7 +1261,43 @@ details.fold .copybox{margin-top:0}
 
 </div>
 
-<h3>실습 ① 솔루션 만들기</h3>
+<h3>실습 ① 표준 화면으로 들어가기</h3>
+
+<div class="new"><span class="tag"></span>
+<p>Copilot Studio에 접속하면 <strong>New experience</strong>라고 부르는 새 화면이 먼저 뜹니다. 최근에 나온 방식이라 만드는 순서도 화면 구성도 다릅니다.</p>
+<p>오늘은 토픽과 흐름을 직접 짜 보는 것이 목적이라 <strong>표준 화면</strong>으로 진행합니다. 오늘 실습에 나오는 메뉴는 대부분 이쪽에만 있습니다.</p>
+</div>
+
+<h4>1단계. 접속</h4>
+<p><a href="https://copilotstudio.microsoft.com">copilotstudio.microsoft.com</a>에 접속합니다. 가운데 큰 카드 두 개에 <strong>GitHub Copilot</strong> 표시가 붙어 있는 화면이 나옵니다.</p>
+<img loading="lazy" decoding="async" class="shot" src="ecl-shots/m04-01-studio-home.png" alt="New experience가 켜진 Copilot Studio 첫 화면">
+<p class="cap">오른쪽 위에 <strong>New experience</strong> 토글이 있습니다</p>
+
+<h4>2단계. New experience 토글 끄기</h4>
+<p>오른쪽 위의 <strong>New experience</strong> 토글을 눌러 <strong>끕니다.</strong></p>
+<img loading="lazy" decoding="async" class="shot" src="ecl-img/m05-newexp.jpeg" alt="화면 오른쪽 위의 New experience 토글">
+<p class="cap">켜면 새 화면, 끄면 표준 화면입니다</p>
+
+<p>왼쪽 메뉴가 <strong>홈, 에이전트, 흐름, 도구</strong>로 바뀌면 제대로 넘어온 것입니다.</p>
+
+<div class="note key">
+<span class="t">오늘 하루 지켜야 할 한 가지</span>
+<p>이 토글은 <strong>끈 채로</strong> 진행합니다. 새로 고침하거나 다시 접속하면 <strong>다시 켜져 있을 수 있습니다.</strong></p>
+<p>실습 중 화면이 교재와 달라 보이면 먼저 이 토글부터 확인합니다.</p>
+</div>
+
+<h4>3단계. 환경 확인</h4>
+<p>오른쪽 위에 지금 어느 <strong>환경</strong>에 들어와 있는지 표시됩니다. 눌러서 목록을 엽니다.</p>
+<img loading="lazy" decoding="async" class="shot" src="ecl-img/m04-1_env.png" alt="오른쪽 위 환경 버튼과 환경 선택 패널">
+<p class="cap">환경 이름을 누르면 고를 수 있는 환경이 나옵니다</p>
+
+<div class="note">
+<span class="t">안내받은 환경을 고르세요</span>
+<p>화면에 보이는 이름은 예시입니다. 강사가 알려준 환경이 있으면 그것을, 없으면 기본 환경을 고르면 됩니다.</p>
+<p><strong>여기서 고른 환경을 기억해 두세요.</strong> 뒤에서 에이전트를 만들 때 같은 환경이어야 합니다.</p>
+</div>
+
+<h3>실습 ② 솔루션 만들기</h3>
 
 <div class="new"><span class="tag"></span>
 <p>솔루션은 에이전트와 흐름, 커넥터를 함께 담아 두는 상자입니다. 에이전트를 만들면 어차피 어느 솔루션엔가 들어가는데, 지정하지 않으면 기본 솔루션으로 갑니다.</p>
@@ -1273,18 +1309,7 @@ details.fold .copybox{margin-top:0}
 </div>
 </div>
 
-<h4>1단계. 접속과 환경 확인</h4>
-<p><a href="https://copilotstudio.microsoft.com">copilotstudio.microsoft.com</a>에 접속합니다. 오른쪽 위에 지금 어느 <strong>환경</strong>에 들어와 있는지 표시됩니다. 눌러서 목록을 엽니다.</p>
-<img loading="lazy" decoding="async" class="shot" src="ecl-img/m04-1_env.png" alt="오른쪽 위 환경 버튼과 환경 선택 패널">
-<p class="cap">오른쪽 위 환경 이름을 누르면 고를 수 있는 환경이 나옵니다</p>
-
-<div class="note">
-<span class="t">안내받은 환경을 고르세요</span>
-<p>화면에 보이는 이름은 예시입니다. 강사가 알려준 환경이 있으면 그것을, 없으면 기본 환경을 고르면 됩니다.</p>
-<p><strong>여기서 고른 환경을 기억해 두세요.</strong> 실습 ②에서 에이전트를 만들 때 같은 환경이어야 합니다.</p>
-</div>
-
-<h4>2단계. 솔루션 만들기</h4>
+<h4>1단계. 솔루션 화면 열기</h4>
 <p>왼쪽 메뉴 아래쪽의 <strong>...</strong>를 누릅니다.</p>
 <img loading="lazy" decoding="async" class="shot" src="ecl-img/m04-1_more.png" alt="왼쪽 메뉴 아래쪽의 점 세 개">
 <p class="cap">왼쪽 메뉴 맨 아래에 있습니다</p>
@@ -1297,6 +1322,7 @@ details.fold .copybox{margin-top:0}
 <img loading="lazy" decoding="async" class="shot" src="ecl-img/m04-1_sol-list.png" alt="솔루션 목록과 새 솔루션 버튼">
 <p class="cap">처음에는 기본 솔루션 두 개만 있습니다</p>
 
+<h4>2단계. 이름 넣고 만들기</h4>
 <p>오른쪽에 입력 창이 열립니다. 표시 이름을 넣으면 이름이 따라 채워집니다. 게시자와 버전은 기본값을 그대로 두고 <strong>만들기</strong>를 누릅니다.</p>
 <img loading="lazy" decoding="async" class="shot" src="ecl-img/m04-1_sol-new.png" alt="새 솔루션 입력 창">
 <p class="cap">표시 이름과 만들기 버튼만 쓰면 됩니다</p>
@@ -1307,7 +1333,7 @@ details.fold .copybox{margin-top:0}
 <p>아래 <strong>선호하는 솔루션으로 설정</strong>은 체크하지 않아도 됩니다. 체크하면 앞으로 만드는 것이 기본으로 이 솔루션에 들어갑니다.</p>
 </div>
 
-<h3>실습 ② 에이전트 만들기</h3>
+<h3>실습 ③ 에이전트 만들기</h3>
 
 <p>오전에 만든 HR 도우미는 질문에 답하는 데까지 할 수 있었습니다. 이제 손과 발을 붙일 차례입니다. 오전에 만든 것을 Copilot Studio로 복사해 올 수도 있지만, 오늘은 토픽과 흐름을 다루는 <strong>표준 에이전트</strong>로 진행하므로 처음부터 새로 만들고 오전에 쓴 지침을 옮겨 심습니다. 같은 에이전트의 업그레이드 버전을 만든다고 보면 됩니다. 지침은 텍스트라 옮기는 데 몇 초면 됩니다.</p>
 
@@ -1326,45 +1352,22 @@ details.fold .copybox{margin-top:0}
 </div>
 </details>
 
-<h4>들어가는 길은 두 가지입니다</h4>
-<p><a href="https://copilotstudio.microsoft.com">copilotstudio.microsoft.com</a>에 접속하면 처음에는 <strong>새로운 환경</strong> 화면이 뜹니다. 가운데 큰 카드 두 개에 <strong>GitHub Copilot</strong> 표시가 붙어 있는 화면입니다. 오늘 쓰는 화면이 아닙니다.</p>
-<img loading="lazy" decoding="async" class="shot" src="ecl-shots/m04-01-studio-home.png" alt="새로운 환경이 켜진 Copilot Studio 홈 화면">
-<p class="cap">오른쪽 위에 <strong>New experience</strong> 토글이 있고, 맨 아래에 <strong>다른 빌드 방법</strong>이 있습니다</p>
-
-<table>
-<tr><th>방법</th><th>하는 일</th><th>그다음</th></tr>
-<tr><td><strong>New experience 토글 끄기</strong></td><td>화면 전체가 표준으로 바뀝니다</td><td>표준 홈에서 에이전트 카드를 누릅니다</td></tr>
-<tr><td>다른 빌드 방법 &rarr; 에이전트(표준)</td><td>토글은 그대로 두고 표준 에이전트만 하나 만듭니다</td><td>이름 지정 창이 바로 뜹니다</td></tr>
-</table>
-
-<p>어느 쪽으로 가도 같은 <strong>에이전트 이름 지정</strong> 창에서 만납니다. 오늘은 <strong>토글을 끄는 쪽</strong>으로 진행합니다. 오후 내내 토픽과 흐름을 오가야 하는데, 토글을 꺼 두면 화면이 계속 표준으로 유지되기 때문입니다.</p>
-
-<div class="note key">
-<span class="t">오늘 하루 지켜야 할 한 가지</span>
-<p>오른쪽 위 <strong>New experience</strong> 토글을 <strong>끈 채로</strong> 진행합니다. 오늘 실습은 표준 에이전트 기준입니다.</p>
-<img loading="lazy" decoding="async" class="shot" src="ecl-img/m05-newexp.jpeg" alt="화면 오른쪽 위의 New experience 토글">
-<p class="cap">이 토글이 켜져 있으면 오늘 교안의 화면과 다르게 보입니다</p>
-<p>새로 고침하거나 다시 접속하면 토글이 <strong>다시 켜져 있을 수 있습니다.</strong> 화면이 교안과 달라 보이면 먼저 이 토글부터 확인합니다.</p>
-</div>
-
 <details class="fold">
-<summary>다른 빌드 방법으로 가는 경우<span class="use">토글을 건드리지 않을 때</span></summary>
+<summary>토글을 끄지 않고 만드는 방법<span class="use">참고</span></summary>
 <div class="in">
-<p>홈 화면 맨 아래 <strong>다른 빌드 방법</strong>을 누르면 카드 두 개가 나옵니다. 왼쪽 <strong>에이전트</strong> 카드에 <strong>표준</strong> 표시가 붙어 있습니다.</p>
+<p>토글을 켜 둔 채로도 표준 에이전트를 하나 만들 수 있습니다. 홈 화면 맨 아래 <strong>다른 빌드 방법</strong>을 누르면 카드 두 개가 나옵니다.</p>
 <img loading="lazy" decoding="async" class="shot" src="ecl-shots/m04-02-other-ways-standard.png" alt="에이전트(표준)와 에이전트 흐름 두 카드가 놓인 화면">
-<p class="cap">오른쪽 <strong>에이전트 흐름</strong>은 대화 없이 작업만 처리하는 자동화라 오늘은 쓰지 않습니다</p>
+<p class="cap">왼쪽 <strong>에이전트</strong> 카드에 <strong>표준</strong> 표시가 붙어 있습니다</p>
 
-<p>누르면 홈 화면을 거치지 않고 <strong>에이전트 이름 지정</strong> 창이 바로 뜹니다. 아래 3단계로 이어집니다.</p>
+<p>누르면 <strong>에이전트 이름 지정</strong> 창이 바로 뜹니다.</p>
 <img loading="lazy" decoding="async" class="shot" src="ecl-shots/m04-11-name-dialog-direct.png" alt="다른 빌드 방법에서 바로 뜬 에이전트 이름 지정 대화상자">
-<p class="cap">에이전트 설정을 펼치면 언어, 솔루션, 스키마 이름이 똑같이 들어 있습니다</p>
+<p class="cap">아래 2단계와 같은 창입니다</p>
+
+<p>다만 이 방법은 에이전트만 만들고 화면은 새 방식 그대로입니다. 오늘은 토픽과 흐름을 계속 오가야 하므로 토글을 끄고 진행합니다.</p>
 </div>
 </details>
 
-<h4>1단계. New experience 토글 끄기</h4>
-<p>화면 오른쪽 위의 <strong>New experience</strong> 토글을 눌러 끕니다. 화면이 표준으로 바뀝니다.</p>
-<p>왼쪽 메뉴가 <strong>홈, 에이전트, 흐름, 도구</strong>로 바뀌고 오른쪽 위에 지금 <strong>환경</strong> 이름이 표시되면 제대로 넘어온 것입니다. 실습 &#9312;에서 고른 환경이 맞는지 여기서 한 번 더 확인합니다.</p>
-
-<h4>2단계. 에이전트 카드 누르기</h4>
+<h4>1단계. 에이전트 카드 누르기</h4>
 <p>가운데에 <strong>무엇을 빌드하시겠습니까?</strong>가 보입니다. 그 아래 <strong>처음부터 빌드 시작</strong> 줄에서 맨 왼쪽 <strong>에이전트</strong> 카드를 누릅니다.</p>
 <img loading="lazy" decoding="async" class="shot" src="ecl-shots/m04-03-build-agent.png" alt="표준 홈 화면의 처음부터 빌드 시작에서 에이전트 카드">
 <p class="cap">웹 사이트, Microsoft Teams 등에서 질문에 답변하고 작업을 수행합니다라고 적힌 카드입니다</p>
@@ -1375,7 +1378,7 @@ details.fold .copybox{margin-top:0}
 <p>위쪽 입력 칸에 하고 싶은 일을 적어서 만드는 방법도 있습니다. 오전에 에이전트 빌더에서 한 것과 같은 방식인데, 오늘은 각 항목을 직접 채워 보기 위해 카드로 시작합니다.</p>
 </div>
 
-<h4>3단계. 이름 넣기</h4>
+<h4>2단계. 이름 넣기</h4>
 <p><strong>에이전트 이름 지정</strong> 창이 뜹니다. 이름을 <code>HR 도우미_사번</code>처럼 본인을 알아볼 수 있게 넣습니다.</p>
 <img loading="lazy" decoding="async" class="shot" src="ecl-shots/m04-04-name-dialog.png" alt="에이전트 이름 지정 대화상자">
 <p class="cap">여러 사람이 같은 환경에서 실습하므로 이름이 겹치지 않게 합니다</p>
@@ -1385,7 +1388,7 @@ details.fold .copybox{margin-top:0}
 <p>아래 <strong>에이전트 설정(선택 사항)</strong>에 언어와 솔루션이 들어 있습니다. 선택 사항이라고 적혀 있지만 오늘 실습에서는 둘 다 지정해야 합니다.</p>
 </div>
 
-<h4>4단계. 언어와 솔루션 지정</h4>
+<h4>3단계. 언어와 솔루션 지정</h4>
 <p><strong>에이전트 설정(선택 사항)</strong> 왼쪽의 화살표를 눌러 펼칩니다. 세 항목이 나옵니다.</p>
 <img loading="lazy" decoding="async" class="shot" src="ecl-shots/m04-05-agent-settings.png" alt="에이전트 설정을 펼쳐 언어, 솔루션, 스키마 이름이 보이는 화면">
 <p class="cap">펼치면 언어, 솔루션, 스키마 이름이 나옵니다</p>
@@ -1393,11 +1396,11 @@ details.fold .copybox{margin-top:0}
 <table>
 <tr><th>항목</th><th>지정할 값</th><th>무엇인가</th></tr>
 <tr><td>언어</td><td>한국어(대한민국)</td><td>에이전트가 기본으로 쓰는 언어입니다</td></tr>
-<tr><td>솔루션</td><td>실습 ①에서 만든 <code>mySolution_사번</code></td><td>이 에이전트를 담아 둘 상자입니다</td></tr>
+<tr><td>솔루션</td><td>실습 ②에서 만든 <code>mySolution_사번</code></td><td>이 에이전트를 담아 둘 상자입니다</td></tr>
 <tr><td>스키마 이름</td><td>자동으로 채워짐</td><td>내부에서 이 에이전트를 가리키는 고유 이름입니다</td></tr>
 </table>
 
-<p>솔루션은 처음에 <strong>Common Data Services Default Solution</strong>으로 되어 있습니다. 오른쪽 화살표를 눌러 실습 ①에서 만든 솔루션으로 바꿉니다.</p>
+<p>솔루션은 처음에 <strong>Common Data Services Default Solution</strong>으로 되어 있습니다. 오른쪽 화살표를 눌러 실습 ②에서 만든 솔루션으로 바꿉니다.</p>
 <img loading="lazy" decoding="async" class="shot" src="ecl-shots/m04-06-solution-default.jpeg" alt="솔루션이 기본값이고 스키마 이름 접두사가 cr56a_인 상태">
 <p class="cap">바꾸기 전. 스키마 이름 접두사가 <code>cr56a_</code>입니다</p>
 
@@ -1412,19 +1415,19 @@ details.fold .copybox{margin-top:0}
 <div class="note">
 <span class="t">언어는 지금 정해야 합니다</span>
 <p>에이전트의 기본 언어는 <strong>만든 뒤에는 바꿀 수 없습니다.</strong> 지역만 바꾸거나 보조 언어를 추가할 수 있을 뿐입니다. 만들기를 누르기 전에 한국어로 맞춰 둡니다.</p>
-<p>실습 ①에서 만든 솔루션이 목록에 안 보이면 환경이 다른 경우입니다. 오른쪽 위 환경 이름을 확인합니다.</p>
+<p>실습 ②에서 만든 솔루션이 목록에 안 보이면 환경이 다른 경우입니다. 오른쪽 위 환경 이름을 확인합니다.</p>
 </div>
 
 <p>세 항목을 확인했으면 <strong>만들기</strong>를 누릅니다.</p>
 
-<h4>5단계. 만들어진 화면 확인</h4>
+<h4>4단계. 만들어진 화면 확인</h4>
 <p>에이전트의 <strong>개요</strong> 탭이 열립니다. 준비되는 데 잠시 걸리며, 그동안 Agent status 자리에 Loading이 표시됩니다.</p>
 <img loading="lazy" decoding="async" class="shot" src="ecl-shots/m04-08-overview.png" alt="에이전트를 만든 직후의 개요 화면">
 <p class="cap">왼쪽은 에이전트를 채워 넣는 자리, 오른쪽은 바로 대화해 보는 테스트 패널입니다</p>
 
 <p>지금은 지침도 참조 자료도 비어 있습니다. 오른쪽 테스트 패널에는 인사말 하나만 돌아옵니다. 이 화면을 어떻게 읽는지는 <a href="#m5">M5</a>에서 하나씩 살펴봅니다.</p>
 
-<h4>6단계. 설명과 지침 넣기</h4>
+<h4>5단계. 설명과 지침 넣기</h4>
 <p><strong>세부 정보</strong> 오른쪽 <strong>편집</strong>을 누르면 이름과 설명을 고칠 수 있습니다. 설명에 이 에이전트가 무슨 일을 하는지 한 줄로 적습니다.</p>
 <img loading="lazy" decoding="async" class="shot" src="ecl-shots/m05-02-details-edit.png" alt="세부 정보에서 이름과 설명을 편집하는 화면">
 <p class="cap">설명은 <code>우리 회사 HR과 총무 관련 질문에 답하는 도우미</code> 정도면 됩니다</p>
@@ -1464,7 +1467,7 @@ details.fold .copybox{margin-top:0}
 </div>
 </div>
 
-<h4>7단계. 테스트</h4>
+<h4>6단계. 테스트</h4>
 <p>오른쪽 테스트 패널에서 <code>연차 며칠이야?</code>를 물어봅니다. 지침에 적은 말투로 답하기는 하는데, 연차가 며칠인지는 모릅니다.</p>
 
 <div class="new"><span class="tag"></span>
