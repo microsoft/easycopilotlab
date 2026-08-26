@@ -17,9 +17,10 @@
   --accent:#1f5fbf;
   --accent-soft:#eef3fb;
   --radius:10px;
-  --sb-w:262px;
+  --sb-w:236px;
   --nav-h:60px;
-  --shell:1180px;
+  --shell:1440px;
+  --read:800px;
   --font:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
 }
 *{box-sizing:border-box}
@@ -46,8 +47,8 @@ a:hover{text-decoration:underline}
 .nav .sub{font-size:13px;color:var(--ink-mute)}
 
 .layout{
-  display:flex;align-items:flex-start;gap:56px;
-  max-width:var(--shell);margin:0 auto;padding:0 40px;
+  display:flex;align-items:flex-start;gap:48px;
+  max-width:var(--shell);margin:0 auto;padding:0 32px;
 }
 .sb{
   width:var(--sb-w);flex:none;position:sticky;top:var(--nav-h);
@@ -70,6 +71,10 @@ a:hover{text-decoration:underline}
 .sb .sub a.cur{color:var(--accent);font-weight:600;background:transparent}
 
 .doc{flex:1;min-width:0;padding:44px 0 130px}
+/* 글줄은 읽기 좋은 폭으로 묶고, 캡처와 표는 넓게 쓴다 */
+.doc p,.doc li,.doc dd,.doc dt,.doc h1,.doc h2,.doc h3,.doc h4{max-width:var(--read)}
+.doc .cap{max-width:var(--read)}
+.doc pre{max-width:var(--read)}
 .doc h1{font-size:31px;line-height:1.38;margin:0 0 12px}
 .doc h2{
   font-size:23px;line-height:1.45;margin:64px 0 16px;
@@ -489,7 +494,7 @@ details.fold .copybox{margin-top:0}
 <tr><td>결과</td><td>일반적인 답변</td><td>업무 맥락이 반영된 답변</td><td>사내 규정에 맞는 답변</td></tr>
 </table>
 
-<p>세 칸의 차이는 모델이 아니라 <strong>무엇을 성격으로 주었고, 무엇을 보게 했고, 무엇을 할 수 있게 했는가</strong>에서 나옵니다. 오늘 하루 동안 하는 일이 바로 이 세 가지를 우리 업무에 맞게 정하는 것입니다.</p>
+<p>세 칸의 차이는 모델이 아니라 <strong>무엇을 성격으로 주었고, 무엇을 보게 했고, 무엇을 할 수 있게 했는가</strong>에 달려 있습니다. 오늘 하루 동안 이 세 가지를 우리 업무에 맞게 정합니다.</p>
 
 <div class="note">
 <span class="t">할루시네이션</span>
@@ -658,7 +663,9 @@ details.fold .copybox{margin-top:0}
 <img loading="lazy" decoding="async" class="shot" src="ecl-shots/m03-05-auto-result.png" alt="자동으로 만들어진 에이전트의 이름과 설명, 지침">
 <p class="cap">오른쪽에 이름, 설명, 지침이 채워져 있습니다. 이름은 만들 때마다 달라질 수 있습니다</p>
 
-<p>자동으로 만들어진 <strong>지침을 한번 읽어 봅니다.</strong> 역할과 할 일이 정리되어 있습니다.</p>
+<p>자동으로 만들어진 <strong>안내(지침)</strong>를 한번 읽어 봅니다. 역할과 할 일이 정리되어 있습니다.</p>
+
+<p>에이전트 빌더에서는 이 칸이 <strong>안내</strong>로 표시됩니다. Copilot Studio에서는 같은 것을 <strong>지침</strong>이라고 부릅니다. 이 교재에서는 익숙한 쪽인 지침으로 부르되, 화면과 맞춰 볼 수 있게 <strong>안내(지침)</strong>로 함께 적습니다.</p>
 
 <div class="note">
 <span class="t">자동으로 만들어진 지침을 읽어 봅니다</span>
@@ -725,7 +732,7 @@ details.fold .copybox{margin-top:0}
 <img loading="lazy" decoding="async" class="shot" src="ecl-shots/m03-06-configured.png" alt="에이전트 빌더에서 이름과 설명, 지침을 입력한 화면">
 <p class="cap">이름, 설명, 지침을 차례로 입력합니다</p>
 
-<p>지침 전체를 보려면 <strong>안내</strong> 오른쪽의 펼침 아이콘을 누릅니다.</p>
+<p>지침 전체를 보려면 <strong>안내(지침)</strong> 오른쪽의 펼침 아이콘을 누릅니다.</p>
 <img loading="lazy" decoding="async" class="shot" src="ecl-shots/m03-07-instr-formal.png" alt="입력한 지침을 확대해서 확인하는 화면">
 <p class="cap">태도에 존칭과 200자를 적어 두었습니다. 다음 단계에서 이 두 줄을 바꿉니다</p>
 
@@ -738,7 +745,7 @@ details.fold .copybox{margin-top:0}
 <tr><td>아이콘</td><td>AI로 만들거나 직접 올립니다</td><td>PNG, 1MB</td></tr>
 <tr><td>모델</td><td>빠르게 답할지 오래 생각할지 정합니다. 쓰는 사람이 바꿀 수 있습니다</td><td></td></tr>
 <tr><td>설명</td><td>이 에이전트를 언제 부를지 판단하는 근거입니다. 짧고 분명하게 씁니다</td><td>1,000자</td></tr>
-<tr><td>지침</td><td>역할과 범위, 태도를 정합니다</td><td>8,000자</td></tr>
+<tr><td>안내(지침)</td><td>역할과 범위, 태도를 정합니다</td><td>8,000자</td></tr>
 <tr><td>지식</td><td>답변의 근거가 될 자료를 붙입니다</td><td>웹사이트, SharePoint, 파일을 합쳐 20개</td></tr>
 <tr><td>기능</td><td>문서와 차트 만들기, 이미지 만들기를 켭니다</td><td></td></tr>
 <tr><td>추천 프롬프트</td><td>처음 여는 사람에게 예시 질문을 보여 줍니다</td><td></td></tr>
@@ -1371,7 +1378,7 @@ details.fold .copybox{margin-top:0}
 </details>
 
 <h4>1단계. 에이전트 카드 누르기</h4>
-<p>솔루션을 만들었으면 왼쪽 메뉴의 <strong>홈</strong>을 눌러 첫 화면으로 돌아갑니다. 가운데에 <strong>무엇을 빌드하시겠습니까?</strong>가 보입니다. 그 아래 <strong>처음부터 빌드 시작</strong> 줄에서 맨 왼쪽 <strong>에이전트</strong> 카드를 누릅니다.</p>
+<p>솔루션을 만들었으면 화면 위쪽의 <strong>Copilot Studio</strong> 글자를 눌러 첫 화면으로 돌아갑니다. 가운데에 <strong>무엇을 빌드하시겠습니까?</strong>가 보입니다.그 아래 <strong>처음부터 빌드 시작</strong> 줄에서 맨 왼쪽 <strong>에이전트</strong> 카드를 누릅니다.</p>
 <img loading="lazy" decoding="async" class="shot" src="ecl-shots/m04-03-build-agent.png" alt="표준 홈 화면의 처음부터 빌드 시작에서 에이전트 카드">
 <p class="cap">웹 사이트, Microsoft Teams 등에서 질문에 답변하고 작업을 수행합니다라고 적힌 카드입니다</p>
 
@@ -1910,7 +1917,7 @@ details.fold .copybox{margin-top:0}
 
 <div class="note">
 <span class="t">이모지와 맺음말이 왜 들어갔나</span>
-<p>겉치레처럼 보이지만 <strong>확인용 표시</strong>입니다. 답변 끝에 맺음말과 이모지가 붙어 있으면 지침의 태도 항목이 실제로 먹혔다는 뜻이고, 빠져 있으면 안 먹힌 것입니다. <a href="#m8">M8</a>에서 참조 자료를 붙인 뒤 이 표시가 그대로 남아 있는지로 지침과 지식이 함께 작동하는지 판단합니다.</p>
+<p>맺음말과 이모지는 <strong>확인용 표시</strong>로 씁니다. 답변 끝에 맺음말과 이모지가 붙어 있으면 지침의 태도 항목이 실제로 먹혔다는 뜻이고, 빠져 있으면 안 먹힌 것입니다. <a href="#m8">M8</a>에서 참조 자료를 붙인 뒤 이 표시가 그대로 남아 있는지로 지침과 지식이 함께 작동하는지 판단합니다.</p>
 </div>
 
 <div class="note">
@@ -2232,7 +2239,7 @@ details.fold .copybox{margin-top:0}
 <div class="note">
 <span class="t">이 대본에는 대사가 없습니다</span>
 <p>보통 대본이라고 하면 대사가 적혀 있습니다. 그런데 여기서 만드는 대본에는 <strong>무엇을 할지만</strong> 적습니다. 어느 부서인지 물어봐라, 담당자를 찾아라, 찾은 결과를 적어 둬라 같은 것들입니다.</p>
-<p>그것을 실제 문장으로 옮기는 일은 <strong>오케스트레이터</strong>가 합니다. 같은 대본을 써도 사용자가 어떻게 물었느냐에 따라 돌아오는 말이 달라지는 이유가 여기 있습니다. 지침에 적어 둔 말투도 이 단계에서 입혀집니다.</p>
+<p>그것을 실제 문장으로 옮기는 일은 <strong>오케스트레이터</strong>가 합니다. 그래서 같은 대본을 써도 사용자가 어떻게 물었느냐에 따라 돌아오는 말이 달라집니다. 지침에 적어 둔 말투도 이 단계에서 입혀집니다.</p>
 <p>그래서 실습에서 토픽을 만들 때 답변 문장을 짜느라 시간을 쓰지 않습니다. 무엇을 알아낼지만 정해 두면 됩니다.</p>
 </div>
 </div>
@@ -2278,7 +2285,7 @@ details.fold .copybox{margin-top:0}
 <div class="note">
 <span class="t">대화를 새로 시작하면 떨어집니다</span>
 <p>글로벌 변수는 <strong>한 번의 대화 동안만</strong> 값을 들고 있습니다. 테스트 패널에서 새 대화를 시작하면 상자가 전부 비워집니다.</p>
-<p>실습 중에 앞에서 저장한 값이 안 보이면 십중팔구 대화를 새로 시작한 것입니다. 다시 담당자를 물어보면 상자가 새로 채워집니다.</p>
+<p>실습 중에 앞에서 저장한 값이 안 보이면 대화를 새로 시작한 경우가 대부분입니다. 다시 담당자를 물어보면 상자가 새로 채워집니다.</p>
 </div>
 </div>
 
@@ -2622,7 +2629,7 @@ details.fold .copybox{margin-top:0}
 <div class="note">
 <span class="t">메시지 보내기를 끄는 이유</span>
 <p>켜 두면 이 노드가 만든 문장이 그대로 사용자에게 갑니다. <a href="#m7">M7</a>에서 정한 말투도, 다른 자료에서 얻은 내용도 섞이지 않은 상태로 나갑니다.</p>
-<p>끄고 결과를 상자에 담아 두면 오케스트레이터가 그것을 읽어 답을 만듭니다. <strong>토픽은 정보를 모으고, 말하는 것은 오케스트레이터</strong>라는 원칙이 이 체크박스 하나로 정해집니다.</p>
+<p>끄고 결과를 상자에 담아 두면 오케스트레이터가 그것을 읽어 답을 만듭니다. 토픽은 정보를 모으고, 말하는 쪽은 오케스트레이터가 됩니다.</p>
 </div>
 </div>
 
@@ -3229,9 +3236,9 @@ details.fold .copybox{margin-top:0}
 <p>커넥터를 붙였는데도 거절합니다. 고장이 아니라 <a href="#m7">M7</a>에서 <strong>날씨 같은 업무 외 질문에는 답하지 않는다</strong>고 적어 두었기 때문입니다. 지침에 적힌 금지가 남아 있으면 도구가 붙어 있어도 답하지 않습니다.</p>
 
 <div class="note">
-<span class="t">여기가 오늘 가장 중요한 장면 중 하나입니다</span>
-<p>도구를 붙였다고 바로 쓰이지 않습니다. <strong>지침이 막고 있으면 도구까지 가지 않습니다.</strong> 반대로 지침만 고치고 도구가 없으면 에이전트가 아는 대로 지어냅니다. 둘은 짝입니다.</p>
-<p>오후 내내 도구를 붙일 때마다 지침도 함께 손보게 되는 이유가 여기 있습니다.</p>
+<span class="t">도구와 지침은 함께 봅니다</span>
+<p>도구를 붙였다고 바로 쓰이지 않습니다. <strong>지침이 막고 있으면 도구까지 가지 않습니다.</strong> 반대로 지침만 고치고 도구가 없으면 에이전트가 아는 대로 지어냅니다.</p>
+<p>오후 실습에서는 도구를 붙일 때마다 지침도 함께 손봅니다.</p>
 </div>
 </div>
 
