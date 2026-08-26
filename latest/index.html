@@ -538,14 +538,15 @@ details.fold .copybox{margin-top:0}
 </ul>
 
 <h3>In-context</h3>
-<p>Copilot 채팅에서 <code>@에이전트이름</code>으로 부릅니다. 하나의 대화 안에서 여러 에이전트를 번갈아 부를 수 있다는 점이 핵심입니다.</p>
+<p>Copilot 채팅에서 <code>@에이전트이름</code>으로 부릅니다. 하나의 대화 안에서 여러 에이전트를 번갈아 부를 수 있습니다.</p>
 
+<p>오늘 만들 에이전트를 예로 들면 이렇게 씁니다. 실제로 불러 보는 것은 <a href="#m3">M3</a>을 마친 뒤입니다.</p>
 <pre>@HR도우미 복지포인트 사용처 알려줘</pre>
 
 <p>이렇게 한 줄로 질문과 답이 끝납니다. 하던 작업의 흐름을 끊지 않아도 됩니다.</p>
 
 <h3>여러 에이전트를 함께 사용하기</h3>
-<p>In-context 방식의 진짜 쓸모는 하나의 대화 흐름 안에서 여러 에이전트를 조합하는 데 있습니다. 고객인 A사와의 미팅을 준비하는 상황을 예로 들면 다음과 같습니다.</p>
+<p>In-context 방식은 하나의 대화 흐름 안에서 여러 에이전트를 조합할 때 쓸모가 큽니다. 고객인 A사와의 미팅을 준비하는 상황을 예로 들면 다음과 같습니다.</p>
 
 <table>
 <tr><th>단계</th><th>누구와 대화</th><th>하는 일</th></tr>
@@ -610,7 +611,7 @@ details.fold .copybox{margin-top:0}
 
 <div class="note">
 <span class="t">알아두면 좋습니다</span>
-<p>선언형 에이전트는 Copilot Studio의 에이전트 목록에 나타나지 않습니다. Copilot Studio에만 있는 기능이 필요해지면 편집 화면의 <strong>...</strong> 메뉴에 Copilot Studio로 복사하는 항목도 있습니다. 다만 이 과정에서는 표준 에이전트로 새로 만듭니다. 이유는 그때 설명합니다. <a href="#m4">M4</a>에서 이 작업을 합니다.</p>
+<p>선언형 에이전트는 Copilot Studio의 에이전트 목록에 나타나지 않습니다. Copilot Studio에만 있는 기능이 필요해지면 편집 화면의 <strong>...</strong> 메뉴에 Copilot Studio로 복사하는 항목도 있습니다. 다만 이 과정에서는 표준 에이전트로 새로 만듭니다. <a href="#m4">M4</a>에서 이 작업을 합니다.</p>
 </div>
 
 <div class="note">
@@ -657,11 +658,11 @@ details.fold .copybox{margin-top:0}
 <img loading="lazy" decoding="async" class="shot" src="ecl-shots/m03-05-auto-result.png" alt="자동으로 만들어진 에이전트의 이름과 설명, 지침">
 <p class="cap">오른쪽에 이름, 설명, 지침이 채워져 있습니다. 이름은 만들 때마다 달라질 수 있습니다</p>
 
-<p>자동으로 만들어진 <strong>지침을 한번 읽어 보세요.</strong> 역할과 할 일이 정리되어 있습니다.</p>
+<p>자동으로 만들어진 <strong>지침을 한번 읽어 봅니다.</strong> 역할과 할 일이 정리되어 있습니다.</p>
 
 <div class="note">
-<span class="t">잘 만들어졌을 겁니다</span>
-<p>요즘 에이전트 빌더가 만들어 주는 지침은 꽤 좋습니다. 목적, 응답 원칙, 지원 영역, 답변 형식, 예외 처리까지 갖춰서 나옵니다. 그대로 쓰셔도 됩니다.</p>
+<span class="t">자동으로 만들어진 지침을 읽어 봅니다</span>
+<p>목적, 응답 원칙, 지원 영역, 답변 형식, 예외 처리가 들어 있습니다. 이 상태로 쓰는 경우도 있습니다.</p>
 <p>다만 <strong>우리 회사 것은 아닙니다.</strong> 지역이나 고용 형태에 따라 다를 수 있다고 적혀 있지만 실습 자료에는 그런 구분이 없고, 연차 기준이나 정산 기한 같은 우리 회사만의 전제도 들어 있지 않습니다. 일반적으로 맞는 말과 우리 회사에서 맞는 말은 다릅니다.</p>
 </div>
 
@@ -681,7 +682,7 @@ details.fold .copybox{margin-top:0}
 급여 금액이나 인사평가는 담당자에게 안내하도록 해줘.
 존칭을 쓰고 핵심을 먼저 말하게 해줘.
 사내 규정 문서를 지식으로 붙일 예정이야.</code></pre>
-<p>특히 <strong>파일을 붙일 계획이라면 미리 말해 두세요.</strong> 문서를 근거로 답하라는 내용이 지침에 들어갑니다. 나중에 파일만 올리면 됩니다.</p>
+<p>특히 <strong>파일을 붙일 계획이라면 요청에 미리 적어 둡니다.</strong> 문서를 근거로 답하라는 내용이 지침에 들어갑니다. 나중에 파일만 올리면 됩니다.</p>
 <p>시간이 되면 새 대화에서 이 요청으로 한 번 더 만들어 앞의 결과와 비교해 봅니다.</p>
 </div>
 
@@ -693,7 +694,7 @@ details.fold .copybox{margin-top:0}
 </div>
 
 <h4>3단계. 지침을 직접 쓰기</h4>
-<p>이제 우리 회사에 맞는 지침을 직접 써 봅니다. 구성 탭에서 이름과 설명, 지침을 다음 내용으로 바꿉니다. 앞에서 자동으로 만들어진 지침은 지우고 통째로 붙여넣습니다.</p>
+<p>이제 우리 회사에 맞는 지침을 직접 써 봅니다. 화면 위쪽의 <strong>구성</strong>을 눌러 구성 탭으로 간 뒤, 이름과 설명, 지침을 다음 내용으로 바꿉니다. 앞에서 자동으로 만들어진 지침은 지우고 통째로 붙여넣습니다.</p>
 
 <div class="new"><span class="tag"></span>
 <p>자동으로 만들어진 지침은 만들 때마다 내용이 달라집니다. 실습을 같은 조건에서 진행하려면 모두 같은 지침으로 맞춰야 합니다.</p>
@@ -861,8 +862,8 @@ details.fold .copybox{margin-top:0}
 <tr><th>질문</th><th>참조되는 문서</th></tr>
 <tr><td>연차 사용 절차 알려줘</td><td>휴가 근태 가이드</td></tr>
 <tr><td>복지포인트 사용처 알려줘</td><td>복리후생 안내</td></tr>
-<tr><td>경비처리 어떻게 해요?</td><td>경비처리 가이드</td></tr>
-<tr><td>경비처리 담당자 누구예요?</td><td>담당자정보</td></tr>
+<tr><td>경비처리 어떻게 해?</td><td>경비처리 가이드</td></tr>
+<tr><td>경비처리 담당자 누구야?</td><td>담당자정보</td></tr>
 </table>
 
 <img loading="lazy" decoding="async" class="shot" src="ecl-shots/m03-20-doc-answers.png" alt="연차와 복지포인트 질문에 문서를 근거로 답한 화면">
@@ -874,7 +875,7 @@ details.fold .copybox{margin-top:0}
 <div class="new"><span class="tag"></span>
 <div class="note">
 <span class="t">방금 무엇이 달라졌나</span>
-<p>지침은 그대로입니다. 문서 다섯 개를 붙였을 뿐입니다. 조금 전까지 모르겠다고 하던 질문에 이제 답합니다.</p>
+<p>지침은 그대로 두고 문서 다섯 개만 붙였는데, 조금 전까지 모르겠다고 하던 질문에 이제 답합니다.</p>
 <p>말투는 여전히 반말입니다. 지침이 태도를, 지식이 내용을 맡는다는 것이 여기서 보입니다.</p>
 </div>
 </div>
@@ -1280,6 +1281,8 @@ details.fold .copybox{margin-top:0}
 
 <p>왼쪽 메뉴가 <strong>홈, 에이전트, 흐름, 도구</strong>로 바뀌면 제대로 넘어온 것입니다.</p>
 
+<p>접속했을 때 토글이 보이지 않고 왼쪽 메뉴가 이미 이렇게 되어 있다면 표준 화면으로 들어온 상태입니다. 2단계는 건너뜁니다.</p>
+
 <div class="note key">
 <span class="t">오늘 하루 지켜야 할 한 가지</span>
 <p>이 토글은 <strong>끈 채로</strong> 진행합니다. 새로 고침하거나 다시 접속하면 <strong>다시 켜져 있을 수 있습니다.</strong></p>
@@ -1292,9 +1295,9 @@ details.fold .copybox{margin-top:0}
 <p class="cap">환경 이름을 누르면 고를 수 있는 환경이 나옵니다</p>
 
 <div class="note">
-<span class="t">안내받은 환경을 고르세요</span>
+<span class="t">안내받은 환경을 고릅니다</span>
 <p>화면에 보이는 이름은 예시입니다. 강사가 알려준 환경이 있으면 그것을, 없으면 기본 환경을 고르면 됩니다.</p>
-<p><strong>여기서 고른 환경을 기억해 두세요.</strong> 뒤에서 에이전트를 만들 때 같은 환경이어야 합니다.</p>
+<p><strong>여기서 고른 환경을 기억해 둡니다.</strong> 뒤에서 에이전트를 만들 때 같은 환경이어야 합니다.</p>
 </div>
 
 <h3>실습 ② 솔루션 만들기</h3>
@@ -1368,7 +1371,7 @@ details.fold .copybox{margin-top:0}
 </details>
 
 <h4>1단계. 에이전트 카드 누르기</h4>
-<p>가운데에 <strong>무엇을 빌드하시겠습니까?</strong>가 보입니다. 그 아래 <strong>처음부터 빌드 시작</strong> 줄에서 맨 왼쪽 <strong>에이전트</strong> 카드를 누릅니다.</p>
+<p>솔루션을 만들었으면 왼쪽 메뉴의 <strong>홈</strong>을 눌러 첫 화면으로 돌아갑니다. 가운데에 <strong>무엇을 빌드하시겠습니까?</strong>가 보입니다. 그 아래 <strong>처음부터 빌드 시작</strong> 줄에서 맨 왼쪽 <strong>에이전트</strong> 카드를 누릅니다.</p>
 <img loading="lazy" decoding="async" class="shot" src="ecl-shots/m04-03-build-agent.png" alt="표준 홈 화면의 처음부터 빌드 시작에서 에이전트 카드">
 <p class="cap">웹 사이트, Microsoft Teams 등에서 질문에 답변하고 작업을 수행합니다라고 적힌 카드입니다</p>
 
@@ -1384,7 +1387,7 @@ details.fold .copybox{margin-top:0}
 <p class="cap">여러 사람이 같은 환경에서 실습하므로 이름이 겹치지 않게 합니다</p>
 
 <div class="note">
-<span class="t">여기서 바로 만들기를 누르지 마세요</span>
+<span class="t">여기서 바로 만들기를 누르지 않습니다</span>
 <p>아래 <strong>에이전트 설정(선택 사항)</strong>에 언어와 솔루션이 들어 있습니다. 선택 사항이라고 적혀 있지만 오늘 실습에서는 둘 다 지정해야 합니다.</p>
 </div>
 
@@ -1473,7 +1476,7 @@ details.fold .copybox{margin-top:0}
 <div class="new"><span class="tag"></span>
 <div class="note">
 <span class="t">참조 자료는 아직 없습니다</span>
-<p>M3에서 올린 실습 파일 다섯 개는 여기에 없습니다. 새로 만든 에이전트니까요.</p>
+<p>M3에서 올린 실습 파일 다섯 개는 여기에 없습니다. 새로 만든 에이전트라 이전에 올린 파일이 넘어오지 않습니다.</p>
 <p><a href="#m8">M8</a>에서 같은 파일을 다시 올립니다.</p>
 </div>
 </div>
@@ -1494,7 +1497,7 @@ details.fold .copybox{margin-top:0}
 <tr><th>구성 요소</th><th>비유</th><th>역할</th><th>모듈</th></tr>
 <tr><td>오케스트레이터</td><td>운영자</td><td>모델을 언제 부를지, 어떤 도구를 쓸지 정함</td><td>M6</td></tr>
 <tr><td>지침</td><td>행동매뉴얼</td><td>역할, 범위, 태도, 원칙 정의</td><td>M7</td></tr>
-<tr><td>지식</td><td>교과서</td><td>답변의 근거 자료. 화면에서는 <strong>참조 자료</strong>라고 부릅니다</td><td>M8</td></tr>
+<tr><td>지식</td><td>교과서</td><td>답변의 근거 자료. 에이전트 빌더에서는 <strong>지식</strong>, Copilot Studio에서는 <strong>참조 자료</strong>로 표시됩니다</td><td>M8</td></tr>
 <tr><td>도구</td><td>손발</td><td>실제로 수행하는 행동</td><td>M9~M16</td></tr>
 </table>
 
@@ -1510,7 +1513,7 @@ details.fold .copybox{margin-top:0}
 <tr><th>메뉴</th><th>하는 일</th></tr>
 <tr><td>홈</td><td>에이전트를 빠르게 만들고, 최근에 쓴 것을 다시 엽니다</td></tr>
 <tr><td>에이전트</td><td>내가 만든 에이전트 전체 목록입니다. 새로 만들 때도 여기서 시작합니다</td></tr>
-<tr><td>흐름</td><td>만들어 둔 워크플로 전체입니다 (M13에서 사용)</td></tr>
+<tr><td>흐름</td><td>만들어 둔 에이전트 흐름 전체입니다 (M13에서 사용)</td></tr>
 <tr><td>도구</td><td>만들어 둔 도구 전체입니다. 여러 에이전트가 나눠 쓸 수 있습니다</td></tr>
 </table>
 
@@ -1639,7 +1642,7 @@ details.fold .copybox{margin-top:0}
 <p class="cap">켜면 GitHub Copilot 하네스, 끄면 표준 하네스로 만들게 됩니다</p>
 
 <div class="note">
-<span class="t">솔루션을 먼저 정해 두세요</span>
+<span class="t">솔루션을 먼저 정해 둡니다</span>
 <p>새로 만들 때는 기본 설정 솔루션에 들어갑니다. 원하는 솔루션이 따로 있다면 만들기 전에 지정해 두는 편이 낫습니다.</p>
 </div>
 </div>
@@ -1743,8 +1746,8 @@ details.fold .copybox{margin-top:0}
 <div class="new"><span class="tag"></span>
 <div class="note">
 <span class="t">근거 없는 응답 허용하기가 M8과 이어집니다</span>
-<p>지금 이 항목이 켜져 있기 때문에, 참조 자료가 하나도 없는 상태에서도 에이전트가 그럴듯하게 답을 만들어 냅니다. <a href="#m8">M8</a>에서 참조 자료를 붙이기 전과 후를 비교할 때 이 점을 기억해 두세요.</p>
-<p>끄면 참조 자료나 도구를 쓰지 않은 답은 아예 막히고, 대신 폴백 토픽이 실행됩니다. 사내 규정만 근거로 답하게 하려는 운영 환경에서는 끄는 쪽을 검토합니다. 다만 오늘은 여러 실습을 이어서 하므로 켜 둔 채로 진행합니다.</p>
+<p>지금 이 항목이 켜져 있기 때문에, 참조 자료가 하나도 없는 상태에서도 에이전트가 그럴듯하게 답을 만들어 냅니다. <a href="#m8">M8</a>에서 참조 자료를 붙이기 전과 후를 비교할 때 이 점을 기억해 둡니다.</p>
+<p>끄면 참조 자료나 도구를 쓰지 않은 답은 아예 막히고, 대신 답을 찾지 못했을 때 실행되는 폴백 토픽이 안내 문구를 내보냅니다. 사내 규정만 근거로 답하게 하려는 운영 환경에서는 끄는 쪽을 검토합니다. 다만 오늘은 여러 실습을 이어서 하므로 켜 둔 채로 진행합니다.</p>
 </div>
 </div>
 
@@ -1779,7 +1782,7 @@ details.fold .copybox{margin-top:0}
 <p>화면 오른쪽 위 <strong>New experience</strong> 토글이 꺼져 있는지 봅니다. 새로 고침하면 다시 켜져 있을 수 있습니다. 오늘 실습은 표준 에이전트 기준입니다.</p>
 </div>
 
-<p>지침은 에이전트에게 주는 행동매뉴얼입니다. 무엇을 하고 무엇을 하지 말지, 어떻게 말할지를 여기서 정합니다.</p>
+<p>지침은 에이전트에게 주는 행동 매뉴얼입니다. 무엇을 하고 무엇을 하지 말지, 어떻게 말할지를 여기서 정합니다.</p>
 
 <div class="new"><span class="tag"></span>
 <div class="note">
@@ -1900,7 +1903,7 @@ details.fold .copybox{margin-top:0}
 <div class="new"><span class="tag"></span>
 <div class="note">
 <span class="t">연락처는 실습용 예시입니다</span>
-<p>위 연락처는 실습을 위해 넣어 둔 값입니다. 실제로 쓸 때는 <code>담당자정보.docx</code>처럼 담당자를 정리해 둔 문서와 <strong>같은 값으로 맞춰 두세요.</strong> 지침에 적은 연락처와 문서에 있는 연락처가 다르면 에이전트가 두 가지를 섞어 안내합니다.</p>
+<p>위 연락처는 실습을 위해 넣어 둔 값입니다. 실제로 쓸 때는 <code>담당자정보.docx</code>처럼 담당자를 정리해 둔 문서와 <strong>같은 값으로 맞춰 둡니다.</strong> 지침에 적은 연락처와 문서에 있는 연락처가 다르면 에이전트가 두 가지를 섞어 안내합니다.</p>
 <p>법무팀은 실습 문서에 없는 부서입니다. <a href="#m15">M15</a>에서 법무 전용 에이전트를 따로 만들어 이 질문을 넘기는 구조를 실습합니다.</p>
 </div>
 </div>
@@ -1949,7 +1952,7 @@ details.fold .copybox{margin-top:0}
 <div class="note">
 <span class="t">날씨 줄은 오후에 다시 손봅니다</span>
 <p>답변 불가에 적어 둔 <strong>날씨</strong> 때문에 첫 질문이 막혔습니다. 그런데 <a href="#m12">M12</a>에서 날씨 커넥터를 붙여 보는데, 이 줄이 남아 있으면 커넥터를 붙여도 계속 거절합니다.</p>
-<p>지침이 도구보다 먼저 판단에 들어간다는 것을 그때 직접 보게 됩니다. 지금은 그대로 두세요.</p>
+<p>지침에 적힌 금지가 남아 있으면 도구를 붙여도 답하지 않는다는 것을 그때 직접 보게 됩니다. 지금은 그대로 둡니다.</p>
 </div>
 </div>
 
@@ -1958,12 +1961,12 @@ details.fold .copybox{margin-top:0}
 <p>화면에 <code>**급여팀(내선 5678)**</code>처럼 별표가 붙어 나올 때가 있습니다. 모델이 굵게 표시하려고 넣은 마크다운인데 테스트 패널이 그대로 보여준 것입니다. 지침에 강조 표시를 쓰지 말라고 한 줄 적어 두면 줄어들고, 실제 채널에서는 대부분 굵은 글씨로 제대로 나옵니다.</p>
 </div>
 
-<p>이 시점에서 에이전트는 행동매뉴얼만 받은 상태입니다. 말투와 답변 범위는 지침을 따르지만 사내 규정의 구체적인 내용은 아직 알지 못합니다. 다음 모듈에서 지식을 연결합니다.</p>
+<p>이 시점에서 에이전트는 행동 매뉴얼만 받은 상태입니다. 말투와 답변 범위는 지침을 따르지만 사내 규정의 구체적인 내용은 아직 알지 못합니다. 다음 모듈에서 지식을 연결합니다.</p>
 
 </section><section class="pg" data-pg="m8"><h2 class="mod" id="m8"><span class="num">M8</span>지식 <span class="pill">실습</span></h2>
 <p class="lead">세 번째 구성 요소입니다. 답변의 근거가 되는 문서를 연결합니다.</p>
 
-<p>지식은 에이전트가 답변의 근거로 삼는 자료입니다. 지침만 있을 때는 정확한 답변을 드리기 어렵다고 응답하던 질문에, 이제 문서 내용을 근거로 구체적으로 답하게 됩니다.</p>
+<p>지식은 에이전트가 답변의 근거로 삼는 자료이며, Copilot Studio 화면에서는 <strong>참조 자료</strong>로 표시됩니다. 지침만 있을 때는 정확한 답변을 드리기 어렵다고 응답하던 질문에, 이제 문서 내용을 근거로 구체적으로 답하게 됩니다.</p>
 
 <h3>참조 자료를 붙이는 방식</h3>
 <p><strong>참조 자료 추가</strong>를 누르면 원본 종류가 나옵니다. 파일을 직접 올리는 방법이 맨 위에 있고, 그 아래로 사내 시스템에 연결하는 카드가 놓입니다.</p>
@@ -2011,7 +2014,7 @@ details.fold .copybox{margin-top:0}
 
 <div class="new"><span class="tag"></span>
 <h4>문서보다 먼저 챙길 것</h4>
-<p>Microsoft가 문서로 안내하는 항목은 문서 안쪽보다 <strong>참조 자료의 이름과 설명</strong> 쪽에 몰려 있습니다. 오케스트레이터가 어느 자료를 열어볼지 고를 때 읽는 것이 그 둘이기 때문입니다.</p>
+<p>손볼 곳은 문서 안쪽보다 <strong>참조 자료의 이름과 설명</strong> 쪽입니다. 오케스트레이터가 어느 자료를 열어볼지 고를 때 읽는 것이 그 둘입니다.</p>
 <table>
 <tr><th>항목</th><th>내용</th></tr>
 <tr><td>이름은 고유하게</td><td>문서1, 가이드처럼 흔한 이름을 피하고 무엇이 들었는지 드러나게 짓습니다</td></tr>
@@ -2132,7 +2135,7 @@ details.fold .copybox{margin-top:0}
 </table>
 
 <div class="note">
-<span class="t">비교하고 나면 되돌려 두세요</span>
+<span class="t">비교하고 나면 되돌려 둡니다</span>
 <p>오후 실습은 모두 같은 에이전트로 이어집니다. 비교가 끝나면 원래 모델로 돌려 두는 편이 안전합니다.</p>
 <p>모델을 바꿔도 지침과 참조 자료는 그대로 남습니다. 바뀌는 것은 그것을 읽고 답을 만드는 쪽뿐입니다.</p>
 </div>
@@ -2263,7 +2266,7 @@ details.fold .copybox{margin-top:0}
 <tr><td>시스템 변수</td><td>처음부터 놓여 있습니다</td><td>모든 토픽</td><td>Echo 실습에서 꺼내 씁니다</td></tr>
 </table>
 
-<p>셋 다 오늘 한 번씩 써 보는데, 다른 토픽이나 흐름으로 값을 넘길 때는 <strong>글로벌 변수</strong>가 필요합니다. <a href="#m13">M13</a>에서 흐름과 이어 붙일 때 그렇습니다. 변수를 만들 때 속성 창에서 <strong>글로벌(모든 토픽에서 액세스 가능)</strong>을 고르면 이름 앞에 <code>Global.</code>이 붙으므로, 그것이 붙어 있는지로 구분하면 됩니다.</p>
+<p>셋 다 오늘 한 번씩 써 보는데, 다른 토픽이나 흐름으로 값을 넘길 때는 <strong>글로벌 변수</strong>가 필요합니다. <a href="#m13">M13</a>에서 흐름과 이어 붙일 때 그렇습니다. 변수를 만들 때 속성 창의 사용량에서 <strong>전역(모든 토픽에서 액세스 가능)</strong>을 고르면 이름 앞에 <code>Global.</code>이 붙습니다. 이 책에서 말하는 글로벌 변수가 화면의 전역이며, <code>Global.</code>이 붙어 있는지로 구분하면 됩니다.</p>
 
 <div class="new"><span class="tag"></span>
 <div class="note">
@@ -2288,7 +2291,7 @@ details.fold .copybox{margin-top:0}
 <div class="note">
 <span class="t">왜 메시지 노드로 직접 답하지 않나</span>
 <p>토픽 안에서 메시지 노드로 답을 내보낼 수도 있습니다. 그러면 <strong>답변 형식이 그 문장에 고정됩니다.</strong> 지침에 적어 둔 말투도, 다른 자료에서 찾은 내용도 섞이지 않습니다.</p>
-<p>대신 변수에 담아 두면 오케스트레이터가 지식과 다른 도구에서 얻은 것까지 합쳐 하나의 답으로 만듭니다. Microsoft도 생성형 오케스트레이션에서는 이 방식을 권장합니다.</p>
+<p>대신 변수에 담아 두면 오케스트레이터가 참조 자료와 다른 도구에서 얻은 것까지 합쳐 하나의 답으로 만듭니다.</p>
 </div>
 </div>
 
@@ -2346,7 +2349,7 @@ details.fold .copybox{margin-top:0}
 </table>
 
 <img loading="lazy" decoding="async" class="shot" src="ecl-shots/m10-07-desc-filled.png" alt="설명을 입력한 화면">
-<p class="cap">설명이 핵심입니다. 오케스트레이터가 이 문장을 보고 토픽을 선택합니다</p>
+<p class="cap">오케스트레이터는 이 설명을 보고 토픽을 고릅니다</p>
 
 <h4>5단계. 인사 메시지 노드 추가</h4>
 <p>트리거 아래 <strong>+</strong>를 누르고 <strong>메시지 보내기</strong>를 고릅니다.</p>
@@ -2396,7 +2399,7 @@ details.fold .copybox{margin-top:0}
 <img loading="lazy" decoding="async" class="shot" src="ecl-shots/m10-15-var-activity.png" alt="시스템 탭에서 Activity.Text를 검색한 화면">
 <p class="cap">사용자가 방금 입력한 문장이 담기는 변수입니다</p>
 
-<p>같은 변수를 <strong>세 번</strong> 넣습니다. 한 번 넣고 줄바꿈 없이 이어서 두 번 더 반복하면 됩니다.</p>
+<p>메아리처럼 들리도록 같은 변수를 <strong>세 번</strong> 이어서 넣습니다. 한 번 넣고 줄바꿈 없이 두 번 더 반복하면 됩니다.</p>
 <img loading="lazy" decoding="async" class="shot" src="ecl-shots/m10-16-echo-done.png" alt="두 번째 메시지 노드에 Activity.Text가 세 번 들어간 화면">
 <p class="cap">같은 말이 세 번 돌아오는 것이 메아리입니다</p>
 
@@ -2416,6 +2419,8 @@ details.fold .copybox{margin-top:0}
 <p>테스트 패널에서 <code>메아리 해줘. 야호~</code>처럼 입력합니다.</p>
 <img loading="lazy" decoding="async" class="shot" src="ecl-shots/m10-18-test.png" alt="테스트 패널에서 Echo 토픽이 실행되고 왼쪽에 활동 화면이 표시된 화면">
 <p class="cap">인사말이 먼저 나오고, 그다음 같은 말이 세 번 돌아옵니다</p>
+
+<p>다른 답이 돌아오면 테스트 패널에서 <strong>새 테스트 세션 시작</strong>을 누르고, 4단계에 적은 설명 문장에 가까운 표현으로 다시 물어봅니다.</p>
 
 <div class="new"><span class="tag"></span>
 <div class="note">
@@ -2464,7 +2469,7 @@ details.fold .copybox{margin-top:0}
 </div>
 
 <h4>4단계. 입력 변수 만들기</h4>
-<p>Echo 토픽과 다른 점이 여기서 나옵니다. Contact 토픽은 <strong>무엇을 찾을지</strong>를 받아야 합니다. 경비 담당자인지 교육 담당자인지 알아야 조회할 수 있으니까요.</p>
+<p>Echo 토픽과 다른 점이 여기서 나옵니다. Contact 토픽은 <strong>무엇을 찾을지</strong>를 받아야 합니다. 경비 담당자인지 교육 담당자인지 알아야 조회할 수 있습니다.</p>
 <p>그 값을 받아 둘 상자를 만듭니다. 위쪽 <strong>세부 정보</strong>를 누릅니다.</p>
 <img loading="lazy" decoding="async" class="shot" src="ecl-shots/m10-24-details-panel.png" alt="세부 정보를 눌러 토픽 세부 정보 패널을 연 화면">
 <p class="cap">이름과 설명이 <strong>모델 표시 이름</strong>, <strong>모델 설명</strong>으로도 보입니다. 오케스트레이터는 이 두 값을 읽고 토픽을 고릅니다</p>
@@ -2553,7 +2558,7 @@ details.fold .copybox{margin-top:0}
 <div class="new"><span class="tag"></span>
 <div class="note">
 <span class="t">왜 myContact이 아니라 Activity.Text인가</span>
-<p>Microsoft 문서도 이 노드의 입력으로 <code>Activity.Text</code>를 고르라고 안내합니다. 사용자가 방금 한 말 전체가 담기는 변수입니다.</p>
+<p>이 노드의 입력에는 <code>Activity.Text</code>를 넣습니다. 사용자가 방금 한 말 전체가 담기는 변수입니다.</p>
 <p><code>myContact</code>에는 <code>경비처리</code>처럼 뽑아낸 조각만 들어 있어서, 앞의 메시지에서 무엇을 찾는 중인지 알려 주는 데 썼습니다. 같은 토픽 안에서도 자리마다 쓰는 값이 다릅니다.</p>
 </div>
 </div>
@@ -2564,7 +2569,7 @@ details.fold .copybox{margin-top:0}
 
 <p>오른쪽에 <strong>생성형 답변 만들기 속성</strong>이 열립니다.</p>
 <img loading="lazy" decoding="async" class="shot" src="ecl-shots/m10-44-gen-props.png" alt="생성형 답변 만들기 속성 패널">
-<p class="cap">위에서부터 <strong>선택한 원본만 검색</strong>, <strong>웹 검색</strong>, <strong>클래식 데이터</strong>, <strong>콘텐츠 조정 수준</strong>입니다</p>
+<p class="cap">위에서부터 <strong>선택한 원본만 검색</strong>, <strong>웹 검색</strong>, <strong>AI에서 자체 일반 지식 사용</strong>, <strong>클래식 데이터</strong>, <strong>콘텐츠 조정 수준</strong> 순서입니다. 클래식 데이터는 오늘 쓰지 않으므로 그대로 둡니다</p>
 
 <table>
 <tr><th>항목</th><th>이 실습에서</th><th>무엇인가</th></tr>
@@ -2616,7 +2621,7 @@ details.fold .copybox{margin-top:0}
 <div class="new"><span class="tag"></span>
 <div class="note">
 <span class="t">메시지 보내기를 끄는 이유</span>
-<p>켜 두면 이 노드가 만든 문장이 그대로 사용자에게 갑니다. <a href="#m7">M7</a>에서 정한 말투도, 다른 자료에서 얻은 내용도 섞이지 않은 채로요.</p>
+<p>켜 두면 이 노드가 만든 문장이 그대로 사용자에게 갑니다. <a href="#m7">M7</a>에서 정한 말투도, 다른 자료에서 얻은 내용도 섞이지 않은 상태로 나갑니다.</p>
 <p>끄고 결과를 상자에 담아 두면 오케스트레이터가 그것을 읽어 답을 만듭니다. <strong>토픽은 정보를 모으고, 말하는 것은 오케스트레이터</strong>라는 원칙이 이 체크박스 하나로 정해집니다.</p>
 </div>
 </div>
@@ -2637,7 +2642,7 @@ details.fold .copybox{margin-top:0}
 
 <p>이름을 <code>Contact_Result</code>로 바꿉니다.</p>
 <img loading="lazy" decoding="async" class="shot" src="ecl-shots/m10-52-var-rename.png" alt="변수 이름을 Contact_Result로 바꾼 화면">
-<p class="cap">앞의 <code>Global.</code>은 회색으로 고정되어 있어 고칠 수 없습니다</p>
+<p class="cap">이름 칸만 고칩니다. 앞에 붙는 <code>Global.</code>은 다음 단계에서 사용량을 전역으로 바꾸면 생깁니다</p>
 
 <p>아래 <strong>사용량</strong>에서 <strong>전역(모든 토픽에서 액세스 가능)</strong>을 고릅니다.</p>
 <img loading="lazy" decoding="async" class="shot" src="ecl-shots/m10-53-var-global.png" alt="사용량을 전역으로 고른 화면">
@@ -2665,7 +2670,7 @@ details.fold .copybox{margin-top:0}
 
 <div class="note">
 <span class="t">아직 테스트하지 않습니다</span>
-<p>지금 물어봐도 Contact 토픽이 불리지 않을 수 있습니다. 언제 이 토픽을 부를지 아직 지침에 적지 않았기 때문입니다. 실습 &#9314;를 마치고 함께 확인합니다.</p>
+<p>Contact 토픽은 지침에 호출 규칙을 적은 뒤에 확인합니다. 실습 &#9314;을 마치고 함께 테스트합니다.</p>
 </div>
 
 <h3>실습 &#9314; STRICT RULES 추가</h3>
@@ -2683,7 +2688,7 @@ details.fold .copybox{margin-top:0}
 <p class="cap">입력칸 안에 <strong>/를 사용하여 도구, 토픽 등 추가</strong>라는 안내가 보입니다</p>
 
 <h4>2단계. 규칙 넣을 자리 만들기</h4>
-<p><code>## 역할</code> 항목 바로 아래에 빈 줄을 만들고 다음을 넣습니다. 기존 내용은 지우지 않습니다.</p>
+<p>지침 맨 첫 줄, <code>## 역할</code>보다 위에 다음을 넣습니다. 기존 내용은 지우지 않습니다.</p>
 
 <pre><code># STRICT RULES
 - 담당자를 찾아달라는 요청은 Contact Topic을 호출하고, Global.Contact_Result를 활용해 답변합니다
@@ -3033,6 +3038,7 @@ details.fold .copybox{margin-top:0}
 <h3>실습 &#9315; In-context로 호출</h3>
 <p>Microsoft 365 Copilot 채팅에서 <code>@</code>를 입력하면 쓸 수 있는 에이전트 목록이 뜹니다. 만든 에이전트를 골라 그대로 질문합니다.</p>
 
+<p>복사해 붙여넣지 말고 <code>@</code>부터 직접 입력해 목록에서 에이전트를 고른 뒤 질문을 이어서 씁니다.</p>
 <pre><code>@HR 도우미 복지포인트 사용처 알려줘</code></pre>
 
 <p>하던 대화의 흐름을 유지한 채 필요할 때만 부르는 방식입니다. 답을 받은 뒤 호출을 해제하고 일반 대화로 돌아오면, 그 답이 대화에 남은 상태로 Copilot과 계속 이야기할 수 있습니다. <a href="#m2">M2</a>에서 본 사용 방식입니다.</p>
@@ -3060,14 +3066,14 @@ details.fold .copybox{margin-top:0}
 <ol class="steps">
 <li><b>채널 탭 열기</b>Teams 및 Microsoft 365 Copilot 채널을 다시 엽니다.</li>
 <li><b>가용성 옵션</b>패널에서 가용성 옵션을 누릅니다.</li>
-<li><b>링크 복사</b>복사한 링크를 동료에게 보냅니다. 받은 사람이 링크를 열어 설치합니다.</li>
+<li><b>링크 복사</b>가용성 옵션 안의 <strong>링크 복사</strong>를 눌러 설치 링크를 복사하고 동료에게 보냅니다. 받은 사람이 링크를 열면 설치 화면이 나타납니다.</li>
 </ol>
 
 <div class="note">
 <span class="t">공유가 안 될 때</span>
 <p><strong>게시부터 확인합니다.</strong> 게시하지 않은 에이전트는 공유해도 상대방이 설치할 수 없습니다.</p>
 <p><strong>상대방에게 라이선스가 있어야 합니다.</strong> Copilot Studio 사용자 라이선스가 없으면 공유해도 쓸 수 없습니다.</p>
-<p><strong>공동 작성자로 공유할 때는 권한이 하나 더 필요합니다.</strong> 상대방에게 Dataverse의 환경 메이커 역할이 있어야 합니다. 없으면 관리자에게 요청해야 하고, 환경에 처음 들어오는 사람은 목록에 뜨기까지 10분 정도 걸립니다.</p>
+<p><strong>공동 작성자로 공유할 때는 권한이 하나 더 필요합니다.</strong> 상대방에게 이 환경에서 무언가를 만들 수 있는 권한인 환경 메이커 역할이 있어야 합니다. 없으면 관리자에게 요청해야 하고, 환경에 처음 들어오는 사람은 목록에 뜨기까지 10분 정도 걸립니다.</p>
 <p><strong>모바일에서는 설치 링크가 동작하지 않습니다.</strong> Teams 모바일 사용자에게 배포하려면 앱 스토어에 올려야 합니다.</p>
 <p><strong>인증 설정도 봅니다.</strong> 공유해서 다른 사람이 쓰게 하려면 에이전트의 인증이 Microsoft Entra ID 기반이어야 하고, 사용자 로그인이 필요한 상태여야 합니다. 인증 없음으로 두면 공유 대상이 제한됩니다.</p>
 </div>
@@ -3214,13 +3220,13 @@ details.fold .copybox{margin-top:0}
 <p class="cap">도구 탭에 하나가 생겼습니다</p>
 
 <h4>3단계. 테스트</h4>
-<p>테스트 패널에서 <code>런던 날씨 알려줘</code>를 물어봅니다. 아마 이렇게 나올 것입니다.</p>
+<p>테스트 패널에서 <code>런던 날씨 알려줘</code>를 물어봅니다. 다음과 같은 답이 돌아옵니다.</p>
 
 <p class="sm">저는 HR/총무 관련 질문만 도와드릴 수 있습니다 &#128522;<br>
 연차, 복리후생, 경비처리, 사내 규정 등에 대해 궁금하신 점이 있으시면 언제든지 말씀해 주세요!</p>
 
 <div class="new"><span class="tag"></span>
-<p>커넥터를 붙였는데도 거절합니다. 고장이 아니라 <a href="#m7">M7</a>에서 <strong>날씨 같은 업무 외 질문에는 답하지 않는다</strong>고 적어 두었기 때문입니다. 오케스트레이터는 도구를 고르기 전에 지침을 먼저 봅니다.</p>
+<p>커넥터를 붙였는데도 거절합니다. 고장이 아니라 <a href="#m7">M7</a>에서 <strong>날씨 같은 업무 외 질문에는 답하지 않는다</strong>고 적어 두었기 때문입니다. 지침에 적힌 금지가 남아 있으면 도구가 붙어 있어도 답하지 않습니다.</p>
 
 <div class="note">
 <span class="t">여기가 오늘 가장 중요한 장면 중 하나입니다</span>
@@ -3250,7 +3256,7 @@ details.fold .copybox{margin-top:0}
 
 <div class="note">
 <span class="t">범위 항목은 그대로 둡니다</span>
-<p><code>## 범위</code>의 답변 불가에 적힌 날씨는 지우지 않아도 됩니다. STRICT RULES가 더 구체적인 지시라 그쪽이 우선합니다.</p>
+<p><code>## 범위</code>의 답변 불가에 적힌 날씨는 지우지 않아도 됩니다. STRICT RULES에 예외를 적어 두면 대부분 그쪽을 따릅니다. 그래도 계속 거절한다면 범위에 적힌 날씨 줄을 지우고 다시 확인합니다.</p>
 <p>실무라면 둘 중 하나로 정리하는 편이 낫지만, 지금은 <strong>어느 쪽이 이기는지 보는 것</strong>도 실습의 일부입니다.</p>
 </div>
 
@@ -3313,7 +3319,7 @@ details.fold .copybox{margin-top:0}
 <p class="cap">여기서 정한 이름이 나중에 그대로 입력 항목이 됩니다</p>
 
 <h4>3단계. 표로 변환</h4>
-<p>A1부터 <strong>D2</strong>까지 선택하고 <strong>삽입</strong> 탭에서 <strong>테이블</strong>을 누릅니다. 머리글은 1행뿐이지만, 표를 만들려면 데이터가 들어갈 행이 최소 하나 필요하므로 비어 있는 2행까지 함께 잡습니다.</p>
+<p>A1부터 <strong>D2</strong>까지 선택하고 <strong>삽입</strong> 탭에서 <strong>테이블</strong>을 누릅니다. 머리글은 1행뿐이지만, 값이 들어갈 자리를 미리 잡아 두기 위해 비어 있는 2행까지 함께 선택합니다.</p>
 <img loading="lazy" decoding="async" class="shot" src="ecl-shots/m12-x05-insert.png" alt="삽입 탭의 테이블 버튼">
 <p class="cap">삽입 탭에 있습니다</p>
 
@@ -3351,7 +3357,7 @@ details.fold .copybox{margin-top:0}
 <p class="cap"><strong>AI가 생성한 응답이 곧 전송됩니다</strong>를 고릅니다</p>
 
 <img loading="lazy" decoding="async" class="shot" src="ecl-shots/m12-x13-trigger-done.png" alt="트리거가 바뀐 화면">
-<p class="cap">트리거 카드에 설명 칸이 없어졌습니다. 사용자가 말하지 않아도 매번 실행되기 때문입니다</p>
+<p class="cap">트리거 카드에 설명 칸이 없어집니다. 사용자의 말을 보고 부르는 트리거가 아닙니다</p>
 
 <h4>5단계. Excel 커넥터 추가</h4>
 <p>트리거 아래 <strong>+</strong>에서 <strong>도구 추가</strong>를 고릅니다.</p>
@@ -3419,13 +3425,13 @@ details.fold .copybox{margin-top:0}
 <div class="new"><span class="tag"></span>
 <div class="note">
 <span class="t">표를 고르면 입력 항목이 늘어납니다</span>
-<p>표를 고르는 순간 커넥터가 그 표의 <strong>머리글을 읽어</strong> 열마다 입력 칸을 하나씩 만들어 줍니다. 1단계에서 넣은 시간, 사용자, 질문, 답변이 그대로 나타납니다.</p>
+<p>표를 고르는 순간 커넥터가 그 표의 <strong>머리글을 읽어</strong> 열마다 입력 칸을 하나씩 만들어 줍니다. 2단계에서 넣은 시간, 사용자, 질문, 답변이 그대로 나타납니다.</p>
 <p>표를 고르기 전에는 이 칸들이 없습니다. 순서를 지켜야 하는 이유입니다.</p>
 </div>
 </div>
 
 <h4>7단계. 열마다 값 넣기</h4>
-<p><strong>고급 매개 변수</strong>를 펼치면 1단계에서 만든 열 이름이 그대로 나타납니다. 하나씩 채웁니다.</p>
+<p><strong>고급 매개 변수</strong>를 펼치면 2단계에서 만든 열 이름이 그대로 나타납니다. 각 칸 오른쪽 끝에 <code>fx</code>와 <code>{x}</code> 아이콘이 있습니다. <code>fx</code>는 수식을, <code>{x}</code>는 변수를 넣는 자리입니다.</p>
 
 <table>
 <tr><th>항목</th><th>넣는 방법</th><th>값</th></tr>
@@ -3438,6 +3444,8 @@ details.fold .copybox{margin-top:0}
 
 <p>시간만 <code>fx</code>로 넣고 나머지 셋은 <code>{x}</code>로 고릅니다. <code>Text()</code>와 <code>Now()</code>는 변수가 아니라 함수이기 때문입니다.</p>
 
+<p>변수 목록에는 <code>System.</code>이 붙어 <code>System.User.PrincipalName</code>처럼 보입니다. 위 표에는 뒷부분만 적었으므로 목록에서 골라 넣으면 됩니다.</p>
+
 <img loading="lazy" decoding="async" class="shot" src="ecl-shots/m12-x31-user.png" alt="사용자 칸에 변수를 넣는 화면">
 <p class="cap">사용자</p>
 
@@ -3449,7 +3457,7 @@ details.fold .copybox{margin-top:0}
 <span class="t">질문 칸이 비어서 기록될 때가 있습니다</span>
 <p><code>Activity.Text</code>는 사용자가 방금 한 말이 담기는 변수입니다. 그런데 에이전트가 <strong>참조 자료를 검색한 턴</strong>에서는 이 변수가 비어 버립니다.</p>
 <p>Record 토픽은 답변이 나가기 직전에 도는데 그 답변이 대개 참조 자료를 거쳐 나옵니다. 그래서 <code>Activity.Text</code>로 두면 질문 열이 빈 채로 쌓이는 일이 생깁니다.</p>
-<p><code>LastMessage.Text</code>에는 직전 사용자 메시지가 남아 있어 이 상황에서도 값이 들어옵니다. Microsoft 문서도 이 경우에는 그쪽을 쓰라고 안내합니다.</p>
+<p><code>LastMessage.Text</code>에는 직전 사용자 메시지가 남아 있어 이 상황에서도 값이 들어옵니다.</p>
 </div>
 </div>
 
@@ -3649,7 +3657,7 @@ details.fold .copybox{margin-top:0}
 <p class="cap">카드가 추가되었습니다</p>
 
 <img loading="lazy" decoding="async" class="shot" src="ecl-img/m13-1_image12a.png" alt="게시 주체를 사용자로 변경하는 화면">
-<p class="cap">게시 주체를 정하는 항목입니다. 기본값인 흐름 봇으로 두고 진행합니다</p>
+<p class="cap">게시 주체를 정하는 항목입니다. 화면에는 사용자로 바꾼 모습이 보이지만, 실습에서는 기본값인 흐름 봇으로 두고 진행합니다</p>
 
 <img loading="lazy" decoding="async" class="shot" src="ecl-img/m13-1_image13.png" alt="게시 위치를 채널로 선택하는 화면">
 <p class="cap">게시 위치를 채널로 지정합니다</p>
@@ -3704,8 +3712,8 @@ details.fold .copybox{margin-top:0}
 <h4>9단계. 흐름이 쓸 계정 지정</h4>
 
 <div class="new"><span class="tag"></span>
-<p>이 흐름은 Teams에 메시지를 올립니다. <strong>누구 이름으로 올릴지</strong>를 여기서 정합니다. 앞의 커넥터에서 자격 증명을 골랐던 것과 같은 이야기인데, 흐름에서는 <strong>연결 관리</strong> 화면에서 정합니다.</p>
-<p>지정하지 않으면 에이전트가 흐름을 불러도 Teams 권한이 없어 실패합니다.</p>
+<p>이 흐름은 Teams에 메시지를 올립니다. <strong>누구 이름으로 올릴지</strong>를 여기서 정합니다. 앞의 커넥터에서 자격 증명을 골랐던 것과 같은 이야기인데, 흐름에서는 개요 탭의 <strong>연결 참조 관리</strong> 화면에서 정합니다.</p>
+<p>앞 단계의 수동 테스트는 내 계정으로 돌기 때문에 그대로 성공했습니다. 에이전트가 부를 때는 흐름에 지정된 연결을 쓰므로 여기서 본인 연결을 지정해 둡니다.</p>
 </div>
 
 <img loading="lazy" decoding="async" class="shot" src="ecl-img/m13-1_image25.png" alt="개요 탭에서 연결 참조 관리를 클릭하는 화면">
@@ -3799,6 +3807,7 @@ details.fold .copybox{margin-top:0}
 <p class="cap">실행 후에는 생성형 AI로 응답을 작성하도록 둡니다</p>
 
 <h4>5단계. 테스트</h4>
+<p>아직 지침에 규칙을 넣지 않은 상태입니다. 도구 설명만으로 흐름이 불리는지 먼저 확인합니다.</p>
 <img loading="lazy" decoding="async" class="shot" src="ecl-img/m13-2_image9.png" alt="테스트 패널에서 흐름이 실행 중인 화면">
 <p class="cap">문의를 요청하면 흐름이 호출됩니다</p>
 
@@ -3993,7 +4002,7 @@ details.fold .copybox{margin-top:0}
 <ol class="steps">
 <li><b>흐름 열기</b>왼쪽 메뉴의 흐름에서 <code>HR_Request</code>를 엽니다.</li>
 <li><b>프롬프트 단계 선택</b>흐름 안의 <code>AIRequestRewrite</code> 노드를 클릭합니다.</li>
-<li><b>지시 한 줄 추가</b>프롬프트 끝에 <code>문의 내용을 읽고 긴급, 보통, 참고 중 하나로 분류해 맨 앞에 표시하세요</code>를 붙입니다.</li>
+<li><b>지시 한 줄 추가</b>프롬프트 끝에 <code>문의 내용을 읽고 긴급, 보통, 참고 중 하나로 분류해 맨 앞에 표시한다</code>를 붙입니다.</li>
 <li><b>테스트</b>같은 문의를 넣고 결과를 봅니다.</li>
 </ol>
 
@@ -4126,6 +4135,7 @@ details.fold .copybox{margin-top:0}
 <h3>실습 &#9313; 슈퍼 호스트 만들기</h3>
 
 <h4>1단계. 에이전트 생성</h4>
+<p>실습 &#9312;의 1단계와 같은 방법으로 만듭니다. 홈 화면 아래쪽 <strong>다른 빌드 방법</strong>에서 <strong>에이전트(표준)</strong>를 고른 뒤, <strong>처음부터 빌드 시작</strong>의 <strong>에이전트</strong> 카드를 누릅니다.</p>
 <img loading="lazy" decoding="async" class="shot old" src="ecl-img/m15_image13.png" alt="에이전트 목록에서 두 에이전트를 확인하고 고급 만들기를 클릭하는 화면">
 <p class="cap old">HR 도우미와 법무 도우미가 모두 게시된 상태인지 확인합니다</p>
 
@@ -4148,7 +4158,7 @@ details.fold .copybox{margin-top:0}
 <p class="cap">상단 에이전트 탭에서 추가합니다</p>
 
 <img loading="lazy" decoding="async" class="shot" src="ecl-img/m15_image17.png" alt="모두 보기를 클릭해 전체 목록을 여는 화면">
-<p class="cap">외부 에이전트에 연결에서 Copilot Studio를 고르면 목록이 나옵니다</p>
+<p class="cap">외부 에이전트에 연결에서 Copilot Studio를 고르고, 모두 보기를 눌러 전체 목록을 엽니다</p>
 
 <img loading="lazy" decoding="async" class="shot" src="ecl-img/m15_image18.png" alt="목록에서 법무 도우미를 선택하는 화면">
 <p class="cap">법무 도우미를 선택합니다</p>
@@ -4222,12 +4232,14 @@ details.fold .copybox{margin-top:0}
 <tr><td>1</td><td>Forms로 HR 문의 접수</td></tr>
 <tr><td>2</td><td>새 응답 제출 트리거로 Power Automate 흐름 시작</td></tr>
 <tr><td>3</td><td>흐름이 에이전트를 호출해 답변 초안 생성</td></tr>
-<tr><td>4</td><td>담당자에게 원문과 초안 전달</td></tr>
-<tr><td>5</td><td>담당자가 검토 후 최종 발송</td></tr>
+<tr><td>4</td><td>원문과 답변 초안을 메일로 발송</td></tr>
+<tr><td>5</td><td>사람이 초안을 확인하고 최종 발송</td></tr>
 </table>
 
 <h3>사람이 최종 판단하는 구조</h3>
-<p>AI가 답변을 바로 발송하지 않고 담당자가 검토한 뒤 발송하는 구조입니다. 공식 문서에서는 <strong>인간 참여 제어</strong>, 영문으로는 human-in-the-loop이라고 표현합니다. AI가 속도를 담당하고 사람이 판단을 담당합니다. 담당자는 초안을 검토하고 필요한 부분만 수정하면 되므로 처리 시간이 줄어들면서도 최종 판단은 사람이 유지합니다.</p>
+<p>AI가 답변을 바로 발송하지 않고 담당자가 검토한 뒤 발송하는 구조입니다. 공식 문서에서는 <strong>인간 참여 제어</strong>, 영문으로는 human-in-the-loop이라고 표현합니다. AI가 속도를 담당하고 사람이 판단을 담당합니다. 담당자는 초안을 확인하고 필요한 부분만 고치면 되므로 처리 시간이 줄어들면서도 최종 판단은 사람이 유지합니다.</p>
+
+<p>이번 실습에서는 초안이 설문에 적은 주소로 도착합니다. 실제로 운영할 때는 받는 주소를 담당자로 고정하고, 담당자가 확인한 뒤 문의자에게 보내는 순서로 바꿉니다.</p>
 
 <h3>실습 &#9312; Forms 설문 만들기</h3>
 <p>문의를 접수할 설문을 만듭니다. 여기에 응답이 제출되면 에이전트가 자동으로 실행됩니다.</p>
@@ -4281,11 +4293,11 @@ details.fold .copybox{margin-top:0}
 <img loading="lazy" decoding="async" class="shot" src="ecl-img/m16_image10.png" alt="개요 탭에 트리거가 등록된 화면">
 <p class="cap">개요 탭에서 트리거가 등록된 것을 확인합니다</p>
 
-<h3>실습 &#9314; 워크플로 구성</h3>
+<h3>실습 &#9314; 흐름 구성</h3>
 <p>트리거가 만들어낸 Power Automate 흐름을 열어, 설문 응답을 가져와 에이전트에게 전달하도록 구성합니다.</p>
 
-<h4>1단계. 워크플로 열기</h4>
-<img loading="lazy" decoding="async" class="shot" src="ecl-img/m16_image11.png" alt="기본 두 단계로 구성된 워크플로 디자이너">
+<h4>1단계. 흐름 열기</h4>
+<img loading="lazy" decoding="async" class="shot" src="ecl-img/m16_image11.png" alt="기본 두 단계로 구성된 흐름 디자이너">
 <p class="cap">처음에는 트리거와 에이전트 호출 두 단계만 있습니다</p>
 
 <h4>2단계. 응답 세부 정보 가져오기</h4>
@@ -4312,7 +4324,7 @@ details.fold .copybox{margin-top:0}
 <p class="cap">동적 콘텐츠를 넣으면 반복 루프가 자동으로 만들어집니다</p>
 
 <h4>3단계. 변수 초기화</h4>
-<p>응답 데이터를 하나의 문자열로 합칠 변수를 준비합니다. 루프 위쪽에 변수 초기화를 추가합니다.</p>
+<p>응답 데이터를 하나의 문자열로 합칠 변수를 준비합니다. 트리거 카드와 For each 사이의 더하기 버튼을 눌러 변수 초기화를 추가합니다. For each 안쪽 더하기를 누르면 값이 반복할 때마다 지워지므로 위치를 확인합니다.</p>
 <img loading="lazy" decoding="async" class="shot" src="ecl-img/m16_image16.png" alt="변수 초기화 작업을 선택하는 화면">
 <p class="cap">변수를 검색해 초기화를 선택합니다</p>
 
@@ -4356,7 +4368,7 @@ details.fold .copybox{margin-top:0}
 <p class="cap">에이전트가 HR 도우미로 지정되어 있는지 확인하고 myBody를 연결합니다</p>
 
 <h4>6단계. 게시</h4>
-<img loading="lazy" decoding="async" class="shot" src="ecl-img/m16_image22.png" alt="워크플로를 게시하는 화면">
+<img loading="lazy" decoding="async" class="shot" src="ecl-img/m16_image22.png" alt="흐름을 게시하는 화면">
 <p class="cap">게시해야 변경한 흐름이 적용됩니다</p>
 
 <h3>실습 &#9315; 메일 발송과 결과 확인</h3>
@@ -4402,7 +4414,7 @@ details.fold .copybox{margin-top:0}
 <pre><code>- Forms 트리거로 에이전트가 시작되면 아래 작업을 순서대로 빠짐없이 수행한다.
   1. 문의 내용을 분석하여 답변 초안을 작성
   2. 메일 보내기(V2) 도구로 아래 내용을 발송
-     To: 수신 가능한 메일 주소를 입력
+     To: 문의 내용 앞의 [연락처]에 적힌 메일 주소를 그대로 사용
      Subject: 적절한 제목을 만들어 입력
      Body: 원문 문의 내용과 답변 초안을 입력. 메일 본문에 쓸 HTML로 작성</code></pre>
 
@@ -4460,7 +4472,7 @@ details.fold .copybox{margin-top:0}
 <tr><td>Copilot Studio에서 표준 에이전트 만들기</td><td>M4</td></tr>
 <tr><td>AI 모델 변경과 설정 조정</td><td>M6</td></tr>
 <tr><td>지침 작성</td><td>M7</td></tr>
-<tr><td>지식 문서 다섯 개 연결</td><td>M8</td></tr>
+<tr><td>참조 자료 문서 다섯 개 연결</td><td>M8</td></tr>
 <tr><td>Echo 토픽과 Contact 토픽</td><td>M10</td></tr>
 <tr><td>STRICT RULES로 토픽 호출 규칙 지정</td><td>M10</td></tr>
 <tr><td>게시와 Copilot 연결</td><td>M11</td></tr>
@@ -4474,9 +4486,9 @@ details.fold .copybox{margin-top:0}
 <h3>바로 적용할 수 있는 것</h3>
 <ol class="steps">
 <li><b>팀원과 공유</b>오늘 만든 에이전트를 동료에게 공유해 사용해 보게 합니다.</li>
-<li><b>지식 문서 교체</b>실습용 문서를 실제 팀 문서로 교체합니다. M8의 문서 작성 방법을 참고해 정리하면 답변 품질이 달라집니다.</li>
+<li><b>참조 자료 교체</b>실습용 문서를 실제 팀 문서로 교체합니다. M8의 문서 작성 방법을 참고해 정리하면 답변 품질이 달라집니다.</li>
 <li><b>지침에 실제 용어 반영</b>팀에서 실제로 쓰는 용어와 규정을 지침에 반영합니다.</li>
-<li><b>대화 기록 확인</b>2주 정도 사용한 뒤 Excel 기록을 열어 자주 묻는 질문을 확인하고 지식을 보강합니다.</li>
+<li><b>대화 기록 확인</b>2주 정도 사용한 뒤 Excel 기록을 열어 자주 묻는 질문을 확인하고 참조 자료를 보강합니다.</li>
 </ol>
 
 <h3>단계적으로 확장할 수 있는 것</h3>
@@ -4547,7 +4559,7 @@ details.fold .copybox{margin-top:0}
 <dt>OneDrive를 사용할 수 없는 환경이라면?</dt>
 <dd>SharePoint 문서 라이브러리나 Dataverse로 같은 구조를 만들 수 있습니다.</dd>
 <dt>AI 프롬프트에 추가 비용이 드나요?</dt>
-<dd>라이선스에 포함된 사용량이 있습니다. 대량으로 사용할 계획이라면 조직 관리자와 확인합니다.</dd>
+<dd>사용량은 조직이 가진 라이선스와 환경 설정에 따라 다릅니다. 대량으로 사용할 계획이라면 조직 관리자와 확인합니다.</dd>
 <dt>에이전트 없이 AI 프롬프트만 사용할 수 있나요?</dt>
 <dd>Power Automate 흐름에서 단독으로 사용할 수 있습니다.</dd>
 </dl>
@@ -4556,7 +4568,7 @@ details.fold .copybox{margin-top:0}
 
 <table>
 <tr><th>증상</th><th>원인</th><th>해결</th></tr>
-<tr><td>관련 없는 답변을 한다</td><td>지식이 부족함</td><td>M8에서 관련 문서를 추가로 업로드</td></tr>
+<tr><td>관련 없는 답변을 한다</td><td>참조 자료가 부족함</td><td>M8에서 관련 문서를 추가로 업로드</td></tr>
 <tr><td>범위를 벗어난 질문에도 답한다</td><td>지침의 범위가 불명확</td><td>M7에서 범위를 특정 영역으로 한정</td></tr>
 <tr><td>모르는 내용을 지어낸다</td><td>모를 때의 행동이 미정의</td><td>M7의 원칙에 안내 메시지 추가</td></tr>
 <tr><td>토픽이 실행되지 않는다</td><td>토픽 설명이 불명확</td><td>M10에서 토픽 설명을 구체적으로 수정</td></tr>
