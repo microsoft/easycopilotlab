@@ -75,7 +75,7 @@ a:hover{text-decoration:underline}
 .doc p,.doc li,.doc dd,.doc dt,.doc h1,.doc h2,.doc h3,.doc h4{max-width:var(--read)}
 .doc .cap{max-width:var(--read)}
 .doc pre{max-width:var(--read)}
-.doc h1{font-size:31px;line-height:1.38;margin:0 0 12px}
+.doc h1{font-size:clamp(32px,4.4vw,44px);line-height:1.26;letter-spacing:-0.035em;margin:0 0 14px}
 .doc h2{
   font-size:23px;line-height:1.45;margin:64px 0 16px;
   padding-bottom:12px;border-bottom:1px solid var(--line);
@@ -87,6 +87,8 @@ a:hover{text-decoration:underline}
 .doc li{margin:6px 0}
 .doc ul,.doc ol{padding-left:1.3rem}
 .lead{color:var(--ink-soft);font-size:16px}
+/* 표지의 안내 문장은 커진 제목에 맞춰 한 단계 키운다 */
+.pg[data-pg="intro"] .lead{font-size:17.5px}
 .doc hr{border:0;border-top:1px solid var(--line);margin:52px 0}
 
 /* 모듈 시작 표시 */
