@@ -254,14 +254,59 @@ details.fold .copybox{margin-top:0}
 .prog + h2.mod{margin-top:0;border-top:0;padding-top:0}
 .prog + h2{margin-top:0}
 
+/* 접속 주소를 화면 전체에 띄운다. 강의장에서 참석자가 보고 따라 들어오는 용도다. */
+.bigbtn{
+  margin-left:auto;font-family:inherit;font-size:13.5px;font-weight:600;
+  color:var(--accent);background:var(--accent-soft);border:1px solid #d5e1f3;
+  border-radius:999px;padding:6px 15px;cursor:pointer;letter-spacing:-0.01em;
+}
+.bigbtn:hover{background:#e3edfa}
+.bigbtn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.urlcard{
+  display:flex;align-items:center;gap:18px;margin:26px 0 4px;
+  padding:16px 18px;border:1px solid var(--line);border-radius:var(--radius);
+  background:var(--paper-soft);
+}
+.urlcard .qr{width:74px;height:74px;flex:none;background:#fff;border-radius:6px;padding:4px}
+.urlcard .t{font-size:12.5px;color:var(--ink-mute)}
+.urlcard .u{font-size:19px;font-weight:600;letter-spacing:-0.02em;color:var(--ink);display:block}
+.urlcard .u:hover{color:var(--accent);text-decoration:none}
+.urlcard .bigbtn{margin-left:auto}
+
+.bigview{
+  position:fixed;inset:0;z-index:100;background:var(--paper);
+  display:none;flex-direction:column;align-items:center;justify-content:center;
+  gap:clamp(16px,3.4vh,40px);padding:6vh 4vw;text-align:center;
+}
+.bigview.on{display:flex}
+.bigview .kicker{font-size:clamp(15px,2.1vw,26px);color:var(--ink-soft);margin:0}
+.bigview .url{
+  display:block;font-size:clamp(21px,6.1vw,116px);font-weight:700;
+  letter-spacing:-0.035em;line-height:1.05;color:var(--ink);white-space:nowrap;
+}
+.bigview .url:hover{color:var(--accent);text-decoration:none}
+.bigview .qr{width:clamp(150px,24vh,270px);height:auto;flex:none}
+.bigview .hint{font-size:14px;color:var(--ink-mute);margin:0}
+.bigview .x{
+  position:absolute;top:16px;right:20px;font-family:inherit;font-size:13.5px;
+  color:var(--ink-soft);background:var(--paper-soft);border:1px solid var(--line);
+  border-radius:999px;padding:6px 14px;cursor:pointer;
+}
+.bigview .x:hover{background:#eef0f3}
+
 @media (max-width:1080px){
   .sb{display:none}
   .layout{padding:0 28px;gap:0}
   .doc{padding:30px 0 90px;max-width:100%}
   .nav .inner{padding:0 28px}
 }
+@media (max-width:560px){
+  .urlcard{flex-wrap:wrap;gap:14px}
+  .urlcard .bigbtn{margin-left:0}
+}
 @media print{
-  .nav,.sb,.pager{display:none}
+  .nav,.sb,.pager,.bigview,.bigbtn{display:none}
   .layout{display:block;padding:0;max-width:100%}
   .doc{max-width:100%;padding:0}
   body{font-size:11pt}
@@ -272,11 +317,22 @@ details.fold .copybox{margin-top:0}
 </head>
 <body>
 
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="qrsym" viewBox="0 0 33 33"><path fill="none" stroke="#111" shape-rendering="crispEdges" d="M2 2.5h7m2 0h1m1 0h1m1 0h1m1 0h1m1 0h4m1 0h7m-29 1h1m5 0h1m4 0h5m2 0h1m3 0h1m5 0h1m-29 1h1m1 0h3m1 0h1m1 0h2m1 0h1m1 0h1m1 0h1m6 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m1 0h1m5 0h2m1 0h1m2 0h1m1 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m1 0h2m1 0h1m3 0h1m1 0h4m1 0h1m1 0h3m1 0h1m-29 1h1m5 0h1m1 0h1m1 0h1m4 0h1m4 0h1m1 0h1m5 0h1m-29 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-21 1h2m1 0h2m1 0h1m3 0h3m-21 1h1m1 0h5m5 0h1m2 0h3m1 0h1m2 0h5m-27 1h2m2 0h1m2 0h5m1 0h2m1 0h9m3 0h1m-28 1h3m2 0h1m2 0h1m3 0h5m2 0h1m1 0h1m-23 1h1m1 0h1m4 0h2m1 0h4m5 0h1m3 0h1m1 0h1m1 0h1m-25 1h4m2 0h1m4 0h1m2 0h1m7 0h2m-27 1h1m1 0h1m2 0h1m1 0h4m1 0h1m3 0h1m2 0h2m1 0h1m1 0h1m3 0h1m-28 1h4m1 0h3m3 0h1m2 0h2m3 0h2m1 0h4m-27 1h1m3 0h1m5 0h3m1 0h1m1 0h1m1 0h1m3 0h1m1 0h1m2 0h1m-28 1h2m1 0h1m1 0h2m2 0h2m1 0h1m3 0h2m1 0h3m3 0h2m-27 1h1m2 0h2m4 0h1m1 0h1m1 0h4m2 0h6m1 0h1m1 0h1m-29 1h1m4 0h7m1 0h6m1 0h1m1 0h2m2 0h1m-27 1h1m1 0h1m2 0h1m1 0h1m2 0h1m2 0h1m2 0h1m2 0h1m2 0h1m4 0h1m-28 1h1m1 0h1m1 0h1m1 0h1m5 0h1m1 0h1m2 0h1m2 0h5m1 0h3m-21 1h1m7 0h1m2 0h2m3 0h5m-29 1h7m2 0h2m4 0h2m2 0h2m1 0h1m1 0h3m-27 1h1m5 0h1m1 0h1m1 0h1m3 0h2m2 0h3m3 0h1m3 0h1m-29 1h1m1 0h3m1 0h1m1 0h2m2 0h1m4 0h1m2 0h5m1 0h2m-28 1h1m1 0h3m1 0h1m1 0h2m4 0h1m1 0h1m2 0h1m5 0h4m-29 1h1m1 0h3m1 0h1m1 0h1m1 0h2m1 0h3m5 0h7m-28 1h1m5 0h1m2 0h1m1 0h3m1 0h2m3 0h1m2 0h3m1 0h1m-28 1h7m1 0h1m1 0h1m2 0h1m1 0h1m1 0h1m1 0h1m4 0h1m1 0h1"/></symbol></svg>
+
 <div class="nav">
   <div class="inner">
     <span class="title">처음 만나는 Copilot Studio</span>
     <span class="sub">기본과정</span>
+    <button type="button" class="bigbtn" data-bigview>실습 페이지 주소 크게 보기</button>
   </div>
+</div>
+
+<div class="bigview" id="bigview" role="dialog" aria-modal="true" aria-label="실습 페이지 접속 주소">
+  <button type="button" class="x">닫기 (Esc)</button>
+  <p class="kicker">브라우저 주소창에 아래 주소를 입력하세요</p>
+  <a class="url" href="https://aka.ms/easycopilotstudio_kr" target="_blank" rel="noopener">aka.ms/easycopilotstudio_kr</a>
+  <svg class="qr" aria-hidden="true" focusable="false"><use href="#qrsym"></use></svg>
+  <p class="hint">휴대전화는 QR 코드를 찍으면 바로 열립니다. 화면을 누르면 닫힙니다.</p>
 </div>
 
 <div class="layout">
@@ -318,6 +374,15 @@ details.fold .copybox{margin-top:0}
 
 <h1>처음 만나는 Copilot Studio</h1>
 <p class="lead">개발 지식 없이 만드는 나의 첫 AI 에이전트. 코드를 쓰지 않고 실제 업무를 처리하는 에이전트를 직접 만들어 봅니다.</p>
+
+<div class="urlcard">
+  <svg class="qr" aria-hidden="true" focusable="false"><use href="#qrsym"></use></svg>
+  <div>
+    <div class="t">실습 페이지 주소</div>
+    <a class="u" href="https://aka.ms/easycopilotstudio_kr" target="_blank" rel="noopener">aka.ms/easycopilotstudio_kr</a>
+  </div>
+  <button type="button" class="bigbtn" data-bigview>화면에 크게 띄우기</button>
+</div>
 
 <div class="meta">
   <div><b>5~6시간</b>과정 길이</div>
@@ -4828,6 +4893,39 @@ details.fold .copybox{margin-top:0}
       })(cell, txt);
     }
   }
+})();
+
+// 접속 주소 전체 화면
+(function(){
+  var box = document.getElementById('bigview');
+  if (!box) return;
+
+  function open(){
+    box.classList.add('on');
+    document.body.style.overflow = 'hidden';
+  }
+  function close(){
+    box.classList.remove('on');
+    document.body.style.overflow = '';
+  }
+
+  var opens = document.querySelectorAll('[data-bigview]');
+  for (var i = 0; i < opens.length; i++) {
+    opens[i].addEventListener('click', function(e){ e.preventDefault(); open(); });
+  }
+
+  // 주소를 누르면 새 탭으로 열리게 두고, 그 밖의 빈 곳을 누르면 닫는다
+  box.addEventListener('click', function(e){
+    if (e.target.closest('a.url')) return;
+    close();
+  });
+
+  // 열려 있는 동안에는 좌우 방향키가 뒤쪽 페이지를 넘기지 않게 막는다
+  document.addEventListener('keydown', function(e){
+    if (!box.classList.contains('on')) return;
+    if (e.key === 'Escape') { close(); return; }
+    if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') e.stopPropagation();
+  }, true);
 })();
 </script></body>
 </html>
