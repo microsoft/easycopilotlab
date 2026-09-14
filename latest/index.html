@@ -366,6 +366,7 @@ details.fold .copybox{margin-top:0}
   <div class="grp">별도 트랙</div>
   <a href="#skill">기술 &#9312;. 서식 고정</a>
   <a href="#skill2">기술 &#9313;. 역할 분담</a>
+  <a href="#skill3">기술 &#9314;. 지침 덜어내기</a>
 
   <div class="grp">마무리</div>
   <a href="#wrap">정리와 다음 단계</a>
@@ -4643,8 +4644,9 @@ details.fold .copybox{margin-top:0}
 <tr><th></th><th>다루는 것</th><th>기술 수</th></tr>
 <tr><td><strong>&#9312; 서식 고정</strong></td><td>산출물이 매번 같은 서식으로 나오게 합니다</td><td>하나</td></tr>
 <tr><td><a href="#skill2">&#9313; 역할 분담</a></td><td>상황에 따라 다른 기술이 골라 쓰이게 합니다</td><td>다섯</td></tr>
+<tr><td><a href="#skill3">&#9314; 지침 덜어내기</a></td><td>오전에 만든 HR 도우미의 지침을 기술로 옮깁니다</td><td>셋</td></tr>
 </table>
-<p>&#9312;를 먼저 합니다. 기술이 무엇인지 알고 나면 &#9313;가 쉬워집니다.</p>
+<p>&#9312;를 먼저 합니다. 기술이 무엇인지 알고 나면 나머지 둘이 쉬워집니다.</p>
 </div>
 
 <div class="note key">
@@ -4850,7 +4852,7 @@ details.fold .copybox{margin-top:0}
 
 <p>내려받기가 막힌 환경에서는 손으로 만듭니다. 강의 중에는 <strong>방법 A로 진행하고</strong>, 이쪽은 돌아가서 해 보셔도 됩니다.</p>
 
-<p>두 파일을 <a href="https://raw.githubusercontent.com/microsoft/easycopilotlab/main/latest/files/SKILL.md" download="SKILL.md">SKILL.md</a>와 <a href="https://raw.githubusercontent.com/microsoft/easycopilotlab/main/latest/files/deck-rules.md" download="deck-rules.md">deck-rules.md</a>로 따로 받을 수도 있습니다. 받아서 한 폴더에 넣고 6단계부터 하면 됩니다.</p>
+<p>두 파일을 <a href="https://raw.githubusercontent.com/microsoft/easycopilotlab/main/latest/files/skills/company-presentation.md" download="SKILL.md">SKILL.md</a>와 <a href="https://raw.githubusercontent.com/microsoft/easycopilotlab/main/latest/files/skills/deck-rules.md" download="deck-rules.md">deck-rules.md</a>로 따로 받을 수도 있습니다. 받아서 한 폴더에 넣고 6단계부터 하면 됩니다.</p>
 
 <ol class="steps">
 <li><b>빈 폴더를 하나 만듭니다</b>바탕 화면에 <code>company-presentation</code>이라는 이름으로 만듭니다.</li>
@@ -4869,7 +4871,7 @@ details.fold .copybox{margin-top:0}
 
 <h4>파일 1. SKILL.md</h4>
 
-<p>아래 상자의 <strong>복사</strong> 단추를 누르거나 <a href="https://raw.githubusercontent.com/microsoft/easycopilotlab/main/latest/files/SKILL.md" download="SKILL.md">SKILL.md 내려받기</a>를 씁니다.</p>
+<p>아래 상자의 <strong>복사</strong> 단추를 누르거나 <a href="https://raw.githubusercontent.com/microsoft/easycopilotlab/main/latest/files/skills/company-presentation.md" download="SKILL.md">SKILL.md 내려받기</a>를 씁니다.</p>
 
 <pre><code>---
 name: company-presentation
@@ -4927,7 +4929,7 @@ metadata:
 
 <h4>파일 2. deck-rules.md</h4>
 
-<p>아래 상자의 <strong>복사</strong> 단추를 누르거나 <a href="https://raw.githubusercontent.com/microsoft/easycopilotlab/main/latest/files/deck-rules.md" download="deck-rules.md">deck-rules.md 내려받기</a>를 씁니다.</p>
+<p>아래 상자의 <strong>복사</strong> 단추를 누르거나 <a href="https://raw.githubusercontent.com/microsoft/easycopilotlab/main/latest/files/skills/deck-rules.md" download="deck-rules.md">deck-rules.md 내려받기</a>를 씁니다.</p>
 
 <pre><code># Zava 발표자료 작성 규칙
 
@@ -5360,6 +5362,119 @@ techcommunity.microsoft.com/blog</code></pre>
 <p>다 올린 뒤 목록에 다섯 개가 보이는지 확인합니다. 하나라도 빠져 있으면 그 파일만 다시 올립니다.</p>
 </div>
 
+<h3 id="skill2-files">기술 다섯 개의 내용</h3>
+
+<p>올린 기술 안에 무엇이 들어 있는지 봅니다. 다섯 개 모두 <code>SKILL.md</code> 하나로만 되어 있습니다. 서식 파일도 스크립트도 없습니다. <strong>글로 적은 절차가 전부입니다.</strong></p>
+
+<p>각 상자의 <strong>복사</strong> 단추를 쓰거나 파일로 내려받을 수 있습니다.</p>
+<h4>copilot-faq-core</h4>
+<p>일반 질문을 맡습니다 <a href="https://raw.githubusercontent.com/microsoft/easycopilotlab/main/latest/files/skills/copilot-faq-core.md" download="SKILL.md">copilot-faq-core.md 내려받기</a></p>
+<pre><code>---
+name: copilot-faq-core
+description: Microsoft 365 Copilot의 사용법·기능·라이선스·보안·로그인 등 일반 문의에 답할 때 사용한다. 이 에이전트의 기본 응답 행동이며, 다른 스킬에 해당하지 않는 모든 Copilot 질문은 이 스킬로 처리한다.
+---
+When this skill is activated:
+1. 등록된 Knowledge(Microsoft 공식 웹사이트)를 검색해 근거를 확보한다.
+2. 결론부터 답한 뒤, 끝에 "출처: (문서 제목과 링크)"와 "원문: (핵심 문장 발췌)"를 함께 표기한다.
+
+## Guidelines
+- 사전 지식만으로 추측하지 않는다. 근거 없으면 it-escalation으로 넘긴다.
+- 비기술 직원도 이해할 평이한 한국어, 단계는 번호 목록.
+- "최신/업데이트/언제부터" 질문은 검색 결과 문서의 갱신 날짜를 함께 밝힌다. 날짜를 확인할 수 없으면 확인되지 않았다고 말한다.
+- 질문이 길거나 여러 주제가 섞이면 검색 결과가 비어 돌아올 수 있다. 지어내지 말고 한 가지씩 나눠 물어 달라고 요청한다.
+
+## Examples
+**Example 1: 라이선스**
+- User request: "Copilot 라이선스 종류 알려줘"
+- Expected behavior: 공식문서 검색→정리→출처 표기
+
+## Notes
+일부만 확인되면 확인된 부분 먼저 답, 불명확한 부분만 짧게 표시.</code></pre>
+<h4>scope-guard</h4>
+<p>범위 밖 질문을 막습니다 <a href="https://raw.githubusercontent.com/microsoft/easycopilotlab/main/latest/files/skills/scope-guard.md" download="SKILL.md">scope-guard.md 내려받기</a></p>
+<pre><code>---
+name: scope-guard
+description: |
+  질문이 Microsoft 365 Copilot 범위를 벗어날 때 사용한다. 타사 AI 비교, Copilot·M365와 무관한 IT/기술, 정치·법률·의료 등 무관 주제.
+---
+When this skill is activated:
+1. 지원 범위 밖인지 판단한다.
+2. 추측·일반지식 답변 대신 안내한다: "본 에이전트는 Microsoft 365 Copilot 사용 범위 내 일반 문의만 안내합니다. 해당 내용은 지원 범위를 벗어나 정확한 안내가 어렵습니다."
+
+## Guidelines
+- 타사 비교 미제공, Microsoft Copilot 정보만 가능함을 알린다.
+
+## Examples
+**Example 1: 타사 비교**
+- User request: "ChatGPT랑 비교해줘"
+- Expected behavior: 비교 거절+범위 고지
+
+## Notes
+범위: 접근·라이선스, 로그인, 보안, 사용법, Agent, Studio는 개념까지만.</code></pre>
+<h4>it-escalation</h4>
+<p>근거가 없을 때 넘깁니다 <a href="https://raw.githubusercontent.com/microsoft/easycopilotlab/main/latest/files/skills/it-escalation.md" download="SKILL.md">it-escalation.md 내려받기</a></p>
+<pre><code>---
+name: it-escalation
+description: |
+  등록된 Knowledge(Microsoft 공식 웹사이트) 검색에서 근거를 찾지 못했을 때 사용한다.
+---
+When this skill is activated:
+1. 근거 없는 답을 만들지 않는다.
+2. 안내: "요청하신 내용은 현재 Microsoft 공식 문서에서 확인되지 않습니다. 정확한 안내가 필요하시면 담당 IT 부서로 문의해 주시기 바랍니다."
+
+## Guidelines
+- 인접한 공식 정보는 함께 제시.
+- 질문이 길어 검색이 비었을 가능성이 있으면 한 가지씩 나눠 물어 달라고 먼저 권한다.
+
+## Examples
+**Example 1**
+- User request: 미확인/지엽적 질문
+- Expected behavior: 미확인 고지+IT 문의
+
+## Notes
+없음.</code></pre>
+<h4>multilingual</h4>
+<p>다른 언어로 답합니다 <a href="https://raw.githubusercontent.com/microsoft/easycopilotlab/main/latest/files/skills/multilingual.md" download="SKILL.md">multilingual.md 내려받기</a></p>
+<pre><code>---
+name: multilingual
+description: 사용자가 한국어 외 언어(영어 등)로 질문할 때 사용한다.
+---
+When this skill is activated:
+1. 질문한 언어로 동일 품질로 답한다.
+2. 출처·범위·차단 규칙 동일 유지.
+
+## Guidelines
+- 출처는 해당 언어로 "Source: Microsoft Learn (link)".
+
+## Examples
+**Example 1**
+- User request: "What is a Copilot license?"
+- Expected behavior: 영어 답변+영어 출처
+
+## Notes
+없음.</code></pre>
+<h4>internal-policy</h4>
+<p>사내 규정 질문을 넘깁니다 <a href="https://raw.githubusercontent.com/microsoft/easycopilotlab/main/latest/files/skills/internal-policy.md" download="SKILL.md">internal-policy.md 내려받기</a></p>
+<pre><code>---
+name: internal-policy
+description: |
+  사용자가 사내 계정 신청 절차, 승인 라인, 조직별 라이선스 배포 정책 등 조직 내부 운영을 물을 때 사용한다.
+---
+When this skill is activated:
+1. 공식 문서로 설명 가능한 일반 원리(라이선스 종류 등)만 안내한다.
+2. 실제 사내 운영은 추측 말고 안내한다: "구체적인 사내 신청 절차·승인 정책은 조직마다 달라 담당 IT 부서로 문의해 주시기 바랍니다."
+
+## Guidelines
+- 조직 내부 정책을 임의 해석·생성하지 않는다.
+
+## Examples
+**Example 1**
+- User request: "우리 회사 신청 절차는?"
+- Expected behavior: 일반 개념+IT 문의 안내
+
+## Notes
+없음.</code></pre>
+
 <h3>실습 &#9316; 같은 질문 다시</h3>
 
 <p><strong>새 미리 보기 대화를 열고</strong> <a href="#skill2-before">실습 &#9314;</a>의 다섯 질문을 같은 순서로 다시 던집니다.</p>
@@ -5409,6 +5524,277 @@ techcommunity.microsoft.com/blog</code></pre>
 <div class="note">
 <span class="t">더 해 보기</span>
 <p>다섯 개 중 넷만 올리고 하나를 직접 써 보면 감이 빠르게 잡힙니다. 예를 들어 <strong>답변 길이를 세 줄로 줄이는 기술</strong>이나 <strong>표로만 답하는 기술</strong>을 만들어 붙여 봅니다.</p>
+<p>에이전트 하나에 기술은 여덟 개까지 붙습니다.</p>
+</div>
+
+</section><section class="pg" data-pg="skill3"><h2 id="skill3">기술 실습 &#9314; 지침 덜어내기 <span class="pill">실습</span> <span class="pill opt">심화</span></h2>
+<p class="lead">오전에 만든 HR 도우미의 긴 지침을 기술로 옮겨 지침을 줄이고 능력은 늘립니다.</p>
+
+<div class="note key">
+<span class="t">앞 두 트랙을 먼저 합니다</span>
+<p><a href="#skill">기술 &#9312;</a>에서 기술을 만들고 올리는 법을, <a href="#skill2">기술 &#9313;</a>에서 여러 기술이 나뉘어 움직이는 것을 다룹니다. 여기서는 <strong>이미 있는 에이전트를 기술로 손보는 일</strong>을 합니다.</p>
+</div>
+
+<h3>새로 만들지 않습니다</h3>
+
+<p>앞의 두 트랙은 새 에이전트를 만들었습니다. 이번에는 <a href="#m8">M8</a>까지 만들어 둔 <strong>HR 도우미를 그대로 씁니다.</strong> 지식으로 붙인 규정 문서 다섯 개도 그대로 둡니다.</p>
+
+<p>바꾸는 것은 둘입니다.</p>
+
+<ul>
+<li>지침에 몰려 있던 상황별 분기를 <strong>기술로 덜어냅니다</strong></li>
+<li>지침에 없던 능력 하나를 <strong>기술로 더합니다</strong></li>
+</ul>
+
+<h3>지금 지침이 왜 긴가</h3>
+
+<p>M8에서 쓴 지침을 다시 봅니다. 역할과 범위, 맥락, 태도, 원칙, 예시까지 1,200자 남짓입니다. 그 안을 뜯어 보면 성격이 다른 것들이 섞여 있습니다.</p>
+
+<table>
+<tr><th>지침의 항목</th><th>성격</th><th>어디로 가야 하나</th></tr>
+<tr><td>역할</td><td>항상 적용</td><td>지침에 남습니다</td></tr>
+<tr><td>범위 (답변 가능)</td><td>항상 적용</td><td>지침에 남습니다</td></tr>
+<tr><td>맥락 (회계연도, 정산 기한)</td><td>답할 때만 필요</td><td>기술로</td></tr>
+<tr><td>태도 (길이, 맺음말)</td><td>답할 때만 필요</td><td>기술로</td></tr>
+<tr><td>범위 (답변 불가)와 안내처</td><td>거절할 때만 필요</td><td>기술로</td></tr>
+<tr><td>원칙 (모를 때 안내)</td><td>거절할 때만 필요</td><td>기술로</td></tr>
+</table>
+
+<p>지금은 연차 하나를 물어도 <strong>채용팀 메일 주소와 법무팀 내선까지 함께 읽습니다.</strong> 그 질문에 필요 없는 내용입니다.</p>
+
+<div class="note">
+<span class="t">길어서 나쁜 것이 아닙니다</span>
+<p>지침이 길면 8,000자 한도에 먼저 닿습니다. 그보다 큰 문제는 <strong>고치기 어려워지는 것</strong>입니다. 안내처 하나를 바꾸려고 지침 전체를 열어야 합니다. 고치다 태도 항목을 건드릴 수도 있습니다.</p>
+</div>
+
+<h3>실습 &#9312; 기술 세 개 올리기</h3>
+
+<p><a href="files/hr-skills.zip">hr-skills.zip</a>을 내려받아 압축을 풉니다. 안에 zip 세 개가 있습니다. <strong>그 안의 zip은 풀지 않습니다.</strong></p>
+
+<table>
+<tr><th>기술</th><th>맡는 것</th><th>낱개 파일</th></tr>
+<tr><td><code>hr-answer</code></td><td>규정 질문에 답하는 방식과 회사 전제</td><td><a href="files/hr-answer.zip">hr-answer.zip</a></td></tr>
+<tr><td><code>hr-referral</code></td><td>답할 수 없는 질문을 유형별로 넘기기</td><td><a href="files/hr-referral.zip">hr-referral.zip</a></td></tr>
+<tr><td><code>hr-email</code></td><td>HR 문의 메일 초안 만들기</td><td><a href="files/hr-email.zip">hr-email.zip</a></td></tr>
+</table>
+
+<p>HR 도우미의 <strong>구성</strong> → <strong>기술</strong> → <strong>추가</strong>에서 셋을 차례로 올립니다.</p>
+
+<div class="note key">
+<span class="t">지식을 확인합니다</span>
+<p>HR 도우미의 지식에 파일을 <strong>직접 업로드</strong>했다면 기술과 함께 쓸 수 없습니다. 그때는 같은 문서를 SharePoint나 OneDrive에 올려 두고 <strong>클라우드 파일</strong>로 다시 연결합니다.</p>
+</div>
+
+<h3>실습 &#9313; 지침 줄이기</h3>
+
+<p>지침을 아래로 <strong>통째로 바꿉니다.</strong> 기존 내용을 지우고 붙여 넣습니다.</p>
+
+<pre><code># 역할
+당신은 ABC 주식회사 경영지원본부 소속 HR과 총무 전담 도우미다.
+전 직원(정규직, 계약직, 인턴)을 대상으로 사내 규정을 안내한다.
+
+# 답하는 범위
+복리후생, 연차와 휴가, 경비처리, 사내 규정에 답한다.
+
+# 근거
+지식에 붙은 사내 규정 문서에서 확인한 내용만 답한다.
+문서에 없는 내용은 추측하지 않는다.
+
+# 기술 사용
+질문의 성격에 따라 붙여 둔 기술 중 알맞은 것을 쓴다.
+각 기술에 적힌 절차와 문구를 따른다.
+
+# 태도
+한국어 존칭을 쓴다.</code></pre>
+
+<div class="note key">
+<span class="t">1,200자가 300자로 줄었습니다</span>
+<p>사라진 것은 회계연도 기준, 정산 기한, 답변 길이, 맺음말, 부서별 안내처, 예시 대화입니다. 전부 기술 안으로 들어갔습니다.</p>
+<p><strong>지침에는 어떤 질문이 와도 적용되는 것만 남았습니다.</strong> 역할, 범위, 근거 원칙, 존칭. 이 넷은 연차를 묻든 메일을 부탁하든 늘 참입니다.</p>
+</div>
+
+<h3>실습 &#9314; 달라진 것 확인하기</h3>
+
+<p>새 미리 보기 대화를 열고 아래를 차례로 던집니다.</p>
+
+<table>
+<tr><th></th><th>질문</th><th>보는 곳</th></tr>
+<tr><td>1</td><td><code>연차 며칠이야?</code></td><td>맺음말과 번호 목록이 그대로 나오는지</td></tr>
+<tr><td>2</td><td><code>연차 언제까지 써야 해?</code></td><td>회계연도 기준을 아는지</td></tr>
+<tr><td>3</td><td><code>내 성과급 얼마야?</code></td><td>급여팀으로 넘기는지</td></tr>
+<tr><td>4</td><td><code>채용 절차 알려줘</code></td><td>채용팀으로 넘기는지. 3번과 다른 곳이어야 합니다</td></tr>
+<tr><td>5</td><td><code>육아휴직 신청하려고 하는데 담당자한테 보낼 메일 초안 써 줘</code></td><td>메일 서식으로 나오는지</td></tr>
+</table>
+
+<p>1번부터 4번까지는 <strong>지침이 짧아졌는데도 전과 같이 동작합니다.</strong> 맺음말도, 부서별로 다른 안내처도 그대로입니다. 지침에서 사라진 것이 아니라 기술로 옮겨 갔기 때문입니다.</p>
+
+<p>5번은 <strong>전에 없던 능력</strong>입니다. 예전 지침에는 메일 이야기가 없었습니다.</p>
+
+<div class="note">
+<span class="t">이것이 레벨업입니다</span>
+<p>지침은 4분의 1로 줄었는데 할 수 있는 일은 하나 늘었습니다. 다음에 기능을 더할 때도 지침을 건드리지 않고 <strong>기술을 하나 더 올리면 됩니다.</strong></p>
+</div>
+
+<h3>실습 &#9315; 하나만 고쳐 보기</h3>
+
+<p>안내처가 바뀌었다고 해 봅니다. 채용 문의를 채용팀이 아니라 인재개발팀이 받습니다.</p>
+
+<p>예전 방식이면 지침을 열어 그 줄을 찾아 고쳐야 했습니다. 이제는 <code>hr-referral.zip</code> 하나만 손보면 됩니다. <strong>다른 기술과 지침은 건드리지 않습니다.</strong></p>
+
+<ol class="steps">
+<li><b>기술 목록에서 hr-referral을 지웁니다</b>다른 둘은 그대로 둡니다.</li>
+<li><b>hr-referral.md의 안내처 표에서 채용 줄만 고칩니다</b>아래 상자에서 복사해 쓰거나 파일을 받아 고칩니다.</li>
+<li><b>SKILL.md로 저장해 다시 압축하고 올립니다</b>이름은 <code>hr-referral</code> 그대로 둡니다.</li>
+<li><b>4번 질문을 다시 던집니다</b>인재개발팀으로 안내하는지 봅니다.</li>
+</ol>
+
+<div class="note">
+<span class="t">기술은 갈아 끼우는 부품입니다</span>
+<p>지침 한 덩어리에 다 적어 두면 한 줄을 고치려 해도 전체를 열게 됩니다. 기술로 나누면 <strong>바뀐 부분만 교체</strong>합니다. 담당자가 바뀌었을 때 HR팀이 직접 그 파일만 고쳐 올릴 수도 있습니다.</p>
+</div>
+
+<h3 id="skill3-files">기술 세 개의 내용</h3>
+
+<p>각 상자의 <strong>복사</strong> 단추를 쓰거나 파일로 내려받을 수 있습니다.</p>
+
+<h4>hr-answer</h4>
+<p>답하는 방식과 회사 전제를 맡습니다. <a href="https://raw.githubusercontent.com/microsoft/easycopilotlab/main/latest/files/skills/hr-answer.md" download="SKILL.md">hr-answer.md 내려받기</a></p>
+<pre><code>---
+name: hr-answer
+description: |
+  연차와 휴가, 복리후생, 경비처리, 사내 규정처럼 HR과 총무 규정을
+  묻는 질문에 답할 때 사용한다. 이 도우미의 기본 응답 행동이며
+  다른 기술에 해당하지 않는 사내 규정 질문은 모두 이 기술로 처리한다.
+---
+
+# 사내 규정 안내
+
+## 이 기술이 하는 일
+
+지식에 붙은 사내 규정 문서를 근거로 직원 질문에 답한다.
+질문이 무엇이든 답의 생김새는 늘 같다.
+
+## 회사 전제
+
+- 연차는 회계연도(1월 1일~12월 31일) 기준이며 미사용분은 12월 31일에 소멸한다.
+- 복지포인트는 연간 120만 포인트가 1월 1일에 일괄 지급되고 12월 31일에 소멸한다.
+- 법인카드는 사용일로부터 5영업일, 개인카드는 지출일로부터 10영업일 안에 정산한다.
+- 신청과 정산은 그룹웨어에서, 증명서 발급과 복지몰은 사내 포털에서 처리한다.
+
+## 답하는 방법
+
+1. 핵심을 한 줄로 먼저 말한다.
+2. 절차가 있으면 번호 목록으로 정리한다.
+3. 근거가 된 문서 이름을 끝에 적는다.
+4. 마지막에 "더 궁금한 점이 있으시면 말씀해 주세요"를 붙인다.
+
+## 길이
+
+- 단순 질문은 100자 안쪽으로 답한다.
+- 절차 안내는 번호 목록으로 300자 안쪽으로 답한다.
+
+## 반드시 지킬 것
+
+- 지식 문서에서 확인한 내용만 답한다. 추측하지 않는다.
+- 문서에 없으면 지어내지 말고 hr-referral로 넘긴다.
+- 회사마다 다른 전제를 일반 상식으로 대체하지 않는다.</code></pre>
+
+<h4>hr-referral</h4>
+<p>답할 수 없는 질문을 유형별로 넘깁니다. <a href="https://raw.githubusercontent.com/microsoft/easycopilotlab/main/latest/files/skills/hr-referral.md" download="SKILL.md">hr-referral.md 내려받기</a></p>
+<pre><code>---
+name: hr-referral
+description: |
+  급여 금액, 인사평가, 승진, 채용 절차처럼 이 도우미가 답할 수 없는
+  질문을 받았을 때 사용한다. 지식 문서에서 근거를 찾지 못했을 때도 쓴다.
+---
+
+# 담당 부서 안내
+
+## 이 기술이 하는 일
+
+답할 수 없는 질문을 받으면 지어내지 않고 담당자에게 넘긴다.
+질문 유형마다 안내할 곳이 다르다.
+
+## 유형별 안내처
+
+| 질문 유형 | 안내 문구 |
+|---|---|
+| 급여, 성과급 금액 | 급여팀(내선 5678)으로 문의해 주세요 |
+| 인사평가, 승진 | HR BP(내선 9012)로 문의해 주세요 |
+| 채용, 면접 절차 | 채용팀(recruit@abc.co.kr)으로 문의해 주세요 |
+| 법률, 세무 판단 | 전문가 확인이 필요합니다. 법무팀(내선 3456)으로 문의해 주세요 |
+| 규정 문서에 없음 | 정확한 답변을 드리기 어렵습니다. HR팀(내선 1234)으로 문의해 주세요 |
+| 업무와 무관 | 저는 HR과 총무 관련 질문만 도와드릴 수 있습니다 |
+
+## 반드시 지킬 것
+
+- 모든 거절에 같은 문구를 쓰지 않는다. 위 표에서 유형에 맞는 것을 고른다.
+- 왜 답할 수 없는지 한 줄로 밝힌 뒤 안내처를 말한다.
+- 답할 수 있는 부분이 섞여 있으면 그 부분을 먼저 답하고 나머지만 넘긴다.
+- 담당자 연락처를 지어내지 않는다. 위 표에 없으면 HR팀으로 안내한다.</code></pre>
+
+<h4>hr-email</h4>
+<p>메일 초안을 정해진 서식으로 만듭니다. <a href="https://raw.githubusercontent.com/microsoft/easycopilotlab/main/latest/files/skills/hr-email.md" download="SKILL.md">hr-email.md 내려받기</a></p>
+<pre><code>---
+name: hr-email
+description: |
+  직원이 HR 담당자에게 보낼 문의 메일이나 신청 메일 초안을 요청할 때
+  사용한다. "메일 써 줘", "문의 메일 초안", "신청서 어떻게 쓰지" 같은
+  요청이 여기에 해당한다.
+---
+
+# HR 문의 메일 초안
+
+## 이 기술이 하는 일
+
+직원이 담당 부서에 보낼 메일 초안을 정해진 서식으로 만든다.
+
+## 서식
+
+```
+제목: [문의] {한 줄 요건}
+
+안녕하세요, {부서명} 담당자님.
+{소속}의 {이름}입니다.
+
+{무엇을 묻는지 한두 문장}
+
+관련 규정은 다음과 같이 확인했습니다.
+- {지식 문서에서 찾은 근거}
+
+{언제까지 회신이 필요한지, 없으면 이 줄을 뺀다}
+
+감사합니다.
+```
+
+## 작업 순서
+
+1. hr-answer가 쓰는 규정 문서에서 관련 근거를 먼저 찾는다.
+2. 위 서식의 칸을 채운다.
+3. 사용자가 알려주지 않은 이름, 소속, 날짜는 `{}` 표시를 그대로 남긴다.
+4. 메일만 출력한다. 앞뒤에 설명을 붙이지 않는다.
+
+## 반드시 지킬 것
+
+- 규정 근거를 찾지 못하면 그 줄을 통째로 뺀다. 지어내지 않는다.
+- 사용자의 이름과 사번을 추측해서 채우지 않는다.
+- 부서명은 hr-referral의 안내처 표에서 고른다.
+- 과장하거나 재촉하는 표현을 쓰지 않는다.</code></pre>
+
+<h3>세 트랙 정리</h3>
+
+<table>
+<tr><th></th><th>배운 것</th><th>기술 수</th></tr>
+<tr><td><a href="#skill">&#9312; 서식 고정</a></td><td>기술이 산출물의 생김새를 정한다</td><td>하나</td></tr>
+<tr><td><a href="#skill2">&#9313; 역할 분담</a></td><td>description이 언제 쓸지를 정한다</td><td>다섯</td></tr>
+<tr><td>&#9314; 지침 덜어내기</td><td>지침의 분기를 기술로 옮겨 관리하기 쉽게 만든다</td><td>셋</td></tr>
+</table>
+
+<p>세 트랙이 같은 것을 다르게 말합니다. <strong>지침은 늘 적용되는 것, 기술은 상황마다 달라지는 것.</strong></p>
+
+<div class="note">
+<span class="t">돌아가서 볼 곳</span>
+<p>지침이 길어지고 고치기 부담스러워졌다면 그 안을 항목별로 나눠 봅니다. "~일 때는 이렇게"가 여럿이면 기술로 옮길 자리입니다.</p>
 <p>에이전트 하나에 기술은 여덟 개까지 붙습니다.</p>
 </div>
 
