@@ -492,6 +492,22 @@ details.fold .copybox{margin-top:0}
 </table>
 <p>다섯 개를 한 폴더에 모아 두면 실습할 때 한 번에 올릴 수 있습니다.</p>
 
+<h3>기술 실습 파일</h3>
+<p><a href="#m4">M4</a>에서 쓰는 파일입니다. 그 모듈에서도 같은 링크로 받을 수 있습니다.</p>
+<table>
+<tr><th>파일</th><th>담긴 내용</th><th>쓰는 곳</th></tr>
+<tr><td><a href="files/company-presentation.zip">company-presentation.zip</a></td><td>기술 패키지</td><td>구성 탭의 기술에 올립니다</td></tr>
+<tr><td><a href="files/%ED%9A%8C%EC%9D%98%EB%A1%9D_%EB%8C%80%ED%95%9C%EC%A0%95%EB%B0%80_%EC%82%AC%EC%A0%84%EB%AF%B8%ED%8C%85.docx">회의록_대한정밀_사전미팅.docx</a></td><td>실습에 쓸 회의록</td><td>본문을 복사해 대화창에 붙여 넣습니다</td></tr>
+<tr><td><a href="files/SKILL.md" download>SKILL.md</a></td><td>기술의 작업 순서</td><td>zip을 직접 만들 때만 씁니다</td></tr>
+<tr><td><a href="files/deck-rules.md" download>deck-rules.md</a></td><td>표 서식과 작성 규칙</td><td>zip을 직접 만들 때만 씁니다</td></tr>
+</table>
+
+<div class="note">
+<span class="t">강사가 준비할 것</span>
+<p><a href="files/Zava_%ED%9A%8C%EC%82%AC%EC%9E%90%EB%A3%8C.zip">Zava_회사자료.zip</a>은 참가자가 받는 파일이 아닙니다. 압축을 풀어 참가자 전원이 읽을 수 있는 SharePoint 문서 라이브러리에 <strong>폴더째</strong> 올려 둡니다.</p>
+<p>올린 뒤 SharePoint 검색창에 <code>OpsHub</code>를 넣어 파일이 나오는지 확인합니다. 색인이 끝나기 전에는 에이전트도 찾지 못하므로 실습 전에 미리 해 둡니다.</p>
+</div>
+
 </section><section class="pg" data-pg="terms"><h2 id="terms">용어 정리</h2>
 
 <p>이 과정에서는 익숙한 비유를 사용해 개념을 설명합니다. 다음 여섯 개만 기억하면 됩니다.</p>
@@ -1471,6 +1487,8 @@ details.fold .copybox{margin-top:0}
 
 <p>내려받기가 막힌 환경에서는 손으로 만듭니다. 강의 중에는 <strong>방법 A로 진행하고</strong>, 이쪽은 돌아가서 해 보셔도 됩니다.</p>
 
+<p>두 파일을 <a href="files/SKILL.md" download>SKILL.md</a>와 <a href="files/deck-rules.md" download>deck-rules.md</a>로 따로 받을 수도 있습니다. 받아서 한 폴더에 넣고 6단계부터 하면 됩니다.</p>
+
 <ol class="steps">
 <li><b>빈 폴더를 하나 만듭니다</b>바탕 화면에 <code>company-presentation</code>이라는 이름으로 만듭니다.</li>
 <li><b>메모장을 엽니다</b>시작 메뉴에서 메모장을 실행합니다.</li>
@@ -1487,6 +1505,8 @@ details.fold .copybox{margin-top:0}
 </div>
 
 <h4>파일 1. SKILL.md</h4>
+
+<p>아래 상자의 <strong>복사</strong> 단추를 누르거나 <a href="files/SKILL.md" download>SKILL.md 내려받기</a>를 씁니다.</p>
 
 <pre><code>---
 name: company-presentation
@@ -1543,6 +1563,8 @@ metadata:
 파일과 함께 알린다. 브랜드를 입히려면 만들어진 내용을 회사 템플릿에 옮겨 붙여야 한다.</code></pre>
 
 <h4>파일 2. deck-rules.md</h4>
+
+<p>아래 상자의 <strong>복사</strong> 단추를 누르거나 <a href="files/deck-rules.md" download>deck-rules.md 내려받기</a>를 씁니다.</p>
 
 <pre><code># Zava 발표자료 작성 규칙
 
@@ -1803,6 +1825,12 @@ metadata:
 <pre><code>위 계획대로 PowerPoint 파일로 만들어 줘.</code></pre>
 
 <p>에이전트 빌더에는 <strong>코드 인터프리터</strong>가 기본으로 켜져 있어서 Word, Excel, PowerPoint, PDF 파일을 만들어 내려받게 할 수 있습니다.</p>
+
+<p>파일이 안 나오면 이 한 줄로 먼저 확인합니다.</p>
+
+<pre><code>코드 인터프리터로 이것만 실행해 줘: import pptx; print(pptx.__version__)</code></pre>
+
+<p>버전이 찍히면 PowerPoint를 만들 준비가 된 것입니다. 오류가 나면 그 환경에서는 PowerPoint 대신 <strong>Word로 요청</strong>합니다. 안 되면 슬라이드 계획 표를 그대로 쓰면 됩니다. 이 단계는 선택이라 넘어가도 실습에 지장이 없습니다.</p>
 
 <div class="note">
 <span class="t">회사 템플릿은 입혀지지 않습니다</span>
