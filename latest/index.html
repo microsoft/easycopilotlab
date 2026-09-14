@@ -364,7 +364,8 @@ details.fold .copybox{margin-top:0}
   <a href="#m16">M16. 트리거</a>
 
   <div class="grp">별도 트랙</div>
-  <a href="#skill">기술(Skill) 실습</a>
+  <a href="#skill">기술 &#9312;. 서식 고정</a>
+  <a href="#skill2">기술 &#9313;. 역할 분담</a>
 
   <div class="grp">마무리</div>
   <a href="#wrap">정리와 다음 단계</a>
@@ -4627,13 +4628,23 @@ details.fold .copybox{margin-top:0}
 <tr><td>멀티에이전트 라우팅이 부정확하다</td><td>에이전트 설명이 모호</td><td>M15에서 각 에이전트 설명을 구체화</td></tr>
 </table>
 
-</section><section class="pg" data-pg="skill"><h2 id="skill">기술(Skill) <span class="pill">실습</span> <span class="pill opt">별도 트랙</span></h2>
+</section><section class="pg" data-pg="skill"><h2 id="skill">기술 실습 &#9312; 서식 고정 <span class="pill">실습</span> <span class="pill opt">별도 트랙</span></h2>
 <p class="lead">에이전트 빌더에 기술을 붙여 산출물이 매번 같은 서식을 따르게 합니다.</p>
 
 <div class="note">
 <span class="t">본 과정과 따로 진행합니다</span>
 <p>이 트랙은 하루 과정에 들어 있지 않습니다. 미리 보기 기능을 다루고 조직에 따라 화면에 보이지 않을 수 있어 따로 두었습니다.</p>
-<p><a href="#m3">M3</a>에서 에이전트 빌더를 다뤄 본 뒤에 진행합니다. 여기서는 새 에이전트를 하나 더 만들므로 오전에 만든 HR 도우미는 그대로 두어도 됩니다.</p>
+<p><a href="#m3">M3</a>에서 에이전트 빌더를 다뤄 본 뒤에 진행합니다. 여기서는 새 에이전트를 하나 더 만드므로 오전에 만든 HR 도우미는 그대로 두어도 됩니다.</p>
+</div>
+
+<div class="note plain">
+<span class="t">기술 실습은 둘로 나뉩니다</span>
+<table>
+<tr><th></th><th>다루는 것</th><th>기술 수</th></tr>
+<tr><td><strong>&#9312; 서식 고정</strong></td><td>산출물이 매번 같은 서식으로 나오게 합니다</td><td>하나</td></tr>
+<tr><td><a href="#skill2">&#9313; 역할 분담</a></td><td>상황에 따라 다른 기술이 골라 쓰이게 합니다</td><td>다섯</td></tr>
+</table>
+<p>&#9312;를 먼저 합니다. 기술이 무엇인지 알고 나면 &#9313;가 쉬워집니다.</p>
 </div>
 
 <div class="note key">
@@ -5212,6 +5223,195 @@ metadata:
 <p>맨 위의 <code>---</code> 두 줄 사이에 있는 머리말은 빼고 그 아래 본문만 넣습니다. <a href="#skill-before">실습 &#9313;</a>과 실습 &#9315;의 전후 비교도 그대로 할 수 있습니다.</p>
 <p>다만 지침은 8,000자까지라 길어지면 잘립니다. 그리고 이렇게 넣은 내용은 대화가 길어질수록 흐려집니다. <strong>기술을 따로 두는 이유가 여기에 있습니다.</strong></p>
 </div>
+</section><section class="pg" data-pg="skill2"><h2 id="skill2">기술 실습 &#9313; 역할 분담 <span class="pill">실습</span> <span class="pill opt">심화</span></h2>
+<p class="lead">기술 다섯 개를 붙여 상황에 따라 다른 기술이 골라 쓰이게 합니다.</p>
+
+<div class="note key">
+<span class="t">앞 트랙을 먼저 합니다</span>
+<p><a href="#skill">기술 실습 &#9312;</a>을 마치고 오는 것을 권합니다. 기술을 만들고 올리는 방법은 거기서 다룹니다. 여기서는 <strong>여러 기술이 어떻게 나뉘어 움직이는지</strong>에 집중합니다.</p>
+</div>
+
+<h3>기술 하나와 여럿의 차이</h3>
+
+<p>앞 트랙의 기술은 하나였고 하는 일도 하나였습니다. 발표자료 계획을 정해진 표로 만드는 것입니다. 언제 쓸지 고민할 필요가 없었습니다.</p>
+
+<p>기술이 여럿이면 <strong>어느 것을 쓸지 고르는 일</strong>이 생깁니다. 이 선택은 기술의 <code>description</code>을 보고 이뤄집니다.</p>
+
+<pre><code>---
+name: scope-guard
+description: |
+  질문이 Microsoft 365 Copilot 범위를 벗어날 때 사용한다.
+  타사 AI 비교, Copilot·M365와 무관한 IT/기술, 정치·법률·의료 등 무관 주제.
+---</code></pre>
+
+<p>이 두 줄이 "언제 부를지"를 정합니다. 본문이 아무리 좋아도 <code>description</code>이 모호하면 그 기술은 불려 나오지 않습니다.</p>
+
+<div class="note">
+<span class="t">기술 하나에 일 하나</span>
+<p>다섯 가지 행동을 기술 하나에 몰아 넣을 수도 있습니다. 다만 그러면 언제 무엇을 할지 모델이 스스로 판단해야 합니다.</p>
+<p>나누어 두면 <strong>필요한 것만 불려 나옵니다.</strong> 범위 밖 질문에는 <code>scope-guard</code>만 들어오고 나머지 넷은 대화에 실리지 않습니다.</p>
+</div>
+
+<h3>만들 에이전트</h3>
+
+<p>Microsoft 공식 문서를 근거로 Copilot 사용법을 안내하는 FAQ 에이전트입니다. 기술 다섯 개가 각자 다른 상황을 맡습니다.</p>
+
+<table>
+<tr><th>기술</th><th>언제 불려 나오나</th><th>하는 일</th></tr>
+<tr><td><code>copilot-faq-core</code></td><td>일반 Copilot 질문</td><td>공식 문서를 찾아 출처와 함께 답합니다</td></tr>
+<tr><td><code>scope-guard</code></td><td>범위 밖 질문</td><td>답하지 않고 지원 범위를 알립니다</td></tr>
+<tr><td><code>it-escalation</code></td><td>근거를 못 찾았을 때</td><td>지어내지 않고 담당 부서를 안내합니다</td></tr>
+<tr><td><code>multilingual</code></td><td>한국어가 아닌 질문</td><td>같은 품질로 그 언어로 답합니다</td></tr>
+<tr><td><code>internal-policy</code></td><td>사내 규정 질문</td><td>일반 원리만 설명하고 사내 절차는 IT로 넘깁니다</td></tr>
+</table>
+
+<h3>실습 &#9312; 에이전트 만들기</h3>
+
+<p>에이전트 빌더에서 새 에이전트를 만들고 <strong>구성</strong> 탭으로 갑니다.</p>
+
+<table>
+<tr><th>항목</th><th>입력값</th></tr>
+<tr><td>이름</td><td>Copilot FAQ 도우미</td></tr>
+<tr><td>설명</td><td>Microsoft 공식 문서를 근거로 Copilot 사용법을 안내하는 도우미</td></tr>
+</table>
+
+<p>지침에는 다음만 넣습니다.</p>
+
+<pre><code># 역할
+당신은 Microsoft Copilot 사용자를 돕는 안내 비서다.
+사용자가 Copilot의 기능, 사용법, 라이선스, 보안, 에이전트를 물으면
+등록된 공식 문서를 근거로 답한다.
+
+# 근거
+- 등록된 지식의 Microsoft 공식 사이트를 우선 근거로 쓴다.
+- 같은 주제에 여러 문서가 있으면 최근에 갱신된 것을 쓴다.
+- 공식 문서에서 확인되지 않는 내용은 추측하지 않는다.
+
+# 기술 사용
+질문의 성격에 따라 붙여 둔 기술 중 알맞은 것을 쓴다.
+각 기술에 적힌 절차와 문구를 따른다.
+
+# 톤
+한국어 존칭을 쓴다. 전문 용어가 나오면 한 줄로 풀어 설명한다.</code></pre>
+
+<div class="note key">
+<span class="t">지침이 짧아졌습니다</span>
+<p>앞 트랙의 지침보다 짧습니다. 출력 형식도, 거절 문구도, 언어 규칙도 없습니다. <strong>전부 기술이 맡기 때문입니다.</strong></p>
+<p>지침에는 역할과 근거 원칙처럼 <strong>항상 적용되는 것</strong>만 남깁니다. 상황마다 달라지는 행동은 기술로 내보냅니다.</p>
+</div>
+
+<h3>실습 &#9313; 지식 붙이기</h3>
+
+<p><strong>지식</strong>에서 <strong>웹 검색</strong>을 고르고 아래 네 곳을 하나씩 더합니다.</p>
+
+<pre><code>learn.microsoft.com
+adoption.microsoft.com
+support.microsoft.com
+techcommunity.microsoft.com/blog</code></pre>
+
+<div class="note">
+<span class="t">파일은 올리지 않습니다</span>
+<p>지식에 <strong>직접 업로드한 파일</strong>은 기술과 함께 쓸 수 없습니다. 이 실습은 웹사이트만 쓰므로 걸리지 않습니다.</p>
+</div>
+
+<h3 id="skill2-before">실습 &#9314; 기술 없이 먼저</h3>
+
+<p>기술을 붙이기 전에 아래 다섯 질문을 차례로 던집니다. 답을 화면에 남겨 둡니다.</p>
+
+<table>
+<tr><th></th><th>질문</th><th>노리는 것</th></tr>
+<tr><td>1</td><td><code>Copilot 라이선스 종류 알려줘</code></td><td>일반 질문</td></tr>
+<tr><td>2</td><td><code>ChatGPT랑 Copilot 비교해줘</code></td><td>범위 밖</td></tr>
+<tr><td>3</td><td><code>우리 회사 Copilot 신청 절차 알려줘</code></td><td>사내 규정</td></tr>
+<tr><td>4</td><td><code>What is a Copilot license?</code></td><td>다른 언어</td></tr>
+<tr><td>5</td><td><code>Copilot으로 사내 ERP 결재 올리는 법 알려줘</code></td><td>근거 없음</td></tr>
+</table>
+
+<p>기술이 없으면 대개 이렇게 나옵니다.</p>
+
+<ul>
+<li>2번에서 타사 제품을 비교해 줍니다</li>
+<li>3번에서 사내 절차를 그럴듯하게 지어냅니다</li>
+<li>5번에서 없는 기능을 있는 것처럼 설명합니다</li>
+<li>출처가 붙기도 하고 안 붙기도 합니다</li>
+</ul>
+
+<h3>실습 &#9315; 기술 다섯 개 붙이기</h3>
+
+<p><a href="files/faq-skills.zip">faq-skills.zip</a>을 내려받아 압축을 풉니다. 안에 zip 다섯 개가 들어 있습니다. <strong>그 안의 zip을 다시 풀지 않습니다.</strong></p>
+
+<p><strong>구성</strong> → <strong>기술</strong> → <strong>추가</strong>에서 하나씩 올립니다. 다섯 번 반복합니다.</p>
+
+<table>
+<tr><th>순서</th><th>파일</th></tr>
+<tr><td>1</td><td><a href="files/copilot-faq-core.zip">copilot-faq-core.zip</a></td></tr>
+<tr><td>2</td><td><a href="files/scope-guard.zip">scope-guard.zip</a></td></tr>
+<tr><td>3</td><td><a href="files/it-escalation.zip">it-escalation.zip</a></td></tr>
+<tr><td>4</td><td><a href="files/multilingual.zip">multilingual.zip</a></td></tr>
+<tr><td>5</td><td><a href="files/internal-policy.zip">internal-policy.zip</a></td></tr>
+</table>
+
+<div class="note">
+<span class="t">시간이 부족하면 셋만</span>
+<p>앞의 세 개만 올려도 실습이 됩니다. <code>copilot-faq-core</code>, <code>scope-guard</code>, <code>it-escalation</code>이 대비가 가장 뚜렷합니다.</p>
+</div>
+
+<div class="new"><span class="tag"></span>
+<p>다 올린 뒤 목록에 다섯 개가 보이는지 확인합니다. 하나라도 빠져 있으면 그 파일만 다시 올립니다.</p>
+</div>
+
+<h3>실습 &#9316; 같은 질문 다시</h3>
+
+<p><strong>새 미리 보기 대화를 열고</strong> <a href="#skill2-before">실습 &#9314;</a>의 다섯 질문을 같은 순서로 다시 던집니다.</p>
+
+<table>
+<tr><th></th><th>기술 없을 때</th><th>기술 있을 때</th><th>불려 나온 기술</th></tr>
+<tr><td>1</td><td>출처가 붙다 말다 함</td><td>출처와 원문을 함께 표기</td><td><code>copilot-faq-core</code></td></tr>
+<tr><td>2</td><td>타사 제품을 비교해 줌</td><td>지원 범위 밖이라고 알림</td><td><code>scope-guard</code></td></tr>
+<tr><td>3</td><td>사내 절차를 지어냄</td><td>일반 원리만 답하고 IT로 안내</td><td><code>internal-policy</code></td></tr>
+<tr><td>4</td><td>한국어로 답하기도 함</td><td>영어로 답하고 출처도 영어</td><td><code>multilingual</code></td></tr>
+<tr><td>5</td><td>없는 기능을 설명함</td><td>확인되지 않는다고 알림</td><td><code>it-escalation</code></td></tr>
+</table>
+
+<div class="note key">
+<span class="t">다섯이 한꺼번에 움직이지 않습니다</span>
+<p>질문 하나에 기술 하나가 붙습니다. 2번 질문에 <code>multilingual</code>은 들어오지 않습니다. 필요한 것만 골라 쓰이고 나머지는 대화에 실리지 않습니다.</p>
+<p>이것이 기술을 나누어 두는 이유입니다. 지침 한 덩어리에 다 적으면 매번 전부 읽게 됩니다.</p>
+</div>
+
+<h3>실습 &#9317; 트리거 바꿔 보기</h3>
+
+<p><code>description</code>이 정말 선택을 좌우하는지 확인합니다.</p>
+
+<p><code>scope-guard</code> 기술을 지웁니다. 그리고 <code>scope-guard.zip</code> 안의 <code>SKILL.md</code>에서 <code>description</code>만 아래로 바꾼 뒤 다시 압축해 올립니다.</p>
+
+<pre><code>description: 필요할 때 사용한다.</code></pre>
+
+<p>그리고 2번 질문을 다시 던집니다. 대개 이 기술이 불려 나오지 않고 타사 비교를 해 줍니다. 본문은 한 글자도 바꾸지 않았는데 동작이 달라집니다.</p>
+
+<div class="note">
+<span class="t">description은 설명문이 아니라 조건문입니다</span>
+<p>무엇을 하는지가 아니라 <strong>언제 쓰는지</strong>를 적습니다. 사용자가 쓸 법한 표현을 함께 넣어 두면 더 잘 걸립니다.</p>
+<p>확인이 끝나면 원래 <code>scope-guard.zip</code>으로 되돌려 놓습니다.</p>
+</div>
+
+<h3>정리</h3>
+
+<table>
+<tr><th></th><th>맡는 것</th></tr>
+<tr><td>지침</td><td>항상 적용되는 역할과 원칙</td></tr>
+<tr><td>지식</td><td>답의 근거가 될 자료</td></tr>
+<tr><td>기술</td><td>상황별 행동. <code>description</code>이 언제 쓸지를 정합니다</td></tr>
+</table>
+
+<p>지침이 길어지고 있다면 그 안에 <strong>상황별 분기</strong>가 섞여 있는지 봅니다. "~일 때는 이렇게"가 여럿이면 기술로 나눌 자리입니다.</p>
+
+<div class="note">
+<span class="t">더 해 보기</span>
+<p>다섯 개 중 넷만 올리고 하나를 직접 써 보면 감이 빠르게 잡힙니다. 예를 들어 <strong>답변 길이를 세 줄로 줄이는 기술</strong>이나 <strong>표로만 답하는 기술</strong>을 만들어 붙여 봅니다.</p>
+<p>에이전트 하나에 기술은 여덟 개까지 붙습니다.</p>
+</div>
+
 </section><section class="pg" data-pg="links"><h2 id="links">참고 자료</h2>
 
 <h3>공식 문서</h3>
